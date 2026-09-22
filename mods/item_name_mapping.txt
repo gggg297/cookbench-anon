@@ -1,0 +1,477 @@
+# ================================================================
+# 完整物品映射表 v2.0
+# 基于 F7_location.txt 扫描数据生成
+# ================================================================
+#
+# 【识别逻辑说明】
+# 1. CloneID格式: "数字(Clone)" 或 "纯数字" → 提取数字查此表
+# 2. 名称格式: "名称 (数字)" 或 "英文名" → 用名称查此表
+#
+# 【文件格式】
+# ID/名称,中文名,英文名,类别
+#
+# ================================================================
+# 第一部分：CloneID 映射 (数字→物品)
+# ================================================================
+#
+# --- 液体类 (liquids) ---
+1,水,Water,liquids
+2,葵花籽油,Sunflower Oil,liquids
+3,红葡萄酒,Red Wine,liquids
+12,蜂蜜,Honey,liquids
+13,鸡汤,Chicken Broth,liquids
+18,酸奶油,Sour Cream,liquids
+20,白醋,White Vinegar,liquids
+21,柠檬汁,Lemon Juice,liquids
+56,白葡萄酒,White Wine,liquids
+60,青柠汁,Lime Juice,liquids
+63,酱油,Soy Sauce,liquids
+68,椰奶,Coconut Milk,liquids
+98,番茄酱,Ketchup,liquids
+99,烧烤酱,Barbecue Sauce,liquids
+118,脱水黄油,Clarified Butter,liquids
+119,牛奶,Milk,liquids
+120,芥末酱,Mustard,liquids
+121,鳄梨油,Avocado Oil,liquids
+122,橄榄油,Olive Oil,liquids
+123,米醋,Rice Vinegar,liquids
+124,意大利香醋,Balsamic Vinegar,liquids
+146,葡萄酒醋,Wine Vinegar,liquids
+169,米酒,Rice Wine,liquids
+170,芝麻油,Sesame Oil,liquids
+172,花生油,Peanut Oil,liquids
+173,海鲜酱,Hoisin Sauce,liquids
+187,淡色拉格清啤,Helles Märzenbier,liquids
+188,黑清啤,Dunkles Märzenbier,liquids
+189,巴伐利亚啤酒醋,Bavarian Beer Vinegar,liquids
+190,接骨木花冻酱,Elderflower Jelly,liquids
+191,红醋栗冻酱,Redcurrant Jelly,liquids
+192,法国第戎芥末,Dijon Mustard,liquids
+193,杜塞尔多夫芥末,Düsseldorf Mustard,liquids
+199,淡啤酒,Light beer,liquids
+200,黑啤酒,Dark beer,liquids
+1004,可乐,Cola,liquids
+1005,莎莎酱,Salsa,liquids
+1009,青酱,Pesto,liquids
+
+#
+# --- 调味料类 (spices) ---
+9,盐,Salt,spices
+10,黑胡椒,Black Pepper,spices
+11,干牛至,Oregano dried,spices
+36,糖,Sugar,spices
+46,甜椒粉,Sweet Bell Pepper powder,spices
+52,干莳萝,Dill dried,spices
+57,白胡椒,White Pepper,spices
+59,干香菜叶,Cilantro Leaves dried,spices
+61,干迷迭香,Rosemary dried,spices
+66,干百里香,Thyme dried,spices
+69,姜粉,Ginger,spices
+70,干罗勒,Basil dried,spices
+71,孜然粉,Cumin powder,spices
+72,咖喱粉,Curry powder,spices
+73,干薄荷,Mint dried,spices
+74,干普罗旺斯香草,Herbs de Provence dried,spices
+75,辣椒片,Chili Flakes,spices
+76,干独活草,Lovage dried,spices
+77,姜黄粉,Turmeric powder,spices
+78,干墨角兰,Marjoram dried,spices
+79,烟熏胡椒粉,Smoked Pepper powder,spices
+125,多香果粉,Allspice powder,spices
+126,干香叶,Bay Leaf dried,spices
+127,卡宴辣椒粉,Cayenne Pepper powder,spices
+128,肉桂粉,Cinnamon ground,spices
+129,干大蒜,Garlic dried,spices
+130,干辣根,Horseradish dried,spices
+131,肉豆蔻粉,Nutmeg powder,spices
+132,柠檬胡椒,Lemon Pepper,spices
+133,香草粉,Vanilla powder,spices
+168,淀粉,Starch,spices
+171,花椒粉,Sichuan Pepper powder,spices
+184,芥末籽,Mustard Seeds,spices
+185,丁香粉,Cloves ground,spices
+186,咖啡粉,Ground coffee,spices
+1010,棕糖,Brown Sugar,spices
+1016,干葫芦巴叶,Fenugreek Leaves dried,spices
+#
+# --- 蔬菜水果类 (products) ---
+0,西红柿,Tomato,products
+5,树莓,Raspberry,products
+6,西葫芦,Zucchini,products
+7,黄瓜,Cucumber,products
+8,茄子,Eggplant,products
+14,洋葱,Onion,products
+16,大蒜,garlic,products
+17,牛排,Steak,products
+26,土豆,Potato,products
+27,玉米棒,Cob of Corn,products
+28,樱桃萝卜,Radish,products
+31,苹果,Apple,products
+32,香蕉,Banana,products
+#32|has:SpawningContainer,甜果馅饼生成器,Tart Spawner,products   
+1001,甜果馅饼,Tart,products
+33,橙子,Orange,products
+34,草莓,Strawberry,products
+38,欧芹,Parsley Root,products
+49,西兰花,broccoli,products
+80,芦笋,Asparagus,products
+84,柠檬,Lemon,products
+87,甜菜根,Beetroot,products
+88,辣根,Horseradish,products
+90,南瓜,Pumpkin,products
+93,生姜,Whole Ginger,products
+94,梨,Pear,products
+107,蘑菇,Button Mushroom,products
+108,红甜椒,Red Bell Pepper,products
+109,青甜椒,Green Bell Pepper,products
+111,黄甜椒,Yellow Bell Pepper,products
+112,墨西哥辣椒,Jalapeño,products
+113,辣椒,Chili Pepper,products
+114,抱子甘蓝,Brussels Sprouts,products
+134,面包,Bread,products
+166,红土豆,Red Potato,products
+194,欧防风,Parsnip,products
+195,紫甘蓝,Red Cabbage,products
+1015,塞拉诺辣椒,Serrano Pepper,products
+#
+# --- 肉类海鲜类 (products) ---
+4,鸭胸,Duck Breast,products
+44,汉堡排,Burger Meat,products
+45,汉堡面包顶,Top BurgerBun,products
+47,鸡腿,Chicken Leg,products
+48,虾,Shrimp,products
+53,培根,Bacon,products
+58,汉堡面包底,Bottom Burger Bun,products
+64,马苏里拉芝士,Mozzarella,products
+65,猪排,Pork Chops,products
+81,切达芝士,Cheddar,products
+82,鳟鱼,Trout,products
+83,三文鱼柳,Salmon Fillet,products
+85,吞拿鱼,Tuna,products
+86,鳕鱼,Cod,products
+89,帕尔玛干酪,Parmesan,products
+91,山羊芝士,Goat Cheese,products
+95,扇贝,Scallop,products
+97,猪里脊,Pork Tenderloin,products
+115,青柠,Lime,products
+116,戈尔贡佐拉芝士,Gorgonzola,products
+117,牛肩胛肉,Beef Chuck,products
+147,香肠,Sausage,products
+160,鸡蛋,Egg,products
+161(Clone),鸡蛋,egg,products
+160(Clone)|has:ProductPart,鸡蛋,Egg,products
+163,鸡蛋壳,Eggshell,products
+164,鸡蛋壳,Eggshell,products
+165,T骨牛排,T-bone Steak,products
+177,鸡胸肉,Chicken Breast,products
+179,月饼,Mooncake,products
+197,猪肩肉,Pork Shoulder,products
+1002,英式玛芬,English Muffin,products
+1003,鸡翅,Chicken Wing,products
+1006,蜂蜜芒果,Honey Mango,products
+1008,手指土豆,Fingerling Potato,products
+1011,菲达奶酪,Feta,products
+1012,剑鱼,Swordfish,products
+1013,鳀鱼,Anchovy,products
+1014,意式培根,Pancetta,products
+1018,早餐猪肉肠,Pork Breakfast Sausage,products
+1020,火腿,Ham,products
+1021,龙虾尾,Lobster Tail,products
+1022,白肠,White sausage,products
+1023,猪肋排,Pork ribs,products
+1025,哈罗米奶酪,Halloumi,products
+#
+# --- 新鲜香草类 (products) ---
+135,新鲜罗勒叶,Basil Leaf fresh,products
+136,牛至枝,Oregano Twig,products
+137,薄荷叶,Mint Leaf,products
+138,迷迭香枝,Rosemary Twig,products
+139,百里香枝,Thyme Twig,products
+140,新鲜欧芹叶,Parsley Leaves fresh,products
+141,细香葱,Chives,products
+142,新鲜香菜叶,Cilantro Leaves fresh,products
+143,新鲜莳萝,Dill fresh,products
+144,新鲜鼠尾草叶,Sage Leaf fresh,products
+145,新鲜香叶,Bay Leaf fresh,products
+#
+# --- 其他 (products) ---
+15,螺旋粉,Fusilli,products
+22,桶,Bucket,background
+45,汉堡面包顶,Top Hamburger Bun,products
+58,汉堡面包底,Bottom Hamburger Bun,products
+174,青葱,Scallion,products
+182,八角茴香,Star Anise,products
+183,肉桂皮条,Cinnamon stick,products
+196,土豆面球,Potato Dumplings,products
+1007,意大利馄饨皮,Tortellini,products
+
+
+#
+# ================================================================
+# 第二部分：名称映射 (GameObject名称→物品)
+# 用于 "名称(数字)" 或 纯名称格式
+# ================================================================
+#
+# --- 肉类 (通过名称识别) ---
+t_bone,T骨牛排,T-bone Steak,products
+chicken_breast,鸡胸肉,Chicken Breast,products
+raw_pork_carbonate,牛肩胛肉,Beef Chuck,products
+PorkShoulder,猪肩肉,Pork Shoulder,products
+Pork Tenderloin,猪里脊,Pork Tenderloin,products
+Sausages,香肠,Sausage,products
+Salmon,三文鱼柳,Salmon Fillet,products
+raw_salmon,吞拿鱼,Tuna,products
+trout,鳟鱼,Trout,products
+cod,鳕鱼,Cod,products
+ShrimpMesh,虾,Shrimp,products
+#
+# --- 芝士类 (通过名称识别) ---
+Goat_Cheese,山羊芝士,Goat Cheese,products
+default,芝士,Cheese,products
+#
+# --- 新鲜香草 (通过名称识别) ---
+basil,新鲜罗勒叶,Basil Leaf fresh,products
+oregano,牛至枝,Oregano Twig,products
+mint,薄荷叶,Mint Leaf,products
+rosemary,迷迭香枝,Rosemary Twig,products
+thyme,百里香枝,Thyme Twig,products
+parsley,新鲜欧芹叶,Parsley Leaves fresh,products
+chives,细香葱,Chives,products
+coriander,新鲜香菜叶,Cilantro Leaves fresh,products
+dill,新鲜莳萝,Dill fresh,products
+sage,新鲜鼠尾草叶,Sage Leaf fresh,products
+bayLeaf,新鲜香叶,Bay Leaf fresh,products
+#
+# --- 蔬菜 (通过名称识别，无CloneID的) ---
+redCabbage,紫甘蓝,Red Cabbage,products
+Courgette,西葫芦,Zucchini,products
+Scallion,青葱,Scallion,products
+spring_onion,青葱,Scallion,products
+#
+# --- 冰箱底层物品 (通过名称识别) ---
+egg,鸡蛋,Egg,products
+lime,青柠,Lime,products
+strawberry,草莓,Strawberry,products
+brussel,抱子甘蓝,Brussels Sprouts,products
+Radish_R_S,樱桃萝卜,Radish,products
+moazzarella,马苏里拉芝士,Mozzarella,products
+default,芦笋,Asparagus,products
+
+
+# --- 辅助导航物品 (通过名称识别) ---
+refrigerator,冰箱,refrigerator,background
+Checkout Stand,检查台,Checkout Stand,background
+#Tablet,检查台平板,Tablet,background
+refrigerator_door_left,冰箱左门,Refrigerator Left Door,background
+refrigerator_door_right,冰箱右门,Refrigerator Right Door,background
+refrigerator_shelf_left,冰箱左抽屉,Refrigerator Left Drawer,background
+refrigerator_shelf_right,冰箱右抽屉,Refrigerator Right Drawer,background
+ScreenStarter,电脑,Computer,background
+# 上层烤炉放置点
+Spawn Point Clickable|parent:Oven Spawn Point 1|great-great-grandparent:Top Oven,烤炉上层放置点1,Oven Top place point 1,background
+Spawn Point Clickable|parent:Oven Spawn Point 2|great-great-grandparent:Top Oven,烤炉上层放置点2,Oven Top place point 2,background
+Spawn Point Clickable|parent:Oven Spawn Point 3|great-great-grandparent:Top Oven,烤炉上层放置点3,Oven Top place point 3,background
+Spawn Point Clickable|parent:Oven Spawn Point 4|great-great-grandparent:Top Oven,烤炉上层放置点4,Oven Top place point 4,background
+
+# 下层烤炉放置点
+Spawn Point Clickable|parent:Oven Spawn Point 1|great-great-grandparent:Bottom Oven,烤炉下层放置点1,Oven Bottom place point 1,background
+Spawn Point Clickable|parent:Oven Spawn Point 2|great-great-grandparent:Bottom Oven,烤炉下层放置点2,Oven Bottom place point 2,background
+Spawn Point Clickable|parent:Oven Spawn Point 3|great-great-grandparent:Bottom Oven,烤炉下层放置点3,Oven Bottom place point 3,background
+Spawn Point Clickable|parent:Oven Spawn Point 4|great-great-grandparent:Bottom Oven,烤炉下层放置点4,Oven Bottom place point 4,background
+Spawn Point Clickable|parent:Small Rack Ledge 1,烤盘架层1,Baking tray rack point 1,background
+Spawn Point Clickable|parent:Small Rack Ledge 2,烤盘架层2,Baking tray rack point 2,background
+Spawn Point Clickable|parent:Small Rack Ledge 3,烤盘架层3,Baking tray rack point 3,background
+Spawn Point Clickable|parent:Small Rack Ledge 4,烤盘架层4,Baking tray rack point 4,background
+
+# --- 交互工具按钮 (通过名称识别) ---
+Gas Switch 1,煤气炉1开关,Stove Switch 1,background
+Gas Switch 2,煤气炉2开关,Stove Switch 2,background
+Gas Switch 3,煤气炉3开关,Stove Switch 3,background
+Gas Switch 4,煤气炉4开关,Stove Switch 4,background
+Gas Switch 5,煤气炉5开关,Stove Switch 5,background
+Gas Switch 6,煤气炉6开关,Stove Switch 6,background
+Oven Switch|grandparent:Top Oven,上层烤炉开关,Top Oven Switch,background
+Oven Switch|grandparent:Bottom Oven,下层烤炉开关,Bottom Oven Switch,background
+Oven Door|grandparent:Top Oven,上层烤炉门,Top Oven Door,background
+Oven Door|grandparent:Bottom Oven,下层烤炉门,Bottom Oven Door,background
+Stand Switch|parent:Hot Plate,扒炉开关,Griddle Switch,background
+Stand Switch|parent:Fryer 1,炸炉1开关,Fryer Switch 1,background
+Stand Switch|parent:Fryer 2,炸炉2开关,Fryer Switch 2,background
+Stand Switch|parent:Grill Stand,条纹烤炉开关,Grill Switch,background
+Button|grandparent:AutomaticCutter,自动切割器按钮,Automatic Cutter Button,background
+AboveFunnelTrigger,自动切割机入口,Automatic Cutter Inlet,background
+Button On,食物处理机开启,Food Processor button On,background
+Button Off,食物处理机关闭,Food Processor button Off,background
+Fryer Basket Spawn Point 1|grandparent:Fryer 1,炸炉1-槽位1,Fryer-Slot a1,background
+Fryer Basket Spawn Point 2|grandparent:Fryer 1,炸炉1-槽位2,Fryer-Slot a2,background
+Fryer Basket Spawn Point 1|grandparent:Fryer 2,炸炉2-槽位1,Fryer-Slot b1,background
+Fryer Basket Spawn Point 2|grandparent:Fryer 2,炸炉2-槽位2,Fryer-Slot b2,background
+Gas Heater Area 1,煤气炉1,Stove Place Point 1,background
+Gas Heater Area 2,煤气炉2,Stove Place Point 2,background
+Gas Heater Area 3,煤气炉3,Stove Place Point 3,background
+Gas Heater Area 4,煤气炉4,Stove Place Point 4,background
+Gas Heater Area 5,煤气炉5,Stove Place Point 5,background
+Gas Heater Area 6,煤气炉6,Stove Place Point 6,background
+Heat Trigger|parent:Hot Plate,平板煎炉面板,Griddle Surface,splittable_platform
+Heat Trigger|parent:Grill Stand,条纹烤炉面板,Grill Surface,splittable_platform
+Hook Spawn Point|parent:Tool Hook (1)|grandparent:Hanging Rail Short,钩子点位1,Hook Point a1,background
+Hook Spawn Point|parent:Tool Hook (2)|grandparent:Hanging Rail Short,钩子点位2,Hook Point a2,background
+Hook Spawn Point|parent:Tool Hook (3)|grandparent:Hanging Rail Short,钩子点位3,Hook Point a3,background
+Hook Spawn Point|parent:Tool Hook (4)|grandparent:Hanging Rail Short,钩子点位4,Hook Point a4,background
+Hook Spawn Point|parent:Tool Hook (5)|grandparent:Hanging Rail Short,钩子点位5,Hook Point a5,background 
+Hook Spawn Point|parent:Tool Hook,钩子点位6,Hook Point a6,background 
+Hook Spawn Point|parent:Tool Hook (7)|grandparent:Hanging Rail Short,钩子点位7,Hook Point a7,background 
+Hook Spawn Point|parent:Tool Hook (8)|grandparent:Hanging Rail Short,钩子点位8,Hook Point a8,background
+
+Hook Spawn Point|parent:Tool Hook (1)|grandparent:Hooks,钩子点位1,Hook Point b1,background
+Hook Spawn Point|parent:Tool Hook (2)|grandparent:Hooks,钩子点位2,Hook Point b2,background
+Hook Spawn Point|parent:Tool Hook (3)|grandparent:Hooks,钩子点位3,Hook Point b3,background
+Hook Spawn Point|parent:Tool Hook (4)|grandparent:Hooks,钩子点位4,Hook Point b4,background
+Hook Spawn Point|parent:Tool Hook (5)|grandparent:Hooks,钩子点位5,Hook Point b5,background 
+Hook Spawn Point|parent:Tool Hook (6),钩子点位6,Hook Point b6,background 
+Hook Spawn Point|parent:Tool Hook (7)|grandparent:Hooks,钩子点位7,Hook Point b7,background 
+Hook Spawn Point|parent:Tool Hook (8)|grandparent:Hooks,钩子点位8,Hook Point b8,background 
+
+Hook Spawn Point|parent:Tool Hook 10,钩子点位10,Hook Point 10,background
+Hook Spawn Point|parent:Tool Hook 11,钩子点位11,Hook Point 11,background
+Hook Spawn Point|parent:Tool Hook 12,钩子点位12,Hook Point 12,background
+Hook Spawn Point|parent:Tool Hook 13,钩子点位13,Hook Point 13,background
+Hook Spawn Point|parent:Tool Hook 14,钩子点位14,Hook Point 14,background
+
+Knife Block Model|parent:Knives Block|grandparent:Work Stands|great-grandparent:Details,刀架本体,Knife holder,background
+
+
+Recycle Bin 2|parent:Work Stands|grandparent:Details,垃圾桶 1,Trash can 1                                 
+Recycle Bin 3|parent:Work Stands|grandparent:Details,垃圾桶 2,Trash can 2
+
+Fryer Button On|parent:Fryer 1,炸锅1加油开关(开),Fryer oil filling switch 1,background                                                                                                                   
+Fryer Button Off|parent:Fryer 1,炸锅1卸油开关(关),Fryer oil discharge switch 1,background                                                                                                                 
+Fryer Button On|parent:Fryer 2,炸锅2加油开关(开),Fryer oil filling switch 2,background                                                                                                                   
+Fryer Button Off|parent:Fryer 2,炸锅2卸油开关(关),Fryer oil discharge switch 2,background  
+Left Valve Clickable|parent:Left Valve|grandparent:Faucet|great-grandparent:Sink Stand,水龙头左阀门,Hot Faucet Switch,background                                                            
+Right Valve Clickable|parent:Right Valve|grandparent:Faucet|great-grandparent:Sink Stand,水龙头右阀门,Cool Faucet Switch,background                                                         
+#Faucet Base|parent:Faucet|grandparent:Sink Stand,水龙头底座,Faucet Base,background 
+Virtual Product Transporter|parent:Faucet|grandparent:Faucet Pivot Sink Switch|great-grandparent:Faucet|great-great-grandparent:Sink Stand,水龙头出水管,Faucet Pipe,background 
+
+Left Sink Spawn Point|parent:Sink Stand,水槽左放置点,Left Sink Place Point,background
+Right Sink Spawn Point|parent:Sink Stand,水槽右放置点,Right Sink Place Point,background   
+
+#Virtual Product Transporter|parent:Faucet|grandparent:Faucet Pivot Sink Switch|great-grandparent:Faucet,忽略,Shelf,background
+#
+# ================================================================
+# 第三部分：出生点映射 (Crate名称→物品获取处)
+# ================================================================
+#
+Paprika Chilli Crate,辣椒获取处,Chili Pepper Source,spawn
+Cucumber Crate,黄瓜获取处,Cucumber Source,spawn
+Tomato Crate,番茄获取处,Tomato Source,spawn
+Paprika Jalapeño Crate,墨西哥辣椒获取处,Jalapeño Source,spawn
+Lemons Crate,柠檬获取处,Lemon Source,spawn
+Buns Crate,忽略,Shelf,spawn
+#Buns Crate,汉堡面包获取处,Burger Bun Source,spawn
+GameObject|parent:Colliders|grandparent:CombinedBot|great-grandparent:Bot,汉堡面包底生成点,Bun Bottom Source,background                                                                     
+GameObject|parent:Colliders|grandparent:Spawners-mesh-mesh|great-grandparent:CombinedTop|great-great-grandparent:Top,汉堡面包顶生成点,Bun Top Source,background 
+Apple Crate,苹果获取处,Apple Source,spawn
+Red Potato Crate,红土豆获取处,Red Potato Source,spawn
+Onion Crate,洋葱获取处,Onion Source,spawn
+Garlic Crate,大蒜获取处,Garlic Source,spawn
+Corn Crate,玉米棒获取处,Cob of Corn Source,spawn
+Broccoli Crate,西兰花获取处,Broccoli Source,spawn
+Bread Crate,面包获取处,Bread Source,spawn
+Parsley Crate,欧芹根获取处,Parsley Root Source,spawn
+Champignon Crate,蘑菇获取处,Button Mushroom Source,spawn
+Paprika Bulgarian Crate,红甜椒获取处,Red Bell Pepper Source,spawn
+Beetroot Crate,甜菜根获取处,Beetroot Source,spawn
+Eggplant Crate,茄子获取处,Eggplant Source,spawn
+Paprika Green Crate,青甜椒获取处,Green Bell Pepper Source,spawn
+Paprika Yellow Crate,黄甜椒获取处,Yellow Bell Pepper Source,spawn
+Potato Crate,土豆获取处,Potato Source,spawn
+Ginger Crate,生姜获取处,Whole Ginger Source,spawn
+Red Cabbage Crate,紫甘蓝获取处,Red Cabbage Source,spawn
+Courgette Crate,西葫芦获取处,Zucchini Source,spawn
+Scallion Crate,青葱获取处,Scallion Source,spawn
+Spring Onion Crate,青葱获取处,Scallion Source,spawn
+Horse Radish Crate,辣根获取处,Horseradish Source,spawn
+Parsnip Crate,欧防风获取处,Parsnip Source,spawn
+Orange Crate,橙子获取处,Orange Source,spawn
+Carrot Crate,胡萝卜获取处,Carrot Source,spawn
+Pumpkin Crate,南瓜获取处,Pumpkin Source,spawn
+
+# --- 盘子获取处 (通过名称识别) ---
+Plate_01_stack3,小盘获取处,Small Plate Source,spawn
+Plate_04_stack2,盘子获取处,Plate Source,spawn
+Plate_05_stack3,方盘获取处,Square Plate Source,spawn
+Plate_06_stack3,深盘获取处,Deep Plate Source,spawn
+Plate_07_stack2,盘子获取处,Plate Source,spawn
+Plate_08_stack2,砂锅获取处,Casserole Source,spawn
+Plate_09_stack1,碗获取处,Bowl Source,spawn
+Plate_10_stack3,大盘获取处,Large Plate Source,spawn
+plate_0_stack3,大盘获取处,Large Plate Source,spawn
+
+#
+# ================================================================
+# 第四部分：工具类 CloneID 映射
+# 与食材ID可能重复，需结合Layer/组件类型区分
+# Layer: IngredientArea / Default
+# ================================================================
+#
+# --- 工具类 (tools) ---
+
+8,锅铲,Spatula,tools
+13,搅拌器,blender,tools
+14|has:FryerContainer,炸篮,Fryer Basket,tools
+14(Clone)|has:Fork,钳子,Tongs,tools
+16,切菜板,Cutting Board,tools
+19(Clone)|has:Skewer,小签子,Small Skewer,tools     
+21(Clone)|has:Skewer,中签子,Medium Skewer,tools
+22(Clone)|has:Skewer,大签子,Large Skewer,tools
+22(Clone)|has:Container,桶,Bucket,tools     
+23,移液器,Pipette,tools
+26,滤锅,Colander,tools
+28,长柄勺50ml,Ladle 50ml,tools
+29,长柄勺150ml,Ladle 150ml,tools
+#99,维修电话,Maintenance telephone,tools
+#
+# --- 餐具容器类 (plates) ---
+11,烘烤托盘,Bake Tray,plates
+100,大盘,Large Plate,plates
+101,小盘,Small Plate,plates
+104,盘子,Plate,plates
+105,方盘,Square Plate,plates
+106,深盘,Deep Plate,plates
+107,盘子,Plate,plates
+108,砂锅,Casserole,plates
+109,碗,Bowl,plates
+110,大盘,Large Plate,plates
+#
+# ================================================================
+# 第五部分：可分割平台映射
+# 这些平台会被按配置的间距分割成多个放置位置
+# 配置文件: scanner_config.txt
+# ================================================================
+#
+# --- 可分割平台 (splittable_platform) ---
+GasStandShelf,燃气灶平台,Gas Stand Shelf,splittable_platform
+# v4.17: 架子平台（使用父对象的BoxCollider）
+Top Shelf Clickable|greatgrandparent:2-Shelf 0-Wall Side Cupboard 1,顶层架子1(双层柜),Top Shelf 1 (2-Shelf),splittable_platform
+Top Shelf Clickable|greatgrandparent:2-Shelf 0-Wall Side Cupboard 2,顶层架子2(双层柜),Top Shelf 2 (2-Shelf),splittable_platform
+Top Shelf Clickable|greatgrandparent:3-Shelf 3-Wall 2-Door Side Cupboard 3,顶层架子3(三层柜),Top Shelf 3 (3-Shelf),splittable_platform
+0|parent:TableSpawnPoint,大桌面(中央),Large Table Center,splittable_platform
+3|parent:TableSpawnPoint,侧桌面,Side Table,splittable_platform
+Top Table Spawn Point (2),柜顶桌面,Top Table Spawn Point,splittable_platform
+
+
+
+# 未来可添加更多平台...
+# CounterShelf,料理台平台,Counter Shelf,splittable_platform
+#
+# ================================================================
+# 统计: CloneID映射 115个 + 名称映射 27个 + 出生点映射 31个 + 工具类 8个 + 餐具类 7个 + 平台 1个 = 189个
+# ================================================================
+
+KnifeBetter,刀,Knife,component
+Knife,刀,Knife,component
+Blender,搅拌机,Blender,component
+phone_base,电话座,Phone Holder,tools
+Phone,维修电话,Repair Phone,component
+

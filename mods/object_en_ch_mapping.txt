@@ -1,0 +1,249 @@
+0,T骨牛排,T-bone Steak,products
+1,三文鱼柳,Salmon Fillet,products
+2,八角茴香,Star Anise,liquids
+3,切达芝士,Cheddar,products
+4,剑鱼,Swordfish,products
+5,南瓜,Pumpkin,products
+6,吞拿鱼,Tuna,products
+7,哈罗米奶酪,Halloumi,products
+8,土豆,Potato,products
+9,土豆面球,Potato Dumplings,products
+10,培根,Bacon,products
+11,塞拉诺辣椒,Serrano Pepper,products
+12,墨西哥辣椒,Jalapeño,products
+13,大蒜,Garlic,products
+14,山羊芝士,Goat Cheese,products
+15,帕尔玛干酪,Parmesan,products
+16,意大利馄饨,Tortellini,products
+17,意式培根,Pancetta,products
+18,戈尔贡佐拉干酪,Gorgonzola,products
+19,扇贝,Scallop,products
+20,手指土豆,Fingerling Potato,products
+21,抱子甘蓝,Brussels Sprouts,products
+22,整块姜,Whole Ginger,products
+23,新鲜欧芹叶,Parsley Leaves dresh,products
+24,新鲜罗勒叶,Basil Leaf dresh,products
+25,新鲜莳萝,Dill dresh,products
+26,新鲜香叶,Bay Leaf dresh,products
+27,新鲜香菜叶,Cilantro Leaves dresh,products
+28,新鲜鼠尾草叶,Sage Leaf dresh,products
+29,早餐猪肉肠,Pork Breakfast Sausage,products
+30,月饼,Mooncake,products
+31,柠檬,Lemon,products
+32,树莓,Raspberry,products
+33,梨,Pear,products
+34,樱桃萝卜,Radish,products
+35,橙子,Orange,products
+36,欧洲萝卜,Parsnip,products
+37,欧芹,Parsley Root,products
+38,汉堡排,Burger Meat,products
+39,汉堡面包底,Bottom Burger Bun,products
+40,汉堡面包顶,Top Burger Bun,products
+41,洋葱,Onion,products
+42,火腿,Ham,products
+43,牛排,Steak,products
+44,牛肩胛肉,Beef Chuck,products
+45,牛至嫩枝,Oregano Twig,products
+46,猪排,Pork Chops,products
+47,猪肋排,Pork ribs,products
+48,猪肩肉,Pork Shoulder,products
+49,猪里脊,Pork Tenderloin,products
+50,玉米棒,Cob of Corn,products
+51,甜果馅饼,Tart,products
+52,甜菜,Beetroot,products
+53,番茄,Tomato,products
+54,白肠,White sausage,products
+55,百里香嫩枝,Thyme Twig,products
+56,紫甘蓝,Red Cabbage,products
+57,红椒,Red Bell Pepper,products
+58,红薯,Red Potato,products
+59,红辣椒,Chili Pepper,products
+60,细香葱,Chives,products
+61,肉桂皮条,Cinnamon stick,liquids
+62,胡萝卜,Carrot,products
+63,芦笋,Asparagus,products
+64,英式玛芬,English Muffin,products
+65,苹果,Apple,products
+66,茄子,Eggplant,products
+67,草莓,Strawberry,products
+68,草菇,Button Mushroom,products
+69,菲达奶酪,Feta,products
+70,葱,Scallion,products
+71,薄荷叶,Mint Leaf,products
+72,虾,Shrimp,products
+73,蜂蜜芒果,Honey Mango,products
+74,螺旋粉,Fusilli,products
+75,西兰花,Broccoli,products
+76,西葫芦,Zucchini,products
+77,辣根,Horseradish,products
+78,迷迭香嫩枝,Rosemary Twig,products
+79,通心粉,Penne,products
+80,青柠,Lime,products
+81,青椒,Green Bell Pepper,products
+82,面包,Bread,products
+83,香肠,Sausage,products
+84,香蕉,Banana,products
+85,马苏里拉芝士,Mozzarella,products
+86,鳀鱼,Anchovy,products
+87,鳕鱼,Cod,products
+88,鳟鱼,Trout,products
+89,鸡翅,Chicken Wing,products
+90,鸡胸,Chicken Breast,products
+91,鸡腿,Chicken Leg,products
+92,鸡蛋,Egg,products
+93,鸭胸,Duck Breast,products
+94,黄椒,Yellow Bell Pepper,products
+95,黄瓜,Cucumber,products
+96,龙虾尾,Lobster Tail,products
+97,自动切割容器,Automatic Cutter Container,utensils
+98,烘烤托盘,Bake Tray,utensils
+99,大锅,Big Pot,utensils
+100,搅拌机,Blender,utensils
+101,滤锅,Colander,utensils
+102,切菜板,Cutting Board,utensils
+103,料理机容器,Food Processor Container,utensils
+104,炸篮,Fryer Basket,utensils
+105,烤盘,Grill Pan,utensils
+106,刀,Knife,utensils
+107,长柄勺150毫升容量,Ladle 150 ml,utensils
+108,长柄勺50毫升容量,Ladle 50 ml,utensils
+109,大签子,Large Skewer,utensils
+110,啤酒杯,Maβkrug,utensils
+111,中签子,Medium Skewer,utensils
+112,双耳锅,Paella Pan,utensils
+113,煎锅,Pan,utensils
+114,移液器,Pipette,utensils
+115,塑料碗,Plastic Bowl,utensils
+116,小锅,Small Pot,utensils
+117,小签子,Small Skewer,utensils
+118,锅铲,Spatula,utensils
+119,钳子,Tongs,utensils
+120,煤气炉,Stove,utensils
+121,炸炉,Fryer,utensils
+122,烤箱,Oven,utensils
+123,平板煎炉,Griddle,utensils
+124,条纹烤炉,Grill,utensils
+125,丁香末,Cloves ground,spices
+126,咖啡粉,Ground coffee,spices
+127,咖喱粉,Curry powder,spices
+128,多香果粉,Allspice powder,spices
+129,姜,Ginger,spices
+130,姜黄根粉,Turmeric powder,spices
+131,孜然粉,Cumin powder,spices
+132,干墨角兰,Marjoram dried,spices
+133,干大蒜,Garlic dried,spices
+134,干普罗旺香草,Herbs de Provence dried,spices
+135,干牛至,Oregano dried,spices
+136,干独活草,Lovage dried,spices
+137,干百里香,Thyme dried,spices
+138,干罗勒,Basil dried,spices
+139,干莳萝,Dill dried,spices
+140,干葫芦巴叶,Fenugreek Leaves dried,spices
+141,干薄荷,Mint dried,spices
+142,干辣根,Horseradish dried,spices
+143,干迷迭香,Rosemary dried,spices
+144,干香叶,Bay Leaf dried,spices
+145,干香菜叶,Cilantro Leaves dried,spices
+146,柠檬胡椒粉,Lemon Pepper,spices
+147,棕糖,Brown Sugar,spices
+148,欧洲芥末籽,Mustard Seeds,spices
+149,淀粉,Starch,spices
+150,烟熏胡椒粉,Smoked Pepper powder,spices
+151,甜椒粉,Sweet Bell Pepper powder,spices
+152,白胡椒,White Pepper,spices
+153,盐,Salt,spices
+154,糖,Sugar,spices
+155,肉桂末,Cinnamon ground,spices
+156,肉豆蔻粉,Nutmeg powder,spices
+157,花椒粉,Sichuan Pepper powder,spices
+158,辣椒粉,Cayenne Pepper powder,spices
+159,辣椒薄片,Chili Flakes,spices
+160,香草粉,Vanilla powder,spices
+161,黑胡椒,Black Pepper,spices
+162,可乐,Cola,liquids
+163,巴伐利亚啤酒醋,Bavarian Beer Vinegar,liquids
+164,意大利香醋,Balsamic Vinegar,liquids
+165,接骨木花冻酱,Elderflower Jelly,liquids
+166,杜塞尔多夫芥末,Düsseldorf Mustard,liquids
+167,柠檬汁,Lemon Juice,liquids
+168,椰奶,Coconut Milk,liquids
+169,橄榄油,Olive Oil,liquids
+170,水,Water,liquids
+171,法国第戎芥末,Dijon Mustard,liquids
+172,海鲜酱,Hoisin Sauce,liquids
+173,淡色拉格清啤,Helles Märzenbier,liquids
+174,烧烤酱,Barbecue Sauce,liquids
+175,牛奶,Milk,liquids
+176,番茄酱,Ketchup,liquids
+177,白葡萄酒,White Wine,liquids
+178,白醋,White Vinegar,liquids
+179,米酒,Rice Wine,liquids
+180,米醋,Rice Vinegar,liquids
+181,红葡萄酒,Red Wine,liquids
+182,红醋栗冻酱,Redcurrant Jelly,liquids
+183,脱水黄油,Clarified Butter,liquids
+184,芝麻油,Sesame Oil,liquids
+185,芥末,Mustard,liquids
+186,花生油,Peanut Oil,liquids
+187,莎莎酱,Salsa,liquids
+188,葡萄酒醋,Wine Vinegar,liquids
+189,葵花籽油,Sunflower Oil,liquids
+190,蜂蜜,Honey,liquids
+191,酱油,Soy Sauce,liquids
+192,酸奶油,Sour Cream,liquids
+193,青柠汁,Lime Juice,liquids
+194,青酱,Pesto,liquids
+195,鳄梨油,Avocado Oil,liquids
+196,鸡汤,Chicken Broth,liquids
+197,黑清啤,Dunkles Märzenbier,liquids
+198,简式方盘,Square Plate,Basic,utensils
+199,简式大盘,Large Plate,Basic,utensils
+200,简式盘,Plate,Basic,utensils
+201,简式小盘,Small Plate,Basic,utensils
+202,简式深盘,Deep Plate,Basic,utensils
+203,简式砂锅,Casserole,Basic,utensils
+204,简式碗,Bowl,Basic,utensils
+205,桶黑啤酒,Barrel of dark beer,background
+206,桶淡啤酒,Barrel of light beer,background
+207,桶,Bucket,utensils
+208,刀架,Knife holder,utensils
+209,垃圾桶,Trash can,utensils
+210,箱子,Carton Box,utensils
+211,维修电话,Repair Phone,utensils
+212,电话座支架,Phone Holder,utensils
+213,电脑,Computer,utensils
+214,冰箱,Refrigerator,utensils
+215,冰箱左门,Refrigerator Left Door,utensils
+216,冰箱右门,Refrigerator Right Door,utensils
+217,冰箱左抽屉,Refrigerator Left Drawer,utensils
+218,冰箱右抽屉,Refrigerator Right Drawer,utensils
+219,自动切割器按钮,Automatic Cutter Button,utensils
+220,自动切割机入口,Automatic Cutter Inlet,utensils
+221,自动切割机容器,Auto Cutter Container,utensils
+222,炸炉槽位a,Fryer-Slot a,tool-interaction
+223,炸炉槽位b,Fryer-Slot b,tool-interaction
+224,炸炉开关,Fryer Switch,tool-interaction
+225,炸锅加油按钮(开),Fryer oil filling switch,tool-interaction
+226,炸锅按钮(关),Fryer oil discharge switch,tool-interaction
+227,扒炉开关,Griddle Switch,tool-interaction
+228,条纹烤炉开关,Grill Switch,tool-interaction
+229,水龙头底座,Faucet Base,tool-interaction 
+230,水龙头右阀门,Cool Faucet Switch,tool-interaction
+231,水龙头左阀门,Hot Faucet Switch,tool-interaction
+232,水槽右放置点,Right Sink Place Point,tool-interaction
+233,水槽左放置点,Left Sink Place Point,tool-interaction
+234,水龙头出水管,Faucet Pipe,tool-interaction
+235,检查台,Checkout Stand,tool-interaction
+236,食物处理机关闭,Food Processor button Off,tool-interaction
+237,食物处理机开启,Food Processor button On,tool-interaction
+238,食物处理机容器,Food Processor Container,tool-interaction 
+239,上层烤炉开关,Top Oven Switch,tool-interaction
+240,下层烤炉开关,Bottom Oven Switch,tool-interaction
+241,烤炉上层放置点,Oven Top place point,tool-interaction
+242,烤炉下层放置点,Oven Bottom place point,tool-interaction
+243,烤盘架层,Baking tray rack point,tool-interaction
+244,煤气炉放置点,Stove Place Point,tool-interaction
+245,煤气炉开关,Stove Switch,tool-interaction
+246,挂钩点位,Hook Point,tool-interaction
+247,挂钩点位A,Hook Point a,tool-interaction
+248,挂钩点位B,Hook Point b,tool-interaction
