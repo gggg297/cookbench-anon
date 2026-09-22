@@ -7,11 +7,10 @@ session, plans with an LLM/VLM, and acts through a semantic action + skill layer
 This repository is released for **double-blind review**; author and institution
 information is intentionally omitted.
 
-> **Not included: in-game template assets.** The perception and GUI layers match
-> screenshots against small icon crops cropped from the game. Those crops are
-> third-party game assets and are **not redistributed here**; the code regenerates
-> them from your own installation. See
-> [Template assets](#template-assets-not-redistributed).
+> **Third-party template assets.** `data/figure/` contains small icon crops taken
+> from *Cooking Simulator* and used for template matching. They are included so the
+> perception and GUI layers are runnable out of the box, and remain the property of
+> the game's rights holders. See [Template assets](#template-assets).
 
 ## Layout
 
@@ -24,7 +23,8 @@ information is intentionally omitted.
     pipelines/*.json      # one config per baseline mechanism
     cookbench_game_lock.json
     docs/config_desc.md   # config field reference and CLI override syntax
-  data/                   # knowledge base (recipes, items, tools, nav map)
+  data/                   # knowledge base (recipes, items, tools, nav map, icons)
+    figure/               # in-game template crops (third-party; see below)
   memory/                 # prompt assets and documented-memory templates
   docs/                   # environment version-locking and setup notes
   scripts/                # CLI entry points
@@ -195,31 +195,37 @@ reconstructing that environment, are in
 [`docs/game_environment_lock.md`](docs/game_environment_lock.md).
 `scripts/manage_game_environment.py` automates depot download / import / verify.
 
-## Template assets (not redistributed)
+## Template assets
 
 The perception layer and several GUI flows match the screen against small reference
-icons cropped from the game (item icons, store buttons, checkout UI, etc.). These
-are third-party game assets, so they are **not** shipped in this repository. The
-code expects them under `data/figure/`:
+icons cropped from the game (item icons, store buttons, checkout UI, etc.). They are
+bundled under `data/figure/` so the harness runs out of the box:
 
 ```text
 data/figure/
-  computer/            # game UI buttons and panels (submit, order, perks, ...)
-  computer/order/
-  store/               # store shelves and product icons
-  object-icon/         # per-item icons used for matching
-  object-icon-transparent/
+  computer/                 # game UI buttons and panels (submit, order, perks, ...)
+  computer/order/           # dish thumbnails for the order menu
+  store/                    # store shelves and product icons
+  object-icon/              # per-item icons used for matching
+  object-icon-transparent/  # alpha-free variants for overlay matching
 ```
 
-Everything else in the harness — the agent loop, planner, prompt assembly, semantic
-action API, memory model, and the non-visual skills — runs without these files.
+These crops are third-party assets belonging to the game's rights holders, included
+solely so the perception and GUI layers are runnable for research and review. If you
+redistribute this repository, review whether you are permitted to pass them on, or
+delete `data/figure/` and regenerate the crops from your own installation.
 
-**Regenerating them.** The crops are produced by screenshotting the running game at
-a fixed resolution and cutting the UI regions the code documents in
+**Regenerating the crops.** Capture the game at the resolution used in
+`configs/common.json`, then cut the UI regions documented in
 `src/epm/cerebellum/gui_actions/` and `src/epm/cerebellum/figure_path_mappings.py`
-(which lists every expected filename). Place the results in the layout above and the
-template-matching paths work unchanged. Adjust the paths in
-`figure_path_mappings.py` if you prefer to keep them elsewhere.
+(which lists every expected filename). Drop the results into the layout above and
+the template-matching paths work unchanged; adjust `figure_path_mappings.py` if you
+prefer to store them elsewhere. Hand-captured screenshots (`PixPin_*.png`,
+`Screenshot_*.png`) are git-ignored by design.
+
+> Navigation-map revisions and point-cloud exports older than the one referenced by
+> `configs/common.json` are not shipped, since only the referenced map is read at
+> run time.
 
 The harness drives the game through standard OS input and screen-capture APIs. It
 ships no game code and contacts no network endpoint other than the model providers

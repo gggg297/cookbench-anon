@@ -49,15 +49,6 @@ COMPUTER_PATHS = {
 
     # 订单管理按钮
     "order_manager_button": get_figure_path("computer", "order-manager-button.png"),
-
-    # 测试图片
-    "test_111": get_figure_path("computer", "111.png"),
-    "test_222": get_figure_path("computer", "222.png"),
-    "test_333": get_figure_path("computer", "333.png"),
-
-    # 截图
-    "pixpin_2025_02_09": get_figure_path("computer", "PixPin_2025-02-09_09-48-42.png"),
-    "pixpin_2025_02_11": get_figure_path("computer", "PixPin_2025-02-11_13-17-49.png"),
 }
 
 # 装饰主题
@@ -100,7 +91,6 @@ ORDER_PATHS = {
     "search_button": get_figure_path("computer", "order", "search-button.png"),
     "search_frame": get_figure_path("computer", "order", "search-frame.png"),
     "chosen_search_frame": get_figure_path("computer", "order", "chosen-search-frame.png"),
-    "pixpin_2025_01_02": get_figure_path("computer", "order", "PixPin_2025-01-02_14-49-23.png"),
 
     # 菜品图片 - 按字母排序
     "baked_cod": get_figure_path("computer", "order", "Baked Cod.png"),

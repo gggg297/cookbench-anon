@@ -10,12 +10,17 @@ configs/*.local.json
 runs/
 *.log
 
-# --- In-game template assets (third-party; regenerate locally, never commit) ---
-data/figure/
-# Large, machine-generated navigation maps. The one referenced by
-# configs/common.json is shipped; regenerate other resolutions as needed.
+# --- Personal screenshots (never commit) ---
+# Template crops that were captured manually rather than generated are excluded
+# so no incidental desktop or game-overlay content can be redistributed.
+PixPin_*.png
+Screenshot_*.png
+Screenshot_*.jpg
+
+# --- Unused large assets ---
+# Older navigation-map revisions and point-cloud exports are not needed to run
+# the harness; the single map referenced by configs/common.json is shipped.
 data/auto_nav_data/*.png
-data/auto_nav_data/obstacle_map_edited_2025*.json
 *.e57
 
 # --- Python ---

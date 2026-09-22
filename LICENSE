@@ -25,13 +25,14 @@ SOFTWARE.
 ## Third-party notices
 
 This repository interoperates with *Cooking Simulator* (App ID 641320, developed
-and published by Big Cheese Studio). It contains no game code and redistributes no
-game assets.
+and published by Big Cheese Studio). It contains no game code.
 
-The perception and GUI layers match screenshots against small icon crops taken from
-the game. Those crops are third-party assets and are deliberately **not** included
-in this repository; they are regenerated locally from the user's own installation.
-See the "Template assets" section of `README.md`.
+`data/figure/` contains small icon crops extracted from the game at run time and
+used solely for template matching in the perception and GUI code. These assets
+remain the property of their respective rights holders and are included only so
+that the harness is runnable for research and review. If you redistribute this
+repository, review whether you are permitted to pass those crops on, or remove
+`data/figure/`. See the "Template assets" section of `README.md`.
 
 Cooking Simulator and all associated assets remain the property of their respective
 rights holders.

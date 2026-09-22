@@ -1,0 +1,110 @@
+0,Anchovy
+1,Apple
+2,Asparagus
+3,Bacon
+4,Banana
+5,Basil Leaf fresh
+6,Bay Leaf fresh
+7,Beef Chuck
+8,Beetroot
+9,Bottom Burger Bun
+10,Bottom Burger Bun
+11,Bread
+12,Broccoli
+13,Brussels Sprouts
+14,Burger Meat
+15,Button Mushroom
+16,Carrot
+17,Cheddar
+18,Chicken Breast
+19,Chicken Leg
+20,Chicken Wing
+21,Chili Pepper
+22,Chives
+23,Cilantro Leaves fresh
+24,Cinnamon stick
+25,Cob of Corn
+26,Cod
+27,Cucumber
+28,Dill fresh
+29,Duck Breast
+30,Egg
+31,Eggplant
+32,Eggplant
+33,English Muffin
+34,Feta
+35,Fingerling Potato
+36,Fusilli
+37,Garlic
+38,Goat Cheese
+39,Goat Cheese
+40,Gorgonzola
+41,Green Bell Pepper
+42,Halloumi
+43,Ham
+44,Honey Mango
+45,Horseradish
+46,Horseradish
+47,Jalapeno
+48,Lemon
+49,Lime
+50,Lobster Tail
+51,Mint Leaf
+52,Mooncake
+53,Mooncake
+54,Mozzarella
+55,Onion
+56,Orange
+57,Oregano Twig
+58,Pancetta
+59,Parmesan
+60,Parmesan
+61,Parsley Leavesfresh
+62,Parsley Root
+63,Parsnip
+64,Pear
+65,Penne
+66,Pork Breakfast Sausage
+67,Pork Chops
+68,Pork Chops
+69,Pork ribs
+70,Pork Shoulder
+71,Pork Tenderloin
+72,Potato
+73,Potato Dumplings
+74,Pumpkin
+75,Pumpkin
+76,Radish
+77,Raspberry
+78,Red Bell Pepper
+79,Red Cabbage
+80,Red Potato
+81,Rosemary Twig
+82,Sage Leaf fresh
+83,Sage Leaf fresh
+84,Salmon Fillet
+85,Sausage
+86,Scallion
+87,Scallop
+88,Serrano Pepper
+89,Shrimp
+90,Shrimp
+91,Star Anise
+92,Steak
+93,Strawberry
+94,Swordfish
+95,Tart
+96,T-bone Steak
+97,T-bone Steak
+98,Thyme Twig
+99,Tomato
+100,Top Burger Bun
+101,Tortellini
+102,Trout
+103,Trout
+104,Tuna
+105,White sausage
+106,Whole Ginger
+107,Yellow Bell Pepper
+108,Zucchini
+109,Zucchini
