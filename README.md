@@ -29,7 +29,9 @@ information is intentionally omitted.
     game_environment_lock.md
     images/               # screenshots referenced by this README
   memory/                 # prompt assets and documented-memory templates
-  mods/                   # mapping tables consumed by the game-side bridge
+  mods/                   # mapping tables + bridge placeholder + output sample
+    bridge/               # placeholder for the withheld mod binary
+    samples/              # verbatim capture of the bridge's live output
   scripts/                # CLI entry points
   src/epm/                # importable package
     brain/                # planner, prompt building, pipelines, modules
@@ -63,18 +65,29 @@ perception layer has nothing to observe.
 <https://melonloader.co/download.html>. Run it, select the MelonLoader version and
 the game, and accept the defaults.
 
-**1.2 Deploy the bridge mod.** The bridge is a compiled MelonLoader mod that
-publishes the game's live state over a local socket. Its source and prebuilt binary
-**will be released upon acceptance**; they are withheld here only to keep the
-artifact anonymous and self-contained during review.
+**1.2 Deploy the bridge mod.** The bridge is a compiled MelonLoader mod that reads
+the game's scene graph and writes it to plain-text snapshots. Its source and prebuilt
+binary **will be released upon acceptance**; they are withheld during review only
+because compiled .NET assemblies embed assembly metadata and PDB paths, which would
+de-identify this submission.
 
 Together with the mapping tables in [`mods/`](mods/), it is the sole game-specific
 component — everything else in this repository runs unchanged against the interface
-it defines. Once obtained, place the binary in:
+it defines. A placeholder with the full rationale sits at
+[`mods/bridge/CS_CamDump.dll.PLACEHOLDER.txt`](mods/bridge/CS_CamDump.dll.PLACEHOLDER.txt).
+Once obtained, place the binary in:
 
 ```text
 <game-dir>/Mods/
 ```
+
+> **The interface is verifiable now.** [`mods/samples/realtime_products.sample.json`](mods/samples/realtime_products.sample.json)
+> is a verbatim, unedited capture from a live session — 745 scene objects with 42
+> fields each, including real Unity component types. The parsers under
+> `src/epm/world_adapter/` and `src/epm/cerebellum/` consume exactly this schema, so
+> the bridge contract can be checked against genuine data rather than taken on trust.
+> Fields such as `spout_position`, `renderer_is_visible` and `instance_id` are read
+> directly by the pouring, perception and disambiguation code paths.
 
 **1.3 Deploy the mapping tables.** Copy both files into the game's `UserData`
 directory:

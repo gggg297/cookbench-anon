@@ -1,0 +1,44 @@
+PLACEHOLDER - NOT A WORKING BINARY
+==================================
+
+This file stands in for the compiled bridge mod (CS_CamDump.dll) that the
+CookBench harness uses to read Cooking Simulator's live state.
+
+    Status      : withheld pending publication
+    Release     : source + prebuilt binary will be released upon acceptance
+
+WHY IT IS NOT HERE YET
+----------------------
+The bridge is the only game-specific component of this artifact. Shipping a
+binary during anonymous review would make the submission trivially
+de-identifiable (compiled .NET assemblies embed assembly metadata and PDB
+paths), so it is withheld for the review period only.
+
+WHAT THE MOD DOES
+-----------------
+It runs inside the game under MelonLoader 0.5.7 and writes snapshots of the
+world to <game-dir>/UserData/ :
+
+    realtime_products.json              all scene objects, per-frame
+    realtime_radar_scan.txt             overhead navigation scan
+    realtime_camera_info.txt            camera pose / orientation
+    realtime_interaction_status.txt     hotkey-driven interaction state
+
+It also implements the in-game hotkeys (F10 overlay, F12 object tracking,
+Alt+J interaction dump, Ctrl+Alt+Q emergency stop). The Python side never
+loads this assembly - it only reads the text files above - so the rest of
+the repository is fully readable and partly runnable without it.
+
+EVIDENCE THAT THE BRIDGE EXISTS AND WORKS
+-----------------------------------------
+A verbatim capture from a live session is included at:
+
+    mods/samples/realtime_products.sample.json
+
+That file is genuine unedited mod output: 745 scene objects, 42 fields per
+object, real Unity component types. The parsers in src/epm/cerebellum/ and
+src/epm/world_adapter/ consume exactly this schema, so the interface can be
+verified against real data now.
+
+Replace this file with the real CS_CamDump.dll at <game-dir>/Mods/ once it
+is available.
