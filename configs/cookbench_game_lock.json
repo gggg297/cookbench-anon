@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-18T16:26:22+08:00",
+  "source": "<steam-library>/steamapps/appmanifest_641320.acf",
+  "app_id": "641320",
+  "name": "Cooking Simulator",
+  "build_id": "24711773",
+  "language": "schinese",
+  "install_dir_name": "CookingSimulator",
+  "required_depots": {
+    "641321": {
+      "manifest_id": "8794508976528179697",
+      "size": 5400417433,
+      "role": "base_game"
+    }
+  },
+  "observed_optional_depots": {
+    "1168680": { "manifest_id": "9121039572705571496", "size": 326108821, "dlc_app_id": "1168680" },
+    "1227350": { "manifest_id": "5300667613653213696", "size": 1966823318, "dlc_app_id": "1227350" },
+    "1400460": { "manifest_id": "4878802355124911089", "size": 1687937571, "dlc_app_id": "1400460" },
+    "1575660": { "manifest_id": "5306624609472269162", "size": 2250427360, "dlc_app_id": "1575660" },
+    "2655000": { "manifest_id": "8277630164876545093", "size": 2698998081, "dlc_app_id": "2655000" },
+    "3218770": { "manifest_id": "5917552117932983157", "size": 1045265353, "dlc_app_id": "3218770" }
+  },
+  "reference_files": {
+    "CookingSim.exe": "13bfe4d3d09ac203890e5fd03e6ff75debbbfb3f3918a82393592355e301dd42",
+    "CookingSim_Data/Managed/Assembly-CSharp.dll": "e2309cdbd2a6dfaae04d319bc2e9196f0462751666ae76b27ce3f5ad73e2207f"
+  },
+  "runtime": {
+    "unity_version": "2022.3.62f3",
+    "executable": "CookingSim.exe",
+    "mod_loader": "MelonLoader 0.5.7 Open-Beta"
+  },
+  "mod_reference_files": {
+    "Mods/CS_CamDump.dll": "ece68aafef2cd2fd598db9b8ab7d83fbe7db56752999a3757a5c5049a4ecbc2f",
+    "version.dll": "a53ed18e46d15519ae81c82fb40b5c9658330b3cd4223f15329da2c1b189d302"
+  }
+}

@@ -1,0 +1,76 @@
+# Code-as-Policies prompt prefix for CookBench.
+# Return Python code only.
+#
+# Contract:
+# - Define exactly one function: `policy(ctx)`.
+# - `policy(ctx)` must contain a straight-line sequence of `yield`
+#   `action(...)` / `yield skill(...)` steps.
+# - This is planning code, not executable runtime control flow.
+# - Prefer a multi-step plan over a short 1-3 step script.
+# - Regeneration always starts from a fresh Python scope.
+# - Never use variables from a previous generated policy; only use locals defined
+#   in this code block or values read from `ctx`.
+# - Do not use `if stage == ...` state-machine code.
+# - Do not use loops, branches, try/except, or helper functions.
+# - Every yield arg must be a literal only.
+# - Do not use `ctx[...]`, `results[...]`, indexing, attribute access, or function calls
+#   inside `yield action(...)` / `yield skill(...)` arguments.
+# - Prefer direct calls like `yield skill("auto_navigation", target="Big Pot", target_instance_id=...)`
+#   instead of first copying fixed values into many local variables.
+# - Do not invent placeholder instance ids or custom binding syntax.
+# - Use comments to indicate phase structure; do not store phase names in runtime state unless unavoidable.
+#
+# Runtime conventions:
+# - action(name, **kwargs) -> {"type": "action", "name": name, "args": kwargs}
+# - skill(name, **kwargs) -> {"type": "skill", "name": name, "args": kwargs}
+# - json is available.
+# - Do not write `import json`; use the provided `json`.
+#
+# Runtime context:
+# - ctx["goal"]: current high-level goal text
+# - ctx["feedback"]: latest execution / planner feedback string
+# - ctx["on_screen_names"]: visible object names
+# - ctx["on_screen_objects"]: visible object dicts
+# - ctx["agent_state"]: serialized agent state snapshot
+# - ctx["query_memory"]: recent cross-step query_scene_objects cache rendered as text
+# - ctx["instance_query_snapshot"]: compact candidates for blocking instance disambiguation
+# - ctx["runtime_state"]: persisted recovery state injected across regenerations.
+#   It should stay small and only contain the minimum durable state needed to continue.
+# - ctx["resume_state"]: compact progress summary derived from persisted runtime state,
+#   recent executed steps, and agent-level postconditions such as whether the dish
+#   has already been ordered.
+#
+# Important execution pattern:
+# - Before navigating to a normal object, first call `query_scene_objects(...)`.
+# - Then use the returned candidates (or the cached query memory / instance snapshot)
+#   to choose one concrete `instance_id`.
+# - Then continue the current task with the chosen `instance_id`.
+# - Often that means `auto_navigation(target=..., target_instance_id=...)`, but not always:
+#   the chosen instance_id is only a resolved binding, not a new high-level plan.
+# - If a query already returned non-empty results for the current target, do NOT repeat the same query again;
+#   bind one result and continue the current task using that instance.
+# - After navigation succeeds, perform the physical action such as `pick_up()` / `put_down()`.
+# - For cutting tasks, prefer `auto_cutting(...)`; do not use `knife_cut_down()` as the main high-level plan.
+# - For query fallback, keep only ONE current query string variable; overwrite it when switching
+#   from the base name to another exact query such as `Source` or `Stack`.
+# - Never create synthetic query suffixes or markers such as `_alt1`, `_alt2`, `_retry`, `_candidate`.
+# - Do not invent `Source` / `Stack` for scene cookware or fixed containers such as `Big Pot`, `Pot`, `Pan`,
+#   `Deep Pot`, `Bake Tray`, unless evidence in query results or known acquisition lists explicitly shows one exists.
+# - If feedback contains `blocking=instance_disambiguation`, immediately choose one
+#   candidate and retry the same skill with the required instance arg.
+#
+# Style:
+# - Use exact tool names from the reference.
+# - Use `query_scene_objects(...)` whenever the policy needs fresh instance ids
+#   or object discovery.
+# - Avoid explicit `stage` variables unless the task truly requires a longer recovery chain that cannot be inferred from feedback.
+# - Prefer comment blocks like `# Acquire chicken breast` over variables like `stage = "acquire_chicken_breast"`.
+# - Continue planning through the next relevant subtask instead of stopping after one action.
+# - If `ctx["runtime_state"]` already contains useful durable progress, reuse it before re-querying.
+# - Do not assume `ctx["agent_state"]` container ids will be auto-filled by the executor.
+# - If `ctx["resume_state"]` or persisted postconditions say the dish is already ordered,
+#   skip `gui_order_dish_via_computer` and continue from the next unfinished subtask.
+# - Use `countdown_time(...)` only for explicit waiting/timer semantics, not as a generic fallback.
+# - Do not repeat the exact same successful action/skill unless the latest feedback
+#   shows a real state change or the task explicitly requires waiting/retrying.
+# - Do not invent actions.

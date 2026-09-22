@@ -1,0 +1,133 @@
+1,柠檬鸡胸,Lemon Chicken Breasts,dishes
+2,柠檬鸡胸配水果沙拉,Lemon Chicken Breasts with Fruit Salad,dishes
+3,柠檬塔,Lemon Tart,dishes
+4,芒果塔,Mango Tart,dishes
+5,意式培根和鸡翅配抱子甘蓝,Brussels Sprouts with Pancetta & Chicken Wings,dishes
+6,意式培根和烤剑鱼配抱子甘蓝,Brussels Sprouts with Pancetta & Grilled Swordfish,dishes
+7,调味玉米配番茄,Fiesta Corn with Tomatoes,dishes
+8,调味玉米配番茄和辣鸡肉,Fiesta Corn with Tomatoes & Spicy Chicken,dishes
+9,香肠鸡蛋玛芬,Sausage & Egg Muffin,dishes
+10,香肠鸡蛋培根玛芬,Sausage & Egg Muffin with Bacon,dishes
+11,香煎浇汁土豆,Melting Potatoes,dishes
+12,香煎浇汁土豆配普罗旺斯蛋,Melting Potatoes with Egg de Provence,dishes
+13,水牛城烤鸡翅,Grilled Buffalo Wings,dishes
+14,水牛城烤鸡翅配薯条,Grilled Buffalo Wings with French Fries,dishes
+15,可乐辣烧猪肉,Spicy Sparkling Pork,dishes
+16,可乐辣烧猪肉配春日时蔬沙拉,Spicy Sparkling Pork with Spring Salad,dishes
+17,芒果莎莎酱鸡肉,Mango Salsa Chicken,dishes
+18,芒果莎莎酱鸡肉配薯条,Mango Salsa Chicken with French Fries,dishes
+19,意大利馄饨鸡汤,Chicken Tortellini Soup,dishes
+20,意大利馄饨鸡汤配面包丁,Chicken Tortellini Soup with Croutons,dishes
+21,两式土豆沙拉配青酱,Double Potato Salad with Pesto,dishes
+22,两式土豆沙拉配纽扣蘑菇酱,Double Potato Salad with Button Mushroom Sauce,dishes
+23,烤土豆配菲达奶酪,Baked Potatoes with Feta,dishes
+24,烤土豆配菲达奶酪和番茄,Baked Potatoes with Feta & Tomatoes,dishes
+25,意大利家常炸薯条,Italian Home Fries,dishes
+26,意大利家常炸薯条配青瓜沙拉,Italian Home Fries with Cucumber Salad,dishes
+27,普罗旺斯烤剑鱼,Grilled Swordfish Provencal,dishes
+28,烤剑鱼配辣酱,Grilled Swordfish with Hot Sauce,dishes
+29,香料烤鸡咖喱,Chicken Tikka Masala,dishes
+30,香料烤鸡咖喱配土豆,Chicken Tikka Masala with Potatoes,dishes
+31,炸虾,Fried Shrimp,dishes
+32,烘烤鳕鱼,Baked Cod,dishes
+33,烘烤鳟鱼,Baked Trout,dishes
+34,牛排配薯条,Steak with French Fries,dishes
+35,西班牙冻汤,Gazpacho,dishes
+36,猪排配烘烤土豆,Pork Chops with Baked Potatoes,dishes
+37,猪里脊配焦糖蔬菜,Pork Tenderloin with Caramelized Vegetables,dishes
+38,烘烤鳟鱼配烤抱子甘蓝,Baked Trout with Roasted Brussels Sprouts,dishes
+39,蒜香橄榄油意面,Fusilli Aglio, Olio e Peperoncino,dishes
+40,即食南瓜浓汤,Fast Pumpkin Soup,dishes
+41,简易乌克兰罗宋汤,Simple Ukrainian Borscht,dishes
+42,番茄蒜蓉烤面包,Tomato Bruschetta,dishes
+43,虾仁沙拉配番茄蒜蓉烤面包,Shrimp Salad with Tomato Bruschetta,dishes
+44,蒜蓉炸虾,Fried Garlic Shrimp,dishes
+45,德国土豆沙拉,German Potato Salad,dishes
+46,烟熏德国土豆沙拉,Smokey German Potato Salad,dishes
+47,烘烤鳕鱼配希腊沙拉,Baked Cod with Greek Salad,dishes
+48,烤吞拿鱼排,Grilled Tuna Steak,dishes
+49,烤吞拿鱼排配香橙沙拉,Grilled Tuna Steak with Orange Salad,dishes
+50,三文鱼配芦笋,Salmon with Asparagus,dishes
+51,黄油酱三文鱼配芦笋,Salmon in Butter Sauce with Asparagus,dishes
+52,三文鱼排配水煮土豆,Salmon Steak and Boiled Potatoes,dishes
+53,三文鱼排配土豆和烤番茄,Salmon Steak, Potatoes, Grilled Tomatoes,dishes
+54,炸虾宴,Fried Shrimp Boil,dishes
+55,烘烤虾宴,Baked Shrimp Boil,dishes
+56,鸡腿配卡布里沙拉,Chicken Leg with Caprese Salad,dishes
+57,腌制鸡腿配卡布里沙拉,Marinated Chicken Leg with Caprese Salad,dishes
+58,汉堡,Hamburger,dishes
+59,蜂蜜芥末汉堡配薯条,Honey-Mustard Burger with French Fries,dishes
+60,鸭胸配苹果,Duck Breast with Apples,dishes
+61,鸭胸配烤蘑菇,Duck Breast with Roasted Mushrooms,dishes
+62,烤牛肩胛肉配烘烤土豆,Grilled Beef Chuck with Baked Potatoes,dishes
+63,牛肩胛肉配土豆和大蒜酱,Beef Chuck with Potatoes and Garlic Sauce,dishes
+64,猪排配柠檬烘烤土豆,Pork Chops and Lemon Baked Potatoes,dishes
+65,猪里脊配芥末酱,Pork Tenderloin in Mustard Sauce,dishes
+66,牛排配烧烤酱和蔬菜,Steak with Barbecue Sauce and Vegetables,dishes
+67,搅拌蒜香橄榄油意面,Blended Fusilli Aglio, Olio e Peperoncino,dishes
+68,快手俄罗斯酸奶牛肉配螺旋面,Fast Beef Stroganoff over Fusilli,dishes
+69,快手俄罗斯酸奶牛肉配黄油酱汁螺旋面,Fast Beef Stroganoff over Buttered Fusilli,dishes
+70,俄罗斯酸奶牛肉配黄油酱汁螺旋面,Beef Stroganoff over Buttered Fusilli,dishes
+71,螺旋粉配拿破仑汁,Fusilli with Neapolitan Sauce,dishes
+72,螺旋粉配搅拌拿破仑汁,Fusilli with Blended Neapolitan Sauce,dishes
+73,快手青酱意面,Fast Pasta alla Genovese,dishes
+74,青酱意面,Pasta alla Genovese,dishes
+75,西兰花酱通心粉,Penne in Broccoli Sauce,dishes
+76,西兰花蘑菇酱通心面,Penne in Broccoli and Mushroom Sauce,dishes
+77,三文鱼酱通心粉,Penne in Salmon Sauce,dishes
+78,芳香三文鱼酱通心粉,Penne in Fragrant Salmon Sauce,dishes
+79,快手葡式薯蓉青菜汤,Fast Caldo Verde,dishes
+80,葡式薯蓉青菜汤,Caldo Verde,dishes
+81,玉米浓汤,Corn Chowder,dishes
+82,玉米扇贝培根浓汤,Corn, Scallop and Bacon Chowder,dishes
+83,鸭汤,Duck Broth,dishes
+84,清炖鸭汤,Duck Consommé,dishes
+85,浓西班牙冻汤,Chunky Gazpacho,dishes
+86,南瓜汤,Pumpkin Soup,dishes
+87,南瓜浓汤配面包丁,Pumpkin Soup with Croutons,dishes
+88,番茄浓汤,Tomato Soup,dishes
+89,红椒番茄汤,Red Pepper and Tomato Soup,dishes
+90,红椒番茄汤配吐司,Red Pepper and Tomato Soup with Toast,dishes
+91,乌克兰罗宋汤,Ukrainian Borscht,dishes
+92,快手蔬菜杂烩,Fast Ratatouille,dishes
+93,蔬菜杂烩,Ratatouille,dishes
+94,北非蛋,Fast Shakshuka,dishes
+95,辣北非蛋,Shakshuka,dishes
+96,猪排配煎蛋和柠檬烤土豆,Pork Chops with Fried Egg and Lemon Baked Potatoes,dishes
+97,乌克兰罗宋汤配煮鸡蛋,Ukrainian Borscht with Boiled Egg,dishes
+98,烤T骨牛排配烤红薯,Grilled T-bone Steak and Baked Red Potatoes,dishes
+99,烧烤T骨牛排配土豆与玉米棒,Barbecue T-bone Steak with Potatoes and a Corn on the Cob,dishes
+100,烧烤T骨牛排配土豆与热玉米棒,Barbecue T-bone Steak with Potatoes and a Hot Corn on the Cob,dishes
+101,糖醋里脊,Sweet and Sour Pork,dishes
+102,腌制咕噜肉,Marinated Sweet and Sour Pork,dishes
+103,宫保鸡丁,Kung Pao Chicken,dishes
+104,腌制宫保鸡丁,Marinated Kung Pao Chicken,dishes
+105,简易蛋花汤,Easy Chinese Egg Drop Soup,dishes
+106,蛋花汤,Chinese Egg Drop Soup,dishes
+107,橙香炒肉,Orange Pork Stir-Fry,dishes
+108,橙香炒肉配抱子甘蓝,Orange Pork Stir Fry with Brussels Sprouts,dishes
+109,淡色拉格清啤烤猪肉,Helles Märzenbier Roasted Pork,dishes
+110,黑清啤烤鸡,Dunkles Märzenbier BBQ Chicken,dishes
+111,醋栗酱猪里脊配紫甘蓝与百里香面球,Currant-Glazed Pork Tenderloin with Red Cabbage and Thyme Dumplings,dishes
+112,简易南瓜炖鸡肉,Simple Chicken Pumpkin Stew,dishes
+113,南瓜炖鸡肉,Chicken Pumpkin Stew,dishes
+114,西红柿鸡肉炖南瓜,Chicken Pumpkin Stew with Tomatoes,dishes
+115,烤圣诞火腿,Roasted Christmas Ham,dishes
+116,烤圣诞火腿配蒜香炸土豆,Roasted Christmas Ham with Garlic Fried Potatoes,dishes
+117,白葡萄酒烹龙虾尾,Lobster Tail Cooked in White Wine,dishes
+118,白葡萄酒烹龙虾尾配烤芦笋,Lobster tail Cooked in White Wine with Grilled Asparagus,dishes
+119,烤蔬菜,Grilled vegetables,dishes
+120,烤卷心菜汉堡,Grilled cabbage burger,dishes
+121,烤白肠,Grilled white sausage,dishes
+122,啤酒烤白肠,White sausage roasted in beer,dishes
+123,战斧牛排配烤土豆和西兰花,Cowboy steak with baked potato and broccoli,dishes
+124,甜烟熏三文鱼,Sweet and smoky salmon,dishes
+125,咖啡调味牛排配玉米棒子,Coffee-seasoned steak with corn on the cob,dishes
+126,青柠酱烤龙虾尾,Grilled lobster tail in lime sauce,dishes
+127,烤猪肋排,Roasted pork ribs,dishes
+128,烤猪肋排配炸薯条,Grilled pork ribs with french fries,dishes
+129,水果沙拉,Fruit salad,dishes
+130,沙拉配茄子、哈罗米奶酪和西红柿,Salad with eggplant, halloumi, and tomatoes,dishes
+131,哈罗米奶酪汉堡,Halloumi burger,dishes
+137,纽约牛排配大蒜,New York Steak with Garlic,dishes
+138,简式纽约牛排,Simple New York Steak,dishes

@@ -1,0 +1,20 @@
+# Example 1
+def policy(ctx):
+    # Acquire the target object.
+    yield skill("query_scene_objects", query="Chicken Breast", only_on_screen=False)
+    yield skill("auto_navigation", target="Chicken Breast")
+    yield action("pick_up")
+
+    # Move to a placement point and release it.
+    yield skill("auto_navigation", target="Side Table")
+    yield action("put_down")
+
+
+# Example 2
+def policy(ctx):
+    # Acquire a liquid container, then pour into the pot.
+    yield skill("query_scene_objects", query="Olive Oil", only_on_screen=False)
+    yield skill("auto_navigation", target="Olive Oil")
+    yield action("pick_up")
+    yield skill("auto_navigation", target="Big Pot")
+    yield skill("auto_pour", container_name="Big Pot", target_ml="10")

@@ -1,0 +1,10 @@
+﻿Output schema:
+{
+  "has_anomaly": false,
+  "severity": "none",
+  "tags": [],
+  "feedback": "",
+  "expected_visible": "",
+  "observed_issue": "",
+  "confidence": 0.0
+}

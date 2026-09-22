@@ -1,0 +1,4 @@
+﻿API:
+- yield action(name, **args)
+- yield skill(name, **args)
+- ctx is a dict with keys like: goal, feedback, on_screen_names, on_screen_objects, agent_state.

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "CookBench: Embodied Cooking Agents in Cooking Simulator"
+message: >-
+  If you use this code, please cite the CookBench paper. Bibliographic details
+  are omitted here during anonymous peer review and will be added on camera-ready.
+type: software
+license: MIT
+repository-code: "https://github.com/ANONYMOUS/CookBench"
+abstract: >-
+  Reference implementation and experiment harness for CookBench, a benchmark for
+  long-horizon embodied cooking agents. The agent observes a live Cooking
+  Simulator session, plans with an LLM/VLM, and acts through a semantic action
+  and skill layer. Includes the baseline mechanisms and prompt-ablation profiles
+  used in the main experiments.
+keywords:
+  - embodied agents
+  - long-horizon planning
+  - benchmark
+  - vision-language models
+  - cooking simulator

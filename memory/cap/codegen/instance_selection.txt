@@ -1,0 +1,10 @@
+You are in CaP instance selection mode.
+The previous step already failed because `instance_id` is missing or invalid.
+Choose exactly one candidate and return JSON only:
+{"name":"candidate name","instance_id":123}
+
+Selection rules:
+- Choose only from `candidates` or `auto_query_results`.
+- Prefer exact or near-exact name match to the requested target.
+- Prefer `is_on_screen=true`, then `container=Scene`, then smaller `distance`.
+- Do not output code, markdown, or a new plan.

@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "last_updated": "",
+  "notes": "ActionMemory stores reusable action templates and parameter heuristics. Placeholders start with $ (e.g., $object, $container).",
+  "parameter_heuristics_ref": "epm/memory/parameter_heuristics.json",
+  "templates": {
+    "cutting": {
+      "name": "cutting",
+      "description": "Cut a target object on a cutting board using a knife.",
+      "placeholders": ["$object", "$cutting_board", "$knife"],
+      "steps": [
+        {
+          "id": 1,
+          "name": "pick_target",
+          "actions": [
+            { "action": "goto", "args": { "target": "$object" } },
+            { "action": "pick_up", "args": { "object": "$object" } }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "place_on_board",
+          "actions": [
+            { "action": "goto", "args": { "target": "$cutting_board" } },
+            { "action": "put_down", "args": {} }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "pick_knife",
+          "actions": [
+            { "action": "goto", "args": { "target": "$knife" } },
+            { "action": "pick_up", "args": { "object": "$knife" } }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "align_target",
+          "actions": [
+            { "action": "goto", "args": { "target": "$object" } },
+            { "action": "Enter_cutting_mode", "args": {} }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "cut",
+          "actions": [
+            { "action": "cut", "args": { "object": "$object", "cut_num": "$cut_num" } }
+          ]
+        }
+      ]
+    },
+    "pouring": {
+      "name": "pouring",
+      "description": "Pour liquid from a bottle into a container.",
+      "placeholders": ["$container", "$put_place", "$liquid_bottle", "$pour_ml"],
+      "steps": [
+        {
+          "id": 1,
+          "name": "pick_container",
+          "actions": [
+            { "action": "goto", "args": { "target": "$container" } },
+            { "action": "pick_up", "args": { "object": "$container" } }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "place_container",
+          "actions": [
+            { "action": "goto", "args": { "target": "$put_place" } },
+            { "action": "putdown", "args": {} }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "pick_bottle",
+          "actions": [
+            { "action": "goto", "args": { "target": "$liquid_bottle" } },
+            { "action": "pick_up", "args": { "object": "$liquid_bottle" } }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "enter_pouring_mode",
+          "actions": [
+            { "action": "goto", "args": { "target": "$container" } },
+            { "action": "enter_container_dumping_mode", "args": {} }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "pour",
+          "actions": [
+            { "action": "pour", "args": { "container": "$container", "pour_ml": "$pour_ml" } }
+          ]
+        }
+      ]
+    },
+    "sprinkling": {
+      "name": "sprinkling",
+      "description": "Sprinkle spices onto a target object.",
+      "placeholders": ["$object", "$put_place", "$spices_bottle", "$sprinkle_num"],
+      "steps": [
+        {
+          "id": 1,
+          "name": "pick_object",
+          "actions": [
+            { "action": "goto", "args": { "target": "$object" } },
+            { "action": "pick_up", "args": { "object": "$object" } }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "place_object",
+          "actions": [
+            { "action": "goto", "args": { "target": "$put_place" } },
+            { "action": "putdown", "args": {} }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "pick_spices",
+          "actions": [
+            { "action": "goto", "args": { "target": "$spices_bottle" } },
+            { "action": "pick_up", "args": { "object": "$spices_bottle" } }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "enter_sprinkling_mode",
+          "actions": [
+            { "action": "goto", "args": { "target": "$object" } },
+            { "action": "enter_spices_dumping_mode", "args": {} }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "sprinkle",
+          "actions": [
+            { "action": "sprinkle", "args": { "object": "$object", "sprinkle_num": "$sprinkle_num" } }
+          ]
+        }
+      ]
+    },
+    "frying_meat": {
+      "name": "frying_meat",
+      "description": "Fry meat on a stove, flip it, then turn off appliance.",
+      "placeholders": ["$meat", "$put_place", "$tool_switch", "$duration", "$spatula", "$stove"],
+      "steps": [
+        {
+          "id": 1,
+          "name": "pick_meat",
+          "actions": [
+            { "action": "goto", "args": { "target": "$meat" } },
+            { "action": "pick_up", "args": { "object": "$meat" } }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "place_meat",
+          "actions": [
+            { "action": "goto", "args": { "target": "$put_place" } },
+            { "action": "putdown", "args": {} }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "turn_on",
+          "actions": [
+            { "action": "goto", "args": { "target": "$tool_switch" } },
+            { "action": "turn_on_switch", "args": {} }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "countdown_1",
+          "actions": [
+            { "action": "countdown_time", "args": { "duration": "$duration" } }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "pick_spatula",
+          "actions": [
+            { "action": "goto", "args": { "target": "$spatula" } },
+            { "action": "pick_up", "args": { "object": "$spatula" } }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "pick_meat_on_spatula",
+          "actions": [
+            { "action": "goto", "args": { "target": "$meat" } },
+            { "action": "pick_the_ingredients_on_spatula", "args": { "object": "$meat" } }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "enter_flipping_mode",
+          "actions": [
+            { "action": "goto", "args": { "target": "$stove" } },
+            { "action": "enter_the_flipping_mode", "args": {} }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "flip_sequence",
+          "notes": "技能内部可包含：位置对准 -> flip_over() -> exit_the_flipping_mode()；flip_over 输入肉位置与放置点位置，输出是否放置成功。",
+          "actions": [
+            { "action": "flip_over", "args": { "meat_location": "$meat_location", "put_place_location": "$put_place_location" } },
+            { "action": "exit_the_flipping_mode", "args": {} }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "countdown_2",
+          "actions": [
+            { "action": "countdown_time", "args": { "duration": "$duration" } }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "turn_off",
+          "actions": [
+            { "action": "goto", "args": { "target": "$tool_switch" } },
+            { "action": "turn_off_switch", "args": {} }
+          ]
+        }
+      ]
+    },
+    "juicing": {
+      "name": "juicing",
+      "description": "Put products into a container and mix into juice.",
+      "placeholders": ["$container", "$products", "$put_place", "$spatula"],
+      "steps": [
+        {
+          "id": 1,
+          "name": "pick_container",
+          "actions": [
+            { "action": "goto", "args": { "target": "$container" } },
+            { "action": "pick_up", "args": { "object": "$container" } }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "load_products",
+          "actions": [
+            { "action": "goto", "args": { "target": "$products" } },
+            { "action": "pick_up_into_the_container", "args": { "products": "$products" } }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "place_container",
+          "actions": [
+            { "action": "goto", "args": { "target": "$put_place" } },
+            { "action": "putdown", "args": {} }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "pick_mixer",
+          "actions": [
+            { "action": "goto", "args": { "target": "$spatula" } },
+            { "action": "pick_up", "args": { "object": "$spatula" } }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "enter_mixing_mode",
+          "actions": [
+            { "action": "goto", "args": { "target": "$container" } },
+            { "action": "enter_mixing_mode", "args": {} }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "mix",
+          "actions": [
+            { "action": "auto_filp", "args": { "container": "$container" } }
+          ]
+        }
+      ]
+    }
+  }
+}

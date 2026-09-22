@@ -1,0 +1,22 @@
+{
+  "is_held": false,
+  "held_item": "",
+  "item_kind": "",
+  "mode": "idle (hands empty)",
+  "posture": "standing",
+  "held_item_weight": null,
+  "active_container": "",
+  "active_container_instance_id": null,
+  "active_containers": [],
+  "force_submit_active": false,
+  "force_submit_triggered_step": null,
+  "force_submit_deadline_step": null,
+  "force_submit_remaining_steps": null,
+  "force_submit_overdue": false,
+  "force_submit_stage": "",
+  "force_submit_place_index": null,
+  "force_submit_used_place_indices": [],
+  "timers": [],
+  "timer_events": [],
+  "last_updated": ""
+}

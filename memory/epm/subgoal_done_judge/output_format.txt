@@ -1,0 +1,2 @@
+﻿Response JSON schema:
+{ "done": true|false, "reason": "one sentence" }

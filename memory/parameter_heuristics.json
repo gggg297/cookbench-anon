@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "update_policy": "low_frequency_from_long_horizon_history",
+  "source": "epm/memory/long_horizon_history.txt",
+  "last_updated": "",
+  "notes": "Low-frequency distilled parameter heuristics derived from long_horizon_history. Each item should be stable, reusable, and reference evidence steps.",
+  "heuristics": [
+    {
+      "template": "pouring|cutting|sprinkling|frying_meat|juicing|other",
+      "when_to_use": "",
+      "parameter_rules": [],
+      "common_failures": [],
+      "evidence": {
+        "episode_id": "",
+        "step_ids": []
+      }
+    }
+  ]
+}

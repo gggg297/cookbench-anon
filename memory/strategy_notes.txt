@@ -1,0 +1,21 @@
+# Strategy Notes
+
+用途：描述规划指导、常识知识、经验备注、恢复建议等内容，作为 Brain prompt 的静态片段。
+
+[Notes]
+1) 如果 agent_state 中 `is_held=true`，说明当前手持物品，必须先导航到放置平台点位（如 Plate/Side Table/Countertop 等可放置点）前，再执行放下/放置，然后再重新导航去拿取其他物品。
+2) 要执行拿起物品的的动作时，如果当前正在手持物品，那么应该先把手中物品放下，再进行操作。或者用完放置好。
+2.1) 处理“手持遮挡视野”问题：如果 `agent_state.is_held=true` 且手持物体（尤其瓶子/锅/大容器）遮挡准星前方，优先先放下手中物体或切换到无遮挡视角，再执行下一次拿取。禁止在明显遮挡状态下连续重试 `pick_up`。
+2.2) 若拿取失败（如 `pick_up_post_check_failed:not_holding_after_click` 或 `post_check_failed:pick_up_not_holding_item`），推荐结合视觉信息恢复：重新确认目标在屏幕内（`is_on_screen`）、中心对齐程度（`screen_x/screen_y`）和距离，再优先考虑“重导航 + 视角微调 + 重试”，而不是盲目重复点击。
+2.3) 避免全局 staging。不要为了腾出手而提前收集、摊开大量后续步骤才会用到的工具或容器；只为当前菜谱子任务或下一次紧邻交互准备必要物品。
+2.4) 如果 `task_progress`、前置条件反馈、或视觉异常反馈已经指出当前子任务、阻塞项或风险警告，应优先解决这些具体问题，不要为了方便而继续做大范围 staging 或提前准备后续菜谱步骤。
+3) 不要只拿物品：拿到食材后必须按菜谱进行处理（切/煎/烤/混合等），并在操作后将产物集中放入同一个盘子中，保证最终只保留一个承装盘用于上菜。
+4) 动作开始前先检查 `agent_state`：若处于倾倒/播撒/切割等模式，要么执行对应技能动作，要么先退出该模式再进行其他操作；根据姿势判断，是否需要蹲下，站起等，留意 `auto_navigation` 中已经自动加上了根据物品位置高低自动判断蹲下站起情况。
+5) 容器选择需保持一致：一旦确定某个容器/盘子作为当前工序的承载容器，后续相关操作应持续使用该容器，不要随视野变化切换；仅在容器不可用/丢失/任务需求需要多余的工具时才重新选择并更新 `active_containers`（最近使用列表）与 `active_container`（当前容器）。
+6) 智能体可以通过拿容器来一次性拿多个物品，但太多物品容易会掉落需要留意。
+7) 失败恢复优先级：重试（小参数扰动）→ 换技能/换路径 → 回退到安全状态 → 可选 reset。
+8) 若你选择的 instance_id 连续 2 次导致导航/交互失败：不要死循环重试同一个 instance_id；改选 `candidates` 中的另一个 instance_id 再试。
+9) 若 feedback 出现 `error=invalid_target_name`：不要重复同一个 target 字符串；优先使用 feedback 里的 `mapping_suggestions`，或先 `list_supported_items()` 找到可用的标准 target 名称后再调用 `auto_navigation(target=...)`。
+10) 获取处列表：Chili Pepper Source; Cucumber Source; Tomato Source; Jalapeno Source; Lemon Source; Shelf; Burger Bun Source; Bun Bottom Source; Bun Top Source; Apple Source; Red Potato Source; Onion Source; Garlic Source; Cob of Corn Source; Broccoli Source; Bread Source; Parsley Root Source; Button Mushroom Source; Red Bell Pepper Source; Beetroot Source; Eggplant Source; Green Bell Pepper Source; Yellow Bell Pepper Source; Potato Source; Whole Ginger Source; Red Cabbage Source; Zucchini Source; Scallion Source; Horseradish Source; Parsnip Source; Orange Source; Carrot Source; Pumpkin Source; Small Plate Stack; Plate Stack; Square Plate Stack; Deep Plate Stack; Plate Stack; Casserole Stack; Bowl Stack; Large Plate Stack.
+11) 如果连续 5 步都是 `auto_perception` / `query_scene_objects` / `list_supported_items`（任意组合），下一步必须选择“真实物理动作”执行（如 `auto_navigation` / `pick_up` / `open_door` / `place` / `pour` / `sprinkle` / `cut` / `toggle` 等），禁止继续感知/检索循环；必要时直接 `gui_buy_new_item(...)`。
+12) 评分优先：最终评分高低主要取决于最终提交容器内的内容与状态，包括调味配比、热处理方式与时长、食品操作工艺（如切配/混合/烹饪流程）以及最终温度等。若最终提交容器中没有可评分内容，通常不会得分；若包含与目标菜品相关且部分正确的内容，即使不完全一致，也可能获得部分得分项。

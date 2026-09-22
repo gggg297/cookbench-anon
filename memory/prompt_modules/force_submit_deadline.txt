@@ -1,0 +1,23 @@
+You are operating under a hard execution deadline. The environment will force submission starting at step {force_submit_step_threshold}, and may take over submission behavior within the next {force_submit_within_steps} steps.
+Treat the countdown / remaining-step status as a first-class decision signal. Do not assume unlimited time or future recovery opportunities.
+
+Budget-aware policy:
+- Early budget phase: gather key recipe items, set up cookware/serving vessels, and make progress on core recipe components.
+- Mid budget phase: reduce redundant querying, long detours, and low-value local repairs; prioritize the highest-value missing recipe components.
+- Late budget phase: prioritize final assembly, plating, and getting into a state that is likely scorable if forced submission happens soon.
+- Final budget phase: maximize expected score under the remaining steps; avoid long recovery loops, repeated object shuffling, and speculative retries that are unlikely to finish before forced submission.
+
+Submission discipline under deadline:
+- Do NOT behave as if there is no deadline.
+- Do NOT spend many steps on unrelated exploration when the countdown is low.
+- Do NOT enter repeated repair/retry loops near the deadline unless they directly improve the likely submitted result.
+- Before any major detour, ask whether it is worth the remaining step budget.
+- Reaching the force-submit threshold does NOT by itself mean immediate submit is optimal; use the remaining window first for small, high-value improvements when they clearly increase likely score.
+- Only submit early inside the forced window when the dish is already in a plausible final serving state, or when the remaining steps are too few to materially improve score.
+- Minimal submit gate: before submit, quickly check final object, serving vessel, and core recipe components. If any of these is still doubtful, use the remaining window for the highest-value fix instead of submitting immediately.
+
+Scoring reminder:
+- Dish score is determined mainly by the final submitted container contents and their state: correct ingredients/components, correct seasoning, correct processing/cooking operations, and appropriate doneness/temperature help; wrong or unrelated contents can reduce score.
+- Under limited steps, prioritize recipe-required ingredients and the highest-value processing/assembly steps that most improve the final submitted result.
+- Before spending many steps on seasoning or small liquid adjustments, first ensure the final container already contains the main recipe-defining components; building that core dish skeleton usually improves score more than early polishing.
+- If key dish-defining components are still missing, avoid low-value garnish/polish loops and use the remaining budget on the highest-value missing core component first.

@@ -1,0 +1,147 @@
+{
+  "_comment": "Base configuration. Paths are resolved relative to this file's directory (configs/). Do not put real API keys here - use environment variables or a git-ignored common.local.json / api_keys.local.json.",
+  "dish_id": 1,
+  "paths": {
+    "recipes_path": "../data/classics1.json",
+    "memory_dir": "../memory",
+    "auto_nav_map_path": "../data/auto_nav_data/obstacle_map_edited_20260216_053803.json",
+    "screenshot_dir": "../runs/screenshots/default_episode",
+    "game_userdata_root": ""
+  },
+  "capture": {
+    "window_title": "CookingSimulator",
+    "activate_window_each_step": true
+  },
+  "runtime": {
+    "verbose": true,
+    "max_steps": 250,
+    "force_submit_step_threshold": 200,
+    "force_submit_within_steps": 50,
+    "network_wait_s": 15,
+    "network_max_wait_s": 150,
+    "network_retry_attempts": 10,
+    "endpoint_profile": "api",
+    "notify_email_enabled": false,
+    "notify_email_smtp_host": "",
+    "notify_email_smtp_port": 587,
+    "notify_email_username": "",
+    "notify_email_from": "",
+    "notify_email_password_env": "EPM_EMAIL_PASS",
+    "notify_email_to": "",
+    "notify_email_use_tls": true,
+    "balance_check_every_steps": 10,
+    "notify_email_low_balance_usd_threshold": 10.0,
+    "done_state_keys": [
+      "task_done",
+      "task_complete",
+      "episode_done",
+      "is_done",
+      "success",
+      "completed"
+    ],
+    "force_submit_active": false
+  },
+  "brain": {
+    "max_actions_per_category": -1,
+    "inject_memory": true,
+    "inject_tool_schemas": true,
+    "action_catalog_path": "../src/epm/cerebellum/local_actions_by_category.txt",
+    "prompt_policy": {
+      "include_percept": true,
+      "include_oracle_observation": true,
+      "include_task_progress": false,
+      "include_tool_en_catalog": true
+    },
+    "prompt_layout_path": "../memory/prompt_layout.json",
+    "planner_mode": "vlm",
+    "use_vlm": true,
+    "max_visible_items": -1,
+    "step_success_judge": {
+      "enabled": false,
+      "max_retries": 1,
+      "strip_think_tags": true
+    },
+    "scripted_plan_path": "../memory/next_plan.json"
+  },
+  "llm": {
+    "timeout_s": 600,
+    "max_retries": 3,
+    "temperature": 0.0,
+    "max_tokens": 128000,
+    "use_vision": false,
+    "prompt_cache_enabled": false,
+    "prompt_cache_force": false,
+    "gemini_cache_api_base_url": ""
+  },
+  "vlm": {
+    "timeout_s": 600,
+    "max_retries": 3,
+    "temperature": 0.0,
+    "max_tokens": 128000,
+    "use_vision": true,
+    "strip_think_tags": true,
+    "use_tools": false,
+    "prompt_cache_enabled": false,
+    "prompt_cache_force": false,
+    "gemini_cache_api_base_url": ""
+  },
+  "hpc_config": {
+    "service_urls": {
+      "llm_service": "",
+      "vlm_service": "",
+      "detection_service": ""
+    }
+  },
+  "api_providers": {
+    "template_openai_compatible": {
+      "provider_type": "openai_compatible",
+      "base_url": "https://your-endpoint.example.com",
+      "request_path": "/v1/chat/completions",
+      "api_key_env": "TEMPLATE_OPENAI_API_KEY",
+      "api_key_pool_env": "TEMPLATE_OPENAI_API_KEY_POOL",
+      "api_key": "",
+      "auth_header_name": "Authorization",
+      "auth_header_prefix": "Bearer ",
+      "extra_headers": {},
+      "models": [
+        "your-model-name"
+      ],
+      "default_model": "your-model-name"
+    },
+    "template_anthropic_messages": {
+      "provider_type": "anthropic_messages",
+      "api": "anthropic-messages",
+      "base_url": "https://your-endpoint.example.com",
+      "request_path": "/v1/messages",
+      "api_key_env": "TEMPLATE_ANTHROPIC_API_KEY",
+      "api_key_pool_env": "TEMPLATE_ANTHROPIC_API_KEY_POOL",
+      "api_key": "",
+      "auth_header_name": "x-api-key",
+      "auth_header_prefix": "",
+      "extra_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "models": [
+        "your-model-name"
+      ],
+      "default_model": "your-model-name"
+    },
+    "local": {
+      "provider_type": "openai_compatible",
+      "base_url": "http://127.0.0.1:22222",
+      "send_auth": false,
+      "models": [],
+      "default_model": ""
+    }
+  },
+  "api_model_assignments": {
+    "llm": {
+      "provider": "template_openai_compatible",
+      "model": "your-model-name"
+    },
+    "vlm": {
+      "provider": "template_openai_compatible",
+      "model": "your-model-name"
+    }
+  }
+}

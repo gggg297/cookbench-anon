@@ -1,0 +1,15 @@
+# Normalize line endings so the repo is consistent across platforms.
+* text=auto eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.e57 binary
+*.pdf binary
+
+# Windows-oriented entry points keep CRLF for direct editing on Windows.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf

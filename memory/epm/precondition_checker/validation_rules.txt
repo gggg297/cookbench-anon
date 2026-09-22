@@ -1,0 +1,23 @@
+﻿Infer only this minimal execution context:
+- hands_state: empty / holding / unknown
+- held_item_kind: liquid / spice / container / tool / unknown
+- interaction_mode: idle / pouring / sprinkling / cutting / mixing / flipping / unknown
+- recent_navigation_target
+- recent_navigation_target_kind: item / container / placement_point / tool_point / unknown
+
+Validation rules:
+- pick_up requires empty hands and recent navigation to the target item or source.
+- pick_up should be rejected when the most recent navigation target does not match the intended pickup target.
+- put_down requires holding an item and recent navigation to a placement point.
+- put_down should be rejected when the most recent post-pick navigation target does not match the intended placement target.
+- enter_pouring_mode requires holding a liquid bottle or a pourable container and recent navigation to the target container.
+- auto_pour requires pouring mode and holding a liquid bottle or a pourable container.
+- enter_spices_sprinkle_mode requires holding a spice and recent navigation to the target container.
+- auto_sprinkle requires sprinkling mode and holding a spice.
+- auto_navigation should not be executed while blocked by an incompatible interaction mode.
+- For interaction actions, navigation is usually a hard prerequisite, not a soft hint.
+- For pickup/use/place actions, infer the nearest required preparation sequence from recent history, such as navigate -> pick_up -> navigate -> use_or_put_down.
+- Apply the same pattern to other interaction actions: first check the immediately required hand state, mode state, and recent navigation/alignment context, then judge whether the candidate action is executable.
+- When an action is not explicitly listed above, infer its immediate prerequisites from short-horizon interaction history and common embodied interaction constraints.
+- If an action is invalid, explain the reason and suggest the smallest useful modification rather than only rejecting it.
+

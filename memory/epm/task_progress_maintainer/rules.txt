@@ -1,0 +1,12 @@
+﻿Rules:
+- Treat recipe requirements as hard constraints; include the most relevant recipe constraints in evidence.recipe_constraints.
+- Summarize what has been completed, what is in progress, and what is blocked.
+- Record state objectively. Do NOT decide what the next planning round should do.
+- Do NOT propose plans, next-step hints, suggested fixes, or recommendations.
+- Prefer semantic state summaries over low-level action repetition.
+- You are given the FULL current task_progress file. Decide which parts should change, keep the rest semantically stable, and output the FULL updated JSON object.
+- Only record commitments that should remain stable across replans.
+- Resource bindings should describe semantic roles, not every visible object.
+- Blocking conditions should be grounded in evidence and describe the blocker itself, not how the planner should respond.
+- Temporal checkpoints should capture future constraints such as timers or submit deadlines.
+- If uncertain, keep fields empty instead of inventing facts.

@@ -1,0 +1,61 @@
+﻿# Body Rules (Embodiment Rules)
+
+用途：描述必须遵守的环境规则、交互约束、接口协议与执行硬约束，作为 Brain prompt 的静态片段。
+
+[Rules]
+1) 放置前必须先到位：执行 `put_down` 放置动作前，必须先 `auto_navigation` 到目标放置位点前并对准。放置位点获取方式：
+   - 系统已提供 `put_place_list.json`（平台类别与 index 范围），可直接参考其中的平台类别（如 "Side Table" / "Countertop" / "Plate" 等）。
+   - 用 `auto_navigation(target="<平台类别>", target_instance_id=<index 或 instance_id>)` 导航到具体放置位点（平台类别时 `target_instance_id` 视为平台序号 index；或直接用全名如 `Side Table-3`）。导航到点位后，放置前需要通过视觉检查确认对准了空白放置位点；若误入模式，必须先退出模式。
+   - 若 `auto_navigation` 反馈包含 `put_place_platforms`，可从中选择平台类别与 index。
+2) 结束后必做：所有任务结束后，智能体必须手持可直接提交的承载物或成品（例如容器，或者 `Tart/挞`），执行 `gui_submit_dish_via_checkout_stand(dish_name: str)` 提交菜品获得得分。
+2.1) 单道菜提交约束：除非运行时的 `Task execution context` 明确列出了多个 active dishes，否则当前 recipe 一律按“同一道菜”理解。即使 recipe 里存在多个组成部分、多个 `serve hot` / `serve cold` 描述，也只是同一道菜的不同组件，不代表需要分别提交多道菜。同一道菜最终只允许形成一次提交结果：必须汇总到一个最终可提交的容器或直接可提交的单个成品里，禁止把同一道菜拆成多个容器分别提交。
+3) 智能体一次只能拿一个物品（手持物品限制）；必须在 `agent_state` 显示空手（`is_held=false` 且 mode 为 `idle (hands empty)`）后才能继续拿取下一个物品。若手持的是容器，则允许在容器中承载多个物品后继续拿取。
+4) 智能体必须在合适的模式下执行对应动作，例如倾倒模式、播撒模式、切割模式、搅拌模式、翻面模式、`faucet_filling_mode` 等；凡是会进入持续交互态的复杂交互逻辑，都必须先判断当前模式是否匹配，再决定执行、退出或切换模式（模式限制）。
+4.1) 如果连续进行了多次鼠标/键盘感知操作、视角调整操作或移动操作后，相机位姿始终没有变化，则大概率是误入了某个模式或交互态。此时必须优先执行“退出模式”动作；默认使用鼠标右键退出，凡是能够可靠退出当前模式的等价动作也允许。
+5) 智能体不能直接手拿热的物品，必须先手持一个容器，再把热物品放入该容器中来实现“拿起热物品”（手持热物品限制）。对热物品不要规划裸手 `pick_up`；应优先规划“手持容器 -> 对准热物品 -> `pick_up_into_the_container`”。
+6) 技能与原子动作必须通过支持的动作和技能执行，禁止绕过 API 直接操作 UI。
+7) 动作参数必须符合 action schema（名称、类型、范围、单位）。
+8) 同名多实例必须显式选择 `instance_id`：当你要对某个“普通物体”执行动作/技能，且该物体在场景中存在多个同名实例时（常见于 Cutting Board、Knife、Side Table 等），你必须先调用 `query_scene_objects(query="...")` 获取候选列表与每个候选的 `instance_id`、`distance`、`container`、`is_on_screen`，再在后续动作中显式填入对应的 `instance_id`（例如 `auto_navigation(target="Cutting Board", target_instance_id="...")` 或其他动作里的 `instance_id` 参数）。禁止让执行器“自动挑最近的”来消歧。
+8.1) 若上一步反馈里出现 `blocking=instance_disambiguation`：这是阻塞型失败，你的下一次 plan 必须以“选择并重试”为第一步：
+   - 从 feedback 的 `candidates` 中选出一个 `instance_id`（可按 distance 更近、container=Scene、is_on_screen=true 等策略）。
+   - 立刻重试同一个 skill/action，并在对应的 `*_instance_id` 参数里填入你选的 `instance_id`。
+   - 不要在“选择并重试”之前插入任何其它步骤（包括再次 `auto_navigation` 到其他地方）。
+9) 先导航再交互：对一个物品执行 `pick` / `place` / `cut` / `pour` / `sprinkle` / `toggle` / `open` 等交互前，必须先用 `auto_navigation(...)` 导航到该物品（或其 Source/Stack）前并正对它，使其处于可交互距离内，然后再执行交互动作。
+9.1) 交互遮挡约束：交互会受到视线遮挡影响，环境会优先与视野正中间附近最靠前、当前可见的物体发生交互。因此，仅仅导航到目标附近并不能保证目标一定可交互。如果导航后目标仍被其他可见物体部分或完全遮挡，遮挡物可能会优先拦截交互。在执行 `pick_up` / `put_down` / cutting / pouring / sprinkling / toggling / opening 之前，必须先确认目标已经在视觉上暴露出来，并且是视野正中间附近最靠前的相关物体；否则应先调整视角/瞄准、重新站位，或移开遮挡物，再重试交互。
+10) 冰箱容器规则（选门/选抽屉 + 状态检查）：如果 `query_scene_objects` 返回的目标物品 `container` 是 Fridge/Refrigerator（或中文“冰箱”），在抓取/交互前必须先开门；必要时还要开抽屉，再继续后续操作。更稳健流程如下：
+    - (a) 用 `query_scene_objects(query="<item>")` 获取该物品的 `position` / `distance` / `is_on_screen` / `instance_id`。
+    - (b) 用 `query_scene_objects(query="Refrigerator Left Door")`、`query_scene_objects(query="Refrigerator Right Door")`、`query_scene_objects(query="Refrigerator Left Drawer")`、`query_scene_objects(query="Refrigerator Right Drawer")` 获取门/抽屉候选的 `position` 与 `is_open`（以及 `open_angle`）。
+    - (c) 选择更接近目标物品的一侧（Left/Right）：对比目标物品的 `position` 与 Left/Right Door/Drawer 的 `position`（或直接用 candidates 的 `distance`），选择更近的一侧优先打开。
+    - (d) 状态检查：如果选中的 Door/Drawer 的 `is_open=false`，必须先 `auto_navigation(target="<Door/Drawer>", target_instance_id=...)`，然后对 Door 执行 `open_door()`、对 Drawer 执行 `open_drawer()`；如果 `is_open=true` 则不要重复打开。
+    - (e) 验证可交互：开门/抽屉后，立刻再次 `query_scene_objects(query="<item>")`，确认 `is_on_screen=true` 且 `distance` 已进入可交互范围；否则尝试打开另一侧的门/抽屉并再次验证。
+    - (f) 抽屉优先物品：以下物品通常需要“开门后再开抽屉”才能拿到：Lemon、Lime、Radish、Mozzarella、Egg、Strawberry、Brussels sprouts（也可能写作 Brusseis sprouts）、Asparagus。对这些物品默认执行 Door + Drawer 两步，并用上面的 (d)(e) 检查门/抽屉开启情况。
+11) 物品不存在时优先从获取处列表中找（Source/Stack 白名单，英文名）。优先 `auto_navigation` 到对应 Source/Stack 并通过交互获取新物品实例；只有当没有 Source/Stack 时才考虑 `gui_buy_new_item(...)` 购买。
+11.1) 若 `query_scene_objects(query="<item>")` 返回为空，需继续查询 `<item> Source` / `<item> Stack`；若仍为空（连续 2 次空结果），则停止重复查询，直接使用 `gui_buy_new_item(item="<item>")` 去商店购买该物品。这里的“连续 2 次空结果”按“同一物品主名”合并统计：去掉 query 中的 `Source` / `Stack` 后缀（或等价生成点标识）后得到的主名相同，则算作同一物品的连续空结果。该计数不被 `list_supported_items` / `auto_navigation` / 失败重试打断；一旦满足 2 次空结果，下一步必须立刻 `gui_buy_new_item(...)`。
+11.2) 购买流程必须使用 `gui_buy_new_item(item="<item>")`（自带导航 + 下单）；禁止在 Carton Box / 商店界面里自行点击、翻页或搜索来购买物品。
+11.3) 只要涉及“购物/补货”，不要打开或操作 Carton Box；直接调用 `gui_buy_new_item(...)`。Carton Box 只用于已经存在的物品的取放，不用于购买流程。
+11.4) 盘子 / 托盘 / 碗类（例如 Bake Tray、Large/Small/Deep/Square Plate、Plate、Casserole、Bowl）禁止使用 `gui_buy_new_item(...)` 购买；必须通过对应 `X Stack` 获取（先 `query_scene_objects("<X Stack>")`，再 `auto_navigation + pick_up`）。
+12) `instance_id` 为正数的条目不是“唯一实例”：在 `realtime_products.json` / `query_scene_objects` 结果中，如果某条目的 `instance_id` 为正数，这通常表示它是一个“物品获取处/生成点”（而不是单个可唯一追踪的物品实例）。对这类条目，优先把它当作 Source/Stack 来导航与交互获取新实例；不要把它当作已经拿到手的唯一物品。
+13) 不要只依赖“视野中可见物品”列表：`percept` / `visible_items` 只反映当前画面中看到的物品，不是场景全量清单。做菜目标里需要但当前不可见的物品，必须用 `query_scene_objects(query="...")` 在全场景检索并拿到 `instance_id` / `position` / `container` / `distance`，然后再 `auto_navigation(..., target_instance_id=...)` 去交互获取或操作。
+13.1) 禁止连续使用 `auto_perception` 来“找物品”：若当前视野未包含目标物品，不允许再调用 `auto_perception` 重复感知；必须改用 `query_scene_objects(query="<item>")` 做全场景检索，必要时再搜索 `<item> Source/Stack` 或直接 `gui_buy_new_item(item="<item>")`。
+14) 强制提交覆盖：当 `agent_state.force_submit_active=true` 时，说明系统已经进入强制提交窗口，必须尽快完成提交流程；允许不完整提交。选择最可能得分最高的可直接提交承载物或成品并调用 `gui_submit_dish_via_checkout_stand(...)`。
+14.1) 最终提交/评价时，只有可提交容器或可直接提交的 `Tart/挞` 才可以直接拿去提交：锅类、各类 plate / bowl / dish / casserole、`Food Processor Container/料理机容器`，以及 `Tart/挞` 都可以直接提交。对于名称里带 `pan` 的锅具，只有 `PAELLA pan` 可以作为最终提交容器；其他带 `pan` 的容器都不可以提交。`Bake Tray` 不可以作为最终提交容器。
+15) 放置位点选择：执行 `put_down` 时必须选择“空的放置位点”；如果之前在某个放置位点放过物品，则下次放置必须更换到另一个空位点，避免重复占用同一位置。
+16) 规划输出约束：
+    - 不要发明不存在的动作或技能；只能使用 Allowed actions/skills 中定义的名称与参数。
+    - 只输出一个最终方案，不要输出多个备选。
+    - 不要使用抽象动词（如 `move` / `move_to` / `continue`）；必须使用精确动作 / 技能名。
+    - 参数必须严格匹配对应 schema（不允许多余字段）。
+    - 每一步 `expectation` 必须包含目标对象 / 工具与可验证结果。
+17) 交互循环约束（仅适用于 PE / planner_executor 框架；其它框架不适用本条）：
+    - 执行器按 `action_list` 顺序执行。
+    - 任一步失败后，本轮停止；下一轮从失败点开始重规划，不要重复已成功步骤。
+    - 若 feedback 含 `blocking=instance_disambiguation`，下一步必须先从 `candidates` 里选唯一 `instance_id` 并重试同一技能（使用指定 `instance_arg`），之后再做其它动作。
+18) Stove 放置点限制：仅锅类容器（Pot / Small Pot / Big Pot / Deep Pot 等）可放在 Stove 的平台放置点；其他容器请放到 Countertop / Side Table / Plate 等平台。
+19) Stove 开关映射约束：`Stove Switch N` 仅控制 `Stove Place Point N`（索引一一对应）。当需要控制某个 Stove 放置点的火力开关时，必须导航并操作同索引的开关。
+20) 液体瓶交互约束：不能把液体瓶作为被倾倒的“目标容器”（不能往液体瓶里倒）；但可以手持液体瓶向其他容器（锅 / 碗 / 盘等）倾倒。
+20.1) 当手持的物体能够触发某种持续交互模式，并且当前交互目标正是该模式的有效触发目标时，朝该目标执行交互（包括试图把当前物体放到该目标区域上方，或显式调用对应的 `enter_*_mode`）都应按“进入对应模式”来理解和规划，而不是按普通放置处理。这里不仅包括倾倒模式，也包括播撒模式、切割模式、搅拌模式、翻面模式、`faucet_filling_mode` 等。若真实意图是正常放下当前物体，目标必须是平台放置点，而不是会触发上述模式的交互目标。
+20.2) 模式触发优先级约束与物品交互逻辑约束：当手持一个能够触发特殊交互模式的物体时，`put_down` 的实际效果取决于准星当前对准的目标；如果该目标正是这个手持物体的有效交互目标，那么执行 `put_down` 也可能直接进入对应模式，而不是普通放下。因此规划时必须避免把这类目标当作普通放置点，除非你的真实意图就是进入该模式。例如，手持煎锅或液体容器对准另一个容器时会进入倾倒模式；手持刀对准菜板或食材时会进入切割模式。
+20.2.1) 切割目标约束：刀无法对 `Bake Tray` 里面的物体进行可靠切割；切割操作应优先只在 `Cutting Board/菜板` 或普通平台放置点（如 `Countertop` / `Side Table` 等平台表面）上进行。不要把 `Bake Tray` 当作切割基底，也不要规划“隔着 Bake Tray 对其中食材切割”。
+20.3) 维修约束：如果发现某个厨具/工具已经损坏、当前无法正常使用，必须先手持 `Repair Phone`，对准该损坏目标并执行 `repair`，将其修好后再继续使用该物体。
+20.4) Repair Phone 放置约束：`Repair Phone` 只能通过两种方式脱手：放回 `Phone Holder`，或执行 `throw_away`。禁止把 `Repair Phone` 放到普通放置位点上。
+21) Query 后转入物理操作约束：`query_scene_objects(...)` 只是信息获取步骤，本身不算作有效的物理推进，也不会获得得分。当当前子任务所需的 `instance_id` / `availability` 信息已经通过一次或多次成功 query 获取到后，下一轮 planning 必须优先进入具体的物理操作（例如 `auto_navigation`、`pick_up`、`put_down`、`toggle_switch`、`cut`、`pour`、`sprinkle`）或具体的 instance binding retry。除非上一次 query 结果为空、信息不足、过时，或仍然缺少必要的物品 / category，否则禁止在没有进入物理交互的情况下连续 query。

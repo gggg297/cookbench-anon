@@ -1,0 +1,3682 @@
+[
+  {
+    "id": 1,
+    "dish_name": "Lemon Chicken Breasts",
+    "ingredients": [
+      "Garlic",
+      "Lemon",
+      "Thyme Twig",
+      "Chicken Breast",
+      "Lemon Juice",
+      "White Wine",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Oregano, dried"
+    ],
+    "recipe": {"Lemon Chicken Breasts":"Add to a Pot: Olive Oil [50ml], White Wine [10ml], Lemon Juice [10ml], Oregano, dried [5g], Thyme Twig [10g], Garlic [60g]. Fry for 60s. Take Chicken Breast [240g]. Season with: Salt [5g], Black Pepper [5g]. Cut Lemon [80g] into Pieces [16g]. Add to a Baking Tray: Mixture [70ml], Chicken Breast, Lemon. Fry for 90s. Transfer into a Deep Plate: Mixture [70ml], Chicken Breast, Lemon. Serve hot."
+    },
+    "sub_task_sequence": [
+      "打鸡蛋",
+      "切番茄",
+      "炒鸡蛋",
+      "炒番茄"
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 2,
+    "dish_name": "Lemon Chicken Breasts with Fruit Salad",
+    "ingredients": [
+      "Garlic", 
+      "Apple",
+      "Orange",
+      "Strawberry",
+      "Lemon",
+      "Thyme Twig",
+      "Chicken Breast",
+      "Lemon Juice",
+      "White Wine",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Oregano, dried" 
+    ],
+    "recipe": {"Lemon Chicken Breasts":"Add to a Pot: Olive Oil [50ml], White Wine [10ml], Lemon Juice [10ml], Oregano, dried [5g], Thyme Twig [10g], Garlic [60g]. Fry for 60s. Take Chicken Breast [240g]. Season with: Salt [5g], Black Pepper [5g]. Cut Lemon [80g] into Pieces [16g]. Add to a Baking Tray: Mixture [70ml], Chicken Breast, Lemon. Fry for 90s. Transfer into a Deep Plate: Mixture [70ml], Chicken Breast, Lemon. Serve hot.",
+    "Fruit Salad":"Cut: Apple [150g] into Pieces [25g], Orange [90g] into Pieces [15g]. Add to a Bowl: Strawberry [30g], Apple, Orange. Serve cool."
+    },
+    "sub_task_sequence": [
+      "打鸡蛋",
+      "切番茄",
+      "炒鸡蛋",
+      "炒番茄"
+    ],
+    "video_id": "video_002"
+  },
+  {
+    "id": 3,
+    "dish_name": "Lemon Tart",
+    "ingredients": [
+      "Banana",
+      "Orange",
+      "Strawberry",
+      "Lemon",
+      "Tart",
+      "Honey",
+      "Coconut Milk",
+      "Brown Sugar"
+    ],
+    "recipe": {"Tart":"Take Tart [260g]. Bake for 40s. Add to the Food Processor: Coconut Milk [180ml], Honey [20ml], Brown Sugar [5g]. Blend. Cut: Banana [100g] into Pieces [20g], Lemon [80g] into Pieces [10g], Orange [60g] into Quarters [15g], Strawberry [60g] into Halves [5g]. Transfer into a Tart: Mixture [200ml], Lemon, Banana, Orange, Strawberry. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 4,
+    "dish_name": "Mango Tart",
+    "ingredients": [
+      "Banana",
+      "Orange",
+      "Strawberry",
+      "Lemon",
+      "Tart",
+      "Honey Mango",
+      "Honey",
+      "Coconut Milk",
+      "Brown Sugar"
+    ],
+    "recipe": {"Tart":"Take Tart [260g]. Bake for 40s. Add to the Food Processor: Coconut Milk [180ml], Honey [20ml], Brown Sugar [5g]. Blend. Cut: Lemon [80g] into Pieces [10g], Banana [100g] into Pieces [20g], Orange [60g] into Quarters [15g], Strawberry [60g] into Halves [5g], Honey Mango [100g] into Pieces [~14g]. Transfer into a Tart: Mixture [200ml], Lemon, Banana, Orange, Strawberry, Honey Mango. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 5,
+    "dish_name": "Brussels Sprouts with Pancetta & Chicken Wings",
+    "ingredients": [
+      "Brussels Sprouts",
+      "Chicken Wing",
+      "Pancetta",
+      "Water",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder"
+    ],
+    "recipe": {"Brussels Sprouts":"Add to a Pot: Water [500ml], Salt [5g], Brussels Sprouts [120g]. Boil for 50s. Cut Pancetta [60g] into Pieces [10g]. Add to a Pan: Olive Oil [20ml], Black Pepper [5g], Salt [5g], Pancetta. Fry for 40s. Add to the Pan: Brussels Sprouts. Fry for 40s. Transfer onto a Plate: Brussels Sprouts, Pancetta. Serve hot.",
+    "Chicken Wings":"Take Chicken Wing [120g]. Season with: Sweet Bell Pepper, powder [10g], Black Pepper [6g]. Add to a Baking Tray: Chicken Wing. Bake for 50s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 6,
+    "dish_name": "Brussels Sprouts with Pancetta & Grilled Swordfish",
+   "ingredients": [
+      "Brussels Sprouts",
+      "Swordfish",
+      "Pancetta",
+      "Water",
+      "Lemon Juice",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Garlic, dried"
+    ],
+    "recipe": {"Brussels Sprouts":"Add to a Pot: Water [500ml], Salt [5g], Brussels Sprouts [120g]. Boil for 50s. Cut Pancetta [60g] into Pieces [10g]. Add to a Pan: Olive Oil [20ml], Black Pepper [5g], Salt [5g], Pancetta. Fry for 40s. Add to the Pan: Brussels Sprouts. Fry for 40s. Transfer onto a Plate: Brussels Sprouts, Pancetta. Serve hot.",
+    "Grilled Swordfish":"Take Swordfish [250g]. Season with: Garlic, dried [5g], Salt [5g], Black Pepper [5g]. Drizzle in Lemon Juice [10ml]. Grill for 75s each side. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 7,
+    "dish_name": "Fiesta Corn with Tomatoes",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Cob of Corn",
+      "Red Bell Pepper",
+      "Jalapeño",
+      "Water",
+      "Lime Juice",
+      "Avocado Oil",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Chili Flakes",
+      "Garlic, dried"
+    ],
+    "recipe": {"Fiesta Corn with Tomatoes":"Add to a Bowl: Lime Juice [20ml], Olive Oil [10ml], Avocado Oil [10ml], Garlic, dried [5g]. Chili Flakes [5g], Salt [10g], Black Pepper [10g]. Transfer onto a Plate: Cob of Corn [180g], Tomato [120g], Onion [120g], Red Bell Pepper [240g], Jalapeño [40g]. Drizzle in Mixture [40ml]. Add to a Pot: Water [1000ml], Salt [10g], Cob of Corn. Boil for 100s. Cut: Tomato into Quarters [30g], Onion into Pieces [20g], Red Bell Pepper into Pieces [30g], Jalapeño into Quarters [10g], Cob of Corn into Pieces [20g]. Transfer everything onto a Plate. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 8,
+    "dish_name": "Fiesta Corn with Tomatoes & Spicy Chicken",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Cob of Corn",
+      "Red Bell Pepper",
+      "Jalapeño",
+      "Chicken Breast",
+      "Water",
+      "Lime Juice",
+      "Avocado Oil",
+      "Olive Oil",
+      "Sesame Oil",
+      "Salt",
+      "Black Pepper",
+      "Chili Flakes",
+      "Garlic, dried"
+    ],
+    "recipe": {"Fiesta Corn with Tomatoes":"Add to a Bowl: Lime Juice [20ml], Olive Oil [10ml], Avocado Oil [10ml], Garlic, dried [5g]. Chili Flakes [5g], Salt [10g], Black Pepper [10g]. Transfer onto a Plate: Cob of Corn [180g], Tomato [120g], Onion [120g], Red Bell Pepper [240g], Jalapeño [40g]. Drizzle in Mixture [40ml]. Add to a Pot: Water [1000ml], Salt [10g], Cob of Corn. Boil for 100s. Cut: Tomato into Quarters [30g], Onion into Pieces [20g], Red Bell Pepper into Pieces [30g], Jalapeño into Quarters [10g], Cob of Corn into Pieces [20g]. Transfer everything onto a Plate. Serve cool.",
+    "Spicy Chicken":"Take Chicken Breast [240g]. Season with: Black Pepper [5g], Salt [5g], Chili Flakes [5g]. Cut Chicken Breast into Quarters [60g]. Add to the Pan: Sesame Oil [5ml], Olive Oil [20ml]. Chicken Breast. Fry for 90s. Transfer into a Deep Plate: Chicken Breast. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 9,
+    "dish_name": "Sausage & Egg Muffin",
+    "ingredients": [
+      "Cheddar",
+      "Egg",
+      "English Muffin",
+      "Pork Breakfast Sausage",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Sausage & Egg Muffin":"Take Pork Breakfast Sausage [112g]. Season with: Salt [5g], Black Pepper [5g]. Grill for 80s each side. Add to a Baking Tray: English Muffin [100g]. Bake for 60s. Crack Egg into the Pan. Fry for 35s. Add: English Muffin, Pork Breakfast Sausage, Cheddar [20g], Egg. Serve warm."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 10,
+    "dish_name": "Sausage & Egg Muffin with Bacon",
+    "ingredients": [
+      "Bacon",
+      "Cheddar",
+      "Egg",
+      "English Muffin",
+      "Pork Breakfast Sausage",
+      "Barbecue Sauce",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Sausage &Egg Muffin with Bacon":"Take Pork Breakfast Sausage [112g]. Season with: Salt [5g], Black Pepper [5g]. Grill for 80s. Add to the Pan: Bacon [60g]. Fry for 60s. Add to a Baking Tray: English Muffin [100g]. Bake for 60s. Crack Egg into the Pan. Fry for 35s. Transfer onto a Plate: Pork Breakfast Sausage, Bacon. Drizzle in Barbecue Sauce [10ml]. Transfer onto a Plate: English Muffin, Cheddar [20g], Egg, Pork Breakfast Sausage, Bacon. Serve warm."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 11,
+    "dish_name": "Melting Potatoes",
+    "ingredients": [
+      "Garlic",
+      "Potato",
+      "Rosemary Twig",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Melting Potatoes":"Take Potato [300g]. Season with: Salt [10g], Black Pepper [10g]. Cut Potato into Pieces [30g]. Add to the Pan: Sunflower Oil [10ml], Clarified Butter [40ml], Potato. Fry for 20s. Add to the Pan: Chicken Broth [250ml], Garlic [20g], Rosemary Twig [5g]. Boil for 40s. Transfer onto a Plate: Potato. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 12,
+    "dish_name": "Melting Potatoes with Egg de Provence",
+    "ingredients": [ 
+      "Garlic",
+      "Potato",
+      "Rosemary Twig",
+      "Egg",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Herbs de Provence, dried"
+    ],
+    "recipe": {"Melting Potatoes":"Take Potato [300g]. Season with: Salt [10g], Black Pepper [10g]. Cut Potato into Pieces [30g]. Add to the Pan: Sunflower Oil [10ml], Clarified Butter [40ml], Potato. Fry for 20s. Add to the Pan: Chicken Broth [250ml], Garlic [20g]. Rosemary Twig [5g]. Boil for 40s. Transfer onto a Plate: Potato. Serve hot.",
+    "Egg de Provence":"Crack Egg into the Pan. Fry for 35s. Season with Herbs de Provence, dried [5g]. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 13,
+    "dish_name": "Grilled Buffalo Wings",
+    "ingredients": [
+      "Chicken Wing",
+      "Honey",
+      "Barbecue Sauce",
+      "Clarified Butter",
+      "Wine Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Garlic, dried"
+    ],
+    "recipe": {"Grilled Buffalo Wings":"Add to a Pot: Clarified Butter [100ml]. Fry for 30s. Add to the Pot: Barbecue Sauce [20ml], Wine Vinegar [20ml]. Honey [10ml]. Fry for 30s. Take Chicken Wing [240g]. Season with: Salt [20g], Black Pepper [20g], Garlic, dried [20g]. Add to a Baking Tray: Mixture [150ml]. Chicken Wing. Fry for 20s. Take Chicken Wing. Grill for 30s each side. Transfer onto a Plate.Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 14,
+    "dish_name": "Grilled Buffalo Wings with French Fries",
+    "ingredients": [
+      "Potato",
+      "Chicken Wing",
+      "Honey",
+      "Ketchup",
+      "Barbecue Sauce",
+      "Clarified Butter",
+      "Wine Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Garlic, dried"
+    ],
+    "recipe": {"Grilled Buffalo Wings":"Add to a Pot: Clarified Butter [100ml]. Fry for 30s. Add to the Pot: Barbecue Sauce [20ml], Wine Vinegar [20ml], Honey [10ml]. Fry for 30s. Take Chicken Wing [240g]. Season with: Salt [20g], Black Pepper [20g], Garlic, dried [20g]. Add to a Baking Tray: Mixture [150ml]. Chicken Wing. Fry for 20s. Take Chicken Wing. Grill for 30s each side. Transfer onto a Plate.Serve hot.",
+    "French Fries":"Cut Potato [150g] into Pieces [15g]. Deep fry for 30s. Drizzle in Ketchup [9ml]. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 15,
+    "dish_name": "Spicy Sparkling Pork",
+    "ingredients": [
+      "Onion",
+      "Chili Pepper",
+      "Pork Shoulder",
+      "Olive Oil",
+      "Cola",
+      "Salt",
+      "Black Pepper",
+      "Brown Sugar"
+    ],
+    "recipe": {"Spicy Sparkling Pork":"Take Pork Shoulder [375g]. Season with: Salt [5g], Black Pepper [5g]. Cut: Onion [240g] into Quarters [30g], Chili Pepper [180g] into Halves [15g], Pork Shoulder into Slices [125g]. Add to a Pot: Olive Oil [50ml], Onion, Pork Shoulder, Chili Pepper. Fry for 60s. Add to a Baking Tray: Cola [200ml], Brown Sugar [20g], Pork Shoulder. Boil for 60s. Transfer onto a Plate: Onion, Pork Shoulder. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 16,
+    "dish_name": "Spicy Sparkling Pork with Spring Salad",
+    "ingredients": [ 
+      "Tomato",
+      "Cucumber",
+      "Onion",
+      "Radish",
+      "Apple",
+      "Chili Pepper",
+      "Pork Shoulder",
+      "Lemon Juice",
+      "Olive Oil",
+      "Cola",
+      "Salt",
+      "Black Pepper",
+      "Brown Sugar"
+    ],
+    "recipe": {"Spicy Sparkling Pork":"Take Pork Shoulder [375g]. Season with: Salt [5g], Black Pepper [5g]. Cut: Onion [240g] into Quarters [30g], Chili Pepper [180g] into Halves [15g], Pork Shoulder into Slices [125g]. Add to a Pot: Olive Oil [50ml], Onion, Pork Shoulder, Chili Pepper. Fry for 60s. Add to a Baking Tray: Cola [200ml], Brown Sugar [20g], Pork Shoulder. Boil for 60s. Transfer onto a Plate: Onion, Pork Shoulder. Serve hot.",
+    "Spring Salad":"Transfer onto a Plate: Tomato [120g], Cucumber [160g], Radish [30g], Apple [150g]. Drizzle in Lemon Juice [20ml]. Cut: Tomato into Pieces [20g], Cucumber into Pieces [20g]. Radish into Halves [~8g], Apple into Pieces [30g]. Transfer everything onto a Plate. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 17,
+    "dish_name": "Mango Salsa Chicken",
+    "ingredients": [
+      "Penne",
+      "Chicken Breast",
+      "Honey Mango",
+      "Water",
+      "Salsa",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Mango Salsa Chicken":"Take Chicken Breast [240g]. Season with: Salt [5g], Black Pepper [5g]. Cut: Honey Mango [50g] into Pieces [10g]. Chicken Breast into Pieces [30g]. Add to the Pan: Salsa [200ml], Chicken Breast. Boil for 60s. Transfer into a Deep Plate: Mixture [200ml], Chicken Breast, Honey Mango. Serve cold.",
+    "Penne":"Add to a Pot: Water [1000ml], Salt [10g], Penne [100g]. Boil for 60s. Transfer into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 18,
+    "dish_name": "Mango Salsa Chicken with French Fries",
+    "ingredients": [
+      "Potato",
+      "Chicken Breast",
+      "Honey Mango",
+      "Ketchup",
+      "Salsa",
+      "Salt",
+      "Black Pepper"
+    ],
+   "recipe": {"Mango Salsa Chicken":"Take Chicken Breast [240g]. Season with: Salt [5g], Black Pepper [5g]. Cut: Honey Mango [50g] into Pieces [10g]. Chicken Breast into Pieces [30g]. Add to the Pan: Salsa [200ml], Chicken Breast. Boil for 60s. Transfer into a Deep Plate: Mixture [200ml], Chicken Breast, Honey Mango. Serve cold.",
+    "French Fries":"Cut Potato [150g] into Pieces [15g]. Deep fry for 30s. Drizzle in Ketchup [9ml]. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 19,
+    "dish_name": "Chicken Tortellini Soup",
+    "ingredients": [
+      "Onion",
+      "Carrot",
+      "Thyme Twig",
+      "Bay Leaf, fresh",
+      "Chicken Breast",
+      "Tortellini",
+      "Water",
+      "Red Wine",
+      "Chicken Broth",
+      "Lemon Juice",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder"
+    ],
+    "recipe": {"Chicken Soup":"Take Chicken Breast [240g]. Season with: Sweet Bell Pepper, powder [5g]. Salt [5g]. Black Pepper [5g]. Cut: Carrot [140g] into Pieces [14g], Onion [120g] into Pieces [15g]. Add to the Pan: Olive Oil [15ml], Chicken Breast, Carrot, Onion. Fry for 30s. Add to a Pot: Chicken Broth [1000ml], Lemon Juice [20ml], Red Wine [50ml], Bay Leaf, fresh [3g], Thyme Twig [15g]. Boil for 30s. Add to the Pot: Chicken Breast, Carrot, Onion. Boil for 40s. Cut Chicken Breast into Pieces [20g]. Each serving consists of Mixture [300ml], Chicken Breast [60g], Carrot [42g], Onion [30g]. Serve hot.",
+    "Tortellini":"Add to a Pot: Water [1000ml], Salt [5g], Tortellini [150g]. Boil for 35s. Transfer into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 20,
+    "dish_name": "Chicken Tortellini Soup with Croutons",
+    "ingredients": [
+      "Onion",
+      "Carrot",
+      "Bread",
+      "Thyme Twig",
+      "Bay Leaf, fresh",
+      "Chicken Breast",
+      "Tortellini",
+      "Water",
+      "Red Wine",
+      "Lemon Juice",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "Garlic, dried"
+    ],
+    "recipe": {"Chicken Soup":"Take Chicken Breast [240g]. Season with: Sweet Bell Pepper, powder [5g]. Salt [5g]. Black Pepper [5g]. Cut: Carrot [140g] into Pieces [14g], Onion [120g] into Pieces [15g]. Add to the Pan: Olive Oil [15ml], Chicken Breast, Carrot, Onion. Fry for 30s. Add to a Pot: Chicken Broth [1000ml], Lemon Juice [20ml], Red Wine [50ml], Bay Leaf, fresh [3g], Thyme Twig [15g]. Boil for 30s. Add to the Pot: Chicken Breast, Carrot, Onion. Boil for 40s. Cut Chicken Breast into Pieces [20g]. Each serving consists of Mixture [300ml], Chicken Breast [60g], Carrot [42g], Onion [30g]. Serve hot.",
+    "Tortellini":"Add to a Pot: Water [1000ml], Salt [5g], Tortellini [150g]. Boil for 35s. Transfer into a Deep Plate. Serve hot.",
+    "Croutons":"Cut Bread [50g] into Pieces [10g]. Add to a Pan: Olive Oil [20ml], Garlic, dried [5g], Bread. Fry for 30s. Transfer into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 21,
+    "dish_name": "Double Potato Salad with Pesto",
+    "ingredients": [
+      "Potato",
+      "Fingerling Potato",
+      "Water",
+      "White Vinegar",
+      "Dijon Mustard",
+      "Pesto",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Fingerling Potato Salad":"Take Fingerling Potato [210g]. Season with: Salt [6g], Black Pepper [6g]. Add to a Pot: Water [1000ml], Fingerling Potato. Boil for 30s. Add to the Pot: White Vinegar [50ml]. Boil for 25s. Transfer onto a Plate: Fingerling Potato. Drizzle in Pesto [15ml]. Cut Fingerling Potato into Quarters [~18g]. Transfer onto a Plate. Serve hot.",
+    "French Fries":"Cut Potato [150g] into Pieces [15g]. Deep fry for 30s. Drizzle in Dijon Mustard [10ml]. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 22,
+    "dish_name": "Double Potato Salad with Button Mushroom Sauce",
+    "ingredients": [
+      "Potato",
+      "Button Mushroom",
+      "Fingerling Potato",
+      "Water",
+      "Sour Cream",
+      "White Vinegar",
+      "Dijon Mustard",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Fingerling Potato Salad in Mushroom Sauce":"Take Fingerling Potato [210g]. Season with: Salt [6g], Black Pepper [6g]. Add to a Pot: Water [1000ml], Fingerling Potato. Boil for 30s. Add to the Pot: White Vinegar [50ml]. Boil for 25s. Cut: Button Mushroom [50g] into Quarters [~12g]. Fingerling Potato into Quarters [~18g]. Add to the Pan: Sour Cream [100ml], Salt [5g], Black Pepper [5g], Button Mushroom. Boil for 100s. Transfer into a Deep Plate: Mixture [100ml], Button Mushroom, Fingerling Potato. Serve hot.",
+    "French Fries":"Cut Potato [150g] into Pieces [15g]. Deep fry for 30s. Drizzle in Dijon Mustard [10ml]. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 23,
+    "dish_name": "Baked Potatoes with Feta",
+    "ingredients": [
+      "Potato",
+      "Chives",
+      "Feta",
+      "Olive Oil",
+      "Salt",
+      "Rosemary, dried",
+      "Thyme, dried"
+    ],
+    "recipe": {"Baked Potatoes with Feta":"Take Potato [300g]. Season with Salt [4g]. Cut Potato into Halves [75g]. Bake for 90s. Cut Feta [100g] into Pieces [~12g]. Add to a Bowl: Olive Oil [20ml], Thyme, dried [4g] Rosemary, dried [4g]. Take Potato. Drizzle in Mixture [20ml]. Transfer onto the Plate: Feta, Potato. Serve hot.",
+    "Chives Garnish":"Garnish with Chives [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 24,
+    "dish_name": "Baked Potatoes with Feta & Tomatoes",
+    "ingredients": [
+      "Tomato",
+      "Potato",
+      "Chives",
+      "Feta",
+      "Olive Oil",
+      "Salt",
+      "Rosemary, dried",
+      "Thyme, dried"
+    ],
+    "recipe": {"Baked Potatoes with Feta & Tomatoes":"Take Potato [300g]. Season with Salt [4g]. Cut Potato into Halves [75g]. Bake for 90s. Cut: Feta [100g] into Pieces [~12g], Tomato [120g] into Pieces [15g]. Add to a Bowl: Olive Oil [20ml], Thyme, dried [4g], Rosemary, dried [4g]. Take Potato. Drizzle in Mixture [20ml]. Transfer onto a Plate: Feta, Potato, Tomato. Serve hot.",
+    "Chives Garnish":"Garnish with Chives [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 25,
+    "dish_name": "Italian Home Fries",
+    "ingredients": [
+      "Onion",
+      "Potato",
+      "Red Bell Pepper",
+      "Rosemary Twig",
+      "Parsley Leaves, fresh",
+      "Sausage",
+      "Clarified Butter",
+      "Sweet Bell Pepper, powder",
+      "Garlic, dried"
+    ],
+    "recipe": {"Sausage with Peppers and Onions":"Cut: Onion [120g] into Pieces [15g], Red Bell Pepper [240g] into Pieces [30g], Sausage [120g] into Pieces [20g]. Add to a Pan: Clarified Butter [100ml], Garlic, dried [10g], Red Bell Pepper, Sausage. Fry for 50s. Add to the Pan: Rosemary Twig [5g], Parsley Leaves, fresh [6g], Onion. Fry for 30s. Transfer onto a Plate: Red Bell Pepper, Onion, Sausage. Serve hot.",
+    "Italian Fries":"Take Potato [300g]. Season with Sweet Bell Pepper, powder [6g]. Cut Potato into Pieces [30g]. Fry for 35s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 26,
+    "dish_name": "Italian Home Fries with Cucumber Salad",
+    "ingredients": [
+      "Cucumber",
+      "Onion",
+      "Potato",
+      "Red Bell Pepper",
+      "Rosemary Twig",
+      "Parsley Leaves, fresh",
+      "Sausage",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Olive Oil",
+      "Sweet Bell Pepper, powder",
+      "Garlic, dried"
+    ],
+    "recipe": {"Sausage with Peppers and Onions":"Cut: Onion [120g] into Pieces [15g], Red Bell Pepper [240g] into Pieces [30g], Sausage [120g] into Pieces [20g]. Add to a Pan: Clarified Butter [100ml], Garlic, dried [10g], Red Bell Pepper, Sausage. Fry for 50s. Add to the Pan: Rosemary Twig [5g], Parsley Leaves, fresh [6g], Onion. Fry for 30s. Transfer onto a Plate: Red Bell Pepper, Onion, Sausage. Serve hot.",
+    "Italian Fries":"Take Potato [300g]. Season with Sweet Bell Pepper, powder [6g]. Cut Potato into Pieces [30g]. Fry for 35s. Transfer onto a Plate. Serve hot.",
+    "Cucumber Salad":"Take Cucumber [160g]. Drizzle in: Lemon Juice [5ml], Olive Oil [5ml]. Cut Cucumber into Pieces [~15g]. Transfer onto a Plate. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 27,
+    "dish_name": "Grilled Swordfish Provencal",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Red Bell Pepper",
+      "Yellow Bell Pepper",
+      "Basil Leaf, fresh",
+      "Swordfish",
+      "Anchovy",
+      "Chicken Broth",
+      "White Wine",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Fried Vegetables":"Cut: Onion [60g] into Quarters [15g], Red Bell Pepper [80g] into Pieces [16g], Yellow Bell Pepper [80g] into Pieces [16g]. Garlic [20g] into Halves [5g]. Add to a Pan: Olive Oil [30ml], Chicken Broth [20ml], White Wine [20ml], Red Bell Pepper, Yellow Bell Pepper. Fry for 50s. Add to the Pan: Basil Leaf, fresh [6g], Anchovy [8g], Onion, Garlic. Fry for 30s. Transfer everything into a Deep Plate. Serve hot.",
+    "Sage Garnish":"Add to the Food Processor: Tomato [240g]. Blend. Transfer into a Pot. Boil for 40s. Take Swordfish [250g]. Season with: Black Pepper [4g]. Salt [4g]. Grill for 70s each side. Drizzle in Mixture [50ml]. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 28,
+    "dish_name": "Grilled Swordfish with Hot Sauce",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Red Bell Pepper",
+      "Yellow Bell Pepper",
+      "Chili Pepper",
+      "Basil Leaf, fresh",
+      "Sage Leaf,fresh",
+      "Swordfish",
+      "Anchovy",
+      "Chicken Broth",
+      "White Wine",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Fried Vegetables":"Cut: Onion [60g] into Quarters [15g]. Red Bell Pepper [80g] into Pieces [16g], Yellow Bell Pepper [80g] into Pieces [16g]. Garlic [20g] into Halves [5g]. Add to a Pan: Olive Oil [30ml], Chicken Broth [20ml], White Wine [20ml], Red Bell Pepper, Yellow Bell Pepper. Fry for 50s. Add to the Pan: Basil Leaf, fresh [6g], Anchovy [8g], Onion, Garlic. Fry for 30s. Transfer everything into a Deep Plate. Serve hot.",
+    "Grilled Swordfish":"Add to the Food Processor: Tomato [120g], Chili Pepper [60g]. Blend. Transfer into a Pot. Boil for 40s. Take Swordfish [250g]. Season with: Black Pepper [4g]. Salt [4g]. Grill for 70s each side. Drizzle in Mixture [50ml]. Transfer onto a Plate. Serve hot.",
+    "Sage Garnish":"Garnish with Sage Leaf, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 29,
+    "dish_name": "Chicken Tikka Masala",
+    "ingredients": [
+      "Tomato",
+      "Garlic",
+      "Chicken Breast",
+      "Serrano Pepper",
+      "Milk",
+      "Olive Oil",
+      "Salt",
+      "Sweet Bell Pepper, powder",
+      "Ginger",
+      "Garlic, dried",
+      "Fenugreek Leaves, dried"
+    ],
+    "recipe": {"Chicken Breast":"Cut Chicken Breast [240g] into Pieces [40g]. Add to a Pan: Milk [150ml], Garlic, dried [10g], Ginger [10g], Chicken Breast. Boil for 65s. Transfer onto a Plate: Chicken Breast. Serve hot.",
+    "Tomato Hot Sauce":"Cut: Garlic[20g] into Halves [5g], Tomato [120g] into Pieces [15g]. Add to a Pan:  Olive Oil [50ml], Salt [5g], Sweet Bell Pepper, powder [5g], Fenugreek Leaves, dried [5g]. Tomato. Fry for 15s. Add to the Pan: Garlic. Fry for 10s. Add to the Pan: Serrano Pepper [18g]. Fry for 20s. Transfer everything into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 30,
+    "dish_name": "Chicken Tikka Masala with Potatoes",
+    "ingredients": [
+      "Tomato",
+      "Garlic",
+      "Potato",
+      "Chicken Breast",
+      "Serrano Pepper",
+      "Water",
+      "Milk",
+      "Olive Oil",
+      "Salt",
+      "Sweet Bell Pepper, powder",
+      "Ginger",
+      "Garlic, dried",
+      "Fenugreek Leaves, dried"
+    ],
+    "recipe": {"Chicken Breast":"Cut Chicken Breast [240g] into Pieces [40g]. Add to a Pan: Milk [150ml], Garlic, dried [10g], Ginger [10g], Chicken Breast. Boil for 65s. Transfer onto a Plate: Chicken Breast. Serve hot.",
+    "Tomato Hot Sauce":"Cut: Garlic[20g] into Halves [5g], Tomato [120g] into Pieces [15g]. Add to a Pan:  Olive Oil [50ml], Salt [5g], Sweet Bell Pepper, powder [5g], Fenugreek Leaves, dried [5g]. Tomato. Fry for 15s. Add to the Pan: Garlic. Fry for 10s. Add to the Pan: Serrano Pepper [18g]. Fry for 20s. Transfer everything into a Deep Plate. Serve hot.",
+    "Boiled Potatoes":"Add to a Pot: Water [1000ml], Salt [10g], Potato [300g]. Boil for 120s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 31,
+    "dish_name": "Fried Shrimp",
+    "ingredients": [
+      "Shrimp",
+      "Lemon",
+      "Parsley Leaves, fresh",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Fried Shrimp":"Add to a Pan: Clarified Butter [30ml], Salt [10g], Black Pepper [10g], Shrimp [120g]. Fry for 50s. Transfer everything into a Deep Plate. Serve hot.",
+    "Lemon Quarters":"Cut Lemon [80g] into Quarters [20g]. Transfer onto a Plate.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 32,
+    "dish_name": "Baked Cod",
+    "ingredients": [
+      "Lemon",
+      "Cod",
+      "Parsley Leaves, fresh",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "Cumin, powder"
+    ],
+    "recipe": {"Baked Cod":"Take Cod [160g]. Season with: Salt [3g], Black Pepper [3g], Sweet Bell Pepper, powder [5g], Cumin, powder [5g]. Fry for 35s each side. Drizzle in: Lemon Juice [5ml], Olive Oil [5ml], Clarified Butter [5ml]. Transfer Cod to a Baking Tray. Bake for 45s. Transfer onto the Plate. Serve hot.",
+    "Lemon Slices":"Cut Lemon [80g] into Quarters [20g]. Transfer onto a Plate.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 33,
+    "dish_name": "Baked Trout",
+    "ingredients": [
+      "Trout",
+      "Lemon",
+      "Parsley Leaves, fresh",
+      "Black Pepper",
+      "Dill, dried",
+      "Thyme, dried",
+      "Horseradish, dried"
+    ],
+    "recipe": {"Baked Trout":"Take Trout [200g]. Season with: Black Pepper [5g], Thyme, dried [5g], Dill, dried [5g]. Place on a Baking Tray. Bake for 90s. Season with Horseradish, dried [5g]. Transfer onto a Plate. Serve hot.",
+    "Lemon Quarters":"Cut Lemon [80g] into Quarters [20g]. Transfer onto a Plate.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 34,
+    "dish_name": "Steak with French Fries",
+    "ingredients": [
+      "Steak",
+      "Potato",
+      "Rosemary Twig",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Steak":"Take Steak [220g]. Season with: Salt [4g], Black Pepper [4g]. Fry for 45s each side. Transfer onto a Plate. Serve hot.",
+    "French Fries":"Take Potato [300g]. Season with Salt [6g]. Cut Potato [300g] into Pieces [15g]. Deep fry for 30s. Transfer onto a Plate. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 35,
+    "dish_name": "Gazpacho",
+    "ingredients": [
+      "Tomato",
+      "Cucumber",
+      "Garlic",
+      "Red Bell Pepper",
+      "Bread",
+      "Chives",
+      "Olive Oil",
+      "Wine Vinegar",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Gazpacho":"Add to the Food Processor: Cucumber [320g], Tomato [360g], Red Bell Pepper [480g], Garlic [20g], Bread [150g]. Blend. Add: Olive Oil [30ml], Wine Vinegar [30ml], Salt [10g], Black Pepper [10g]. Pour the Liquid [300ml] into a Deep Plate. Serve cool.",
+    "Chives Garnish":"Garnish with Chives [8g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 36,
+    "dish_name": "Pork Chops with Baked Potatoes",
+    "ingredients": [
+      "Potato",
+      "Pork Chops",
+      "Sunflower Oil",
+      "Salt",
+      "Black Pepper",
+      "Thyme, dried"
+    ],
+    "recipe": {"Pork Chops":"Take Pork Chops [200g]. Season with: Salt [4g], Black Pepper [4g], Thyme, dried [6g]. Add to the Pan: Sunflower Oil [30ml], Pork Chops. Fry for 90s each side. Transfer onto a Plate. Serve hot.",
+    "Baked Potatoes":"Take Potato [300g]. Season with Salt [6g]. Cut Potato into Chunks [50g]. Transfer onto a Baking Tray. Bake for 80s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 37,
+    "dish_name": "Pork Tenderloin with Caramelized Vegetables",
+    "ingredients": [
+      "Carrot",
+      "Beetroot",
+      "Pork Tenderloin",
+      "Rosemary Twig",
+      "Salt",
+      "Black Pepper",
+      "Cumin, powder",
+      "Allspice, powder"
+    ],
+    "recipe": {"Pork Tenderloin":"Take Pork Tenderloin [250g]. Season with: Salt [6g], Black Pepper [6g], Allspice, powder [4g], Cumin, powder [4g]. Place on a Baking Tray. Bake for 130s. Cut Pork Tenderloin into Slices [25g]. Transfer onto a Plate. Serve hot.",
+    "Caramelized Vegetables":"Cut: Beetroot [120g] into Pieces [20g], Carrot [70g] into Quarters [~18g]. Fry for 80s. Transfer onto a Plate. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [5g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 38,
+    "dish_name": "Baked Trout with Roasted Brussels Sprouts",
+    "ingredients": [
+      "Trout",
+      "Lemon",
+      "Brussels Sprouts",
+      "Parsley Leaves, fresh",
+      "Soy Sauce",
+      "Olive Oil",
+      "Rice Vinegar",
+      "Black Pepper",
+      "Dill, dried",
+      "Thyme, dried",
+      "Horseradish, dried"
+    ],
+    "recipe": {"Baked Trout":"Take Trout [200g]. Season with: Black Pepper [5g], Thyme, dried [5g], Dill, dried [5g]. Place on a Baking Tray. Bake for 90s. Season with Horseradish, dried [5g]. Transfer onto a Plate. Serve hot.",
+    "Roasted Brussels Sprouts":"Add to a Bowl: Olive Oil [10ml], Soy Sauce [5ml], Rice Vinegar [5ml]. Transfer onto a Plate: Brussels Sprouts [60g]. Drizzle with Mixture. Cut Brussels Sprouts into Halves [~8g]. Place on a Baking Tray. Bake for 100s. Transfer onto the Plate. Serve hot.",
+    "Lemon Quarters":"Cut Lemon [80g] into Quarters [20g].Transfer onto a Plate.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 39,
+    "dish_name": "Fusilli Aglio, Olio e Peperoncino",
+    "ingredients": [
+      "Fusilli",
+      "Garlic",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Olive Oil",
+      "Salt",
+      "Chili Flakes"
+    ],
+    "recipe": {"Pasta":" Add to a Pot: Water [1000ml], Salt [5g], Fusilli [160g]. Boil for 45s. Transfer into a Casserole. Reserve Water. Cut Garlic [40g] into Halves [5g]. Add to a Pan: Olive Oil [40ml], Garlic. Fry for 15s. Add to the Pan: Chili Flakes [5g], Water (reserve) [50ml], Fusilli. Fry for 15s. Transfer everything into the Casserole. Serve hot.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 40,
+    "dish_name": "Fast Pumpkin Soup",
+    "ingredients": [
+      "Onion",
+      "Pumpkin",
+      "Chicken Broth",
+      "Sour Cream",
+      "Salt"
+    ],
+    "recipe": {"Pumpkin Soup":"Add to a Pot: Chicken Broth [500ml], Salt [20g], Pumpkin [1000g]. Onion [120g]. Boil for 90s. Blend. Add Sour Cream [150ml]. Pour the Liquid [300ml] into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 41,
+    "dish_name": "Simple Ukrainian Borscht",
+    "ingredients": [
+      "Onion",
+      "Carrot",
+      "Parsley Root",
+      "Beetroot",
+      "Chicken Broth",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Ukrainian Borscht":"Add to a Pot: Chicken Broth [1000ml], Salt [20g], Black Pepper [20g], Beetroot [600g], Onion [120g], Carrot [70g], Parsley Root [80g]. Boil for 120s. Pour the Liquid [300ml] into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 42,
+    "dish_name": "Tomato Bruschetta",
+    "ingredients": [
+      "Tomato",
+      "Garlic",
+      "Bread",
+      "Basil Leaf, fresh",
+      "Olive Oil",
+      "Balsamic Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Garlic, dried"
+    ],
+    "recipe": {"Bruschetta":"Take Bread [70g]. Drizzle with Olive Oil [5ml]. Season with Garlic, dried [5g]. Cut Bread into Halves [35g]. Transfer onto a Baking Tray. Bake for 30s. Transfer onto a Plate. Serve hot.",
+    "Tomato Dressing":"Transfer onto the Plate: Tomato [120g], Garlic [10g]. Drizzle in: Olive Oil [15ml], Balsamic Vinegar [10ml]. Season with: Salt [5g], Black Pepper [5g]. Cut: Tomato into Pieces [15g], Garlic into Halves [5g]. Transfer everything onto a Plate. Add Basil Leaf, fresh [6g]. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 43,
+    "dish_name": "Shrimp Salad with Tomato Bruschetta",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Radish",
+      "Shrimp",
+      "Bread",
+      "Basil Leaf, fresh",
+      "Dill, fresh",
+      "Sour Cream",
+      "Lemon Juice",
+      "Mustard",
+      "Olive Oil",
+      "Balsamic Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Dill, dried",
+      "Cayenne Pepper, powder",
+      "Garlic, dried"
+    ],
+    "recipe": {"Shrimp Salad":"Add to a Baking Tray: Shrimp [80g]. Bake for 70s. Add to a Bowl: Sour Cream [25ml], Lemon Juice [5ml], Mustard [5ml], Dill, dried [8g], Cayenne Pepper, powder [4g], Salt [3g]. Transfer onto a Plate: Onion [120g], Radish [30g]. Drizzle with Mixture [20ml]. Cut: Onion into Pieces [15g], Radish into Halves [~8g]. Transfer everything onto a Plate. Serve cool.",
+    "Bruschetta":"Take Bread [70g]. Drizzle with Olive Oil [5ml]. Season with Garlic, dried [5g]. Cut Bread into Halves [35g]. Bake for 30s. Serve hot.",
+    "Tomato Dressing":"Transfer onto a Plate: Tomato [120g], Garlic [10g]. Drizzle in: Olive Oil [15ml], Balsamic Vinegar [10ml]. Season with: Salt [5g], Black Pepper [5g]. Cut: Tomato into Pieces [15g], Garlic into Halves [5g]. Transfer onto the Plate. Add Basil Leaf, fresh [6g]. Serve cool.",
+    "Dill Garnish":"Garnish with Dill, fresh [5g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 44,
+    "dish_name": "Fried Garlic Shrimp",
+    "ingredients": [
+      "Garlic",
+      "Shrimp",
+      "Lemon",
+      "Bread",
+      "Parsley Leaves, fresh",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Cayenne Pepper, powder",
+      "Lemon Pepper"
+    ],
+    "recipe": {"Fried Garlic Shrimp":"Cut Garlic [20g] into Halves [5g]. Add to a Pan: Shrimp [120g]. Fry for 30s. Add to the Pan: Clarified Butter [30ml], Parsley Leaves, fresh [6g], Salt [10g], Lemon Pepper [10g], Garlic. Fry for 20s. Drizzle with Lemon Juice [6ml]. Season with Cayenne Pepper, powder [6g]. Transfer onto a Plate: Garlic, Parsley Leaves, fresh, Shrimp. Serve hot.",
+    "Croutons":"Take Bread [100g]. Drizzle in Olive Oil [10ml]. Cut Bread into Pieces [20g]. Fry for 30s. Transfer onto a Plate. Serve hot.",
+    "Lemon Quarters":"Cut Lemon [80g] into Quarters [20g]. Transfer onto a Plate."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 45,
+    "dish_name": "German Potato Salad",
+    "ingredients": [
+      "Onion",
+      "Potato",
+      "Chives",
+      "Water",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "White Vinegar",
+      "Mustard",
+      "Salt",
+      "Sugar",
+      "White Pepper"
+    ],
+    "recipe": {"Potato Salad":"Add to a Pot: Water [1000ml], Salt [20g], Potato [300g]. Boil for 120s. Cut: Onion [120g] into Pieces [15g], Potato [300g] into Pieces [15g]. Add to a Pot: Chicken Broth [500ml], White Vinegar [20ml], Salt [10g], White Pepper [10g], Sugar [10g], Mustard [10ml], Onion. Boil for 60s. Transfer into a Casserole: Potato, Onion. Drizzle in Sunflower Oil [20ml]. Serve warm.",
+    "Chives Garnish":"Garnish with Chives [8g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 46,
+    "dish_name": "Smokey German Potato Salad",
+    "ingredients": [
+      "Onion",
+      "Potato",
+      "Bacon",
+      "Chives",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "White Vinegar",
+      "Mustard",
+      "Salt",
+      "Sugar",
+      "White Pepper"
+    ],
+    "recipe": {"Smokey Potato Salad":"Take Potato [300g]. Grill for 40s. Cut Potato into Pieces [25g]. Add to a Pan: Bacon [120g]. Fry for 60s. Cut Onion [120g] into Pieces [15g]. Add to a Pot: Chicken Broth [500ml], White Vinegar [20ml], Salt [10g], White Pepper [10g], Sugar [10g], Mustard [10ml], Onion. Boil for 50s. Add to the Pot: Bacon [120g]. Boil for 40s. Transfer into a Casserole: Potato, Bacon, Onion. Drizzle in Sunflower Oil [20ml]. Serve warm.",
+    "Chives Garnish":"Garnish with Chives [8g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 47,
+    "dish_name": "Baked Cod with Greek Salad",
+    "ingredients": [
+      "Tomato",
+      "Cucumber",
+      "Onion",
+      "Cod",
+      "Goat Cheese",
+      "Green Bell Pepper",
+      "Parsley Leaves, fresh",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Oregano, dried",
+      "Sweet Bell Pepper, powder",
+      "Cumin, powder"
+    ],
+    "recipe": {"Baked Cod":"Add to a Bowl: Clarified Butter [5ml], Lemon Juice [5ml], Olive Oil [5ml]. Take Cod [160g]. Season with: Salt [3g]. Black Pepper [3g], Sweet Bell Pepper, powder [5g], Cumin, powder [5g]. Add to the Pan: Olive Oil [20ml], Cod. Fry for 35s. Drizzle in Mixture [15ml]. Transfer onto the Baking Tray. Bake for 45s. Transfer onto a Plate. Serve hot.",
+    "Greek Salad":"Cut: Green Bell Pepper [120g] into Pieces [15g], Cucumber [80g] into Quarters [20g], Onion [120g] into Pieces [10g], Tomato [120g] into Quarters [30g]. Transfer onto a Plate. Add Goat Cheese [40g]. Season with: Salt [10g], Oregano, dried [10g]. Drizzle in Olive Oil [10ml]. Serve cool.",
+    "Parsley Garnish":"Garnish with Parsley Leaves,fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 48,
+    "dish_name": "Grilled Tuna Steak",
+    "ingredients": [
+      "Lemon",
+      "Tuna",
+      "Oregano Twig",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Grilled Tuna Steak":"Take Tuna [200g]. Season with: Salt [5g], Black Pepper [5g]. Grill for 80s each side. Transfer onto the Plate. Serve hot.",
+    "Lemon Slices":"Cut Lemon [80g] into Quarters [20g]. Transfer onto the Plate.",
+    "Oregano Garnish":"Garnish with Oregano Twig [8g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 49,
+    "dish_name": "Grilled Tuna Steak with Orange Salad",
+    "ingredients": [
+      "Onion",
+      "Orange",
+      "Tuna",
+      "Oregano Twig",
+      "White Vinegar",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Thyme, dried"
+    ],
+    "recipe": {"Grilled Tuna Steak":"Take Tuna [200g]. Season with: Salt [5g], Black Pepper [5g], Thyme, dried [5g]. Grill for 80s each side. Transfer onto the Plate: Serve hot.",
+    "Sicilian Orange Salad":"Cut: Orange [100g] into Pieces [20g], Onion [60g] into Quarters [15g]. Season with: Salt [5g], Black Pepper [5g]. Add to a Bowl: Olive Oil [20ml], White Vinegar [10ml]. Drizzle in Mixture. Transfer onto the Plate. Serve cool.",
+    "Oregano Garnish":"Garnish with Oregano Twig [8g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 50,
+    "dish_name": "Salmon with Asparagus",
+    "ingredients": [
+      "Asparagus",
+      "Salmon Fillet",
+      "Water",
+      "Lemon Juice",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Salmon Fillet":"Take Salmon Fillet [210g]. Season with: Salt [5g], Black Pepper [5g]. Fry for 60s each side. Transfer onto the Plate. Drizzle in Lemon Juice [5ml]. Serve hot.",
+    "Boiled Asparagus":"Add to a Pot: Water [1000ml], Salt [20g], Asparagus [80g]. Boil for 100s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 51,
+    "dish_name": "Salmon in Butter Sauce with Asparagus",
+    "ingredients": [
+     "Asparagus",
+     "Salmon Fillet",
+     "Parsley Leaves, fresh",
+     "Sour Cream",
+     "Lemon Juice",
+     "Clarified Butter",
+     "Salt",
+     "Black Pepper"
+    ],
+    "recipe": {"Salmon Fillet":"Take Salmon Fillet [210g]. Season with: Salt [5g], Black Pepper [5g]. Fry for 60s each side. Add to a Pot: Lemon Juice [10ml], Sour Cream [20ml], Clarified Butter [15ml]. Boil for 30s. Add to the Pot: Salt [5g], Black Pepper [5g], Parsley Leaves, fresh [8g]. Boil for 30s. Transfer onto the Plate: Salmon Fillet. Drizzle in Mixture. Serve hot.",
+    "Grilled Asparagus":"Take Asparagus [80g]. Grill for 100s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 52,
+    "dish_name": "Salmon Steak and Boiled Potatoes",
+    "ingredients": [
+      "Potato",
+      "Salmon Fillet",
+      "Water",
+      "Sunflower Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Salmon Steak":"Take Salmon Fillet [210g]. Season with: Salt [5g], Black Pepper [5g]. Add to the Pan: Sunflower Oil [10ml], Salmon Fillet. Fry for 60s each side. Transfer onto the Plate. Serve hot.",
+    "Boiled Potatoes":"Add to a Pot: Water [1000ml], Salt [20g], Potato [300g]. Boil for 120s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 53,
+    "dish_name": "Salmon Steak, Potatoes, Grilled Tomatoes",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Potato",
+      "Salmon Fillet",
+      "Dill, fresh",
+      "Water",
+      "Clarified Butter",
+      "Avocado Oil",
+      "Salt",
+      "Black Pepper",
+      "Rosemary, dried",
+      "Thyme, dried"
+    ],
+    "recipe": {"Salmon Steak":"Take Salmon Fillet [210g]. Season with: Salt [5g], Black Pepper [5g], Thyme, dried [5g], Rosemary, dried [5g]. Add to the Pan: Avocado Oil [10ml], Salmon Fillet. Fry for 60s each side. Transfer onto the Plate. Serve hot.",
+    "Boiled Potatoes":"Cut: Potato [300g] into Halves [75g], Onion [120g] into Quarters [30g], Garlic [20g] into Halves [5g]. Add to a Pot: Water [1000ml], Salt [20g], Potato. Boil for 120s. Add to a Pan: Clarified Butter [20ml], Onion, Garlic. Fry for 30s. Transfer onto a Plate: Potato. Drizzle in Mixture. Serve hot.",
+    "Grilled Tomatoes":"Take Tomato [240g]. Grill for 70s. Transfer onto a Plate. Serve hot.",
+    "Dill Garnish":"Garnish with Dill, fresh [5g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 54,
+    "dish_name": "Fried Shrimp Boil",
+    "ingredients": [
+      "Potato",
+      "Cob of Corn",
+      "Shrimp",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "Ginger",
+      "Allspice, powder",
+      "Bay Leaf, dried",
+      "Cayenne Pepper, powder",
+      "Cinnamon, ground",
+      "Garlic, dried",
+      "Nutmeg, powder"
+    ],
+    "recipe": {"Fried Shrimp Boil":"Cut: Potato [300g] into Halves [75g], Cob of Corn [180g] into Pieces [30g]. Add to the Pot: Water [300ml], Lemon Juice [100ml], Salt [10g], Black Pepper [10g], Allspice, powder [10g], Cinnamon, ground [10g], Bay Leaf, dried [8g], Nutmeg, powder [8g], Sweet Bell Pepper, powder [8g], Garlic, dried [5g], Cayenne Pepper, powder [5g], Ginger [10g], Potato, Cob of Corn. Boil for 60s. Drain. Add to a Pan: Clarified Butter [15ml], Shrimp [120g], Potato, Cob of Corn. Fry for 50s. Transfer into a Deep Plate: Shrimp, Potato, Cob of Corn, Mixture. Serve hot.",
+    "Parsley Garnish":"Garnish with Parsley Leaves,fresh [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 55,
+    "dish_name": "Baked Shrimp Boil",
+    "ingredients": [
+      "Potato",
+      "Cob of Corn",
+      "Shrimp",
+      "Lemon",
+      "Parsley Leaves, fresh",
+      "Sausage",
+      "Water",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "Ginger",
+      "Allspice, powder",
+      "Bay Leaf, dried",
+      "Cayenne Pepper, powder",
+      "Cinnamon, ground",
+      "Garlic, dried",
+      "Nutmeg, powder"
+    ],
+    "recipe": {"Baked Shrimp Boil":"Cut: Potato [300g] into Halves [75g], Cob of Corn [180g] into Pieces [30g], Lemon [80g] into Pieces [10g], Sausage [240g] into Pieces [24g]. Add to the Pot: Water [300ml], Salt [10g], Black Pepper [10g], Bay Leaf, dried [8g], Garlic, dried [5g], Sweet Bell Pepper, powder [8g], Cayenne Pepper, powder [5g], Nutmeg, powder [8g], Cinnamon, ground [10g], Allspice, powder [10g], Ginger [10g], Potato, Cob of Corn. Boil for 60s. Drain. Add to a Baking Tray: Shrimp [120g], Cob of Corn, Potato, Lemon, Sausage. Bake for 80s. Transfer onto a Plate. Serve hot.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 56,
+    "dish_name": "Chicken Leg with Caprese Salad",
+    "ingredients": [
+      "Tomato",
+      "Chicken Leg",
+      "Mozzarella",
+      "Basil Leaf, fresh",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Cumin, powder",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Baked Chicken Leg":"Take Chicken Leg [180g]. Season with: Salt [3g], Black Pepper [3g], Cayenne Pepper, powder [3g], Cumin, powder [3g]. Place on a Baking Tray. Bake for 120s. Transfer onto a Plate. Serve hot.",
+    "Caprese Salad":"Cut: Tomato [120g] into Pieces [20g], Mozzarella [160g] into Pieces [16g]. Season with: Salt [5g], Black Pepper [5g]. Drizzle in Olive Oil [10ml]. Transfer onto a Plate. Serve cool.",
+    "Basil Garnish":"Garnish with Basil Leaf, fresh [9g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 57,
+    "dish_name": "Marinated Chicken Leg with Caprese Salad",
+    "ingredients": [
+      "Tomato",
+      "Chicken Leg",
+      "Mozzarella",
+      "Basil Leaf, fresh",
+      "Honey",
+      "Olive Oil",
+      "Balsamic Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "Garlic, dried"
+    ],
+    "recipe": {"Marinated Chicken Leg":"Add to a Bowl: Olive Oil [20ml], Sweet Bell Pepper, powder [3g], Garlic, dried [3g], Salt [3g], Black Pepper [3g]. Take Chicken Leg [180g]. Drizzle in Mixture. Transfer onto the Baking Tray. Bake for 120s. Transfer onto a Plate. Serve hot.",
+    "Caprese Salad":"Add to a Bowl: Honey [15ml], Balsamic Vinegar [10ml], Olive Oil [15ml], Salt [7g], Black Pepper [7g]. Cut: Tomato [120g] into Pieces [20g], Mozzarella [160g] into Pieces [16g]. Transfer onto a Plate. Drizzle in Mixture. Serve cool.",
+    "Balsamic Garnish":"Garnish with Basil Leaf, fresh [9g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 58,
+    "dish_name": "Hamburger",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Burger Meat",
+      "Top Burger Bun",
+      "Bottom Burger Bun",
+      "Cheddar",
+      "Ketchup",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Hamburger":"Add to a Baking Tray: Top Burger Bun [40g], Bottom Burger Bun [40g]. Bake for 30s. Take Burger Meat [112g]. Season with: Salt [3g], Black Pepper [3g]. Fry for 50s each side. Drizzle in Ketchup [10ml]. Transfer onto a Plate: Bottom Burger Bun, Burger Meat, Cheddar [25g], Tomato [20g], Onion [20g], Top Burger Bun. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 59,
+    "dish_name": "Honey-Mustard Burger with French Fries",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Potato",
+      "Burger Meat",
+      "Top Burger Bun",
+      "Bottom Burger Bun",
+      "Cheddar",
+      "Honey",
+      "White Vinegar",
+      "Ketchup",
+      "Mustard",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Honey-Mustard Hamburger":"Add to the Bowl: Honey [10ml]. Olive Oil [15ml], White Vinegar [5ml], Mustard [10ml], Black Pepper [4g], Salt [4g], Add to a Baking Tray: Bottom Burger Bun [40g], Top Burger Bun [40g]. Bake for 30s. Take Burger Meat [112g]. Season with: Salt [3g], Black Pepper [3g]. Fry for 50s each side. Drizzle in Mixture [15ml]. Transfer onto a Plate: Bottom Burger Bun, Burger Meat, Cheddar [25g], Tomato [20g], Onion [20g], Top Burger Bun. Serve hot.",
+    "French Fries":"Cut Potato [300g] into Pieces [15g]. Deep fry for 30s. Season with Salt [4g]. Drizzle in Ketchup [10ml]. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 60,
+    "dish_name": "Duck Breast with Apples",
+    "ingredients": [
+      "Duck Breast",
+      "Apple",
+      "Sage Leaf, fresh",
+      "Sunflower Oil",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Sugar"
+    ],
+    "recipe": {"Fried Duck Breast":"Take Duck Breast [280g]. Season with: Salt [3g], Black Pepper [3g], Sugar [3g]. Add to the Pan: Sunflower Oil [10ml], Sage Leaf, fresh [6g], Duck Breast. Fry for 100s each side. Transfer onto a Plate: Duck Breast. Cut Apple [150g] into Quarters [~38g]. Transfer into a Plastic Bowl. Drizzle in Lemon Juice [8ml]. Add to the Pan: Clarified Butter [10ml], Apple. Fry for 45s. Transfer onto a Plate: Duck Breast, Apple. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 61,
+    "dish_name": "Duck Breast with Roasted Mushrooms",
+    "ingredients": [
+      "Duck Breast",
+      "Apple",
+      "Button Mushroom",
+      "Sage Leaf, fresh",
+      "Sunflower Oil",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Sugar",
+      "Garlic, dried"
+    ],
+    "recipe": {"Fried Duck Breast":"Take Duck Breast [280g]. Season with: Salt [3g], Black Pepper [3g], Sugar [3g]. Add to the Pan: Sunflower Oil [10ml], Sage Leaf, fresh [6g], Duck Breast. Fry for 100s each side. Transfer onto a Plate: Duck Breast [280g]. Cut Apple [150g] into Quarters [~38g]. Transfer into a Plastic Bowl. Drizzle in Lemon Juice [8ml]. Add to the Pan: Clarified Butter [10ml], Apple. Fry for 45s. Add: Apple, Duck Breast. Serve hot.",
+    "Roasted Mushrooms":"Add to a Bowl: Olive Oil [40ml], Salt [5g], Black Pepper [5g], Garlic, dried [5g]. Take Button Mushroom [50g]. Drizzle in Mixture [16ml]. Cut Button Mushroom into Pieces [10g]. Transfer onto a Baking Tray. Bake for 100s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 62,
+    "dish_name": "Grilled Beef Chuck with Baked Potatoes",
+    "ingredients": [
+      "Potato",
+      "Beef Chuck",
+      "Rosemary Twig",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "Cilantro Leaves, dried",
+      "Rosemary, dried",
+      "Chili Flakes",
+      "Marjoram, dried"
+    ],
+    "recipe": {"Grilled Beef Chuck":"Take Beef Chuck [200g]. Season with: Sweet Bell Pepper, powder [4g], Marjoram, dried [4g], Cilantro Leaves, dried [4g], Rosemary, dried [4g], Black Pepper [4g], Chili Flakes [4g]. Cut Beef Chuck into Halves [100g]. Grill for 180s. Transfer onto a Plate. Serve hot.",
+    "Baked Potatoes":"Add to a Baking Tray: Potato [300g]. Bake for 80s. Transfer onto a Plate. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 63,
+    "dish_name": "Beef Chuck with Potatoes and Garlic Sauce",
+    "ingredients": [
+      "Garlic",
+      "Potato",
+      "Beef Chuck",
+      "Rosemary Twig",
+      "Sunflower Oil",
+      "Sour Cream",
+      "Mustard",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "Dill, dried",
+      "Cilantro Leaves, dried",
+      "Rosemary, dried",
+      "Chili Flakes",
+      "Marjoram, dried"
+    ],
+    "recipe": {"Grilled Beef Chuck":"Add to a Bowl: Sunflower Oil [10ml], Mustard [10ml], Marjoram, dried [2g], Cilantro Leaves, dried [2g], Sweet Bell Pepper, powder [2g], Rosemary, dried [2g], Black Pepper [2g], Chili Flakes [2g]. Cut Beef Chuck [200g] into Halves [100g]. Drizzle in Mixture. Grill for 180s. Transfer onto a Plate. Serve hot.",
+    "Garlic Sauce":"Cut Garlic [20g] into Halves [5g]. Add to a Bowl: Sour Cream [50ml], Dill, dried [5g], Garlic [20g].",
+    "Baked Potatoes":"Add to a Baking Tray: Potato [300g]. Bake for 80s. Transfer onto a Plate. Drizzle in Garlic Sauce [25ml]. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 64,
+    "dish_name": "Pork Chops and Lemon Baked Potatoes",
+    "ingredients": [
+      "Potato",
+      "Pork Chops",
+      "Oregano Twig",
+      "Thyme Twig",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "Lemon Juice",
+      "Milk",
+      "Salt",
+      "Black Pepper",
+      "Thyme, dried"
+    ],
+    "recipe": {"Pork Chops":"Add to a Bowl: Milk [15ml], Salt [7g], Black Pepper [7g], Thyme, dried [15g]. Take Pork Chops [200g]. Drizzle in Mixture. Add to the Pan: Sunflower Oil [10ml], Pork Chops. Fry for 90s each side. Transfer onto a Plate. Serve hot.",
+    "Lemon Baked Potatoes":"Take Potato [300g]. Season with: Salt [15g], Black Pepper [9g]. Add to a Baking Tray: Potato. Bake for 40s. Add to a Bowl: Chicken Broth [50ml], Lemon Juice [50ml]. Take Potato. Drizzle in Mixture [100ml]. Cut Potato into Halves [75g]. Add to a Baking Tray: Oregano Twig [12g], Potato. Bake for 40s. Transfer onto a Plate: Potato. Serve hot.",
+    "Thyme Garnish":"Garnish with Thyme Twig [20g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 65,
+    "dish_name": "Pork Tenderloin in Mustard Sauce",
+    "ingredients": [
+      "Carrot",
+      "Beetroot",
+      "Pork Tenderloin",
+      "Rosemary Twig",
+      "Chives",
+      "Red Wine",
+      "Sour Cream",
+      "Soy Sauce",
+      "Mustard",
+      "Sugar",
+      "Nutmeg, powder"
+    ],
+    "recipe": {"Pork Tenderloin":"Add to a Bowl: Red Wine [50ml], Soy Sauce [30ml], Sugar [10g]. Take Pork Tenderloin [250g]. Drizzle in Mixture [20ml]. Place on a Baking Tray. Bake for 130s. Cut Pork Tenderloin into Pieces [25g]. Transfer onto a Plate. Serve hot.",
+    "Mustard Sauce":"Add to a Pot: Sour Cream [50ml], Mustard [20ml], Nutmeg, powder [8g], Chives [12g]. Boil for 60s. Transfer onto a Plate: Pork Tenderloin. Drizzle in Mixture [20ml].",
+    "Caramelized Vegetables":"Cut: Beetroot [120g] into Pieces [20g], Carrot [140g] into Pieces [14g]. Fry for 80s. Transfer onto a Plate. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 66,
+    "dish_name": "Steak with Barbecue Sauce and Vegetables",
+    "ingredients": [
+      "Zucchini",
+      "Steak",
+      "Carrot",
+      "Button Mushroom",
+      "Red Bell Pepper",
+      "Green Bell Pepper",
+      "Yellow Bell Pepper",
+      "Rosemary Twig",
+      "Water",
+      "Ketchup",
+      "Mustard",
+      "Wine Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Sugar",
+      "Sweet Bell Pepper, powder",
+      "Chili Flakes"
+    ],
+    "recipe": {"Steak":"Take Steak [220g]. Season with: Salt [5g], Black Pepper [5g]. Fry for 45s each side. Transfer onto a Plate. Serve hot.",
+    "Barbecue Sauce":"Add to a Bowl: Ketchup [20ml], Wine Vinegar [10ml], Mustard [5ml], Water [5ml], Sugar [5g], Sweet Bell Pepper, powder [5g], Chili Flakes [5g], Salt [3g], Black Pepper [3g]. Take Steak. Drizzle in Mixture [40ml].",
+    "Deep-fried vegetables":"Cut: Red Bell Pepper [80g] into Quarters [20g], Yellow Bell Pepper [80g] into Quarters [20g], Green Bell Pepper [80g] into Quarters [20g], Carrot [70g] into Pieces [14g], Zucchini [150g] into Quarters [~38g], Button Mushroom [50g] into Halves [25g]. Deep fry for 45s. Transfer onto a Plate. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [5g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 67,
+    "dish_name": "Blended Fusilli Aglio, Olio e Peperoncino",
+    "ingredients": [
+      "Fusilli",
+      "Garlic",
+      "Chili Pepper",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Olive Oil",
+      "Salt",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Pasta":"Add to a Pot: Water [1000ml], Salt [5g], Fusilli [160g]. Boil for 30s. Transfer into a Casserole. Reserve Water. Add to a Pot: Water [500ml], Garlic [40g]. Boil for 30s. Add to the Food Processor: Olive Oil [20ml], Garlic. Blend. Add to a Pan: Mixture [48ml], Water (reserve) [50ml], Cayenne Pepper, powder [5g], Parsley Leaves, fresh [4g], Fusilli. Boil for 30s. Transfer into a Casserole: Mixture [98ml], Fusilli, Parsley Leaves, fresh. Serve hot.",
+    "Diced Chili Pepper":"Cut Chili Pepper [60g] into Quarters [~8g]. Transfer into a Casserole."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 68,
+    "dish_name": "Fast Beef Stroganoff over Fusilli",
+    "ingredients": [
+      "Onion",
+      "Fusilli",
+      "Button Mushroom",
+      "Beef Chuck",
+      "Water",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "White Pepper"
+    ],
+    "recipe": {"Fusilli":"Add to a Pot: Water[1000ml], Salt [5g], Fusilli [160g]. Boil for 60s. Transfer into the Casserole.",
+    "Fast Beef Stroganoff":"Cut: Beef Chuck [150g] into Pieces [50g], Onion [120g] into Pieces [15g], Button Mushroom [25g] into Pieces [~8g]. Add to a Pan: Olive Oil [20ml], Beef Chuck. Fry for 100s. Transfer onto a Plate: Beef Chuck. Add to the Pan: Clarified Butter [20ml], White Pepper [5g], Button Mushroom. Fry for 30s. Add to the Pan: Chicken Broth [150ml], Black Pepper [3g], Beef Chuck, Onion. Boil for 60s. Transfer into the Casserole: Beef Chuck, Onion, Button Mushroom. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 69,
+    "dish_name": "Fast Beef Stroganoff over Buttered Fusilli",
+    "ingredients": [
+      "Onion",
+      "Fusilli",
+      "Button Mushroom",
+      "Beef Chuck",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "White Pepper"
+    ],
+    "recipe": {"Buttered Noodles":"Add to a Pot: Water [1000ml], Salt [5g], Fusilli [150g]. Boil for 40s. Add to a Pan: Clarified Butter [20ml], Fusilli. Fry for 15s. Transfer into a Casserole.",
+    "Beef Stroganoff":"Cut: Beef Chuck [150g] into Pieces [50g], Onion [120g] into Pieces [15g], Button Mushroom [25g] into Pieces [~8g]. Add to a Pan: Olive Oil [20ml], Beef Chuck. Fry for 100s. Transfer onto a Plate: Beef Chuck. Add to the Pan: Clarified Butter [20ml], Sweet Bell Pepper, powder [3g], White Pepper [5g], Button Mushroom. Fry for 30s. Add to the Pan: Chicken Broth [150ml], Black Pepper [3g], Onion, Beef Chuck. Boil for 60s. Transfer into a Deep Plate: Onion, Beef Chuck, Button Mushroom. Serve hot.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 70,
+    "dish_name": "Beef Stroganoff over Buttered Fusilli",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Fusilli",
+      "Button Mushroom",
+      "Beef Chuck",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder",
+      "White Pepper",
+      "Bay Leaf, dried"
+    ],
+    "recipe": {"Buttered Noodles":"Add to a Pot: Water [1000ml], Salt [5g], Fusilli [150g]. Boil for 40s. Add to a Pan: Clarified Butter [10ml], Fusilli. Fry for 15s. Transfer into a Casserole.",
+    "Beef Stroganoff":"Cut: Beef Chuck [150g] into Pieces [50g], Onion [120g] into Pieces [15g], Button Mushroom [25g] into Pieces [~8g], Tomato [120g] into Pieces [15g]. Add to a Pan: Olive Oil [20ml], Beef Chuck. Fry for 100s. Transfer onto a Plate: Beef Chuck. Add to the Pan: Clarified Butter [20ml], Sweet Bell Pepper, powder [3g], White Pepper [5g], Button Mushroom. Fry for 30s. Add to the Pan: Chicken Broth [150ml], Black Pepper [3g], Bay Leaf, dried [6g], Onion, Tomato, Beef Chuck. Boil for 60s. Transfer into the Casserole: Onion, Tomato, Beef Chuck, Button Mushroom. Serve hot.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 71,
+    "dish_name": "Fusilli with Neapolitan Sauce",
+    "ingredients": [
+      "Tomato",
+      "Fusilli",
+      "Garlic",
+      "Basil Leaf, fresh",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Olive Oil",
+      "Salt",
+      "Sugar"
+    ],
+    "recipe": {"Fusili":"Add to a Pot: Water [1000ml], Salt [5g], Fusilli [160g]. Boil for 60s. Transfer into a Casserole.",
+    "Neapolitan Sauce":"Cut: Tomato [120g] into Pieces [15g], Garlic [10g] into Halves [5g]. Add to a Pan: Olive Oil [20ml], Parsley Leaves, fresh [4g], Tomato. Fry for 23s. Add to the Pan: Water [100ml], Sugar [3g], Salt [5g], Basil Leaf, fresh [3g], Garlic. Fry for 30s. Transfer into a Casserole: Mixture, Tomato, Garlic. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 72,
+    "dish_name": "Fusilli with Blended Neapolitan Sauce",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Fusilli",
+      "Garlic",
+      "Basil Leaf, fresh",
+      "Oregano Twig",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Red Wine",
+      "Olive Oil",
+      "Balsamic Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Sugar",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Fusilli":"Add to a Pot: Water [1000ml], Salt [5g], Fusilli [160g]. Boil for 60s. Transfer into a Casserole.",
+    "Blended Neapolitan Sauce":"Cut: Garlic [10g] into Halves [5g], Onion [120g] into Pieces [20g]. Add to a Pan: Olive Oil [20ml], Garlic, Onion. Fry for 30s. Transfer into the Food Processor. Add: Water [100ml], Tomato [120g]. Blend. Transfer into a Pot. Add to a Pot: Red Wine [10ml], Balsamic Vinegar [10ml], Sugar [3g], Black Pepper[5g], Cayenne Pepper, powder [3g], Parsley Leaves, fresh [4g], Basil Leaf, fresh [3g]. Boil for 90s. Transfer into a Casserole: Mixture. Serve hot.",
+    "Oregano Garnish":"Garnish with Oregano Twig [8g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 73,
+    "dish_name": "Fast Pasta alla Genovese",
+    "ingredients": [
+      "Onion",
+      "Carrot",
+      "Parsley Root",
+      "Penne",
+      "Beef Chuck",
+      "Water",
+      "Chicken Broth",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Pasta":"Add to a Pot: Water[1000ml], Salt [5g], Penne [150g]. Boil for 60s. Transfer into a Casserole.",
+    "Sauce":"Cut: Beef Chuck [160g] into Quarters [40g], Carrot [70g] into Pieces [14g], Parsley Root [80g] into Pieces [16g], Onion [120g] into Pieces [15g]. Add to a Pan: Olive Oil [20ml], Beef Chuck. Fry for 70s. Add to the Pan: Carrot, Parsley Root. Fry for 40s. Add to the Pan: Onion. Fry for 20s. Add to the Pan: Chicken Broth [100ml], Black Pepper [5g]. Fry for 20s. Transfer into a Casserole: Mixture, Onion, Carrot, Parsley Root, Beef Chuck. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 74,
+    "dish_name": "Pasta alla Genovese",
+    "ingredients": [
+      "Onion",
+      "Carrot",
+      "Parsley Root",
+      "Penne",
+      "Beef Chuck",
+      "Sage Leaf, fresh",
+      "Bay Leaf, fresh",
+      "Water",
+      "Chicken Broth",
+      "White Wine",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Cumin, powder"
+    ],
+    "recipe": {"Pasta":"Add to a Pot: Water [1000ml], Salt [5g], Penne [150g]. Boil for 60s. Transfer into a Casserole.",
+    "Sauce":"Take Beef Chuck [160g]. Season with Cumin, powder [5g]. Cut: Carrot [70g] into Pieces [14g], Parsley Root [80g] into Pieces [16g], Onion [120g] into Pieces [15g], Beef Chuck into Quarters [40g]. Add to the Pan: Olive Oil [20ml], Beef Chuck. Fry for 70s. Add to the Pan: Carrot, Parsley Root. Fry for 40s. Add to the Pan: Onion. Fry for 20s. Add to the Pan: Chicken Broth [100ml], Black Pepper [5g], Bay Leaf, fresh [6g]. Boil for 20s. Add to the Pan: White Wine [10ml]. Transfer into a Casserole: Mixture, Onion, Carrot, Parsley Root, Beef Chuck. Serve hot.",
+    "Sage Garnish":"Garnish with Sage Leaf, fresh [3g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 75,
+    "dish_name": "Penne in Broccoli Sauce",
+    "ingredients": [
+      "Onion",
+      "Penne",
+      "Broccoli",
+      "Rosemary Twig",
+      "Water",
+      "Sour Cream",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Pasta":"Add to a Pot: Water [1000ml], Salt [5g], Penne [150g]. Boil for 60s. Transfer into a Casserole. Serve hot.",
+    "Sauce":"Add to a Pot: Water [1000ml], Salt [5g], Broccoli [150g]. Boil for 85s. Cut Onion [120g] into Pieces [15g]. Add to a Pan: Clarified Butter [10ml], Rosemary Twig [5g], Onion. Fry for 30s. Add to the Pan: Sour Cream [40ml], Black Pepper [3g]. Salt [3g], Broccoli. Fry for 15s. Transfer into a Casserole: Mixture, Broccoli, Onion, Rosemary Twig. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 76,
+    "dish_name": "Penne in Broccoli and Mushroom Sauce",
+    "ingredients": [
+      "Onion",
+      "Penne",
+      "Broccoli",
+      "Button Mushroom",
+      "Rosemary Twig",
+      "Water",
+      "Sour Cream",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Pasta":"Add to a Pot: Water [1000ml], Salt [5g], Penne [150g]. Boil for 45s. Transfer into a Casserole.",
+    "Sauce":"Add to a Pot: Water [1000ml], Salt [5g], Broccoli [150g]. Boil for 85s. Cut: Onion [120g] into Pieces [15g], Button Mushroom [25g] into Pieces [~8g]. Add to a Pan: Clarified Butter [10ml], Rosemary Twig [5g], Onion, Button Mushroom. Fry for 30s. Add to the Pan: Sour Cream [40ml], Black Pepper [3g], Salt [3g], Broccoli, Pasta. Fry for 15s. Transfer into a Casserole: Mixture, Pasta, Broccoli, Onion, Button Mushroom, Rosemary Twig. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 77,
+    "dish_name": "Penne in Salmon Sauce",
+    "ingredients": [
+      "Onion",
+      "Penne",
+      "Salmon Fillet",
+      "Chives",
+      "Water",
+      "Sour Cream",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "White Pepper"
+    ],
+    "recipe": {"Pasta":"Add to a Pot: Water [1000ml], Salt [5g], Penne [150g]. Boil for 60s. Transfer into a Casserole.",
+    "Sauce":"Cut: Salmon Fillet [210g] into Pieces [~26g], Onion [120g] into Pieces [15g]. Add to a Pan: Clarified Butter [30ml], Salmon Fillet. Fry for 30s. Add to the Pan: Sour Cream [40ml], White Pepper [3g], Black Pepper [3g], Chives [2g], Onion. Fry for 30s. Transfer into a Casserole: Mixture, Chives, Onion, Salmon Fillet. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 78,
+    "dish_name": "Penne in Fragrant Salmon Sauce",
+    "ingredients": [
+      "Onion",
+      "Penne",
+      "Salmon Fillet",
+      "Rosemary Twig",
+      "Chives",
+      "Water",
+      "Sour Cream",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Cayenne Pepper, powder",
+      "Nutmeg, powder"
+    ],
+    "recipe": {"Pasta":"Add to a Pot: Water [1000ml], Salt [5g], Penne [150g]. Boil for 60s. Transfer into a Casserole.",
+    "Sauce":"Cut: Salmon Fillet [210g] into Pieces [~26g], Onion [120g] into Pieces [15g]. Add to a Pan: Clarified Butter [30ml], Salmon Fillet. Fry for 30s. Add to the Pan: Sour Cream [40ml], Cayenne Pepper, powder [3g], Black Pepper[3g], Nutmeg, powder [3g], Chives [2g], Onion. Boil for 30s. Add to the Pan: Lemon Juice [10ml]. Transfer into a Casserole: Mixture, Onion, Salmon Fillet. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [5g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 79,
+    "dish_name": "Fast Caldo Verde",
+    "ingredients": [
+      "Onion",
+      "Garlic",
+      "Potato",
+      "Brussels Sprouts",
+      "Sausage",
+      "Chicken Broth",
+      "Olive Oil"
+    ],
+    "recipe": {"Caldo Verde":"Add to a Pot: Chicken Broth [1000ml], Olive Oil [30ml], Potato [300g], Onion [120g], Garlic [10g]. Boil for 60s. Blend. Cut Brussels Sprouts [120g] into Halves [~8g]. Add to the Pot: Brussels Sprouts. Boil for 100s. Cut Sausage [240g] into Pieces [20g]. Add to a Pan: Sausage. Fry for 75s. Each serving consists of Soup [300ml], Brussels Sprouts [30g], Sausage [40g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 80,
+    "dish_name": "Caldo Verde",
+    "ingredients": [
+      "Onion",
+      "Garlic",
+      "Potato",
+      "Broccoli",
+      "Bacon",
+      "Brussels Sprouts",
+      "Sausage",
+      "Chicken Broth",
+      "Olive Oil"
+    ],
+    "recipe": {"Caldo Verde":"Add to a Pot: Chicken Broth [1000ml], Olive Oil [30ml], Potato [300g], Onion [120g]. Garlic [10g]. Boil for 60s. Blend. Cut Brussels Sprouts [120g] into Halves [~8g]. Add to the Pot: Broccoli [200g], Brussels Sprouts. Boil for 60s. Cut Sausage [240g] into Pieces [20g]. Add to a Pan: Sausage. Fry for 30s. Add to a Pot: Sausage. Boil for 40s. Add to a Pan: Bacon [60g]. Fry for 60s. Each serving consists of Soup [300ml], Brussels Sprouts [30g], Broccoli [50g], Sausage [40g], Bacon [60g]. Serve hot"
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 81,
+    "dish_name": "Corn Chowder",
+    "ingredients": [
+      "Onion",
+      "Potato",
+      "Cob of Corn",
+      "Carrot",
+      "Chicken Broth",
+      "Sour Cream",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Thyme, dried"
+    ],
+    "recipe": {"Corn Chowder":"Transfer onto a Plate: Potato [300g], Onion [120g], Carrot [140g]. Drizzle in Clarified Butter [15ml]. Cut: Potato into Pieces [25g], Onion into Pieces [20g], Carrot into Pieces [14g]. Transfer into a Pan. Fry for 30s. Add to a Pot: Chicken Broth [700ml], Thyme, dried [18g], Salt [12g], Black Pepper [12g], Potato, Onion, Carrot. Boil for 20s. Cut Cob of Corn [180g] into Pieces [30g]. Add to the Pot: Sour Cream [100ml], Cob of Corn. Boil for 100s. Each serving consists of Soup [250ml], Cob of Corn [60g], Potato [75g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 82,
+    "dish_name": "Corn, Scallop and Bacon Chowder",
+    "ingredients": [
+      "Onion",
+      "Potato",
+      "Cob of Corn",
+      "Carrot",
+      "Bacon",
+      "Scallop",
+      "Chicken Broth",
+      "Sour Cream",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Thyme, dried"
+    ],
+    "recipe": {"Corn, Scallops and Bacon Chowder":"Transfer onto a Plate: Potato [300g], Onion [120g], Carrot [140g]. Drizzle in Clarified Butter [15ml]. Cut: Potato into Pieces [25g], Onion into Pieces [20g], Carrot into Pieces [14g]. Transfer into the Pan. Fry for 30s. Add to a Pot: Chicken Broth [700ml], Thyme, dried [18g], Salt [12g], Black Pepper [12g], Potato, Onion, Carrot. Boil for 20s. Add to a Pan: Clarified Butter [15ml], Bacon [120g]. Fry for 60s. Cut Cob of Corn [180g] into Pieces [30g]. Add to the Pot: Sour Cream [100ml], Cob of Corn. Boil for 60s. Add to the Pot: Bacon. Boil for 40s. Add to a Pan: Scallop [90g]. Fry for 50s. Each serving consists of Soup [250ml], Cob of Corn [60g], Potato [75g], Bacon [60g], Scallop [30g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 83,
+    "dish_name": "Duck Broth",
+    "ingredients": [
+      "Duck Breast",
+      "Onion",
+      "Carrot",
+      "Water",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Duck Broth":"Add to a Pot: Water [1300ml], Salt [10g], Black Pepper [10g], Duck Breast [560g], Carrot [70g], Onion [120g]. Boil for 80s. Cut Duck Breast [560g] into Pieces [35g]. Each serving consists of Soup [300ml], Duck Breast [140g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 84,
+    "dish_name": "Duck Consommé",
+    "ingredients": [
+      "Tomato",
+      "Duck Breast",
+      "Onion",
+      "Carrot",
+      "Parsley Leaves, fresh",
+      "Water",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Duck Consommé":"Add to the Food Processor: Water [1000ml], Duck Breast [280g]. Blend. Transfer into a Pot. Add to a Pot: Salt [5g], Black Pepper [5g], Carrot [70g], Onion [120g], Tomato [120g]. Boil for 120s. Pour the Liquid [300ml] into a Deep Plate. Serve hot.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 85,
+    "dish_name": "Chunky Gazpacho",
+    "ingredients": [
+      "Tomato",
+      "Cucumber",
+      "Garlic",
+      "Red Bell Pepper",
+      "Green Bell Pepper",
+      "Jalapeño",
+      "Bread",
+      "Chives",
+      "Lime Juice",
+      "Olive Oil",
+      "Balsamic Vinegar",
+      "Salt",
+      "Black Pepper",
+      "Oregano, dried",
+      "Cumin, powder",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Chunky Gazpacho":"Add to the Food Processor: Balsamic Vinegar [5ml], Lime Juice [5ml], Olive Oil [5ml], Garlic [10g], Cucumber [160g], Tomato [240g], Red Bell Pepper [240g], Green Bell Pepper [240g], Jalapeño [40g], Bread [150g], Chives [6g]. Blend. Add to the Food Processor: Salt [5g], Black Pepper [5g], Cayenne Pepper, powder [3g], Cumin, powder[3g], Oregano, dried [3g]. Pour the Liquid [300ml] into a Deep Plate. Serve cool.",
+    "Vegetables":"Cut: Cucumber [75g] into Pieces [25g], Red Bell Pepper [60g] into Pieces [10g], Tomato [60g] into Pieces [10g], Jalapeño [40g] into Quarters [10g]. Transfer into a Deep Plate. Serve cool.",
+    "Chives Garnish":"Garnish with Chives [8g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 86,
+    "dish_name": "Pumpkin Soup",
+    "ingredients": [
+      "Onion",
+      "Garlic",
+      "Pumpkin",
+      "Thyme Twig",
+      "Cilantro Leaves, fresh",
+      "Chicken Broth",
+      "Sour Cream",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Pumpkin Soup":"Cut Onion [120g] into Pieces [15g]. Add to a Pan: Olive Oil [10ml], Onion. Fry for 30s. Transfer into a Pot: Mixture [10ml], Onion. Add to a Pot: Chicken Broth [500ml], Salt [20g], Black Pepper [15g], Pumpkin [1000g], Garlic [20g], Thyme Twig [20g]. Boil for 90s. Blend. Add Sour Cream [150ml]. Pour the Liquid [300ml] into a Deep Plate. Serve hot.",
+    "Cilantro Garnish":"Garnish with Cilantro Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 87,
+    "dish_name": "Pumpkin Soup with Croutons",
+    "ingredients": [
+      "Onion",
+      "Garlic",
+      "Pumpkin",
+      "Bread",
+      "Thyme Twig",
+      "Cilantro Leaves, fresh",
+      "Chicken Broth",
+      "Sour Cream",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Pumpkin Soup":"Cut Onion [120g] into Pieces [15g]. Add to a Pan: Olive Oil [10ml], Onion. Fry for 30s. Transfer into a Pot: Mixture [10ml], Onion. Add to a Pot: Chicken Broth [500ml], Salt [20g], Black Pepper [15g], Pumpkin [1000g], Garlic [20g], Thyme Twig [20g]. Boil for 90s. Blend. Add Sour Cream [150ml]. Pour the Liquid [300ml] into a Deep Plate. Serve hot.",
+    "Croutons":"Take Bread [50g]. Drizzle in Olive Oil [5ml]. Cut Bread into Pieces [~6g]. Fry for 30s. Transfer into a Deep Plate.",
+    "Cilantro Garnish":"Garnish with Cilantro Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 88,
+    "dish_name": "Tomato Soup",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Chicken Broth",
+      "Sour Cream",
+      "Salt",
+      "Black Pepper",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Tomato Soup":"Add to a Pot: Chicken Broth [700ml], Salt [12g], Black Pepper [12g], Cayenne Pepper, powder [6g], Tomato [960g], Onion [120g]. Boil for 60s. Blend. Add Sour Cream [150ml]. Pour the Liquid [300ml] into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 89,
+    "dish_name": "Red Pepper and Tomato Soup",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Red Bell Pepper",
+      "Basil Leaf, fresh",
+      "Chicken Broth",
+      "Sour Cream",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Red Pepper and Tomato Soup":"Transfer onto the Plate: Red Bell Pepper [240g], Onion [120g], Garlic [20g]. Drizzle in Olive Oil [20ml]. Bake for 90s. Add to a Pot: Chicken Broth [700ml], Salt [12g], Black Pepper [12g], Cayenne Pepper, powder [6g], Tomato [840g], Red Bell Pepper, Onion, Garlic. Boil for 60s. Blend. Add Sour Cream [150ml]. Pour the Liquid [300ml] into a Deep Plate. Serve hot.",
+    "Basil Garnish":"Garnish with Basil Leaf, fresh [12g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 90,
+    "dish_name": "Red Pepper and Tomato Soup with Toast",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Mozzarella",
+      "Red Bell Pepper",
+      "Chili Pepper",
+      "Bread",
+      "Basil Leaf, fresh",
+      "Chicken Broth",
+      "Sour Cream",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Hot Red Pepper and Tomato Soup":"Transfer onto a Plate: Red Bell Pepper [240g], Chili Pepper [30g], Onion [120g], Garlic [20g]. Drizzle in Olive Oil [20ml]. Bake for 90s. Add to a Pot: Chicken Broth [700ml], Salt [12g], Black Pepper [12g], Cayenne Pepper, powder [6g], Tomato [840g], Red Bell Pepper, Chili Pepper, Onion, Garlic. Boil for 60s. Blend. Add Sour Cream [150ml]. Pour the Liquid [300ml] into a Deep Plate. Serve hot.",
+    "Mozzarella Slices":"Cut Mozzarella [80g] into Pieces [16g]. Transfer into a Deep Plate.",
+    "Buttered Toast":"Take Bread [60g]. Drizzle in Clarified Butter [5ml]. Cut Bread into Quarters [15g]. Fry for 30s. Transfer into a Deep Plate.",
+    "Basil Garnish":"Garnish with Basil Leaf, fresh [12g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 91,
+    "dish_name": "Ukrainian Borscht",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Carrot",
+      "Parsley Root",
+      "Beetroot",
+      "Dill, fresh",
+      "Bay Leaf, fresh",
+      "Chicken Broth",
+      "Sour Cream",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Allspice, powder"
+    ],
+    "recipe": {"Ukrainian Borscht":"Add to a Pot: Chicken Broth [700ml], Beetroot [600g]. Boil for 60s. Transfer onto a Plate: Onion [120g], Carrot [70g], Parsley Root [80g]. Drizzle in Clarified Butter [30ml]. Cut: Onion into Pieces [20g], Carrot into Pieces [14g], Parsley Root into Pieces [16g]. Fry for 60s. Add to the Pot: Allspice, powder [15g], Salt [20g], Black Pepper [20g], Garlic [10g]. Bay Leaf, fresh [6g], Carrot, Parsley Root, Onion. Boil for 60s. Cut Tomato [120g] into Halves [60g]. Add to the Pot. Boil for 15s. Add Lemon Juice [20ml]. Pour the Liquid [300ml] into a Deep Plate. Add Sour Cream [50ml]. Serve hot.",
+    "Dill Garnish":"Garnish with Dill, fresh [4g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 92,
+    "dish_name": "Fast Ratatouille",
+    "ingredients": [
+      "Tomato",
+      "Zucchini",
+      "Eggplant",
+      "Onion",
+      "Garlic",
+      "Red Bell Pepper",
+      "Yellow Bell Pepper",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Herbs de Provence, dried"
+    ],
+    "recipe": {"Fast Ratatouille":"Add to the Food Processor: Olive Oil [20ml], Onion [60g], Garlic [10g], Red Bell Pepper [120g], Yellow Bell Pepper [120g], Tomato [60g]. Blend. Transfer into a Pot. Add to the Pot: Salt [6g], Black Pepper [6g], Herbs de Provence, dried [9g]. Boil for 60s. Transfer into a Casserole.",
+    "Roasted Vegetables":"Cut: Eggplant [90g] into Pieces [~11g], Zucchini [150g] into Pieces [~19g]. Transfer onto a Baking Tray. Bake for 60s. Cut Tomato [120g] into Pieces [20g]. Transfer onto the Baking Tray. Bake for 60s. Transfer into a Casserole. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 93,
+    "dish_name": "Ratatouille",
+    "ingredients": [
+      "Tomato",
+      "Zucchini",
+      "Eggplant",
+      "Onion",
+      "Garlic",
+      "Red Bell Pepper",
+      "Yellow Bell Pepper",
+      "Parsley Leaves, fresh",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Herbs de Provence, dried"
+    ],
+    "recipe": {"Ratatouille":"Take Eggplant [90g]. Season with Salt [2g]. Drizzle in Olive Oil [5ml]. Cut Eggplant into Pieces [15g]. Fry for 40s. Cut Zucchini [150g] into Pieces [~19g]. Add to a Baking Tray: Zucchini, Eggplant. Bake for 120s. Cut: Onion [60g] into Pieces [10g], Red Bell Pepper [90g] into Pieces [10g], Yellow Bell Pepper [90g] into Pieces [10g], Garlic [10g] into Halves [5g]. Transfer into a Pan. Fry for 30s. Add to the Food Processor: Tomato [240g]. Blend. Transfer into a Pot. Add to the Pot: Salt [5g], Black Pepper [5g], Herbs de Provence, dried [4g], Parsley Leaves, fresh [6g]. Boil for 30s. Transfer into a Casserole: Mixture, Eggplant, Zucchini, Onion, Red Bell Pepper, Yellow Bell Pepper, Garlic, Parsley Leaves, fresh. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 94,
+    "dish_name": "Fast Shakshuka",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Red Bell Pepper",
+      "Parsley Leaves, fresh",
+      "Egg",
+      "Water",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Cumin, powder",
+      "Turmeric, powder",
+      "Smoked Pepper, powder"
+    ],
+    "recipe": {"Shakshuka":"Cut: Onion [60g] into Pieces [10g], Red Bell Pepper [120g] into Pieces [20g], Tomato [240g] into Pieces [15g], Garlic [10g] into Halves [5g]. Add to a Pan: Olive Oil [10ml], Smoked Pepper, powder [5g], Turmeric, powder [5g], Cumin, powder [3g], Salt [3g], Black Pepper [3g], Red Bell Pepper. Fry for 30s. Add to the Pan: Water [60ml], Onion, Tomato, Garlic. Fry for 30s. Crack Egg into the Pan with sauce. Season with: Salt [3g], Black Pepper [3g]. Fry for 30s. Transfer into a Casserole: Mixture. Egg, Onion, Tomato, Garlic, Red Bell Pepper, Serve hot.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 95,
+    "dish_name": "Shakshuka",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Goat Cheese",
+      "Red Bell Pepper",
+      "Jalapeño",
+      "Bread",
+      "Mint Leaf",
+      "Egg",
+      "Water",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Cumin, powder",
+      "Chili Flakes",
+      "Turmeric, powder",
+      "Smoked Pepper, powder"
+    ],
+    "recipe": {"Spicy Shakshuka":"Cut: Onion [60g] into Pieces [10g], Red Bell Pepper [120g] into Pieces [20g], Tomato [240g] into Pieces [15g], Garlic [10g] into Halves [5g], Jalapeño [40g] into Pieces [8g]. Add to a Pan: Olive Oil [10ml], Smoked Pepper, powder [5g], Turmeric, powder [5g], Cumin, powder [3g], Chili Flakes [2g], Salt [3g], Black Pepper [3g], Red Bell Pepper, Jalapeño. Fry for 30s. Add to the Pan: Water [60ml], Onion, Tomato, Garlic. Boil for 30s. Crack Egg into the Pan with sauce. Season with: Black Pepper [3g]. Salt [3g]. Boil for 30s. Transfer into a Casserole: Mixture. Egg, Onion, Tomato, Garlic, Red Bell Pepper, Jalapeño, Serve hot.",
+    "Diced Goat Cheese":"Cut Goat Cheese [100g] into Pieces [10g]. Transfer into a Casserole.",
+    "Toast":"Take Bread [50g]. Drizzle in Olive Oil [5ml]. Cut Bread into Halves [25g]. Bake for 30s. Transfer into a Casserole. Serve hot.",
+    "Mint Garnish":"Garnish with Mint Leaf [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 96,
+    "dish_name": "Pork Chops with Fried Egg and Lemon Baked Potatoes",
+    "ingredients": [
+      "Potato",
+      "Pork Chops",
+      "Oregano Twig",
+      "Thyme Twig",
+      "Egg",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "Lemon Juice",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Thyme, dried",
+      "Herbs de Provence, dried"
+    ],
+    "recipe": {"Pork Chops":"Take Pork Chops [200g]. Season with: Salt [4g], Black Pepper [4g], Thyme, dried [6g]. Add to the Pan: Sunflower Oil [30ml], Pork Chops. Fry for 90s each side. Transfer onto a Plate. Serve hot.",
+    "Lemon Baked Potatoes":"Take Potato [300g]. Season with: Salt [15g], Black Pepper [9g]. Add to a Baking Tray: Potato. Bake for 40s. Add to a Bowl: Chicken Broth [50ml], Lemon Juice [50ml]. Take Potato. Drizzle in Mixture [100ml]. Cut Potato into Halves [75g]. Add to a Baking Tray: Oregano Twig [12g], Potato. Bake for 40s. Transfer onto a Plate: Potato. Serve hot.",
+    "Fried Egg":"Crack Egg into the Pan. Season with: Salt [3g],  Black Pepper [3g], Herbs de Provence, dried [3g]. Add to the Pan: Olive Oil [10ml]. Fry for 30s. Transfer onto the Plate. Serve hot.",
+    "Thyme Garnish":"Garnish with Thyme Twig [20g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 97,
+    "dish_name": "Ukrainian Borscht with Boiled Egg",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Carrot",
+      "Parsley Root",
+      "Beetroot",
+      "Dill, fresh",
+      "Bay Leaf, fresh",
+      "Peeled Egg",
+      "Water",
+      "Chicken Broth",
+      "Sour Cream",
+      "Lemon Juice",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Allspice, powder"
+    ],
+    "recipe": {"Ukrainian Borscht":"Add to a Pot: Chicken Broth [700ml], Beetroot [600g]. Boil for 60s. Cut: Onion [120g] into Pieces [20g], Carrot [70g] into Pieces [14g], Parsley Root [80g] into Pieces [16g]. Add to a Pan: Clarified Butter [30ml], Onion, Carrot, Parsley Root. Fry for 60s. Add to the Pot: Allspice, powder [15g], Salt [20g], Black Pepper [20g], Garlic [10g], Bay Leaf, fresh [6g], Onion, Carrot, Parsley Root. Boil for 60s. Cut Tomato [120g] into Halves [60g]. Add to the Pot: Tomato [120g]. Boil for 15s. Add Lemon Juice [20ml]. Pour the Liquid [300ml] into a Deep Plate. Add Sour Cream [50ml]. Serve hot.",
+    "Hard Boiled Egg":"Add to a Pot: Water [200ml], Egg [100g]. Boil for 60s. Drain. Peel the Egg Cut Peeled Egg into Halves [~32g]. Transfer into a Deep Plate.",
+    "Dill Garnish":"Garnish with Dill, fresh [4g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 98,
+    "dish_name": "Grilled T-bone Steak and Baked Red Potatoes",
+    "ingredients": [
+      "Onion",
+      "T-bone Steak",
+      "Red Potato",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder"
+    ],
+    "recipe": {"Grilled T-bone Steak":"Take T-bone Steak [680g]. Season with: Salt [7g], Black Pepper [7g], Sweet Bell Pepper, powder [10g]. Grill for 70s each side. Transfer onto a Plate. Serve hot.",
+    "Baked Red Potatoes":"Take Red Potato [300g]. Season with Salt [9g]. Cut Onion [120g] into Pieces [20g]. Add to a Baking Tray: Red Potato, Onion. Bake for 60s. Transfer onto a Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 99,
+    "dish_name": "Barbecue T-bone Steak with Potatoes and a Corn on the Cob",
+    "ingredients": [
+      "Onion",
+      "Cob of Corn",
+      "T-bone Steak",
+      "Red Potato",
+      "Water",
+      "Barbecue Sauce",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder"
+    ],
+    "recipe": {"Barbecue T-bone Steak":"Take T-bone Steak [680g]. Season with: Salt [7g], Black Pepper [7g], Sweet Bell Pepper, powder [10g]. Drizzle in Barbecue Sauce [30ml]. Grill for 70s each side. Transfer onto a Plate. Serve hot.",
+    "Baked Red Potatoes":"Take Red Potato [300g]. Season with Salt [9g]. Cut Onion [120g] into Pieces [20g]. Add to a Baking Tray: Red Potato, Onion. Bake for 60s. Transfer onto a Plate. Serve hot.",
+    "Corn on the Cob with Butter":"Add to a Pot: Water [1000ml], Salt [20g], Cob of Corn [180g]. Boil for 100s. Transfer onto a Plate. Drizzle in Clarified Butter [15ml]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 100,
+    "dish_name": "Barbecue T-bone Steak with Potatoes and a Hot Corn on the Cob",
+    "ingredients": [
+      "Onion",
+      "Garlic",
+      "Cob of Corn",
+      "Chili Pepper",
+      "T-bone Steak",
+      "Red Potato",
+      "Water",
+      "Barbecue Sauce",
+      "Clarified Butter",
+      "Salt",
+      "Black Pepper",
+      "Sweet Bell Pepper, powder"
+    ],
+    "recipe": {"Barbecue T-bone Steak":"Take T-bone Steak [680g]. Season with: Salt [7g], Black Pepper [7g], Sweet Bell Pepper, powder [10g]. Drizzle in Barbecue Sauce [30ml]. Grill for 70s each side. Transfer onto a Plate. Serve hot.",
+    "Baked Red Potatoes and Garlic":"Add to a Pot: Water [1000ml], Salt [20g], Red Potato [300g]. Boil for 20s. Cut Onion [120g] into Pieces [20g]. Add to a Baking Tray: Onion. Bake for 20s. Add: Garlic [50g], Red Potato. Bake for 40s. Transfer onto a Plate. Serve hot.",
+    "Corn on the Cob with Chilli Butter":"Add to a Pot: Water [1000ml], Salt [20g], Cob of Corn [180g]. Boil for 100s. Cut Chili Pepper [30g] into Halves [15g]. Add to a Pan: Clarified Butter [30ml], Chili Pepper. Fry for 15s. Take Cob of Corn. Drizzle in Mixture [30ml]. Transfer everything onto a Plate. Serve cold."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 101,
+    "dish_name": "Sweet and Sour Pork",
+    "ingredients": [
+      "Tomato",
+      "Garlic",
+      "Pork Tenderloin",
+      "Cilantro Leaves, fresh",
+      "Water",
+      "Sunflower Oil",
+      "Salt",
+      "Black Pepper",
+      "Oregano, dried",
+      "Sugar"
+    ],
+    "recipe": {"Tomato Sauce":"Add to the Food Processor: Tomato [240g], Garlic [20g]. Blend. Add: Oregano, dried [6g], Salt [5g], Black Pepper [5g].",
+    "Pork Tenderloin":"Cut Pork Tenderloin [250g] into Pieces [25g]. Add to a Pan: Sunflower Oil [15ml], Pork Tenderloin. Fry for 80s. Add to the Pan: Sugar [10g], Water [20ml], Tomato Sauce [100ml]. Fry for 20s. Transfer everything into a Deep Plate. Serve hot.",
+    "Cilantro Garnish":"Garnish with Cilantro Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 102,
+    "dish_name": "Marinated Sweet and Sour Pork",
+    "ingredients": [
+      "Tomato",
+      "Garlic",
+      "Pork Tenderloin",
+      "Cilantro Leaves, fresh",
+      "Egg",
+      "Water",
+      "Sunflower Oil",
+      "Soy Sauce",
+      "Salt",
+      "Black Pepper",
+      "Oregano, dried",
+      "Sugar",
+      "Starch"
+    ],
+    "recipe": {"Marinade":"Crack Egg [200g]. Transfer into the Food Processor. Blend. Add to the Food Processor: Salt [5g], Starch [7g], Soy Sauce [10ml].",
+    "Tomato Sauce":"Add to the Food Processor: Tomato [240g], Garlic [20g]. Blend. Add: Oregano, dried [6g], Salt [5g], Black Pepper [5g].",
+    "Pork Tenderloin":"Take Pork Tenderloin [250g]. Drizzle in Marinade. Cut Pork Tenderloin into Pieces [25g]. Add to the Pan: Sunflower Oil [15ml], Pork Tenderloin. Fry for 80s. Transfer onto the Plate: Pork Tenderloin. Add to the Pan: Water [20ml], Sugar [10g], Tomato Sauce [100ml]. Boil for 20s. Add to the Pan: Pork Tenderloin. Fry for 20s. Transfer everything into a Deep Plate. Serve hot.",
+    "Cilantro Garnish":"Garnish with Cilantro Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 103,
+    "dish_name": "Kung Pao Chicken",
+    "ingredients": [
+      "Scallion Leaves",
+      "Chicken Breast",
+      "Soy Sauce",
+      "Balsamic Vinegar",
+      "Sesame Oil",
+      "Peanut Oil",
+      "Hoisin Sauce",
+      "Sugar",
+      "Chili Flakes",
+      "Starch",
+      "Sichuan Pepper, powder"
+    ],
+    "recipe": {"Sauce":"Add to a Pot: Balsamic Vinegar [15ml], Soy Sauce [5ml], Hoisin Sauce [5ml], Sesame Oil [5ml], Sugar [10g], Starch [5g], Sichuan Pepper, powder [3g]. Fry for 40s. Transfer everything into a Deep Plate.",
+    "Kung Pao Chicken":"Take Chicken Breast [240g]. Season with Chili Flakes [20g]. Cut Chicken Breast into Pieces [30g]. Add to the Pan: Peanut Oil [30ml], Chicken Breast. Fry for 90s. Transfer into a Deep Plate. Serve hot.",
+    "Scallion Garnish":"Take Scallion [240g]. Separate Scallion. Cut Scallion Leaves [60g] into Quarters [5g]. Garnish with Scallion Leaves."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 104,
+    "dish_name": "Marinated Kung Pao Chicken",
+    "ingredients": [
+      "Chili Pepper",
+      "Scallion Bulbs",
+      "Scallion Leaves",
+      "Chicken Breast",
+      "Soy Sauce",
+      "Balsamic Vinegar",
+      "Rice Wine",
+      "Sesame Oil",
+      "Peanut Oil",
+      "Hoisin Sauce",
+      "Sugar",
+      "Ginger",
+      "Garlic, dried",
+      "Starch",
+      "Sichuan Pepper, powder"
+    ],
+    "recipe": {"Marinade":"Add to a Bowl: Soy Sauce [15ml], Rice Wine [10ml], Starch [8g].",
+    "Sauce":"Add to a Bowl: Balsamic Vinegar [15ml], Soy Sauce [5ml], Hoisin Sauce [5ml], Sesame Oil [5ml], Sugar [10g], Starch [5g], Sichuan Pepper, powder [3g].",
+    "Kung Pao Chicken":"Take Chicken Breast [240g]. Drizzle in Marinade. Cut Chicken Breast into Pieces [30g]. Add to the Pan: Peanut Oil [30ml], Chili Pepper [240g], Chicken Breast. Fry for 90s. Take Scallion [240g]. Separate Scallion. Cut Scallion Bulbs [180g] into Halves [30g]. Transfer onto a Plate: Chili Pepper, Chicken Breast. Add to the Pan: Garlic, dried [20g], Ginger [5g], Scallion Bulbs. Fry for 20s. Add to the Pan: Sauce. Fry for 20s. Transfer into a Deep Plate: Mixture, Chicken Breast. Serve hot.",
+    "Scallion Garnish":"Cut Scallion Leaves [60g] into Quarters [5g]. Garnish with Scallion Leaves."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 105,
+    "dish_name": "Easy Chinese Egg Drop Soup",
+    "ingredients": [
+      "Egg",
+      "Scallion Leaves",
+      "Chicken Broth",
+      "Sesame Oil",
+      "Salt",
+      "White Pepper"
+    ],
+    "recipe": {"Chinese Egg Drop Soup":"Crack Egg [200g]. Transfer into the Food Processor. Blend. Transfer into a Pot. Add to a Pot: Chicken Broth [1000ml]. Boil for 60s. Add to the Pot: Salt [5g], White Pepper [2g], Sesame Oil [10ml]. Boil for 30s. Pour the Liquid [300ml] into a Deep Plate. Serve hot.",
+    "Scallion Garnish":"Take Scallion [160g]. Separate Scallion. Cut Scallion Leaves [40g] into Quarters [5g]. Garnish with Scallion Leaves."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 106,
+    "dish_name": "Chinese Egg Drop Soup",
+    "ingredients": [
+      "Onion",
+      "Garlic",
+      "Carrot",
+      "Chicken Leg",
+      "Egg",
+      "Scallion Leaves",
+      "Water",
+      "Sesame Oil",
+      "Salt",
+      "Black Pepper",
+      "White Pepper"
+    ],
+    "recipe": {"Chinese Egg Drop Soup":"Add to a Pot: Water [1000ml], Salt [7g], Black Pepper [7g], Chicken Leg [180g], Carrot [210g], Onion [120g], Garlic [10g]. Boil for 120s. Discard all vegetables and the Chicken Leg. Crack Egg [200g]. Transfer into the Food Processor. Blend. Transfer into the Pot. Boil for 60s. Add to the Pot: Salt [5g], White Pepper [2g], Sesame Oil [10ml]. Fry for 30s. Pour the Liquid [300ml] into a Deep Plate. Serve hot.",
+    "Scallion Garnish":"Take Scallion [160g]. Separate Scallion. Cut Scallion Leaves [40g] into Quarters [5g]. Garnish with Scallion Leaves."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 107,
+    "dish_name": "Orange Pork Stir-Fry",
+    "ingredients": [
+      "Garlic",
+      "Carrot",
+      "Orange",
+      "Pork Chops",
+      "Whole Ginger",
+      "Water",
+      "Honey",
+      "Soy Sauce",
+      "Rice Wine",
+      "Peanut Oil",
+      "Starch"
+    ],
+    "recipe": {"Sauce":"Add to the Food Processor: Orange [90g]. Blend. Transfer into a Deep Plate. Add: Water [15ml], Soy Sauce [10ml], Honey [5ml].",
+    "Pork Chops":"Add to a Bowl: Rice Wine [15ml], Starch [8g]. Take Pork Chops [200g]. Drizzle in Mixture. Cut Pork Chops into Pieces [40g]. Add to the Pan: Peanut Oil [30ml], Pork Chops. Fry for 50s. Cut: Carrot [70g] into Quarters [~18g], Garlic [20g] into Halves [5g], Whole Ginger [60g] into Quarters [15g]. Add to the Pan: Garlic, Whole Ginger. Fry for 20s. Add to the Pan: Carrot, Sauce. Fry for 20s. Transfer everything into a Deep Plate. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 108,
+    "dish_name": "Orange Pork Stir Fry with Brussels Sprouts",
+    "ingredients": [
+      "Garlic",
+      "Carrot",
+      "Orange",
+      "Pork Chops",
+      "Whole Ginger",
+      "Brussels Sprouts",
+      "Scallion Leaves",
+      "Water",
+      "Honey",
+      "Soy Sauce",
+      "Rice Wine",
+      "Peanut Oil",
+      "Starch"
+    ],
+    "recipe": {"Sauce":"Add to the Food Processor: Orange [90g]. Blend. Add: Water [15ml], Soy Sauce [10ml], Honey [5ml].",
+    "Pork Chops":"Add to a Bowl: Rice Wine [15ml], Starch [8g]. Take Pork Chops [200g]. Drizzle in Mixture. Cut Pork Chops into Pieces [40g]. Add to the Pan: Peanut Oil [30ml], Pork Chops. Fry for 50s. Cut: Carrot [70g] into Quarters [~18g], Garlic [20g] into Halves [5g], Whole Ginger [60g] into Quarters [15g], Brussels Sprouts [60g] into Halves [~8g]. Add to the Pan: Garlic, Whole Ginger, Brussels Sprouts. Fry for 20s. Add to a Pan: Carrot, Sauce. Boil for 20s. Transfer everything into a Deep Plate. Serve hot.",
+    "Scallion Garnish":"Take Scallion [160g]. Separate Scallion. Cut Scallion Leaves [40g] into Quarters [5g]. Garnish with Scallion Leaves."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 109,
+    "dish_name": "Helles Märzenbier Roasted Pork",
+    "ingredients": [      
+      "Onion",
+      "Red Potato",
+      "Star Anise",
+      "Cinnamon stick",
+      "Parsnip",
+      "Pork Shoulder",
+      "Chicken Broth",
+      "Helles Märzenbier",
+      "Elderflower Jelly",
+      "Dijon Mustard",
+      "Salt",
+      "Black Pepper",
+      "Mustard Seeds",
+      "Cloves, ground"
+    ],
+    "recipe": {"Pork Shoulder with Vegetables":"Take Pork Shoulder [375g]. Season with: Cloves, ground [10g], Salt [6g]. Bake for 90s. Transfer onto the Plate: Pork Shoulder. Season with Mustard Seeds [12g]. Drizzle in Helles Märzenbier [40ml]. Cut: Onion [120g] into Quarters [30g], Red Potato [100g] into Pieces [~12g], Parsnip [170g] into Pieces [34g], Cinnamon stick [8g] into Halves [2g]. Add to a Baking Tray: Helles Märzenbier [160ml], Star Anise [15g], Pork Shoulder, Onion, Red Potato, Parsnip. Cinnamon stick. Bake for 30s. Transfer the ingredients onto the Plate. Reserve Mixture.",
+    "Gravy":"Transfer into a Deep Plate: Mixture. Chicken Broth [175ml], Elderflower Jelly [15ml], Dijon Mustard [5ml], Salt [6g], Black Pepper [8g]. Add: Pork Shoulder, Onion, Red Potato, Parsnip. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 110,
+    "dish_name": "Dunkles Märzenbier BBQ Chicken",
+    "ingredients": [
+      "Chicken Leg",
+      "Rosemary Twig",
+      "Lemon Juice",
+      "Peanut Oil",
+      "Dunkles Märzenbier",
+      "Düsseldorf Mustard",
+      "Salt",
+      "Black Pepper",
+      "Thyme, dried",
+      "Basil, dried",
+      "Garlic, dried"
+    ],
+    "recipe": {"Marinade":"Add to a Bowl: Peanut Oil [30ml], Düsseldorf Mustard [5ml], Dunkles Märzenbier [100ml], Lemon Juice [15ml], Garlic, dried [10g], Salt [2g], Black Pepper [2g], Basil, dried [2g], Thyme, dried [2g].",
+    "Chicken Leg":"Take Chicken Leg [180g]. Drizzle in Marinade [25ml]. Grill for 120s. Transfer onto the Plate. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 111,
+    "dish_name": "Currant-Glazed Pork Tenderloin with Red Cabbage and Thyme Dumplings",
+    "ingredients": [
+      "Pork Tenderloin",
+      "Thyme Twig",
+      "Red Cabbage",
+      "Potato Dumplings",
+      "Water",
+      "Olive Oil",
+      "Bavarian Beer Vinegar",
+      "Redcurrant Jelly",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Pork Tenderloin":"Take Pork Tenderloin [250g]. Season with: Salt [8g], Black Pepper [8g]. Drizzle in Olive Oil [15ml]. Transfer onto a Baking Tray. Bake for 100s. Add to a Bowl: Redcurrant Jelly [35ml], Bavarian Beer Vinegar [15ml]. Transfer onto the Plate: Pork Tenderloin. Drizzle in Mixture [50ml]. Bake for 30s. Cut Pork Tenderloin into Pieces [50g]. Transfer onto the Plate. Serve hot.",
+    "Red Cabbage":"Cut Red Cabbage [100g] into Pieces [20g]. Add to a Pan: Redcurrant Jelly [15ml], Red Cabbage. Fry for 40s. Transfer onto the Plate. Serve hot.",
+    "Potato Dumplings":"Add to a Pot: Water [1000ml], Salt [20g], Potato Dumplings [200g]. Boil for 90s. Transfer onto a Plate. Serve hot.",
+    "Thyme Garnish":"Garnish with Thyme Twig [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 112,
+    "dish_name": "Simple Chicken Pumpkin Stew",
+    "ingredients": [
+      "Chicken Leg",
+      "Pumpkin",
+      "Sunflower Oil"
+    ],
+    "recipe": {"Simple Chicken Pumpkin Stew":"Add to a Paella Pan: Sunflower Oil [15ml], Chicken Leg [180g]. Fry for 20s. Cut Pumpkin [300g] into Pieces [50g]. Add to the Paella Pan: Pumpkin. Fry for 100s. Transfer into a Deep Plate: Mixture [15ml], Pumpkin, Chicken Leg. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 113,
+    "dish_name": "Chicken Pumpkin Stew",
+    "ingredients": [
+      "Chicken Leg",
+      "Pumpkin",
+      "Red Bell Pepper",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Garlic, dried",
+      "Starch"
+    ],
+    "recipe": {"Chicken Pumpkin Stew":"Add to a Paella Pan: Sunflower Oil [15ml], Chicken Leg [180g]. Fry for 20s. Cut Pumpkin [300g] into Pieces [50g]. Add to the Paella Pan: Pumpkin. Fry for 20s. Cut Red Bell Pepper [120g] into Slices [30g]. Add to the Paella Pan: Garlic, dried [5g], Red Bell Pepper. Fry for 30s. Add to the Paella Pan: Chicken Broth [200ml]. Boil for 60s. Transfer into a Deep Plate: Mixture [215ml], Clarified Butter [10ml], Starch [8g], Red Bell Pepper, Pumpkin, Chicken Leg. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 114,
+    "dish_name": "Chicken Pumpkin Stew with Tomatoes",
+    "ingredients": [
+      "Tomato",
+      "Onion",
+      "Chicken Leg",
+      "Pumpkin",
+      "Red Bell Pepper",
+      "Rosemary Twig",
+      "Sunflower Oil",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Salt",
+      "Smoked Pepper, powder",
+      "Garlic, dried",
+      "Starch"
+    ],
+    "recipe": {"Chicken Pumpkin Stew with Tomatoes":"Add to a Paella Pan: Sunflower Oil [15ml], Chicken Leg [180g]. Fry for 20s. Cut Pumpkin [300g] into Pieces [50g]. Add to the Paella Pan: Pumpkin. Fry for 20s. Cut Red Bell Pepper [120g] into Slices [30g]. Add to the Paella Pan: Garlic, dried [5g], Red Bell Pepper. Fry for 30s. Cut: Onion [120g] into Quarters [30g]. Tomato [120g] into Pieces [15g]. Add to the Paella Pan: Chicken Broth [200ml], Smoked Pepper, powder [10g], Salt [3g], Onion, Tomato. Boil for 60s. Add to a Deep Plate: Mixture [215ml], Clarified Butter [10ml], Starch [8g], Onion, Tomato, Red Bell Pepper, Pumpkin, Chicken Leg. Serve hot.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [10g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 115,
+    "dish_name": "Roasted Christmas Ham",
+    "ingredients": [
+      "Orange",
+      "Rosemary Twig",
+      "Ham",
+      "Honey",
+      "White Wine",
+      "Black Pepper",
+      "Allspice, powder",
+      "Bay Leaf, dried",
+      "Garlic, dried",
+      "Cloves, ground"
+    ],
+    "recipe": {"Roasted Ham":"Take Ham [2400g]. Season with: Garlic, dried [40g], Bay Leaf, dried [8g], Allspice, powder [15g], Black Pepper [18g]. Drizzle in: Honey [120ml], White Wine [200ml]. Transfer onto the Baking Tray: Ham. Bake for 100s. Season with Cloves, ground [50g]. Cut Ham into Pieces [150g]. Each serving consists of Ham [300g]. Transfer onto a Plate: Ham.",
+    "A Slice of Orange":"Cut Orange [180g] into Pieces [30g]. Each serving consists of Orange [30g]. Transfer onto a Plate: Orange.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [5g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 116,
+    "dish_name": "Roasted Christmas Ham with Garlic Fried Potatoes",
+    "ingredients": [
+      "Potato",
+      "Orange",
+      "Rosemary Twig",
+      "Ham",
+      "Honey",
+      "White Wine",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Allspice, powder",
+      "Bay Leaf, dried",
+      "Garlic, dried",
+      "Cloves, ground"
+    ],
+    "recipe": {"Roasted Ham":"Take Ham [2400g]. Season with: Garlic, dried [40g], Bay Leaf, dried [8g], Allspice, powder [15g], Black Pepper [18g]. Drizzle in: Honey [120ml], White Wine [200ml]. Transfer onto the Baking Tray: Ham. Bake for 100s. Season with Cloves, ground [50g]. Cut Ham into Pieces [150g]. Each serving consists of Ham [300g]. Transfer onto a Plate: Ham.",
+    "Garlic Fried Potatoes":"Take Potato [150g]. Season with: Salt [2g], Garlic, dried [4g], Black Pepper [2g]. Cut Potato into Quarters [~38g]. Add to the Pan: Olive Oil [20ml], Potato. Fry for 30s. Transfer onto a Plate: Potato. Serve warm.",
+    "Orange Slice":"Cut Orange [180g] into Pieces [30g]. Each serving consists of Orange [30g]. Transfer onto a Plate: Orange.",
+    "Rosemary Garnish":"Garnish with Rosemary Twig [5g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 117,
+    "dish_name": "Lobster Tail Cooked in White Wine",
+    "ingredients": [
+      "Dill, fresh",
+      "Lobster Tail",
+      "Lemon Juice",
+      "White Wine",
+      "Clarified Butter",
+      "Bay Leaf, dried",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Cooked Lobster Tail":"Add to a Pan: White Wine [20ml], Bay Leaf, dried [5g], Cayenne Pepper, powder [5g], Lobster Tail [200g]. Boil for 60s. Transfer onto a Plate: Lobster Tail. Drizzle in: Lemon Juice [10ml], Clarified Butter [10ml]. Serve warm.",
+    "Dill Garnish":"Garnish with Dill, fresh [3g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 118,
+    "dish_name": "Lobster tail Cooked in White Wine with Grilled Asparagus",
+    "ingredients": [
+      "Asparagus",
+      "Lemon",
+      "Dill, fresh",
+      "Lobster Tail",
+      "Water",
+      "White Wine",
+      "Clarified Butter",
+      "Dill, dried",
+      "Bay Leaf, dried",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Cooked Lobster Tail":"Add to a Pot: Water [1000ml], Dill, dried [10g], Lobster Tail [200g]. Boil for 30s. Add to a Pan: White Wine [20ml], Bay Leaf, dried [5g], Cayenne Pepper, powder [5g], Lobster Tail. Boil for 30s. Transfer onto a Plate: Lobster Tail. Drizzle in Clarified Butter [10ml]. Serve warm.",
+    "Grilled Asparagus":"Take Asparagus [80g]. Grill for 100s. Transfer onto a Plate: Asparagus. Serve hot.",
+    "Lemon Slices":"Cut Lemon [80g] into Quarters [20g]. Transfer onto a Plate: Lemon.",
+    "Dill Garnish":"Garnish with Dill, fresh [3g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 119,
+    "dish_name": "Grilled vegetables",
+    "ingredients": [
+      "Zucchini",
+      "Eggplant",
+      "Button Mushroom",
+      "Red Bell Pepper",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper"
+    ],
+    "recipe": {"Grilled vegetables":"Transfer into a Deep Plate: Olive Oil [70ml]. Black Pepper [25g], Salt [25g], Take Button Mushroom [50g]. Drizzle in Mixture [5ml]. Take Zucchini [300g]. Drizzle in Mixture [10ml]. Take Eggplant [350g]. Drizzle in Mixture [10ml]. Take Red Bell Pepper [240g]. Drizzle in Mixture [10ml]. Cut: Button Mushroom [50g] into Halves [25g], Eggplant [350g] into Quarters [~88g], Red Bell Pepper [240g] into Quarters [60g], Zucchini [300g] into Quarters [75g]. Add: Button Mushroom [50g], Eggplant [350g], Red Bell Pepper [240g], Zucchini [300g]. Grill for 100s. Transfer onto a Plate: Button Mushroom [50g], Eggplant [350g], Red Bell Pepper [240g], Zucchini [300g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 120,
+    "dish_name": "Grilled cabbage burger",
+    "ingredients": [
+      "Top Burger Bun",
+      "Bacon",
+      "Bottom Burger Bun",
+      "Cheddar",
+      "Red Cabbage",
+      "Sour Cream",
+      "White Vinegar",
+      "Dijon Mustard",
+      "Salt",
+      "Black Pepper",
+      "Dill, dried",
+      "Mint, dried",
+      "Herbs de Provence, dried",
+      "Chili Flakes",
+      "Garlic, dried"
+    ],
+    "recipe": {"Burger":"Take Red Cabbage [40g]. Season with: Salt [3g], Black Pepper [3g], Chili Flakes [2g], Dill, dried [2g], Mint, dried [2g], Garlic, dried [2g], Herbs de Provence, dried [2g]. Drizzle in: Dijon Mustard [5ml], White Vinegar [5ml], Sour Cream [5ml]. Grill for 40s. Take Bacon [60g]. Grill for 80s. Add to a Baking Tray: Bottom Burger Bun [40g], Top Burger Bun [40g]. Bake for 30s. Transfer onto a Plate: Cheddar [50g], Bacon [60g], Bottom Burger Bun [40g], Top Burger Bun [40g], Red Cabbage [40g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 121,
+    "dish_name": "Grilled white sausage",
+    "ingredients": [
+      "Chives",
+      "Peeled Egg",
+      "White sausage",
+      "Sunflower Oil",
+      "Honey",
+      "Sour Cream",
+      "Lemon Juice",
+      "Ketchup",
+      "Salt",
+      "Black Pepper",
+      "Sugar",
+      "Cayenne Pepper, powder",
+      "Horseradish, dried"
+    ],
+    "recipe": {"Sauce":"Transfer into a Deep Plate: Lemon Juice [20ml], Sour Cream [50ml], Horseradish, dried [10g]. Sugar [15g],",
+    "Grilled white sausage":"Add to a Pot: Water [500ml]. Egg [100g], Boil for 70s. Drain. Peel the Egg. Cut Peeled Egg [65g] into Quarters [~16g]. Transfer into a Deep Plate: Sunflower Oil [10ml], Honey [10ml], Ketchup [15ml], Salt [5g]. Black Pepper [5g], Cayenne Pepper, powder [5g], Take white sausage [150g]. Drizzle in Mixture [5ml]. Grill for 70s. Transfer onto a Plate: White sausage [150g]. Drizzle in Sauce [10ml]. Add: Peeled Egg [65g], White sausage [150g]. Serve warm.",
+    "Chives Garnish":"Garnish with Chives [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 122,
+    "dish_name": "White sausage roasted in beer",
+    "ingredients": [
+      "Onion",
+      "White sausage",
+      "Sunflower Oil",
+      "Honey",
+      "Mustard",
+      "Helles Märzenbier",
+      "Salt",
+      "Marjoram, dried",
+      "Cayenne Pepper, powder",
+      "Mustard Seeds"
+    ],
+    "recipe": {"White sausage":"Transfer into a Deep Plate: Helles Märzenbier [50ml], Sunflower Oil [10ml], Mustard [20ml], Honey [15ml], Cayenne Pepper, powder [5g]. Marjoram, dried [10g], Mustard Seeds [10g], Salt [5g], Take White sausage [150g]. Drizzle in Mixture [10ml]. Cut Onion [120g] into Quarters [30g]. Transfer onto the Baking Tray: Onion [120g], White sausage [150g]. Bake for 60s. Transfer onto a Plate: Onion [120g], White sausage [150g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 123,
+    "dish_name": "Cowboy steak with baked potato and broccoli",
+    "ingredients": [
+      "Steak",
+      "Potato",
+      "Broccoli",
+      "Scallion Leaves",
+      "Sunflower Oil",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "White Pepper",
+      "Cayenne Pepper, powder"
+    ],
+    "recipe": {"Steak":"Take Steak [220g]. Season with: Salt [6g], Cayenne Pepper, powder [6g], White Pepper [6g]. Grill for 70s each side. Transfer onto a Plate: Steak [220g].",
+    "Broccoli":"Take Broccoli [100g]. Season with: Salt [8g], Black Pepper [8g]. Drizzle in Olive Oil [6ml]. Grill for 100s. Cut Broccoli [100g] into Halves [25g]. Transfer onto a Plate: Broccoli [100g].",
+    "Potato":"Take Potato [300g]. Season with: Salt [6g], Black Pepper [6g]. Drizzle in Sunflower Oil [10ml]. Cut Potato [300g] into Halves [75g]. Add to a Baking Tray: Potato [300g]. Bake for 80s. Separate Scallion Cut Scallion Leaves [20g] into Pieces [~7g]. Transfer onto a Plate: Potato [300g], Scallion Leaves [20g]. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 124,
+    "dish_name": "Sweet and smoky salmon",
+    "ingredients": [
+      "Salmon Fillet",
+      "Lemon",
+      "Parsley Leaves, fresh",
+      "Lime Juice",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "White Pepper",
+      "Smoked Pepper, powder"
+    ],
+    "recipe": {"Salmon Fillet":"Take Salmon Fillet [210g]. Season with: White Pepper [3g], Black Pepper [3g], Salt [5g], Smoked Pepper, powder [10g]. Drizzle in: Lime Juice [5ml], Olive Oil [5ml]. Grill for 60s each side. Transfer onto a Plate: Salmon Fillet. Serve hot.",
+    "Lemon Quarters":"Cut Lemon [80g] into Quarters [20g]. Transfer onto a Plate.",
+    "Parsley Garnish":"Garnish with Parsley Leaves, fresh [6g]."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 125,
+    "dish_name": "Coffee-seasoned steak with corn on the cob",
+    "ingredients": [
+      "Steak",
+      "Cob of Corn",
+      "Clarified Butter",
+      "Olive Oil",
+      "Salt",
+      "White Pepper",
+      "Ginger",
+      "Smoked Pepper, powder",
+      "Cayenne Pepper, powder",
+      "Cinnamon, ground",
+      "Ground coffee"
+    ],
+    "recipe": {"Steak":"Take Steak [220g]. Season with: Cayenne Pepper, powder [5g], Ground coffee [10g], Salt [5g], Cinnamon, ground [5g], Ginger [7g], White Pepper [5g], Smoked Pepper, powder [5g]. Drizzle in Olive Oil [10ml]. Grill for 70s each side. Transfer onto a Plate: Steak. Serve hot.",
+    "Cob of Corn":"Take Cob of Corn [180g]. Grill for 50s each side. Season with Salt [10g]. Drizzle in Clarified Butter [10ml]. Transfer onto a Plate: Cob of Corn. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 126,
+    "dish_name": "Grilled lobster tail in lime sauce",
+    "ingredients": [
+      "Jalapeño",
+      "Lime",
+      "Scallion Bulbs",
+      "Lobster Tail",
+      "Sunflower Oil",
+      "Lemon Juice",
+      "Olive Oil"
+    ],
+    "recipe": {"Lobster Tail":"Separate Scallion. Cut: Scallion Bulbs [60g] into Quarters [15g], Jalapeño [40g] into Quarters [10g]. Add to the Pan: Sunflower Oil [10ml], Scallion Bulbs, Jalapeño. Fry for 40s. Take Lobster Tail [200g]. Drizzle in: Lemon Juice [6ml], Olive Oil [6ml]. Grill for 70s. Drizzle in Mixture [10ml]. Transfer onto a Plate: Scallion Bulbs, Jalapeño, Lobster Tail. Serve hot.",
+    "Lime wedges":"Cut Lime [60g] into Quarters [15g]. Transfer onto a Plate: Lime."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 127,
+    "dish_name": "Roasted pork ribs",
+    "ingredients": [
+      "Onion",
+      "Pork ribs",
+      "Sunflower Oil",
+      "White Vinegar",
+      "Ketchup",
+      "Salt",
+      "Black Pepper",
+      "Sugar",
+      "Cumin, powder",
+      "Chili Flakes"
+    ],
+    "recipe": {"Roasted pork ribs":"Cut Onion [120g] into Quarters [30g]. Add to the Pan: White Vinegar [10ml], Ketchup [10ml], Sunflower Oil [20ml], Sugar [5g], Chili Flakes [5g], Cumin, powder [5g], Black Pepper [5g], Salt [5g], Onion. Fry for 30s. Take Pork ribs [500g]. Season with: Salt [5g], Black Pepper [5g]. Add to a Baking Tray: Pork ribs. Bake for 60s. Drizzle in Mixture [20ml]. Cut Pork ribs into Pieces [100g]. Transfer onto a Plate: Onion, Pork ribs. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 128,
+    "dish_name": "Grilled pork ribs with french fries",
+    "ingredients": [
+      "Tomato",
+      "Potato",
+      "Pork ribs",
+      "Ketchup",
+      "Barbecue Sauce",
+      "Mustard",
+      "Wine Vinegar",
+      "Salt",
+      "Oregano, dried",
+      "Sugar",
+      "Sweet Bell Pepper, powder",
+      "Cumin, powder"
+    ],
+    "recipe": {"Grilled pork ribs with french fries":"Add to a Pot: Mustard [15ml], Wine Vinegar [10ml], Barbecue Sauce [20ml], Cumin, powder [5g]. Oregano, dried [10g], Sweet Bell Pepper, powder [20g], Sugar [10g], Tomato [120g], Boil for 60s. Blend. Take Pork ribs [500g]. Drizzle in Mixture [10ml]. Grill for 70s. Drizzle in Mixture [10ml]. Transfer onto a Plate: Pork ribs. Serve hot.",
+    "French Fries":"Take Potato [300g]. Season with Salt [6g]. Cut Potato into Pieces [15g]. Deep fry for 30s. Drizzle in Ketchup [10ml]. Transfer onto a Plate: Potato. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 129,
+    "dish_name": "Fruit salad",
+    "ingredients": [
+      "Raspberry",
+      "Apple",
+      "Banana",
+      "Orange",
+      "Strawberry",
+      "Pear",
+      "Mint Leaf",
+      "Lime Juice",
+      "Sugar",
+      "Mint, dried",
+      "Vanilla, powder"
+    ],
+    "recipe": {"Fruit salad":"Add to a Pot: Lime Juice [50ml], Mint, dried [4g]. Sugar [10g], Vanilla, powder [10g], Boil for 40s. Cut: Apple [150g] into Pieces [~19g], Banana [200g] into Pieces [25g], Orange [90g] into Pieces [30g], Pear [80g] into Quarters [20g]. Transfer into a Deep Plate: Mixture [50ml], Raspberry [20g], Strawberry [50g], Apple, Banana, Pear, Orange.",
+    "Mint Garnish":"Garnish with Mint Leaf [8g]. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 130,
+    "dish_name": "Salad with eggplant, halloumi, and tomatoes",
+    "ingredients": [
+      "Tomato",
+      "Eggplant",
+      "Garlic",
+      "Halloumi",
+      "Lemon Juice",
+      "Olive Oil",
+      "Salt",
+      "Black Pepper",
+      "Oregano, dried",
+      "Mint, dried"
+    ],
+    "recipe": {"Dressing":"Add to the Food Processor: Lemon Juice [20ml], Black Pepper [10g]. Salt [10g], Oregano, dried [15g], Mint, dried [10g], Garlic [20g], Blend.",
+    "Salad":"Take Eggplant [350g]. Drizzle in Olive Oil [10ml]. Take Halloumi [200g]. Drizzle in Olive Oil [10ml]. Cut: Tomato [120g] into Quarters [30g]. Eggplant into Pieces [~58g], Halloumi into Quarters [50g]. Add: Tomato, Eggplant, Halloumi. Grill for 70s. Transfer into a Deep Plate: Dressing [34ml], Tomato, Eggplant, Halloumi. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 131,
+    "dish_name": "Halloumi burger",
+    "ingredients": [
+      "Onion",
+      "Carrot",
+      "Top Burger Bun",
+      "Bottom Burger Bun",
+      "Jalapeño",
+      "Halloumi",
+      "Sunflower Oil",
+      "Lemon Juice",
+      "Salt",
+      "Black Pepper",
+      "Chili Flakes"
+    ],
+    "recipe": {"Burger":"Cut: Carrot [35g] into Quarters [~9g], Jalapeño [40g] into Quarters [10g]. Add to the Pan: Sunflower Oil [10ml], Jalapeño, Carrot. Fry for 50s. Add to the Pan: Onion [20g]. Fry for 30s. Take Halloumi [60g]. Season with: Chili Flakes [4g], Salt [4g], Black Pepper [4g]. Drizzle in Lemon Juice [6ml]. Add: Halloumi. Grill for 70s. Add to a Baking Tray: Bottom Burger Bun [40g], Top Burger Bun [40g]. Bake for 30s. Transfer onto a Plate: Onion, Halloumi, Bottom Burger Bun, Top Burger Bun, Carrot. Serve hot."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 132,
+    "dish_name": "Fresh meat!",
+    "ingredients": [
+      "Onion",
+      "Steak",
+      "Potato",
+      "Bacon",
+      "Pork Chops",
+      "Sausage",
+      "Eye of Newt",
+      "Bat Wing"
+    ],
+    "recipe": {"Meat Basket":"Cut: Onion [120g] into Quarters [30g], Potato [150g] into Quarters [~38g], Sausage [240g] into Quarters [60g]. Add to a Frying Basket: Onion [120g], Potato [150g], Sausage [240g]. Deep fry for 35s. Add to the Frying Basket: Eye of Newt [30g], Bat Wing [15g], Bacon [120g], Steak [220g], Pork Chops [200g]. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 133,
+    "dish_name": "Head of the Headless Horseman",
+    "ingredients": [
+      "Apple",
+      "Pumpkin",
+      "Parsley Leaves, fresh",
+      "Eye of Newt",
+      "Lemon Juice",
+      "Olive Oil",
+      "Basil, dried",
+      "Mint, dried"
+    ],
+    "recipe": {"Pumpkin Head":"Take Pumpkin [5000g]. Drizzle in: Lemon Juice [10ml], Olive Oil [10ml]. Season with: Basil, dried [20g], Mint, dried [15g]. Cut Apple [150g] into Quarters [~38g]. Add to a Baking Tray: Pumpkin [5000g], Apple [150g]. Bake for 120s. Add to a Paella Pan: Eye of Newt [30g], Parsley Leaves, fresh [6g], Pumpkin [5000g], Apple [150g]. Serve warm."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 134,
+    "dish_name": "Chum Bucket",
+    "ingredients": [
+      "Shrimp",
+      "Asparagus",
+      "Trout",
+      "Cod",
+      "Star Anise",
+      "Eye of Newt",
+      "Lizard Tail",
+      "Water",
+      "Lemon Juice",
+      "Soy Sauce",
+      "Black Pepper",
+      "Oregano, dried"
+    ],
+    "recipe": {"Slop":"Take Trout [200g]. Season with: Black Pepper [10g], Oregano, dried [10g]. Take Cod [160g]. Season with: Black Pepper [10g], Oregano, dried [10g]. Cut: Trout into Halves [100g], Cod into Halves [80g]. Add to a Pot: Water [500ml], Lemon Juice [10ml], Soy Sauce [15ml], Shrimp [80g]. Star Anise [10g], Lizard Tail [15g], Asparagus [32g], Trout [200g], Cod [160g]. Boil for 50s. Blend. Transfer into a Plastic Bowl: Mixture [843ml]. Eye of Newt [105g], Serve warm."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 135,
+    "dish_name": "Witch’s Brew",
+    "ingredients": [
+      "Onion",
+      "Garlic",
+      "Lizard Tail",
+      "Bat Wing",
+      "Chicken Broth",
+      "Clarified Butter",
+      "Olive Oil"
+    ],
+    "recipe": {"Magic Decoction":"Cut Onion [120g] into Quarters [30g]. Add to a Pot: Olive Oil [20ml], Garlic [50g], Onion [120g]. Fry for 35s. Add to the Pot: Chicken Broth [500ml], Bat Wing [30g]. Blend. Add to the Pot: Clarified Butter [15ml]. Transfer into a Pot: Lizard Tail [105g]. Serve cool."
+    },
+    "sub_task_sequence": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 136,
+    "dish_name": "Braaains Shake",
+    "ingredients": [
+      "Burger Meat",
+      "Broccoli",
+      "Trout",
+      "Egg",
+      "Eye of Newt",
+      "Lizard Tail",
+      "Milk"
+    ],
+    "recipe": {"Shake":"Add to the Food Processor: Milk [100ml]. Burger Meat [224g], Egg [200g], Eye of Newt [60g], Lizard Tail [60g], Trout [200g], Broccoli [200g], Blend. Serve cold."
+    },
+    "sub_task_sequence": [
+      "",
+      
+      ""
+    ],
+    "video_id": "video_001"
+  },  
+  {
+    "id": 137,
+    "dish_name": "New York Steak with Garlic",
+    "ingredients": [
+        "Garlic",
+        "Steak",
+        "Potato",
+        "Rosemary Twig",
+        "Thyme Twig",
+        "Water",
+        "Clarified Butter",
+        "Olive Oil",
+        "Salt",
+        "Black Pepper"
+    ],
+    "recipe": {
+        "New York Steak with Garlic": "Take Steak [220g]. Season with: Black Pepper [10g], Salt [10g]. Transfer onto the Baking Tray: Garlic, Steak. Bake for 40s. Add to the Pan: Potato, Clarified Butter [15ml], Olive Oil [15ml], Garlic [30g], Steak. Fry for 30s each side. Transfer onto a Plate: Garlic, Steak. Serve hot.",
+        "Fried Potatoes": "Cut Potato [150g] into Quarters [~38g]. Add to a Pot: Water [1000ml], Salt [10g], Potato. Boil for 90s. Add to a Pan: Olive Oil [15ml], Potato. Fry for 30s. Transfer onto a Plate: Potato. Serve hot.",
+        "Thyme and Rosemary Garnish":"Garnish with Thyme Twig [5g], Rosemary Twig [5g]."
+    },
+    "sub_task_sequence": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "video_id": "video_001"
+  },
+  {
+    "id": 138,
+    "dish_name": "Simple New York Steak",
+    "ingredients": [
+        "Steak",
+        "Potato",
+        "Rosemary Twig",
+        "Thyme Twig",
+        "Water",
+        "Olive Oil",
+        "Salt",
+        "Black Pepper"
+    ],
+    "recipe": {
+        "New York Steak": "Take Steak [220g]. Season with: Black Pepper [10g], Salt [10g]. Add to the Pan: Olive Oil [15ml], Steak. Fry for 45s each side. Transfer onto a Plate: Steak. Serve hot.",
+        "Fried Potatoes": "Cut Potato [150g] into Quarters [~38g]. Add to a Pot: Water [1000ml], Salt [10g], Potato. Boil for 90s. Add to a Pan: Olive Oil [15ml], Potato. Fry for 30s. Transfer onto a Plate: Potato. Serve hot.",
+        "Thyme and Rosemary Garnish": "Garnish with Thyme Twig [5g], Garnish with Rosemary Twig [5g]."
+    },
+    "sub_task_sequence": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "video_id": "video_001"
+  }
+]

@@ -1,0 +1,35 @@
+Rules:
+- Do NOT import anything.
+- Do NOT access files.
+- `json` is already available; do not write `import json`.
+- Every regeneration is a fresh Python file. Variables from older generated policies do NOT exist now.
+- Never reference a name unless it is defined in the current code, provided as a function argument/local, or read from ctx.
+- Never rely on previous temporary locals, previous helper functions, or previous convenience variables.
+- This code is for planning only; runtime does not execute Python control flow.
+- Do NOT use `if`, `for`, `while`, `try`, or helper functions inside `policy(ctx)`.
+- Prefer a compact straight-line multi-step plan over a one-step script.
+- A policy should usually cover several meaningful future turns before finishing.
+- Treat the policy as high-level control logic. Keep it simple and declarative.
+- Do NOT introduce `stage` or many branch-control variables unless the task truly needs them.
+- Use comments to mark phases/subtasks instead of storing those phase names in runtime variables.
+- Every `yield action(...)` / `yield skill(...)` argument must be a plain literal. No expressions.
+- Forbidden inside yield args: `ctx[...]`, `results[...]`, variable indexing, attribute access, arithmetic, function calls, or any computed expression.
+- If you need something from feedback/query results, mention it in a comment and keep the yielded call itself literal-only.
+- Do NOT create convenience variables that only rename fixed strings/numbers such as `item_name = "Olive Oil"` or `target_ml = 10` if those values can be written directly in the call.
+- Reconstruct progress from `ctx["feedback"]`, `ctx["resume_state"]`, and `ctx["runtime_state"]` instead of maintaining many fragile locals.
+- Use exact action/skill names from the tool reference.
+- Use `query_scene_objects` when you need fresh scene candidates or instance ids.
+- Do NOT invent placeholder instance ids, binding markers, or synthetic variable protocols.
+- Do NOT assume `agent_state` / `runtime_state` container ids will be auto-filled by the executor.
+- Keep the plan natural and let runtime disambiguation resolve missing instance ids when needed.
+- Reuse `ctx["runtime_state"]` before issuing a repeated query, but do not mirror every temporary local into runtime_state.
+- Treat `ctx["resume_state"]` and persisted runtime/postcondition data as the current source of progress after regeneration; continue from there instead of restarting the recipe.
+- Mirror only important durable progress variables when truly needed; avoid bloating `ctx["runtime_state"]`.
+- If the dish is already ordered, or feedback says the previous order step was skipped because it was already ordered, do NOT call `gui_order_dish_via_computer` again.
+- `countdown_time(...)` is only for explicit waiting/timer semantics. Never use it as a generic fallback when you are unsure.
+- Do not emit the exact same successful action/skill again unless the latest feedback shows a real state change or the task explicitly requires waiting/retrying.
+- If query fallback is needed, reuse one `query` variable and overwrite it with another exact item name.
+- Never invent query strings like `_alt1`, `_alt2`, `_retry`, or other synthetic suffix markers.
+- Do not query fabricated `X Source` / `X Stack` names for cookware or scene containers such as Big Pot/Pot/Pan/Bake Tray unless there is explicit evidence that such an acquisition point exists.
+- For cutting tasks, prefer `auto_cutting(...)` instead of planning around `knife_cut_down()`.
+- Define `policy(ctx)` and place only sequential yield statements inside it.

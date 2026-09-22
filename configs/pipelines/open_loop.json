@@ -1,0 +1,23 @@
+{
+  "extends": "../common.json",
+  "runtime": {
+    "stm_window_size": 200,
+    "log_level": "INFO"
+  },
+  "brain": {
+    "pipeline": "open_loop",
+    "use_vlm": true,
+    "perception_mode": "oracle",
+    "plan_min_steps": 10,
+    "plan_max_steps": 40,
+    "allow_incremental_plan": false,
+    "task_progress_maintenance": {
+      "enabled": false,
+      "update_mode": "maintainer_only",
+      "every_n_steps": 0,
+      "on_need_replan": false,
+      "on_planner_invalid_step": false,
+      "history_window_steps": 20
+    }
+  }
+}

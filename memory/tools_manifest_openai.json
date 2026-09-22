@@ -1,0 +1,1677 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "action__Horizontal_movement",
+      "description": "Rotation and spatial-control action. Move the object horizontally in space.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "string"
+          },
+          "y": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "x",
+          "y"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__adjust_sprinkle_weight",
+      "description": "Seasoning sprinkle action. In spice sprinkling mode, adjust the pouring amount by weight.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__blender_downward",
+      "description": "Blender interaction action. In mixing mode, move the blender vertically downward to reach the bottom of the container for mixing.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__blender_upward",
+      "description": "Blender interaction action. Move the blender vertically upward to stop mixing; you can also directly exit mixing mode.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__bottleneck_move_downward",
+      "description": "In liquid pouring mode, tilt the bottle neck downward so liquid flows out.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "y": {
+            "type": "string",
+            "description": "Bottle-neck vertical movement distance (pixels)."
+          }
+        },
+        "required": [
+          "y"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__bottleneck_move_upward",
+      "description": "In liquid pouring mode, raise the bottle neck upward to stop liquid outflow.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "y": {
+            "type": "string",
+            "description": "Bottle-neck vertical movement distance (pixels)."
+          }
+        },
+        "required": [
+          "y"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__change_content_5_or_10ml",
+      "description": "Pipette operation action. While holding a pipette, switch the single-operation volume between 5 ml and 10 ml. Default is 5 ml; press once to change to 10 ml; press once again to return to 5 ml.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__change_faucet_pipe_rotation",
+      "description": "Liquid-container and faucet interaction action. Preconditions: either faucet-filling mode is already active, or you have already navigated to the faucet area and aimed at the `Faucet Pipe`. The action rotates the faucet pipe, verifies whether its position changed, and reports whether it is now closer to `Left Sink Place Point` or `Right Sink Place Point` based on horizontal-plane distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__close_door",
+      "description": "Close any door-type object, such as a fridge door or oven door. You must aim at a centered door within 2 meters before execution. This action uses the door's `is_open` and `open_angle` fields for pre-check and post-check, and returns a 3-second `open_angle` trace as feedback.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__close_drawer",
+      "description": "Close any drawer-type object, such as a left/right refrigerator drawer. You must aim at a centered drawer within 2 meters before execution. This action left-clicks the centered drawer target and uses that drawer's `is_open` field for pre-check and post-check.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__countdown_time",
+      "description": "Countdown (non-blocking): only registers a timer and returns timer_id; other actions can continue during timing. Completion/timeout events will appear in agent_state.timer_events.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "number",
+            "description": "Duration (seconds).",
+            "default": 5.0
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__wait_for_timer",
+      "description": "Wait for timer completion: returns success when the timer completes; returns timeout on timeout. Timer events are also written to agent_state.timer_events.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "timer_id": {
+            "type": "string",
+            "description": "Timer ID; when empty, it is auto-used only if there is exactly one running timer."
+          },
+          "timeout_s": {
+            "type": "number",
+            "description": "Maximum wait time (seconds).",
+            "default": 60.0
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__crack_open_the_egg",
+      "description": "Egg interaction action. While holding an egg, crack it open. The egg white remains in hand and the shell drops vertically.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__enter_cutting_mode",
+      "description": "Cutting-tool action. While holding a knife, enter cutting mode to aim and cut items. You must enter cutting mode before cutting; this is the prerequisite for cutting.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__enter_mixing_mode",
+      "description": "Blender interaction action. While holding a blender and aiming at a container, enter mixing mode to mix items in the container; this is the prerequisite for mixing.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__enter_pouring_mode",
+      "description": "Liquid-pouring action. While holding a container or liquid bottle and aiming at another container, enter liquid pouring mode; this is the prerequisite for liquid pouring.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__enter_spices_sprinkle_mode",
+      "description": "Seasoning sprinkle action. While holding a seasoning shaker and aiming at an item or container, enter spice sprinkling mode. This is the prerequisite for sprinkling spices.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__enter_the_faucet_filling_mode",
+      "description": "水龙头加水准备动作。前提是已经手持可盛液体的容器，并且已经对准 `Faucet Base`。进入水龙头加水模式后，后续通常使用 `open_faucet_right_handle_in_faucet_filling_mode`、`open_faucet_left_handle_in_faucet_filling_mode` 或 `exit_the_faucet_filling_mode`。另一种流程是先把容器放到 `Left Sink Place Point` 或 `Right Sink Place Point`，再导航到水龙头区域、对准对应把手，然后直接调用 `screw_faucet_right_handle` 或 `screw_faucet_left_handle`。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__enter_the_flipping_mode",
+      "description": "Spatula interaction action. While holding a spatula and after lifting the ingredient, enter flipping mode to flip the ingredient; this is the prerequisite for flipping. For example, flipping is needed when frying a burger patty.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__exit_cutting_mode",
+      "description": "Cutting-tool action. In cutting mode, exit cutting mode after cutting is completed.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__exit_mixing_mode",
+      "description": "Blender interaction action. In mixing mode, exit mixing mode and return to normal blender-holding state.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__exit_pouring_mode",
+      "description": "Liquid-pouring action. In liquid pouring mode, exit liquid pouring mode.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__exit_spices_sprinkle_mode",
+      "description": "Seasoning sprinkle action. In spice sprinkling mode, exit spice sprinkling mode.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__exit_the_faucet_filling_mode",
+      "description": "Liquid-container and faucet interaction action. In filling mode, exit filling mode and return to normal liquid-container holding state.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__exit_the_flipping_mode",
+      "description": "Spatula interaction action. In flipping mode, exit flipping mode and return to normal spatula-holding state.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__flip_over",
+      "description": "Spatula interaction action. In flipping mode, flip the ingredient on the spatula onto a flat surface.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__get_liquid_in_Ladle",
+      "description": "Ladle operation action. While holding a ladle, scoop a specific volume of liquid. The one-time volume depends on ladle size, which can be inferred from the ladle name.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__get_liquid_out_Ladle",
+      "description": "Ladle operation action. While holding a ladle and aiming at a target container, pour the liquid currently in the ladle into the target container in one operation.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__horizontal_movement",
+      "description": "Rotation and spatial-control action. In special modes or advanced-control states, move the object horizontally in space.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "string",
+            "description": "Horizontal left-right movement distance (pixels)."
+          },
+          "y": {
+            "type": "string",
+            "description": "Horizontal forward-backward movement distance (pixels)."
+          }
+        },
+        "required": [
+          "x",
+          "y"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__kneel_down",
+      "description": "Character posture adjustment action. Crouch down.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__knife_cut_down",
+      "description": "Cutting-tool action. In cutting mode, make the knife drop vertically to cut the item directly below.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__look_down",
+      "description": "Character view adjustment action. Rotate the view downward by a distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pixels": {
+            "type": "string",
+            "description": "Mouse movement pixels (for view adjustment).",
+            "default": 100
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__look_left",
+      "description": "Character view adjustment action. Rotate the view left by a distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pixels": {
+            "type": "string",
+            "description": "Mouse movement pixels (for view adjustment).",
+            "default": 100
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__look_right",
+      "description": "Character view adjustment action. Rotate the view right by a distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pixels": {
+            "type": "string",
+            "description": "Mouse movement pixels (for view adjustment).",
+            "default": 100
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__look_up",
+      "description": "Character view adjustment action. Rotate the view upward by a distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pixels": {
+            "type": "string",
+            "description": "Mouse movement pixels (for view adjustment).",
+            "default": 100
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_backward",
+      "description": "Move backward by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_backward_left",
+      "description": "Move to the back-left by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_backward_right",
+      "description": "Move to the back-right by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_faucet_container",
+      "description": "Liquid-container and faucet interaction action. In filling mode, move the liquid container vertically to align it with the faucet for filling.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "integer",
+            "description": "Movement distance in horizontal direction (pixels)."
+          }
+        },
+        "required": [
+          "x"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_forward",
+      "description": "Move forward by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_forward_left",
+      "description": "Move to the front-left by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_forward_right",
+      "description": "Move to the front-right by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_left",
+      "description": "Move left by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__move_right",
+      "description": "Move right by a short distance.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "description": "Duration (seconds).",
+            "default": 0.3
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__open_door",
+      "description": "Open any door-type object, such as a fridge door or oven door. You must aim at a centered door within 2 meters before execution. This action uses the door's `is_open` and `open_angle` fields for pre-check and post-check, and returns a 3-second `open_angle` trace as feedback.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__open_drawer",
+      "description": "Open any drawer-type object, such as a left/right refrigerator drawer. You must aim at a centered drawer within 2 meters before execution. This action left-clicks the centered drawer target and uses that drawer's `is_open` field for pre-check and post-check.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pick_less",
+      "description": "Container multi-pick quantity adjustment action. Use this only while holding a container and aiming at a real on-screen item pile that already supports multi-selection. Scroll the mouse wheel upward to reduce how many items will be picked in one pickup. The currently selected items are highlighted by a yellow outline on screen. Do not use this on ingredient Source/spawn points; Source/spawn points do not support pick-more/pick-less quantity adjustment.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "steps": {
+            "type": "string",
+            "description": "Number of upward wheel steps used to reduce the current selection quantity."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pick_more",
+      "description": "Container multi-pick quantity adjustment action. Use this only while holding a container and aiming at a real on-screen item pile that already supports multi-selection. Scroll the mouse wheel downward to increase how many items will be picked in one pickup. The currently selected items are highlighted by a yellow outline on screen. Do not use this on ingredient Source/spawn points; Source/spawn points do not support pick-more/pick-less quantity adjustment.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "steps": {
+            "type": "string",
+            "description": "Number of downward wheel steps used to increase the current selection quantity."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pick_up",
+      "description": "Item pickup action. When hands are empty and the view is aimed at an item, perform pickup on the item.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pick_up_into_the_container",
+      "description": "Item pickup action. While holding a container and aiming at an item, pick the item into the container.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pick_up_with_spatula",
+      "description": "Spatula interaction action. While holding a spatula and aiming at the target item, lift the ingredient with the spatula.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pick_up_with_tongs",
+      "description": "Tongs interaction action. While holding tongs and aiming at the target item, pick up the ingredient with the tongs. Usually not needed and can be ignored.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pour_in_pipette",
+      "description": "Pipette operation action. While holding a pipette and aiming at a target container, draw liquid from the target container into the pipette. Capacity is 20 ml; default single operation is 5 ml.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__pour_out_from_pipette",
+      "description": "Pipette operation action. While holding a pipette and aiming at a target container, dispense liquid from the pipette into the target container. Capacity is 20 ml; default single operation is 5 ml.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__put_down",
+      "description": "Item placement action. When holding an item and aiming at a placement position, place down the item.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__repair",
+      "description": "Repair action. While holding the Repair Phone and aiming at a damaged cookware/tool, execute repair on the target.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__release_with_tongs",
+      "description": "Tongs interaction action. Release the tongs while holding an item with them. Usually not needed and can be ignored.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__rotate_along_the_Yaxis",
+      "description": "Rotation and spatial-control action. When object pose can be controlled, rotate the item or tool around the Y-axis via mouse movement.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "string",
+            "description": "Rotation angle clockwise/counterclockwise around the Y-axis."
+          }
+        },
+        "required": [
+          "x"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__rotate_clockwise_along_the_Yaxis",
+      "description": "Rotation and spatial-control action. When object pose can be controlled, rotate the item or tool clockwise around the Y-axis via keyboard.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__rotate_clockwise_along_the_Zaxis",
+      "description": "Rotation and spatial-control action. When object pose can be controlled, rotate the item or tool clockwise around the Z-axis.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__rotate_counterclockwise_along_the_Yaxis",
+      "description": "Rotation and spatial-control action. When object pose can be controlled, rotate the item or tool counterclockwise around the Y-axis via keyboard.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__rotate_counterclockwise_along_the_Zaxis",
+      "description": "Rotation and spatial-control action. When object pose can be controlled, rotate the item or tool counterclockwise around the Z-axis.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__screw_bottle",
+      "description": "Liquid-bottle interaction action. While holding a liquid bottle, tighten the bottle cap.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__screw_faucet_left_handle",
+      "description": "直接水龙头加水动作。用于非模式化的水龙头加水流程：容器已经放在 `Left Sink Place Point` 或 `Right Sink Place Point`，并且镜头已经对准左侧水龙头把手。动作会从左侧把手开始加水，并在新增液体达到 `target_ml` 后自动停止。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_ml": {
+            "type": "string",
+            "description": "本次加水所需达到的目标增量。默认单位为毫升，也支持带单位的字符串输入，例如 \"1500 ml\" 或 \"1.5 l\"。"
+          }
+        },
+        "required": [
+          "target_ml"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__screw_faucet_right_handle",
+      "description": "直接水龙头加水动作。用于非模式化的水龙头加水流程：容器已经放在 `Left Sink Place Point` 或 `Right Sink Place Point`，并且镜头已经对准右侧水龙头把手。动作会从右侧把手开始加水，并在新增液体达到 `target_ml` 后自动停止。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_ml": {
+            "type": "string",
+            "description": "本次加水所需达到的目标增量。默认单位为毫升，也支持带单位的字符串输入，例如 \"1500 ml\" 或 \"1.5 l\"。"
+          }
+        },
+        "required": [
+          "target_ml"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__skewer_hang_on_string",
+      "description": "Skewer interaction action. While holding a skewer and aiming at an item, skewer the ingredient.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__skewer_remove_the_ingredients",
+      "description": "Skewer interaction action. When food is on the skewer and aimed at a placement position, remove the ingredient from the skewer.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__spatial_rotation",
+      "description": "Rotation and spatial-control action. In advanced-control state, rotate the object in space to change its pose.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "string",
+            "description": "Rotation angle clockwise/counterclockwise around the axis pointing forward along the view horizontal direction."
+          },
+          "y": {
+            "type": "string",
+            "description": "Rotation angle for forward/backward rolling of the object."
+          }
+        },
+        "required": [
+          "x",
+          "y"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__stand_up",
+      "description": "Character posture adjustment action. Stand up.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__switch_to_advanced_control_mode",
+      "description": "Rotation and spatial-control action. In holding state, switch to advanced control to support spatial movement and rotation.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__switch_to_normal_control_mode",
+      "description": "Rotation and spatial-control action. In advanced-control state, switch to normal control to restore normal interaction state.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__discard_into_garbage_bin",
+      "description": "Item interaction action. While holding an item and aiming at a garbage bin, use this action to discard the no-longer-needed held item into the garbage bin. This operation is irreversible and should be used with caution.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__throw_away",
+      "description": "Item interaction action. While holding an item, throw it toward the front of the current view.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__togggle_add_oil_into_Deep_fryer",
+      "description": "Deep fryer specific interaction action. Click the \"Fryer 1/2 Button On\" button on the tool to add cooking oil into the fryer. Prerequisite: first aim at the fryer oil-fill button.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__toggle_off_blender",
+      "description": "Blender interaction action. Turn off the blender.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__toggle_off_food_processor",
+      "description": "Food processor specific interaction action. Turn off the processor blade cutting function.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__toggle_off_switch",
+      "description": "Appliance-switch interaction action. Turn off the switch at a location for gas stove, flat grill, oven, stripe grill, deep fryer, etc.; switch names contain the word \"switch\". You must navigate and aim at the switch position before executing this action.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__toggle_on_blender",
+      "description": "Blender interaction action. Turn on the blender. Tool function: blend solid items into liquid.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__toggle_on_food_processor",
+      "description": "Food processor specific interaction action. Turn on the processor blade cutting function to process items from solids into liquid.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__toggle_on_switch",
+      "description": "Appliance-switch interaction action. Turn on the switch at a location for gas stove, flat grill, oven, stripe grill, deep fryer, etc.; switch names contain the word \"switch\". You must navigate and aim at the switch position before executing this action.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__toggle_pour_oil_out_Deep_fryer",
+      "description": "Deep fryer specific interaction action. Click the \"Fryer 1/2 Button Off\" button on the tool to drain cooking oil from the fryer. Prerequisite: first aim at the fryer oil-drain button.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__unscrew_bottle",
+      "description": "Liquid-bottle interaction action. While holding a liquid bottle, loosen the bottle cap.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__open_faucet_left_handle_in_faucet_filling_mode",
+      "description": "水龙头加水模式内动作。在已经进入水龙头加水模式后，打开左侧水龙头把手，为当前容器加入目标增量的热水；达到目标后动作会自动停止并退出。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_ml": {
+            "type": "string",
+            "description": "本次加水所需达到的目标增量。默认单位为毫升，也支持带单位的字符串输入，例如 \"1500 ml\" 或 \"1.5 l\"。"
+          }
+        },
+        "required": [
+          "target_ml"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__open_faucet_right_handle_in_faucet_filling_mode",
+      "description": "水龙头加水模式内动作。在已经进入水龙头加水模式后，打开右侧水龙头把手，为当前容器加入目标增量的冷水；达到目标后动作会自动停止并退出。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_ml": {
+            "type": "string",
+            "description": "本次加水所需达到的目标增量。默认单位为毫升，也支持带单位的字符串输入，例如 \"1500 ml\" 或 \"1.5 l\"。"
+          }
+        },
+        "required": [
+          "target_ml"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "action__vertical_movement",
+      "description": "Rotation and spatial-control action. In advanced-control state, move the object vertically.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "y": {
+            "type": "string",
+            "description": "Vertical movement distance of the held object (pixels)."
+          }
+        },
+        "required": [
+          "y"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__auto_cut",
+      "description": "Item cutting skill. In cutting mode, make `cut_num` cuts on the item. After cutting, it automatically exits cutting mode and returns to the state of holding the knife.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "item_name": {
+            "type": "string"
+          },
+          "item_instance_id": {
+            "type": "string",
+            "default": null
+          },
+          "cut_num": {
+            "type": "string",
+            "description": "Number of cuts. object_instance_id: Optional `instance_id` in realtime_products.json. Use it to disambiguate when multiple items share the same name (recommended for robust execution). To find candidate `instance_id`s, call the read-only skill `query_scene_objects(query='...')`, e.g.: query_scene_objects(query='lemon')",
+            "default": 3
+          }
+        },
+        "required": [
+          "item_name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__auto_filp",
+      "description": "Spatula flipping skill. In flipping mode, move the `meat` on the spatula to `put_place` to flip the meat, and automatically exit flipping mode after completion, returning to the state of holding the spatula.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "meat": {
+            "type": "string",
+            "description": "Meat/food item name on the spatula (e.g. 'T-bone Steak')."
+          },
+          "put_place": {
+            "type": "string",
+            "description": "Place point / surface name (e.g. 'Griddle Surface-1', 'Plate')."
+          },
+          "meat_instance_id": {
+            "type": "string",
+            "description": "Optional `instance_id` in realtime_products.json for the meat item.",
+            "default": null
+          },
+          "put_place_instance_id": {
+            "type": "string",
+            "description": "Optional `instance_id` in realtime_products.json for the placement target. Note: this action expects a real `instance_id` (NOT a platform index). For platform category+index shorthand like put_place='Side Table', put_place_instance_id=3, use the `--skill auto_filp` wrapper instead. To find candidate `instance_id`s: - Meat: query_scene_objects(query='cod') - Put-place (platform points): query_scene_objects(query='Griddle Surface-3')",
+            "default": null
+          }
+        },
+        "required": [
+          "meat",
+          "put_place"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__auto_mix",
+      "description": "Mixing skill. In mixing mode, automatically mix items in `container`. Solids become liquid after mixing; after mixing, it automatically exits mixing mode and returns to the state of holding the blender.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "container_name": {
+            "type": "string"
+          },
+          "container_instance_id": {
+            "type": "string",
+            "description": "Optional `instance_id` in realtime_products.json for the container. Use it to disambiguate when multiple containers share the same name. To find candidate `instance_id`s, call the read-only skill `query_scene_objects(query='...')`, e.g.: query_scene_objects(query='Big Pot')",
+            "default": null
+          }
+        },
+        "required": [
+          "container_name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__auto_navigation",
+      "description": "Navigation skill. Navigate to `target` and face `target` directly.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target": {
+            "type": "string",
+            "description": "Target name. Three input types are allowed: 1) regular object name (e.g., `lemon`). 2) platform placement-point category name (e.g., `Side Table`). 3) tool interaction-point category name (e.g., `Stove Switch`)."
+          },
+          "target_instance_id": {
+            "type": "string",
+            "description": "Semantics depend on `target` type: 1) Regular object: the corresponding `instance_id` in realtime_products (used to disambiguate multiple instances with the same name). 2) Platform category (`kind='platform_point'`): when `target` is a platform category name, `target_instance_id` is used as the platform index (must be within allowed range), and is automatically expanded to a concrete platform point name. Example: `target='Side Table', target_instance_id=3` -> `Side Table-3`. 3) Tool interaction-point category (`kind='tool_point'`): when `target` is a tool interaction-point category name, `target_instance_id` is used as the category index (must be within allowed range), and is automatically expanded to a concrete tool point name (e.g., `Stove Switch 1`). If this category does not accept an index, do not pass it. If `target` is not a platform/tool category name, `target_instance_id` is interpreted as a regular object instance_id. Actively find candidates: - Regular object: use `query_scene_objects(query='...')` to get candidates and instance_id. - Platform/tool category: use `list_supported_items(query='...')` to get available categories and naming, then decide whether an index is needed.",
+            "default": null
+          },
+          "map_file": {
+            "type": "string",
+            "default": null
+          },
+          "auto_activate_window": {
+            "type": "string",
+            "default": true
+          },
+          "impl": {
+            "type": "string",
+            "default": "simple_astar_radar"
+          }
+        },
+        "required": [
+          "target"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__auto_perception",
+      "description": "Automatic perception skill: get the list of items in the current view (read realtime_products.json, sorted by distance).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "only_on_screen": {
+            "type": "string",
+            "description": "Whether to keep only objects with `is_on_screen=True` (default False).",
+            "default": true
+          },
+          "max_items": {
+            "type": "string",
+            "description": "Maximum number of returned objects (default 200).",
+            "default": 50
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__auto_pour",
+      "description": "Pouring skill. In pouring mode, automatically pour liquid into `container` until `pour_ml` milliliters are reached.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "container_name": {
+            "type": "string"
+          },
+          "container_instance_id": {
+            "type": "string",
+            "description": "Optional `instance_id` in realtime_products.json for the target container. Use it to disambiguate when multiple containers share the same name. To find candidate `instance_id`s, call the read-only skill `query_scene_objects(query='...')`, e.g.: query_scene_objects(query='Pan') {'success': bool, 'poured_ml': float, 'target_ml': float, 'tolerance': float, 'container_name': str, 'error': str}",
+            "default": null
+          },
+          "target_ml": {
+            "type": "string",
+            "default": 50.0
+          }
+        },
+        "required": [
+          "container_name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__auto_sprinkle",
+      "description": "Sprinkling skill. In sprinkling mode, sprinkle seasoning from the shaker onto `target` for `sprinkle_num` times.\nDefault is about 1 g each time (unless an action to change sprinkle grams has already been executed).\n\nGPT tool guidance:\n  Purpose: add seasoning by repeating the sprinkle interaction.\n  When to call: target is visible/interactable and sprinkling action/tool is available.\n  Side effects: sends keyboard/mouse events.\n  Final state: sprinkle interaction executed ~`sprinkle_num` times.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_item": {
+            "type": "string"
+          },
+          "target_instance_id": {
+            "type": "string",
+            "description": "Optional `instance_id` in realtime_products.json for the sprinkle target. Use it to disambiguate when multiple items share the same name. To find candidate `instance_id`s, call the read-only skill `query_scene_objects(query='...')`, e.g.: query_scene_objects(query='Steak')",
+            "default": null
+          },
+          "sprinkle_num": {
+            "type": "string",
+            "description": "number of times the sprinkling action is executed  (int).",
+            "default": 3
+          }
+        },
+        "required": [
+          "target_item"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__query_scene_objects",
+      "description": "Live scene query skill: search current item instances in realtime_products.json by name substring (case-insensitive). Use this when you need current scene state such as live instance_id, visibility, container, or distance for execution/disambiguation. Do not use it for static catalog/reference metadata.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Name substring (English; matches fields such as name/name_en/name_cn).",
+            "default": ""
+          },
+          "only_on_screen": {
+            "type": "string",
+            "description": "Whether to search only objects in the current view; this parameter usually does not need to be changed (default False).",
+            "default": false
+          },
+          "max_items": {
+            "type": "string",
+            "description": "Maximum number of matched items to return; this parameter usually does not need to be changed (default 100).",
+            "default": -1
+          },
+          "max_distance": {
+            "type": "string",
+            "description": "Maximum distance filter; this parameter does not need to be changed (default -1, meaning no filtering).",
+            "default": -1.0
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__gui_buy_new_item",
+      "description": "Buy-item skill. Use this skill to obtain items that do not exist in the scene. In empty-hand state, it automatically navigates to Carton Box and purchases items in the store UI.\nAfter purchase, the agent holds the corresponding item; before buying again, place the current item first to ensure empty hands, otherwise it will fail.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "string",
+            "description": "object name (English/Chinese) resolvable via `epm/data/object_en_ch_mapping.txt`. Category and icon template are auto-resolved."
+          }
+        },
+        "required": [
+          "item"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__gui_order_dish_via_computer",
+      "description": "Dish-ordering skill. This skill must be executed before each task starts: in empty-hand state, automatically navigate to Computer and place the order in the computer UI; after clicking order, the agent remains empty-handed.\nIf ordering again, ensure empty hands, otherwise it will fail.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "dish_name": {
+            "type": "string",
+            "description": "Dish name to order."
+          },
+          "computer_target": {
+            "type": "string",
+            "default": "Computer"
+          }
+        },
+        "required": [
+          "dish_name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__gui_submit_dish_via_checkout_stand",
+      "description": "Dish-submission and evaluation skill. This skill must be executed after each task ends: while holding the dish, automatically navigate to Checkout Stand and submit the dish in the submission UI to obtain score and feedback for the cooked dish.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "dish_name": {
+            "type": "string",
+            "description": "Dish name to submit for evaluation."
+          },
+          "checkout_target": {
+            "type": "string",
+            "default": "Checkout Stand"
+          }
+        },
+        "required": [
+          "dish_name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__query_tool_manual",
+      "description": "Kitchen tool manual lookup skill. Query cookware usage/specifications from epm/data/tool_en.json by tool name/type/function.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "default": "",
+            "description": "Free-text keyword for tool name/type/function."
+          },
+          "tool_type": {
+            "type": "string",
+            "default": "",
+            "description": "Filter by tool_type (substring match)."
+          },
+          "container_type": {
+            "type": "string",
+            "default": "",
+            "description": "Filter by container_type (substring match)."
+          },
+          "tool_function": {
+            "type": "string",
+            "default": "",
+            "description": "Filter by tool_function (substring match)."
+          },
+          "max_items": {
+            "type": "integer",
+            "default": -1,
+            "description": "Maximum results to return. Use -1 for no limit."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "skill__query_product_catalog",
+      "description": "Static product metadata lookup skill. Query epm/data/products_en.json by item name/type and return compact product reference rows. Use this for catalog/reference info only, not for current scene state or live instance lookup; use `query_scene_objects` for live scene objects. `weight` is only the initial static weight metadata and does not change with later in-game operations. `relative_position` is only the initial static placement description; if an item moves later, trust later realtime observations instead. `forms` lists the supported form variations the item can change into.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "default": "",
+            "description": "Free-text keyword for item_name/item_type/forms/relative_position."
+          },
+          "item_type": {
+            "type": "string",
+            "default": "",
+            "description": "Filter by item_type (substring match)."
+          },
+          "max_items": {
+            "type": "integer",
+            "default": -1,
+            "description": "Maximum results to return. Use -1 for no limit."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  }
+]

@@ -1,0 +1,71 @@
+# --- Secrets / local machine overrides (never commit) ---
+configs/api_keys.local.json
+configs/common.local.json
+configs/*.local.json
+*.local.json
+.env
+.env.*
+
+# --- Run artifacts ---
+runs/
+*.log
+
+# --- In-game template assets (third-party; regenerate locally, never commit) ---
+data/figure/
+# Large, machine-generated navigation maps. The one referenced by
+# configs/common.json is shipped; regenerate other resolutions as needed.
+data/auto_nav_data/*.png
+data/auto_nav_data/obstacle_map_edited_2025*.json
+*.e57
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- Test / coverage / typecheck caches ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.hypothesis/
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,7 @@
+- Output {step_count_phrase}: action_list length MUST be {step_count_phrase}.
+- Each step object MUST include `step_id`, `type`, `name`, `args`, and `expectation`.
+- `type` must be exactly `action` or `skill`.
+- Do NOT invent actions. Use exact action or skill names from the schemas above.
+- `args` must be a JSON object using the actual parameter names from the action signature exactly and should not include extra keys; use `{}` when no args are needed.
+- The expectation must name the intended target object or tool and a concrete outcome.
+- If feedback includes `blocking=instance_disambiguation`, you MUST choose exactly one `instance_id` from `candidates` and retry the same skill with the specified `instance_arg`.

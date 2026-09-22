@@ -1,0 +1,121 @@
+{
+  "extends": "../common.json",
+  "runtime": {
+    "stm_window_size": 200
+  },
+  "brain": {
+    "pipeline": "reflexion",
+    "use_vlm": true,
+    "perception_mode": "oracle",
+    "plan_steps": 10,
+    "prompt_policy": {
+      "include_task_progress": true
+    },
+    "task_progress_maintenance": {
+      "enabled": true,
+      "update_mode": "maintainer_only",
+      "on_new_plan_generated": true,
+      "on_need_replan": false,
+      "on_planner_invalid_step": false,
+      "history_window_steps": 30,
+      "min_step_gap_steps": 0,
+      "every_n_plans": 3,
+      "_doc": {
+        "enabled": {
+          "desc": "Enable task_progress maintenance.",
+          "range": "true|false",
+          "current": true
+        },
+        "on_new_plan_generated": {
+          "desc": "Refresh after selected new-plan events.",
+          "range": "true|false",
+          "current": true
+        },
+        "on_need_replan": {
+          "desc": "Refresh when a replan is needed (alignment failure, etc.).",
+          "range": "true|false",
+          "current": false
+        },
+        "on_planner_invalid_step": {
+          "desc": "Refresh when planner outputs an invalid step.",
+          "range": "true|false",
+          "current": false
+        },
+        "min_step_gap_steps": {
+          "desc": "Minimum step gap between maintainer runs. 0 disables gap-based throttling.",
+          "range": "0 or positive integer",
+          "current": 0
+        },
+        "every_n_plans": {
+          "desc": "For Reflexion only, run maintenance every N newly generated plans.",
+          "range": "0 or positive integer",
+          "current": 3
+        },
+        "history_window_steps": {
+          "desc": "Recent step window injected into task_progress maintenance.",
+          "range": "positive integer"
+        }
+      }
+    },
+    "reflexion": {
+      "enabled": true,
+      "reflect_on_failure": true,
+      "min_failures_to_reflect": 3,
+      "failure_window_steps": 8,
+      "min_reflection_gap_steps": 8,
+      "reflect_every_n_steps": 0,
+      "reflect_on_loop": false,
+      "loop_window_steps": 6,
+      "loop_repeat_threshold": 3,
+      "memory_window_size": 3,
+      "max_reflections": 200,
+      "history_window_steps": 8,
+      "_doc": {
+        "reflect_on_failure": {
+          "desc": "Reflect after failures.",
+          "range": "true|false"
+        },
+        "min_failures_to_reflect": {
+          "desc": "Failure-count threshold within the recent failure window before triggering failure-based reflection.",
+          "range": "positive integer"
+        },
+        "failure_window_steps": {
+          "desc": "Count failures within the most recent N executed steps for failure-based reflection.",
+          "range": "positive integer"
+        },
+        "min_reflection_gap_steps": {
+          "desc": "Minimum executed-step gap between two reflections to avoid repeated firing in the same deadlock region.",
+          "range": "0 or positive integer"
+        },
+        "reflect_every_n_steps": {
+          "desc": "Run lightweight periodic reflection every N executed steps. 0 disables periodic reflection.",
+          "range": "0 or positive integer"
+        },
+        "reflect_on_loop": {
+          "desc": "Reflect when the same step pattern repeats in a short recent window.",
+          "range": "true|false"
+        },
+        "loop_window_steps": {
+          "desc": "How many recent executed steps to inspect for loop-like repetition.",
+          "range": "positive integer"
+        },
+        "loop_repeat_threshold": {
+          "desc": "Trigger loop reflection when the same step type/name repeats this many times in the recent window.",
+          "range": "integer >= 2"
+        },
+        "memory_window_size": {
+          "desc": "Number of recent reflections kept in reflexion_memory as a sliding window.",
+          "range": "positive integer"
+        },
+        "max_reflections": {
+          "desc": "Maximum number of reflections in one run.",
+          "range": "positive integer"
+        },
+        "history_window_steps": {
+          "desc": "Recent STM steps injected into reflection prompt.",
+          "range": "positive integer"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "high_level_id": "Hk",
+  "goal": "one sentence goal",
+  "explanation": null | "why last attempt failed",
+  "thoughts": "brief rationale",
+  "action_list": [
+{response_format_action_example_1},
+{response_format_action_example_2},
+{response_format_action_example_3}{response_format_action_examples_extra}
+  ]
+}

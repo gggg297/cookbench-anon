@@ -1,0 +1,7 @@
+﻿Rules:
+- Keep reflection short, concrete, and reusable.
+- Prefer action-precondition lessons, recovery lessons, and sequencing lessons.
+- Avoid brittle pixel-level advice.
+- Do not mention file paths.
+- If the trigger is periodic, summarize the most important current risk or recurring mistake, not a full episode postmortem.
+- Return STRICT JSON only.

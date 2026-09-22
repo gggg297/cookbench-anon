@@ -1,0 +1,206 @@
+{
+  "kind": "tool_point",
+  "note": "Summarizes tool interaction points (kind=tool_point) observed in realtime_products.json. For indexed categories, the trailing digits in name_en represent an index (NOT instance_id). Use query_products() to get the concrete instance_id for a chosen point if needed.",
+  "tool_points": [
+    {
+      "category": "Baking tray rack point",
+      "name_template": "Baking tray rack point {index}",
+      "index_ranges": [
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "category": "Fryer oil discharge switch",
+      "name_template": "Fryer oil discharge switch {index}",
+      "index_ranges": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "category": "Fryer oil filling switch",
+      "name_template": "Fryer oil filling switch {index}",
+      "index_ranges": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "category": "Fryer Switch",
+      "name_template": "Fryer Switch {index}",
+      "index_ranges": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "category": "Fryer-Slot a",
+      "name_template": "Fryer-Slot a{index}",
+      "index_ranges": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "category": "Fryer-Slot b",
+      "name_template": "Fryer-Slot b{index}",
+      "index_ranges": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "category": "Hook Point",
+      "name_template": "Hook Point {index}",
+      "index_ranges": [
+        [
+          10,
+          14
+        ]
+      ]
+    },
+    {
+      "category": "Hook Point a",
+      "name_template": "Hook Point a{index}",
+      "index_ranges": [
+        [
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "category": "Hook Point b",
+      "name_template": "Hook Point b{index}",
+      "index_ranges": [
+        [
+          1,
+          8
+        ]
+      ]
+    },
+    {
+      "category": "Oven Bottom place point",
+      "name_template": "Oven Bottom place point {index}",
+      "index_ranges": [
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "category": "Oven Top place point",
+      "name_template": "Oven Top place point {index}",
+      "index_ranges": [
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "category": "Stove Place Point",
+      "name_template": "Stove Place Point {index}",
+      "index_ranges": [
+        [
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "category": "Stove Switch",
+      "name_template": "Stove Switch {index}",
+      "index_ranges": [
+        [
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "category": "Bottom Oven Door",
+      "name_template": "Bottom Oven Door",
+      "index_ranges": null
+    },
+    {
+      "category": "Bottom Oven Switch",
+      "name_template": "Bottom Oven Switch",
+      "index_ranges": null
+    },
+    {
+      "category": "Checkout Stand",
+      "name_template": "Checkout Stand",
+      "index_ranges": null
+    },
+    {
+      "category": "Cool Faucet Switch",
+      "name_template": "Cool Faucet Switch",
+      "index_ranges": null
+    },
+    {
+      "category": "Faucet Pipe",
+      "name_template": "Faucet Pipe",
+      "index_ranges": null
+    },
+    {
+      "category": "Food Processor button Off",
+      "name_template": "Food Processor button Off",
+      "index_ranges": null
+    },
+    {
+      "category": "Food Processor button On",
+      "name_template": "Food Processor button On",
+      "index_ranges": null
+    },
+    {
+      "category": "Griddle Switch",
+      "name_template": "Griddle Switch",
+      "index_ranges": null
+    },
+    {
+      "category": "Grill Switch",
+      "name_template": "Grill Switch",
+      "index_ranges": null
+    },
+    {
+      "category": "Hot Faucet Switch",
+      "name_template": "Hot Faucet Switch",
+      "index_ranges": null
+    },
+    {
+      "category": "Left Sink Place Point",
+      "name_template": "Left Sink Place Point",
+      "index_ranges": null
+    },
+    {
+      "category": "Right Sink Place Point",
+      "name_template": "Right Sink Place Point",
+      "index_ranges": null
+    },
+    {
+      "category": "Top Oven Door",
+      "name_template": "Top Oven Door",
+      "index_ranges": null
+    },
+    {
+      "category": "Top Oven Switch",
+      "name_template": "Top Oven Switch",
+      "index_ranges": null
+    }
+  ]
+}

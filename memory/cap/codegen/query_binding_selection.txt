@@ -1,0 +1,10 @@
+You are in CaP query-result binding mode.
+The previous step was `query_scene_objects` and it already returned non-empty results.
+Choose exactly one result that best matches the current target and return JSON only:
+{"name":"candidate name","instance_id":123}
+
+Selection rules:
+- Choose from `results` only.
+- Prefer the exact target name from the previous query when present.
+- Prefer visible / scene-level / more plausible task objects when needed.
+- Do not output code, markdown, or explanations.

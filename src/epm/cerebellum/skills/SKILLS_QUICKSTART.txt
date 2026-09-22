@@ -1,0 +1,98 @@
+Skills Quickstart
+=================
+
+These are the commonly used skill/action entrypoints for manual validation.
+
+Below are the builtin skills exposed by `--skill ...` and example commands.
+
+(If `manual_input_validation.py` complains about missing `--realtime-products-path`, either set it explicitly
+or configure `configs/common.json: paths.realtime_products_path` so the script can auto-detect it.)
+
+1) auto_cut
+   python scripts/manual_input_validation.py --skill auto_cut --focus item_name="lemon" cut_num=3
+   # If multiple instances exist, the skill returns `instance_id_required` with `candidates`.
+   # Pick exactly one `instance_id` from candidates, then rerun:
+   python scripts/manual_input_validation.py --skill auto_cut --focus item_name="lemon" item_instance_id=-102792 cut_num=3
+
+2) auto_navigation
+   python scripts/manual_input_validation.py --skill auto_navigation --focus target="Checkout Stand"
+   # With explicit instance disambiguation (when multiple items share the same name):
+   python scripts/manual_input_validation.py --skill auto_navigation --focus target="lemon" target_instance_id=581572
+   # Platform-point compatibility (target is a platform category; target_instance_id used as platform index):
+   python scripts/manual_input_validation.py --skill auto_navigation --focus    target="Griddle Surface" target_instance_id=3
+  
+3) auto_filp
+   python scripts/manual_input_validation.py --skill auto_filp --focus meat="Steak" put_place="Plate"
+   # With explicit instance disambiguation:
+   python scripts/manual_input_validation.py --skill auto_filp --focus meat="cod" meat_instance_id="-117254" put_place="Griddle Surface-1" put_place_instance_id=575600000
+   # Platform-point compatibility (put_place is a platform category; put_place_instance_id used as platform index):
+   python scripts/manual_input_validation.py --skill auto_filp --focus meat="cod" meat_instance_id="-117254" put_place="Griddle Surface" put_place_instance_id=3
+  
+4) auto_mix
+   python scripts/manual_input_validation.py --skill auto_mix --focus container_name="Bowl"
+   # With explicit instance disambiguation:
+   python scripts/manual_input_validation.py --skill auto_mix --focus container_name="Big Pot" container_instance_id="-43190"
+ 
+5) auto_perception
+   python scripts/manual_input_validation.py --skill auto_perception --focus only_on_screen=false max_items=50
+ 
+6) auto_pour
+   python scripts/manual_input_validation.py --skill auto_pour --focus container_name="Paella Pan" target_ml=50
+   python scripts/manual_input_validation.py --skill auto_pour --focus container_name="Pan" container_instance_id="-44960" target_ml=50
+ 
+7) auto_sprinkle
+   python scripts/manual_input_validation.py --skill auto_sprinkle --focus target_item="Steak" sprinkle_num=3
+   python scripts/manual_input_validation.py --skill auto_sprinkle --focus target_item="cod" sprinkle_num=3 target_instance_id="-117254"
+ 
+8) query_scene_objects
+   # Live scene instances from realtime_products.json. Use this for current instance_id / visibility / distance.
+   python scripts/manual_input_validation.py --skill query_scene_objects --focus query="lemon"
+   # Optionally constrain results:
+   python scripts/manual_input_validation.py --skill query_scene_objects --focus query="lemon" only_on_screen=true max_items=20 max_distance=2.0
+
+9) list_supported_items
+   # Read-only: list environment-supported item names (NOT limited to scene instances).
+   python scripts/manual_input_validation.py --skill list_supported_items --focus
+   # Search by substring:
+   python scripts/manual_input_validation.py --skill list_supported_items --focus query="steak"
+   # Optional toggles:
+   python scripts/manual_input_validation.py --skill list_supported_items --focus query="platform" include_put_place=true include_mapping=false
+   python scripts/manual_input_validation.py --skill list_supported_items --focus query="switch" include_tool_points=true include_mapping=false
+
+10) query_product_catalog
+   # Read-only: static product metadata from epm/data/products_en.json.
+   # Use this for catalog/reference info only, not for current scene instance lookup.
+   python scripts/manual_input_validation.py --skill query_product_catalog --focus query="salmon"
+   python scripts/manual_input_validation.py --skill query_product_catalog --focus item_type="Poultry_Eggs_Fish_Meat_Seafood" max_items=10
+ 
+11) gui_buy_new_item
+   python scripts/manual_input_validation.py --skill gui_buy_new_item --focus item="water"
+ 
+12) gui_order_dish_via_computer
+   python scripts/manual_input_validation.py --skill gui_order_dish_via_computer --focus dish_name="Lemon Tart" computer_target="Computer"
+ 
+13) gui_submit_dish_via_checkout_stand
+   python scripts/manual_input_validation.py --skill gui_submit_dish_via_checkout_stand --focus dish_name="Lemon Chicken Breasts"  _debug_submit_only=true checkout_target="Checkout Stand"
+
+  set EPM_CONFIG=<repo>\epm\configs\pipelines\reflexion.json
+  $env:EPM_CONFIG = "<repo>\epm\configs\common.local.json" 
+  python scripts/manual_input_validation.py --skill gui_submit_dish_via_checkout_stand --focus dish_name="Lemon Tart" _debug_skip_holding_check=true
+
+  如果你想继续只测第一段 submit，还是用：
+
+  python scripts/manual_input_validation.py --skill gui_submit_dish_via_checkout_stand --focus dish_name="Lemon Tart" _debug_submit_only=true
+
+  如果你想“跳过手持检查 + 只测 submit”，两个都可以一起带：
+
+  python scripts/manual_input_validation.py --skill gui_submit_dish_via_checkout_stand --focus dish_name="Lemon Tart" _debug_submit_only=true _debug_skip_holding_check=true
+
+
+extended restart_environment
+   python -c "import sys; sys.path.append('src'); from epm.cerebellum.gui_actions.restart_env_gui import restart_environment as f; print(f())"      
+
+
+
+Notes
+-----
+- Prefer `--skill ...` for interactive/manual validation: skills handle `instance_id` disambiguation (returning `instance_id_required` with candidates).
+- `--action ...` calls `CookBenchActionAPI` via `local_actions.ACTION_DISPATCHER` and expects explicit `*_instance_id` when needed (no disambiguation prompt).

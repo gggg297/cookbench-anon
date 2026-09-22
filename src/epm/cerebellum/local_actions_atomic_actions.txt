@@ -1,0 +1,230 @@
+﻿local_actions.py 原子动作归类（参考 ALFRED）
+源文件: deploy_agent/local_actions.py
+统计: AI可调用动作 131 个（ACTION_DISPATCHER 自动收集非 _ 函数）；内部辅助函数 6 个（以 _ 开头）
+
+字段说明:
+- 函数名: Python 顶层函数名
+- 备注: 优先取紧贴函数上方的 # 函数 ... 注释；无则取 docstring 首行；再无则用规则生成
+- 输入: 形参签名（含默认值/类型注解）
+- 输出: 返回类型注解/Docstring Returns/静态推断（用于归纳；可能与运行时类型不完全一致）
+
+====================================================================================================
+
+[ALFRED/Navigate(移动)] (共8个)
+- move_forward | 备注=向前移动固定时间 | 输入=(duration = 0.3) | 输出=None
+- move_backward | 备注=向后移动固定时间 | 输入=(duration = 1) | 输出=None
+- move_left | 备注=向左移动固定时间 | 输入=(duration = 1) | 输出=None
+- move_right | 备注=向右移动固定时间 | 输入=(duration = 1) | 输出=None
+- move_forward_left | 备注=向左前方移动（W+A） | 输入=(duration = 0.3) | 输出=None
+- move_forward_right | 备注=向右前方移动（W+D） | 输入=(duration = 0.3) | 输出=None
+- move_backward_left | 备注=向左后方移动（S+A） | 输入=(duration = 0.3) | 输出=None
+- move_backward_right | 备注=向右后方移动（S+D） | 输入=(duration = 0.3) | 输出=None
+
+[ALFRED/Look(视角)] (共4个)
+- look_right | 备注=向右看 (通过SendInput实现，无需复位) | 输入=(pixels = 500) | 输出=None
+- look_left | 备注=向左看 (通过SendInput实现，无需复位) | 输入=(pixels = 500) | 输出=None
+- look_up | 备注=向上看 | 输入=(pixels = 300) | 输出=None
+- look_down | 备注=向下看 | 输入=(pixels = 300) | 输出=None
+
+[ALFRED/OpenObject-OpenDoor(开门)] 算一个动作，都是点击操作
+- Open_the_door_of_the_oven | 备注=函数 3.12.3.1 [总函数 94]: 打开烤箱门 | 输入=(x, y, key = 'left') | 输出=None
+- Open_left_refrigerator_door | 备注=函数 3.12.5.1 [总函数 102]: 打开左侧冰箱门 | 输入=(x, y, key = 'left') | 输出=None
+- Open_right_refrigerator_door | 备注=函数 3.12.5.2 [总函数 103]: 打开右侧冰箱门 | 输入=(x, y, key = 'left') | 输出=None
+- Open_Microwave_oven_door | 备注=函数 3.12.7.1 [总函数 108]: 打开微波炉门 | 输入=(x, y, key = 'left') | 输出=None
+
+[ALFRED/CloseObject-CloseDoor(关门)] 算一个动作，都是点击操作
+- Close_the_door_of_the_oven | 备注=函数 3.12.3.3 [总函数 96]: 关闭烤箱门 | 输入=(x, y, key = 'left') | 输出=None
+- Close_left_refrigerator_door | 备注=函数 3.12.5.3 [总函数 104]: 关闭左侧冰箱门 | 输入=(x, y, key = 'left') | 输出=None
+- Close_right_refrigerator_door | 备注=函数 3.12.5.4 [总函数 105]: 关闭右侧冰箱门 | 输入=(x, y, key = 'left') | 输出=None
+- Close_Microwave_oven_door | 备注=函数 3.12.7.2 [总函数 109]: 关闭微波炉门 | 输入=(x, y, key = 'left') | 输出=None
+
+[ALFRED/Unscrew (拧开动作)] (共2个)
+- Open_bottle | 备注=函数 3.11.1 [总函数 80]: 拧开瓶子 | 输入=(key = 'e') | 输出=None
+- Turn_on_faucet_right_handle | 备注=函数 3.7.8 [总函数 62]: 拧开水龙头 | 输入=(key = 'e') | 输出=None
+
+[ALFRED/Screw (拧紧动作)] (共2个)
+- Close_bottle | 备注=函数 3.11.2 [总函数 81]: 拧紧瓶子 | 输入=(key = 'e') | 输出=None
+- Turn_off_faucet_right_handle | 备注=函数 3.7.10 [总函数 64]: 拧紧水龙头 | 输入=(key = 'e') | 输出=None
+
+[ALFRED/ToggleOn(打开开关/启动设备)] (共8个)算一个动作
+- turn_on_switch | 备注=函数 3.12.1.1 [总函数 84]: 打开一个位置的煤气灶 | 输入=(key = 'left') | 输出=None
+- Turn_on_Deep_fryer_heating | 备注=函数 3.12.2.3 [总函数 92]: 打开炸炉加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_on_oven_heating | 备注=函数 3.12.3.2 [总函数 95]: 打开烤箱加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_on_Griddle_heating | 备注=函数 3.12.4.1 [总函数 98]: 打开平板煎炉加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_on_Grill_heating | 备注=函数 3.12.4.3 [总函数 100]: 打开条纹烤炉加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_on_Food_Processor | 备注=函数 3.12.6.1 [总函数 106]: 打开料理机切割功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_on_Microwave_oven | 备注=函数 3.12.7.4 [总函数 111]: 开启加热 | 输入=(x, y, key = 'left') | 输出=None
+- Open_Blender | 备注=函数 3.10.1 [总函数 74]: 打开搅拌机 | 输入=(key = 'e') | 输出=None
+
+[ALFRED/ToggleOff(关闭开关/停止设备)] (共8个) 算一个动作
+- turn_off_switch | 备注=关闭一个位置的煤气灶 | 输入=(key = 'left') | 输出=None
+- Turn_off_Deep_fryer_heating | 备注=函数 3.12.2.4 [总函数 93]: 关闭炸炉加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_off_oven_heating | 备注=函数 3.12.3.4 [总函数 97]: 关闭烤箱加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_off_Griddle_heating | 备注=函数 3.12.4.2 [总函数 99]: 关闭平板煎炉加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_off_Grill_heating | 备注=函数 3.12.4.4 [总函数 101]: 关闭条纹烤炉加热功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_off_Food_Processor | 备注=函数 3.12.6.2 [总函数 107]: 关闭料理机切割功能 | 输入=(x, y, key = 'left') | 输出=None
+- Turn_off_Microwave_oven | 备注=函数 3.12.7.6 [总函数 113]: 终止微波炉加热 | 输入=(x, y, key = 'left') | 输出=None
+- Shut_down_Blender | 备注=函数 3.10.2 [总函数 75]: 关闭搅拌机 | 输入=(key = 'e') | 输出=None
+
+[ALFRED/PickupObject(拿起动作类)] (共4个)
+- pick_up | 备注=函数 3.2.1 [总函数 17]: 拿起 | 输入=(key = 'left') | 输出=None
+- pick_up_into_the_container | 备注=函数 3.2.4 [总函数 20]: 向容器内拾取物体 | 输入=(key = 'left') | 输出=None
+- pick_less | 备注=仅在手持容器且对准“支持多选的一堆真实物品”时使用；向上滚动鼠标滚轮，减少一次性将要拾取进容器的物品数量；画面中带黄边的物品表示当前选中数量。不能用于 Source/生成处，生成处不支持这种数量调节。 | 输入=(steps: int = 1) | 输出=None
+- pick_more | 备注=仅在手持容器且对准“支持多选的一堆真实物品”时使用；向下滚动鼠标滚轮，增加一次性将要拾取进容器的物品数量；画面中带黄边的物品表示当前选中数量。不能用于 Source/生成处，生成处不支持这种数量调节。 | 输入=(steps: int = 1) | 输出=None
+
+[ALFRED/PutObject(放下动作类)] (共1个)
+- put_down | 备注=函数 3.2.2 [总函数 18]: 放下 | 输入=(key = 'left') | 输出=None
+
+
+[Extended/RepairObject(维修动作类)] (共1个)
+- repair | 备注=函数 3.2.x [维修动作]: 对损坏厨具执行维修操作 | 输入=(key = 'left') | 输出=None
+[ALFRED/PourOrTransfer(盛取液体类)] (共3个)
+- pour_into_tool | 备注=函数 3.2.5 [总函数 21]: 盛取液体 | 输入=(x, y, key = 'left') | 输出=None
+- Get_liquid_out_spoon | 备注=函数 3.7.2 [总函数 56]: 盛出的液体 | 输入=(x, y, key = 'left') | 输出=None
+- Pour_out_from_Pipette | 备注=函数 3.7.3 [总函数 57]: 倒出液体 | 输入=(x, y, key = 'right') | 输出=None
+
+[ALFRED/ActionModeSwitch(动作模式切换类)] 计入一个类别，但不计入动作数量
+# 切割模式 见切割动作类 (共2个)
+# 倾倒模式 见倾倒动作类 (共4个)
+# 翻动模式 见食材翻动类 (共2个)
+# 搅拌模式 见搅拌动作类 (共2个)
+# 空间姿态调整类 见空间姿态调整类 (共2个)
+
+
+[ALFRED/PickupObject-WithTongs(夹取操作类)] (共1个)
+- Pick_up_ingredients_with_Tongs | 备注=函数 3.9.4 [总函数 73]: 夹取食材 | 输入=(key = 'left') | 输出=None
+
+[ALFRED/SliceObject(切割动作类)] (共3个)-2
+- Enter_cutting_mode | 备注=函数 3.6.1 [总函数 51]: 进入切割模式 | 输入=(x, y, key = 'left') | 输出=None
+- cut_down | 备注=函数 3.6.2 [总函数 52]: 切割动作 | 输入=(key = 'left') | 输出=None
+- Escape_cutting_mode | 备注=函数 3.6.3 [总函数 53]: 退出切割模式 | 输入=(key = 'right') | 输出=None
+
+[Extended/PutObject-MountSkewer(串上/挂上)] (共1个)
+- Hang_on_string | 备注=函数 3.2.8 [总函数 24]: 串上食材 | 输入=(x, y, key = 'left') | 输出=None
+
+[Extended/DeepFryer-AddOil(炸炉操作类)] (共2个)
+- Pour_oil_into_Deep_fryer | 备注=函数 3.12.2.1 [总函数 90]: 炸炉加注食用油 | 输入=(x, y, key = 'left') | 输出=None
+- Pour_oil_out_Deep_fryer | 备注=函数 3.12.2.2 [总函数 91]: 炸炉排出食用油 | 输入=(x, y, key = 'left') | 输出=None
+
+
+[Extended/DumpingMode(倾倒动作类)] (共6个)-4
+- carry_out_dumping_operation | 备注=函数 3.3.6 [总函数 32]: 执行液体倾倒操作 | 输入=(key = 'left') | 输出=None
+- 执行香料倾倒操作 | 备注=函数 3.3.11 [总函数 37]: 执行香料倾倒操作 | 输入=(key = 'left') | 输出=None
+- Enter_dumping_mode | 备注=函数 3.3.9 [总函数 35]: 进入倾倒模式 | 输入=(x, y, key = 'left') | 输出=None
+- Escape_dumping_mode | 备注=函数 3.3.10 [总函数 36]: 退出倾倒模式 | 输入=(key = 'right') | 输出=None
+- Move_downward | 备注=函数 3.4.11 [总函数 47]: 向下倾倒 | 输入=(y, key = 'left') | 输出=None
+- Move_upward | 备注=函数 3.4.12 [总函数 48]: 向上抬起 | 输入=(y, key = 'left') | 输出=None
+
+[Extended/FlipMode(食材翻动类)] (共4个)-2
+- pick_the_ingredients_on_spatula | 备注=函数 3.9.1 [总函数 70]: 铲起食材 | 输入=(key = 'left') | 输出=None
+- flip_over | 备注=函数 3.9.3 [总函数 72]: 翻面 | 输入=(key = 'e') | 输出=None
+- enter_the_flipping_mode | 备注=函数 3.9.2 [总函数 71]: 进入翻动模式 | 输入=(key = 'left') | 输出=None
+- exit_the_flipping_mode | 备注=退出翻动模式 | 输入=(key = 'right') | 输出=None
+
+[Extended/BlenderMode(搅拌动作类)] (共4个)-2
+- enter_mixing_mode | 备注=函数 3.10.3 [总函数 76]: 进入搅拌模式 | 输入=(key = 'left') | 输出=None
+- blender_downward | 备注=函数 3.10.4 [总函数 77]: 搅拌机竖直向下沉 | 输入=(key = 'q') | 输出=None
+- blender_upward | 备注=函数 3.10.5 [总函数 78]: 搅拌机竖直向上浮 | 输入=(key = 'e') | 输出=None
+- exit_mixing_mode | 备注=函数 3.10.6 [总函数 79]: 退出搅拌模式 | 输入=(key = 'right') | 输出=None
+
+[Extended/SpatialControl(空间姿态调整类)] (共10个)-2
+- Rotate_clockwise_along_the_Yaxis | 备注=函数 3.4.1 [总函数 37]: 沿Y轴顺时针旋转 | 输入=(key = 'w') | 输出=None
+- Rotate_counterclockwise_along_the_Yaxis | 备注=函数 3.4.2 [总函数 38]: 沿Y轴逆时针旋转 | 输入=(key = 's') | 输出=None
+- Rotate_clockwise_along_the_Zaxis | 备注=函数 3.4.3 [总函数 39]: 沿Z轴顺时针旋转 | 输入=(key = 'd') | 输出=None
+- Rotate_counterclockwise_along_the_Zaxis | 备注=函数 3.4.4 [总函数 40]: 沿Z轴逆时针旋转 | 输入=(key = 'a') | 输出=None
+- Switch_to_advanced_control_mode | 备注=函数 3.4.5 [总函数 41]: 切换高级控制模式 | 输入=(key = 'shift') | 输出=None
+- Switch_to_normal_control_mode | 备注=函数 3.4.9 [总函数 45]: 切换普通控制模式 | 输入=(key = 'shift') | 输出=None
+- Horizontal_movement | 备注=函数 3.4.6 [总函数 42]: 水平移动 | 输入=(x, y) | 输出=None
+- Spatial_rotation | 备注=函数 3.4.7 [总函数 43]: 空间旋转 | 输入=(x, y, key = 'right') | 输出=None
+- Vertical_movement | 备注=函数 3.4.8 [总函数 44]: 垂直移动 | 输入=(y, key = 'left') | 输出=None
+- Rotate_along_the_Yaxis | 备注=函数 3.4.10 [总函数 46]: 绕Y轴旋转 | 输入=(x, y, key = 'left') | 输出=None
+
+
+
+[Extended/Posture(蹲起)] (共2个)
+- kneel_down | 备注=蹲下 | 输入=(key = 'ctrl') | 输出=None
+- stand_up | 备注=站起 | 输入=(key = 'ctrl') | 输出=None
+
+[Extended/FoodPrep-BreakCrack(分开/敲蛋)] (共2个)
+- Broke_up | 备注=函数 3.11.3 [总函数 82]: 分开 | 输入=(key = 'e') | 输出=None
+- Crack_open_the_egg | 备注=函数 3.11.4 [总函数 83]: 敲开鸡蛋 | 输入=(key = 'e') | 输出=None
+
+
+
+
+[Internal/Timing]时间计时类 (共2个)
+- countdown_time | 备注=倒计时操作（非阻塞，仅登记计时器） | 输入=(duration: float = 5.0) | 输出=dict
+- wait_for_timer | 备注=等待计时器完成 | 输入=(timer_id: Optional[str] = None, timeout_s: float = 60.0) | 输出=dict
+
+
+
+[Advanced/CV_UI(GUI操作)]购买食材 (共1个)
+- scroll_and_find_ingredient | 备注= 购买食材 | 输入=(ingredient_template_path: str, top_template_path: str = None, bottom_template_path: str = None, max_scrolls: int = 100, window_title: str = 'CookingSimulator') | 输出=bool
+
+[Advanced/CV_UI(GUI操作)]订菜 (共1个)
+- order_dish | 备注=订菜操作 | 输入=(dish_template_path: str, order_button_template_path: str = None, window_title: str = 'CookingSimulator') | 输出=bool
+
+
+
+#######################################################################################################################################################
+
+
+[Internal/ControlPrimitives] (共11个)
+- smooth_move_to_position | 备注=移动鼠标到窗口内的指定坐标并可选点击。 | 输入=(x: int, y: int, click: Optional[str] = None) | 输出=None
+- press_keyboard | 备注=点击按键 | 输入=(key: Literal['w', 'a', 's', 'd', 'e', 'q', 'r', 'shift', 'ctrl']) | 输出=None
+- hold_keyboard | 备注=按住按键 | 输入=(key: Literal['w', 'a', 's', 'd', 'shift', 'ctrl']) | 输出=None
+- leave_keyboard | 备注=松开按键 | 输入=(key: Literal['w', 'a', 's', 'd', 'shift', 'ctrl']) | 输出=None
+- click_mouse | 备注=点击鼠标 | 输入=(key: Literal['left', 'right', 'mid']) | 输出=None
+- hold_mouse | 备注=按住鼠标 | 输入=(key: Literal['left', 'right']) | 输出=None
+- leave_mouse | 备注=松开鼠标 | 输入=(key: Literal['left', 'right']) | 输出=None
+- move_mouse | 备注=移动鼠标到屏幕绝对坐标 | 输入=(x: int, y: int) | 输出=None
+- move_related_mouse | 备注=相对移动鼠标（用于非视角转动） | 输入=(x: int, y: int) | 输出=None
+- Scroll_down_the_wheel | 备注=向下滑动滚轮 | 输入=(distance: int = 1) | 输出=None
+- Scroll_up_the_wheel | 备注=向上滑动滚轮 | 输入=(distance: int = 1) | 输出=None
+
+[Internal/Window] (共5个)
+- _get_console_window | 备注=获取当前Python脚本所在的命令行窗口。 | 输入=() | 输出=Any
+- focus_terminal | 备注=将焦点切换到运行此脚本的命令行窗口。 | 输入=() | 输出=None
+- _activate_window | 备注=【全能最终版 v3】激活窗口并确保获得输入焦点。 | 输入=(window_title = 'CookingSimulator') | 输出=Any
+- _get_window_rect | 备注=使用 pygetwindow 获取指定窗口的位置和大小。 | 输入=(window_title = 'CookingSimulator') | 输出=dict
+- get_window_center | 备注=获取窗口的中心点（屏幕绝对坐标）。 | 输入=(window_name: str = 'CookingSimulator') | 输出=dict
+
+
+[Extended/AdjustOrSelect(调节/选择)] (共6个)
+- Change_content_5_or_10ml | 备注=函数 3.7.4 [总函数 58]: 更改装量5/10ML | 输入=(key = 'e') | 输出=None
+- Select_fewer | 备注=函数 3.8.1 [总函数 67]: 选取更少 | 输入=(x, y, key = 'mid') | 输出=None
+- Select_more | 备注=函数 3.8.2 [总函数 68]: 选取更多 | 输入=(x, y, key = 'mid') | 输出=None
+- Change_selecting_mode | 备注=函数 3.8.3 [总函数 69]: 更改选取模式 | 输入=(x, y, key = 'q') | 输出=None
+- Adjust_Microwave_oven_power | 备注=函数 3.12.7.3 [总函数 110]: 调整微波炉火力大小 | 输入=(x, y, key = 'left') | 输出=None
+- Add_5_sconds | 备注=函数 3.12.7.5 [总函数 112]: 加时5秒钟 | 输入=(x, y, key = 'left') | 输出=None
+
+[Extended/WaterFillingMode(加水模式控制)] (共4个)
+- Enter_the_water_filling_mode | 备注=函数 3.7.5 [总函数 59]: 进入加水模式 | 输入=(x, y, key = 'left') | 输出=None
+- Move_water_container | 备注=函数 3.7.6 [总函数 60]: 移动加水容器位置 | 输入=(x, y) | 输出=None
+- Change_faucet_direction | 备注=函数 3.7.7 [总函数 61]: 改变水龙头方向 | 输入=(key = 'left') | 输出=None
+- Escape_the_water_filling_mode | 备注=函数 3.7.12 [总函数 66]: 退出加水模式 | 输入=(key = 'right') | 输出=None
+
+
+[Extended/WaterFillingMode(水龙头控制)]
+- 打开水龙头 | 备注=函数 3.7.8 [总函数 62]: 打开水龙头 | 输入=(key = 'e') | 输出=None
+- 关闭水龙头 | 备注=函数 3.7.10 [总函数 64]: 关闭水龙头 | 输入=(key = 'e') | 输出=None
+
+
+[ALFRED/PutObject-DropThrowRelease(放下/丢弃/松开)] (共4个)
+- throw_away | 备注=函数 3.2.3 [总函数 19]: 向视角前方扔出 | 输入=(key = 'mid') | 输出=None
+- Tool_reposition | 备注=函数 3.2.6 [总函数 22]: 工具位置回位 | 输入=(key = 'mid') | 输出=None
+- Vertically_throw | 备注=函数 3.2.7 [总函数 23]: 垂直下扔 | 输入=(key = 'mid') | 输出=None
+- Leave_ingredients | 备注=函数 3.2.10 [总函数 26]: 松开食材 | 输入=(key = 'e') | 输出=None
+
+
+
+- Adjust_dumping_weight | 备注=函数 3.3.5 [总函数 31]: 调整倾倒重量 | 输入=(key = 'e') | 输出=None
+- enter_bottle_dumping_mode | 备注=函数 3.3.7 [总函数 33]: 进入液体瓶倾倒模式 | 输入=(x, y, key = 'left') | 输出=None
+- exit_bottle_dumping_mode | 备注=函数 3.3.8 [总函数 34]: 退出液体瓶倾倒模式 | 输入=(key = 'right') | 输出=None
+- enter_container_dumping_mode | 备注=函数 3.3.1 [总函数 27]: 进入容器倾倒模式 | 输入=(key = 'left') | 输出=None
+- exit_container_dumping_mode | 备注=函数 3.3.2 [总函数 28]: 退出容器倾倒模式 | 输入=(key = 'right') | 输出=None
+- enter_spices_dumping_mode | 备注=函数 3.3.3 [总函数 29]: 进入香料倾倒模式 | 输入=(key = 'left') | 输出=None
+- exit_spices_dumping_mode | 备注=函数 3.3.4 [总函数 30]: 退出香料倾倒模式 | 输入=(key = 'right') | 输出=None
+
+- Enter_the_aiming_mode | 备注=函数 3.5.1 [总函数 49]: 进入瞄准模式 | 输入=(key = 'w') | 输出=None
+- Adjust_the_aiming_position | 备注=函数 3.5.2 [总函数 50]: 调整瞄准位置 | 输入=(x, y) | 输出=None

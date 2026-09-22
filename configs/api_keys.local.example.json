@@ -1,0 +1,34 @@
+{
+  "_comment": "Starter template for local API credentials. Copy this file to `api_keys.local.json` (git-ignored) and fill in YOUR OWN endpoints and keys. Never commit real values. Entries are matched in order via `provider_root_contains`. Optional `min_balance_usd` skips keys whose prepaid balance is below the threshold (requires the endpoint to expose a usage route; enable it per host with the EPM_BALANCE_CHECK_HOSTS env var). `settings_override` can override model selection locally without touching common.json.",
+  "settings_override": {
+    "api_model_assignments": {
+      "llm": {
+        "provider": "template_openai_compatible",
+        "model": "your-model-name"
+      },
+      "vlm": {
+        "provider": "template_openai_compatible",
+        "model": "your-model-name"
+      }
+    }
+  },
+  "api_key_priority": [
+    {
+      "name": "primary",
+      "provider_root_contains": "your-endpoint.example.com",
+      "keys": [
+        "sk-your-key-1",
+        "sk-your-key-2"
+      ]
+    },
+    {
+      "name": "backup",
+      "provider_root_contains": "your-backup-endpoint.example.com",
+      "min_balance_usd": 2.0,
+      "keys": [
+        "sk-your-backup-key-1",
+        "sk-your-backup-key-2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿Output schema:
+{
+  "success": true,
+  "reason": "short",
+  "confidence": 0.0
+}

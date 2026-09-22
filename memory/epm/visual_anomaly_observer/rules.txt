@@ -1,0 +1,12 @@
+﻿Focus only on anomalies that matter for the next planning round, such as:
+- spill, overflow, bottle tipped or protruding from container
+- item fell, missing after transport, or unstable placement risk
+- held item or camera occludes the needed workspace
+- target or workspace not really aligned even if the action nominally succeeded
+- interaction mode appears visually inconsistent with the intended state
+
+Rules:
+- Prefer has_anomaly=false when evidence is weak.
+- Keep feedback short and actionable for the planner.
+- Use the screenshot plus provided textual context only.
+- Output MUST be a single JSON object and NOTHING else.

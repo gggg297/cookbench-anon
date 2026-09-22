@@ -1,0 +1,21 @@
+GUI Actions Quickstart
+=====================
+
+This package currently exposes 3 main end-user GUI flows (debuggable via `scripts/manual_input_validation.py`):
+
+1) 上菜 + 评价（Checkout Stand）
+   python scripts/manual_input_validation.py --action gui_submit_dish_via_checkout_stand --focus dish_name="Lemon Tart"
+   (Flow: navigate to Checkout Stand -> left click to open checkout UI -> submit dish -> click dish entry -> parse feedback)
+
+2) 下订单（Computer UI）
+   python scripts/manual_input_validation.py --action gui_order_dish_via_computer --focus dish_name="Salmon Steak, Potatoes, Grilled Tomatoes"
+   (Flow: navigate to Computer -> left click to open computer UI -> order dish)
+
+3) 购买物品（Store UI）
+   python scripts/manual_input_validation.py --action gui_buy_new_item --focus item="water"
+   (Flow: navigate to Carton Box -> left click to open store UI -> buy item)
+
+Notes
+-----
+- The CLI supports `key=value` args (values are JSON-decoded when possible).
+- `--focus` tries to activate the game window before executing the action.

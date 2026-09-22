@@ -1,0 +1,2232 @@
+[
+    {
+        "item_id": 0,
+        "item_name": "T-bone Steak",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "680g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The first tray from the right to the left in the first row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "T-bone Steak"
+    },
+    {
+        "item_id": 1,
+        "item_name": "Salmon Fillet",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "210g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "the first tray at the front from right to left in the third row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Salmon Fillet"
+    },
+    {
+        "item_id": 2,
+        "item_name": "Star Anise",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "100g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "sprinkle_weight": "5g",
+        "remaining_amount": -1,
+        "relative_position": "The front leftmost position on the second row from the bottom in the third column shelf",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "spice_pouring_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Star Anise"
+    },
+    {
+        "item_id": 3,
+        "item_name": "Cheddar",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "150g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The third tray from the right in the fourth row on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Cheddar"
+    },
+    {
+        "item_id": 4,
+        "item_name": "Swordfish",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "250g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Swordfish"
+    },
+    {
+        "item_id": 5,
+        "item_name": "Pumpkin",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "5000g",
+        "size": "extra large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The third row left basket on the second column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pumpkin"
+    },
+    {
+        "item_id": 6,
+        "item_name": "Tuna",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "200g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The left end of the leftmost tray in the third row on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Tuna"
+    },
+    {
+        "item_id": 7,
+        "item_name": "Halloumi",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "200g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Halloumi"
+    },
+    {
+        "item_id": 8,
+        "item_name": "Potato",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "150g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The bottom left basket in the second row of the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Potato"
+    },
+    {
+        "item_id": 9,
+        "item_name": "Potato Dumplings",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "400g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "sprinkle_weight": "40g",
+        "remaining_amount": -1,
+        "relative_position": "The rightmost position in the first row from the bottom in the third column shelf",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "pouring_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Potato Dumplings"
+    },
+    {
+        "item_id": 10,
+        "item_name": "Bacon",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "60g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "the front of the first tray from right to left in the fifth row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Bacon"
+    },
+    {
+        "item_id": 11,
+        "item_name": "Serrano Pepper",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "9g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Serrano Pepper"
+    },
+    {
+        "item_id": 12,
+        "item_name": "Jalapeño",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "40g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Top left basket in the first row of the first column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Jalapeño"
+    },
+    {
+        "item_id": 13,
+        "item_name": "Garlic",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "10g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Bottom right basket in the first row of the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Garlic"
+    },
+    {
+        "item_id": 14,
+        "item_name": "Goat Cheese",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "500g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The leftmost tray in the fourth row on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Goat Cheese"
+    },
+    {
+        "item_id": 15,
+        "item_name": "Parmesan",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "150g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Parmesan"
+    },
+    {
+        "item_id": 16,
+        "item_name": "Tortellini",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "300g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "sprinkle_weight": "15g",
+        "remaining_amount": -1,
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "pouring_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Tortellini"
+    },
+    {
+        "item_id": 17,
+        "item_name": "Pancetta",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "400g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pancetta"
+    },
+    {
+        "item_id": 18,
+        "item_name": "Gorgonzola",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "150g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The second tray from the right in the fourth row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Gorgonzola"
+    },
+    {
+        "item_id": 19,
+        "item_name": "Scallop",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "30g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The left rear end of the first tray from the right to the left in the fifth row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Scallop"
+    },
+    {
+        "item_id": 20,
+        "item_name": "Fingerling Potato",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "70g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Fingerling Potato"
+    },
+    {
+        "item_id": 21,
+        "item_name": "Brussels Sprouts",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "15g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Bottom right plate in the lowest drawer on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Brussels Sprouts"
+    },
+    {
+        "item_id": 22,
+        "item_name": "Whole Ginger",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "60g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The bottom right basket in the second row of the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Whole Ginger"
+    },
+    {
+        "item_id": 23,
+        "item_name": "Parsley Leaves, fresh",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "2g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The far right of the third row on the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Parsley Leaves, fresh"
+    },
+    {
+        "item_id": 24,
+        "item_name": "Basil Leaf, fresh",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "3g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The leftmost position in the fourth row of the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Basil Leaf, fresh"
+    },
+    {
+        "item_id": 25,
+        "item_name": "Dill, fresh",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "1g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The far right of the second row on the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Dill, fresh"
+    },
+    {
+        "item_id": 26,
+        "item_name": "Bay Leaf, fresh",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "3g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The leftmost position in the first row of the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Bay Leaf, fresh"
+    },
+    {
+        "item_id": 27,
+        "item_name": "Cilantro Leaves, fresh",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "2g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "middle of the second row on the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Cilantro Leaves, fresh"
+    },
+    {
+        "item_id": 28,
+        "item_name": "Sage Leaf, fresh",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "3g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The far right of the first row on the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Sage Leaf, fresh"
+    },
+    {
+        "item_id": 29,
+        "item_name": "Pork Breakfast Sausage",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "112g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pork Breakfast Sausage"
+    },
+    {
+        "item_id": 30,
+        "item_name": "Mooncake",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "180g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Mooncake"
+    },
+    {
+        "item_id": 31,
+        "item_name": "Lemon",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "80g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Top left basket on the first row of the second column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Lemon"
+    },
+    {
+        "item_id": 32,
+        "item_name": "Raspberry",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "5g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Raspberry"
+    },
+    {
+        "item_id": 33,
+        "item_name": "Pear",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "80g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pear"
+    },
+    {
+        "item_id": 34,
+        "item_name": "Radish",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "15g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The plate at the top right of the bottom drawer on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Radish"
+    },
+    {
+        "item_id": 35,
+        "item_name": "Orange",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "180g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Top left basket in the first row of the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Orange"
+    },
+    {
+        "item_id": 36,
+        "item_name": "Parsnip",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "170g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The top right basket on the first row of the third vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Parsnip"
+    },
+    {
+        "item_id": 37,
+        "item_name": "Parsley Root",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "80g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The lower right basket in the second row of the first column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Parsley Root"
+    },
+    {
+        "item_id": 38,
+        "item_name": "Burger Meat",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "112g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The second tray from the front, counting from right to left, in the fifth row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Burger Meat"
+    },
+    {
+        "item_id": 39,
+        "item_name": "Bottom Burger Bun",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "40g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The upper right basket on the right end of the first row in the second column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Bottom Burger Bun"
+    },
+    {
+        "item_id": 40,
+        "item_name": "Top Burger Bun",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "40g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The upper right basket on the first row of the second column vegetable rack, left end",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Top Burger Bun"
+    },
+    {
+        "item_id": 41,
+        "item_name": "Onion",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "120g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The bottom left basket in the first row of the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Onion"
+    },
+    {
+        "item_id": 42,
+        "item_name": "Ham",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "2400g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Ham"
+    },
+    {
+        "item_id": 43,
+        "item_name": "Steak",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "220g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The right rear end of the first tray from the right to the left in the fifth row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Steak"
+    },
+    {
+        "item_id": 44,
+        "item_name": "Beef Chuck",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "1000g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The first tray from right to left in the second row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Beef Chuck"
+    },
+    {
+        "item_id": 45,
+        "item_name": "Oregano Twig",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "4g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The far right of the fourth row on the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Oregano Twig"
+    },
+    {
+        "item_id": 46,
+        "item_name": "Pork Chops",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "200g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The rear end of the second tray from the right in the fifth row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pork Chops"
+    },
+    {
+        "item_id": 47,
+        "item_name": "Pork ribs",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "500g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pork ribs"
+    },
+    {
+        "item_id": 48,
+        "item_name": "Pork Shoulder",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "750g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The leftmost tray on the second row on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pork Shoulder"
+    },
+    {
+        "item_id": 49,
+        "item_name": "Pork Tenderloin",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "250g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The right end of the leftmost tray in the third row on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Pork Tenderloin"
+    },
+    {
+        "item_id": 50,
+        "item_name": "Cob of Corn",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "180g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The left upper basket in the second row of the first column of the vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Cob of Corn"
+    },
+    {
+        "item_id": 51,
+        "item_name": "Tart",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "260g",
+        "size": "extra large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "pouring_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Tart"
+    },
+    {
+        "item_id": 52,
+        "item_name": "Beetroot",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "120g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The left-bottom basket in the second row of the second column of the vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Beetroot"
+    },
+    {
+        "item_id": 53,
+        "item_name": "Tomato",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "120g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The lower right basket in the first row of the first column of the vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Tomato"
+    },
+    {
+        "item_id": 54,
+        "item_name": "White sausage",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "150g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "White sausage"
+    },
+    {
+        "item_id": 55,
+        "item_name": "Thyme Twig",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "5g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Middle of the third row on the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Thyme Twig"
+    },
+    {
+        "item_id": 56,
+        "item_name": "Red Cabbage",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "700g",
+        "size": "extra large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The right basket in the third row of the second column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Red Cabbage"
+    },
+    {
+        "item_id": 57,
+        "item_name": "Red Bell Pepper",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "240g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The upper right basket in the second row of the second vegetable rack column",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Red Bell Pepper"
+    },
+    {
+        "item_id": 58,
+        "item_name": "Red Potato",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "100g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Bottom right basket in the first row of the second column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Red Potato"
+    },
+    {
+        "item_id": 59,
+        "item_name": "Chili Pepper",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "30g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Top right basket in the first row of the first vegetable rack column",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Chili Pepper"
+    },
+    {
+        "item_id": 60,
+        "item_name": "Chives",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "2g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The leftmost position in the second row of the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Chives"
+    },
+    {
+        "item_id": 61,
+        "item_name": "Cinnamon stick",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "120g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "sprinkle_weight": "4g",
+        "remaining_amount": -1,
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "spice_pouring_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Cinnamon stick"
+    },
+    {
+        "item_id": 62,
+        "item_name": "Carrot",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "70g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "First column vegetable rack, third row left basket",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Carrot"
+    },
+    {
+        "item_id": 63,
+        "item_name": "Asparagus",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "16g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The plate at the upper right end of the bottom drawer on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Asparagus"
+    },
+    {
+        "item_id": 64,
+        "item_name": "English Muffin",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "50g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "English Muffin"
+    },
+    {
+        "item_id": 65,
+        "item_name": "Apple",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "150g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The lower left basket in the first row of the second column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Apple"
+    },
+    {
+        "item_id": 66,
+        "item_name": "Eggplant",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "350g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Second column, vegetable rack, second row, bottom right basket",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Eggplant"
+    },
+    {
+        "item_id": 67,
+        "item_name": "Strawberry",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "10g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Bottom left end of the plate in the lowest drawer on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Strawberry"
+    },
+    {
+        "item_id": 68,
+        "item_name": "Button Mushroom",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "50g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Top left basket on the second row of the second vegetable rack column",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Button Mushroom"
+    },
+    {
+        "item_id": 69,
+        "item_name": "Feta",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "400g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Feta"
+    },
+    {
+        "item_id": 70,
+        "item_name": "Scallion",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "80g",
+        "size": "extra large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "composition": {
+            "Scallion bulbs": {
+                "weight": "60g",
+                "size": "medium",
+                "shelf_life": null,
+                "cleanliness": null,
+                "forms": [
+                    "whole",
+                    "chopped",
+                    "juice"
+                ],
+                "heating_status": "",
+                "state_info": "",
+                "relative_position": "",
+                "supported_operation_states": [
+                    "normal_control_mode",
+                    "advanced_control_mode"
+                ],
+                "action2API": "Scallion bulbs"
+            },
+            "Scallion leaves": {
+                "weight": "20g",
+                "size": "large (requires special attention)",
+                "shelf_life": null,
+                "cleanliness": null,
+                "forms": [
+                    "whole",
+                    "chopped",
+                    "juice"
+                ],
+                "heating_status": "",
+                "state_info": "",
+                "relative_position": "",
+                "supported_operation_states": [
+                    "normal_control_mode",
+                    "advanced_control_mode"
+                ],
+                "action2API": "Scallion leaves"
+            }
+        },
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The third row left basket on the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Scallion"
+    },
+    {
+        "item_id": 71,
+        "item_name": "Mint Leaf",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "2g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Middle of the fourth row on the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Mint Leaf"
+    },
+    {
+        "item_id": 72,
+        "item_name": "Shrimp",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "20g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The rightmost tray in the fourth row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Shrimp"
+    },
+    {
+        "item_id": 73,
+        "item_name": "Honey Mango",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "200g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Honey Mango"
+    },
+    {
+        "item_id": 74,
+        "item_name": "Fusilli",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "400g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "sprinkle_weight": "10g",
+        "remaining_amount": -1,
+        "relative_position": "The leftmost position in the first row from the bottom upwards on the third column shelf",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "pouring_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Fusilli"
+    },
+    {
+        "item_id": 75,
+        "item_name": "Broccoli",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "50g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The top right basket in the second row of the first column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Broccoli"
+    },
+    {
+        "item_id": 76,
+        "item_name": "Zucchini",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "600g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "First column vegetable rack, third row right basket",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Zucchini"
+    },
+    {
+        "item_id": 77,
+        "item_name": "Horseradish",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "200g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "Third row, right basket in the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Horseradish"
+    },
+    {
+        "item_id": 78,
+        "item_name": "Rosemary Twig",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "5g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The leftmost position in the third row of the wall-mounted root and leaf rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Rosemary Twig"
+    },
+    {
+        "item_id": 79,
+        "item_name": "Penne",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "400g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "sprinkle_weight": "10g",
+        "remaining_amount": -1,
+        "relative_position": "The middle of the first row from the bottom in the third column shelf",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "pouring_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Penne"
+    },
+    {
+        "item_id": 80,
+        "item_name": "Lime",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "60g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The bottom left plate in the lowest drawer on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Lime"
+    },
+    {
+        "item_id": 81,
+        "item_name": "Green Bell Pepper",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "240g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The top left basket on the second row of the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Green Bell Pepper"
+    },
+    {
+        "item_id": 82,
+        "item_name": "Bread",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "300g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The lower left basket in the second row of the first column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Bread"
+    },
+    {
+        "item_id": 83,
+        "item_name": "Sausage",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "240g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The second tray from the right in the second row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Sausage"
+    },
+    {
+        "item_id": 84,
+        "item_name": "Banana",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "200g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Banana"
+    },
+    {
+        "item_id": 85,
+        "item_name": "Mozzarella",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "80g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The plate at the bottom right of the lowest drawer on the left side of the refrigerator.",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Mozzarella"
+    },
+    {
+        "item_id": 86,
+        "item_name": "Anchovy",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "4g",
+        "size": "small",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Anchovy"
+    },
+    {
+        "item_id": 87,
+        "item_name": "Cod",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "160g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The left end of the second tray from the right in the third row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Cod"
+    },
+    {
+        "item_id": 88,
+        "item_name": "Trout",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "200g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The second tray from the right on the third row from the right side of the refrigerator, right end",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Trout"
+    },
+    {
+        "item_id": 89,
+        "item_name": "Chicken Wing",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "60g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Chicken Wing"
+    },
+    {
+        "item_id": 90,
+        "item_name": "Chicken Breast",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "240g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The second tray from the right in the first row on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Chicken Breast"
+    },
+    {
+        "item_id": 91,
+        "item_name": "Chicken Leg",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "180g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The right end of the leftmost tray in the fifth row on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Chicken Leg"
+    },
+    {
+        "item_id": 92,
+        "item_name": "Egg",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "100g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "composition": {
+            "Egg": {
+                "weight": "100g",
+                "size": "medium",
+                "shelf_life": null,
+                "cleanliness": null,
+                "forms": [
+                    "whole",
+                    "chopped",
+                    "juice"
+                ],
+                "heating_status": "",
+                "state_info": "",
+                "relative_position": "",
+                "supported_operation_states": [
+                    "normal_control_mode",
+                    "advanced_control_mode"
+                ],
+                "action2API": "Egg"
+            },
+            "Eggshell": {
+                "weight": "10g",
+                "size": "small",
+                "shelf_life": null,
+                "cleanliness": null,
+                "forms": [
+                    "whole"
+                ],
+                "state_info": "",
+                "relative_position": "",
+                "supported_operation_states": [
+                    "normal_control_mode",
+                    "advanced_control_mode"
+                ],
+                "action2API": "Eggshell"
+            }
+        },
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The plate at the top left of the bottom drawer on the right side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Egg"
+    },
+    {
+        "item_id": 93,
+        "item_name": "Duck Breast",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "280g",
+        "size": "large (requires special attention)",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The left end of the leftmost tray in the fifth row on the left side of the refrigerator",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Duck Breast"
+    },
+    {
+        "item_id": 94,
+        "item_name": "Yellow Bell Pepper",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "240g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The upper right basket in the second row of the third column vegetable rack",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Yellow Bell Pepper"
+    },
+    {
+        "item_id": 95,
+        "item_name": "Cucumber",
+        "item_type": "Vegetables_Fruits_Noodles_Dairy",
+        "weight": "160g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The bottom-left basket in the first row of the first vegetable rack column",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Cucumber"
+    },
+    {
+        "item_id": 96,
+        "item_name": "Lobster Tail",
+        "item_type": "Poultry_Eggs_Fish_Meat_Seafood",
+        "weight": "200g",
+        "size": "medium",
+        "shelf_life": null,
+        "cleanliness": null,
+        "forms": [
+            "whole",
+            "chopped",
+            "juice"
+        ],
+        "heating_status": "",
+        "state_info": "",
+        "relative_position": "The back end of the rightmost tray in the third row on the refrigerator's right side",
+        "supported_operation_states": [
+            "normal_control_mode",
+            "advanced_control_mode"
+        ],
+        "action2API": "Lobster Tail"
+    }
+]

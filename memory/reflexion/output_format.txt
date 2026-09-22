@@ -1,0 +1,4 @@
+﻿Response JSON schema:
+{
+  "reflection": "string"
+}

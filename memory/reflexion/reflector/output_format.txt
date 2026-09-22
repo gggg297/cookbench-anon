@@ -1,0 +1,5 @@
+Preferred response style:
+- Write brief plain text.
+- Include: what real progress was made in the current chunk, what blocked completion, what remains unfinished, and what the next chunk should focus on.
+- Prefer one short paragraph or 3-5 short lines.
+- Optional prefixes are allowed: `Completed:`, `Issues:`, `Next:`.

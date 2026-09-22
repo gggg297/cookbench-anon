@@ -1,0 +1,238 @@
+CookBench 动作/技能反馈信息整理（按 前置检查 / 后置检查 / 运行反馈）
+更新时间：2026-03-09
+
+
+===============================================================================
+1) 动作（原子动作）里有专门反馈信息的接口
+===============================================================================
+
+[A] pick_up
+- 前置检查：
+  - 读取 hold 快照（_hold_snapshot）。
+  - 若已手持且手里不是容器类 -> pick_up_precheck_failed:already_holding_item
+  - 若已手持但手里是容器类，允许走“向容器内拾取”分支。
+- 后置检查：
+  - _wait_hold_state(expected_held=True) 轮询手持状态。
+  - 失败：pick_up_post_check_failed:not_holding_after_click
+  - 数据不可用：pick_up_post_check_failed:realtime_products_unavailable
+- 运行反馈字段：
+  - success, error, hint, precheck, postcheck, is_held, held_item, pickup_into_container
+
+[B] put_down
+- 前置检查：
+  - _hold_snapshot 若空手 -> put_down_precheck_failed:hands_empty
+- 后置检查：
+  - _wait_hold_state(expected_held=False)
+  - 并检查不在交互模式（pour/sprinkle/cut/mix/flip）
+  - 失败：put_down_post_check_failed:still_holding_item
+  - 模式仍激活：put_down_post_check_failed:interaction_mode_still_active
+  - 数据不可用：put_down_post_check_failed:realtime_products_unavailable
+- 运行反馈字段：
+  - success, error, hint, precheck, postcheck, is_held
+
+[C] enter_pouring_mode
+[D] enter_spices_sprinkle_mode
+[E] enter_cutting_mode
+[F] enter_the_flipping_mode
+[G] enter_mixing_mode
+- 前置检查：
+  - 无硬拦截 precheck_failed 码；直接执行点击并走模式检测。
+- 后置检查：
+  - _wait_mode_enabled(对应 mode flag)
+  - 失败分别返回 enter_*_mode_failed:not_in_*_mode
+- 运行反馈字段（统一）：
+  - success, mode, mode_entered, error, hint, precheck
+
+[H] countdown_time
+- 前置检查：
+  - 无
+- 后置检查：
+  - 无
+- 运行反馈字段：
+  - success, timer_id, start_ts, duration, deadline_ts
+
+[I] wait_for_timer
+- 前置检查：
+  - timer_id 为空时，必须能唯一推断运行中的 timer
+  - 否则返回 timer_id_required + candidates
+- 运行态检查（非动作后置校验）：
+  - 轮询 timer 状态直到 done 或 timeout（默认是阻塞等待）
+  - 若 timeout_s=0，可作为“即时状态查询”（近似非阻塞）
+- 运行反馈字段：
+  - success, error, timer_id, status, waited_s, candidates
+
+===============================================================================
+2) 技能（含 action 风格高级封装）里有专门反馈信息的接口
+===============================================================================
+
+注意：下面多数 skill 的“后置检查”主要依赖底层 action 返回 success/error，
+wrapper 自身通常不额外做强后验（这就是“依赖底层执行结果”）。
+
+[S1] auto_cut
+- 前置检查：
+  - 实例解析 resolve_instance_id（见第 3 节通用规则）
+- 后置检查：
+  - 依赖底层 _skill_auto_cutting 返回
+- 运行反馈字段：
+  - success, item_name, cut_num, weight, error, traceback
+
+[S2] auto_pour
+- 前置检查：
+  - resolve_instance_id
+  - Alt+J 交互流开关检查（失败：alt_j_not_enabled...）
+- 后置检查：
+  - 依赖底层 _skill_auto_pouring 返回
+- 运行反馈字段：
+  - success, container_name, target_ml, poured_ml, tolerance, mode, mode_entered, error
+
+[S3] auto_sprinkle
+- 前置检查：
+  - resolve_instance_id
+- 后置检查：
+  - 依赖底层 _skill_auto_sprinkling 返回
+- 运行反馈字段：
+  - success, target, requested, completed, mode, mode_entered, error
+
+[S4] auto_flip / auto_filp
+- 前置检查：
+  - 肉和放置点的实例解析
+  - 平台点输入合法性（index 展开/范围）
+- 后置检查：
+  - 依赖底层 _skill_auto_flipping 返回
+- 运行反馈字段：
+  - success, meat, put_place, meat_instance_id, put_place_instance_id, mode, mode_entered, error
+
+[S5] auto_mix
+- 前置检查：
+  - resolve_instance_id
+- 后置检查：
+  - 依赖底层 _skill_auto_mix 返回
+- 运行反馈字段：
+  - success, container 或 container_name, mode, mode_entered, error
+
+[S6] auto_navigation
+- 前置检查（最丰富）：
+  - target/map_file 非空
+  - 平台点/工具点 category + index 合法性
+  - F12/F11 预检（preflight）
+  - resolve_instance_id
+- 后置检查：
+  - 无统一强后验硬拦截；主要看导航器返回 ok
+- 运行反馈字段：
+  - success, error
+  - raw 中常见：target, resolved_target, requested_target_instance_id,
+    resolved_target_instance_id, map_file, preflight, put_place_occupancy_snapshot
+
+[S7] auto_perception
+- 前置检查：
+  - realtime 文件可读
+- 后置检查：
+  - 无
+- 运行反馈字段：
+  - success, visible_items, error
+
+[S8] query_scene_objects
+- 前置检查：
+  - 最佳努力触发 F12 刷新
+- 后置检查：
+  - 无
+- 运行反馈字段：
+  - success, query, results, error
+  - raw 中可含 preflight.f12_ok
+
+[S9] list_supported_items
+- 前置检查：
+  - 本地映射/平台/工具点清单读取
+- 后置检查：
+  - 无
+- 运行反馈字段：
+  - success, query, items, platforms, tool_points, error
+
+[S10] query_tool_manual
+- 前置检查：
+  - tool_en.json 存在且可解析
+- 后置检查：
+  - 无
+- 运行反馈字段（raw）：
+  - query, tool_type, container_type, tool_function, total, results
+
+[S11] gui_buy_new_item
+- 前置检查：
+  - 盘子类必须走 stack 来源（plate_item_must_use_stack_source）
+  - 物品名支持性检查（unsupported_item）
+  - 导航到商店点位
+- 后置检查：
+  - UI 多轮重试策略（attempts）
+- 运行反馈字段：
+  - success, error, item, store_target, mapping_suggestions, attempts, hint, resume_cmd
+
+[S12] gui_order_dish_via_computer
+- 前置检查：
+  - dish_name 非空
+  - 导航到 Computer 成功
+- 后置检查：
+  - 下单 UI 流程成功
+- 运行反馈字段：
+  - success, error, dish_name, computer_target, order_result, f12_ok, f11_ok
+
+[S13] gui_submit_dish_via_checkout_stand
+- 前置检查（local_actions 包装层）：
+  - realtime_products 可读
+  - 当前必须手持物品
+  - 手持物必须是容器类
+- 后置检查（serve_flow）：
+  - 反馈菜名一致性检查，不一致 -> feedback_dish_mismatch
+- 运行反馈字段：
+  - success, error, dish_name, checkout_target, submit, dish_result, feedback, f12_ok, f11_ok
+
+===============================================================================
+3) 技能通用前置检查（实例解析层）错误码与语义
+===============================================================================
+
+resolve_instance_id 常见失败码（均可视为 precheck 失败）：
+- realtime_products_unreadable:*
+- invalid_target_name
+- target_not_found
+- target_kind_mismatch
+- instance_id_required
+- instance_id_not_found
+
+对应的结构化恢复信息（raw）：
+- candidates
+- selection_prompt
+- name_arg
+- instance_arg
+- provided_instance_id（instance_id_not_found 时）
+- mapping_suggestions（invalid_target_name 时）
+
+===============================================================================
+4) Agent 层全局校验（跨动作/技能）
+===============================================================================
+
+[G1] final_success 合并
+- 若 action_result.success=False，直接失败
+- 否则若启用 step_success_judge，取 judged_success
+- 否则成功
+
+[G2] pick_up 严格后置兜底
+- 额外检查 is_held 必须为 true
+- 失败码：post_check_failed:pick_up_not_holding_item ...
+
+[G3] put_down 严格后置兜底
+- 额外检查 mode=idle 且 is_held=false
+- 失败码：post_check_failed:put_down_not_idle ...
+
+[G4] 模式门控类前置
+- 导航在交互模式下会被拦截：navigation_blocked_by_mode
+- Horizontal_movement 仅允许交互模式：horizontal_movement_requires_interaction_mode
+
+===============================================================================
+5) 一句话使用建议
+===============================================================================
+
+调试时按这个顺序看反馈：
+1) 先看 success / error
+2) 若失败，看是 precheck 还是 post_check
+3) 若是实例问题，直接读 candidates + selection_prompt
+4) 若是拿放动作，必须同时看 precheck/postcheck（不要只看 success）
+

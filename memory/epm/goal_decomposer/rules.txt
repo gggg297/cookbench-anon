@@ -1,0 +1,7 @@
+﻿Rules:
+- Each subgoal should be actionable and short.
+- Use strict recipe order.
+- Prefer one subgoal per recipe step.
+- Do NOT create broad setup subgoals such as Gather ingredients and equipment or Prepare the workspace.
+- Do NOT merge non-adjacent recipe steps.
+- Do not include tool calls or code.

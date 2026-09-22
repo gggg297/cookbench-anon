@@ -1,0 +1,15 @@
+{
+  "_comment": "Optional local overrides. Copy this file to `common.local.json` (git-ignored) and fill in your own values. Anything set here overrides `common.json`. Never commit real credentials.",
+  "paths": {
+    "game_userdata_root": "C:/path/to/steamapps/common/CookingSimulator/UserData"
+  },
+  "runtime": {
+    "notify_email_enabled": false,
+    "notify_email_smtp_host": "smtp.example.com",
+    "notify_email_smtp_port": 587,
+    "notify_email_username": "",
+    "notify_email_from": "",
+    "notify_email_password_env": "EPM_EMAIL_PASS",
+    "notify_email_to": ""
+  }
+}

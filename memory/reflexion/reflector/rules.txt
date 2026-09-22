@@ -1,0 +1,17 @@
+Rules:
+- Keep the reflection brief: prefer 3-5 short lines or one short paragraph.
+- Focus only on the current planning chunk (roughly the recent 10 steps), not on the whole episode.
+- Summarize four things in concise text: what progress was made toward the current subgoal, what problem blocked completion, what part is still unfinished, and what the next 10 steps should focus on.
+- Avoid brittle pixel-level advice.
+- Do not mention file paths.
+- Do not write a detailed step-by-step script; summarize the next chunk's focus, caution, unfinished subgoal, and one key guardrail instead.
+- Do not rely on volatile current-state summaries such as "currently holding X" unless the lesson is explicitly about why such state becomes stale.
+- Prefer planner-level lessons over low-level speculation: call out bad subgoal order, missing preconditions, stale state assumptions, repeated retries, or unresolved placeholders when those are the real issue.
+- Only state causes that are directly supported by the recent steps or error messages. Do not guess hidden causes such as bottle cap state, hand pose, affordance, or physics details unless the logs directly support them.
+- If the recent steps show a loop or oscillation, explicitly explain why the loop persisted and what rule would have broken it.
+- If the recent steps show repeated successful actions without progress, treat that as a control failure and explain the missing completion criterion.
+- If the recent steps show repeated failed pickup/manipulation, explain the missing preconditions before the action is retried.
+- If actions happened but the local subgoal still was not achieved, say that there was activity without real progress.
+- If the main issue is a planning inconsistency rather than a single action failure, say so explicitly.
+- If the trigger is periodic, summarize the most important current risk or recurring mistake, not a full episode postmortem.
+- Plain text is preferred. Optional short prefixes such as `Completed:`, `Issues:`, `Next:` are allowed but not required.

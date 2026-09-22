@@ -1,0 +1,185 @@
+Local Actions Catalog (categorized)
+==================================
+
+- taxonomy: src/epm/cerebellum/local_actions_atomic_actions.txt
+- source: epm.cerebellum.local_actions.ACTION_DISPATCHER
+- total_actions: 85
+- categorized_by_actions: 25 categories
+- high_level_skills: 13
+- keyboard_mouse_actions: 10
+
+[Navigate(移动)] (共8个)
+- move_backward(duration=0.3)  # 向后移动一小段距离
+- move_backward_left(duration=0.3)  # 向左后方移动一小段距离
+- move_backward_right(duration=0.3)  # 向右后方移动一小段距离
+- move_forward(duration=0.3)  # 向前移动一小段距离
+- move_forward_left(duration=0.3)  # 向左前方移动一小段距离
+- move_forward_right(duration=0.3)  # 向右前方移动一小段距离
+- move_left(duration=0.3)  # 向左移动一小段距离
+- move_right(duration=0.3)  # 向右移动一小段距离
+
+[Look(视角)] (共4个)
+- look_down(pixels=100)  # 角色视野调整动作。视野向下转动一段距离
+- look_left(pixels=100)  # 角色视野调整动作。视野向左转动一段距离
+- look_right(pixels=100)  # 角色视野调整动作。视野向右转动一段距离
+- look_up(pixels=100)  # 角色视野调整动作。视野向上转动一段距离
+
+[PickupObject(拿起动作类)] (共4个)
+- pick_less(steps: int = 1)  # Container multi-pick quantity adjustment action. While holding a container and aiming at an item pile, scroll the mouse wheel upward to reduce how many items will be picked in one pickup. The currently selected items are highlighted by a yellow outline on screen.
+- pick_more(steps: int = 1)  # Container multi-pick quantity adjustment action. While holding a container and aiming at an item pile, scroll the mouse wheel downward to increase how many items will be picked in one pickup. The currently selected items are highlighted by a yellow outline on screen.
+- pick_up()  # 拿起物品类动作。手没拿东西且视野对准物品的情况下，对物品执行拿起动作
+- pick_up_into_the_container()  # 拿起物品类动作。手持容器时，视野对准物品的前提下，向容器内拾取物体
+
+[PutObject(放下动作类)] (共1个)
+- put_down()  # 拿起物品类动作。手拿了东西且对准放置位置的情况下，对物品执行放下动作
+
+[RepairObject(维修动作类)] (共1个)
+- repair()  # 维修动作。手持 Repair Phone 且视野对准损坏厨具时，对目标执行维修操作
+
+[BlenderMode(搅拌动作类)] (共4个)
+- blender_downward()  # 搅拌机交互类动作。搅拌模式情况下，将搅拌机竖直向下沉，以搅拌到容器底部
+- blender_upward()  # 搅拌机交互类动作。搅拌机竖直向上浮，以停止搅拌，也可以直接退出搅拌模式
+- enter_mixing_mode()  # 搅拌机交互类动作。持有搅拌机且视野对准容器情况下，进入搅拌模式，搅拌机自动开启，以便对容器内物品进行搅拌操作，这是搅拌的前提
+- exit_mixing_mode()  # 搅拌机交互类动作。搅拌模式情况下，退出搅拌模式，搅拌机自动关闭，恢复正常搅拌机持有状态
+- toggle_off_blender()  # 搅拌机交互类动作。手持Blender情况下，关闭搅拌机。
+- toggle_on_blender()  # 搅拌机交互类动作。手持Blender情况下，打开搅拌机, 工具作用为搅拌固体物品为液体。
+
+
+
+[Posture(蹲起)] (共2个)
+- kneel_down()  # 角色姿势调整动作。蹲下去
+- stand_up()  # 角色姿势调整动作。站起来
+
+[PutObject-DropThrowRelease(扔下物品)] (共2个)
+- discard_into_garbage_bin()  # 拿起物品类动作。手持物品且视野对准垃圾桶时，左键将手中之后不再需要的物品丢入垃圾桶。该操作不可恢复，需谨慎使用。前置检查要求手中持有物品；执行后会轮询等待最多3秒，后置检查要求恢复为空手。
+- throw_away()  # 拿起物品类动作。手持物品情况下，将物品向视角前方扔出
+
+[High-level skills(高级技能类)] (共13个)
+- auto_cut(object, cut_num, object_instance_id=None) -> dict  # 切割物品技能。在切割模式下，对物品切 `cut_num` 刀，切完后自动退出切割模式，恢复为手持刀的状态。
+- auto_flip(meat, put_place, meat_instance_id=None, put_place_instance_id=None) -> dict  # 铲子翻面技能。在翻面模式下，将铲子上的 `meat` 移动到 `put_place` 位置给肉翻面，并在结束后自动退出翻面状态，恢复为手持铲子的状态。
+- auto_mix(container, container_instance_id=None) -> dict  # 搅拌技能。在搅拌模式下，对 `container` 内物品进行自动搅拌操作，固体经过搅拌后成液体；搅拌完后自动退出搅拌模式，恢复为手持搅拌机的状态。
+- auto_navigation(target, target_instance_id=None) -> dict  # 导航技能。导航到 `target` 前并将视野正对 `target`。
+- auto_perception(only_on_screen=False, max_items=200) -> dict  # 自动感知技能：获取当前视野内的物品列表
+- auto_pour(container, pour_ml, container_instance_id=None) -> dict  # 倾倒技能。在倾倒模式下，将液体自动倾倒到 `container` 中，直到达到 `pour_ml` 毫升。
+- auto_sprinkle(target, sprinkle_num, target_instance_id=None) -> dict  # 播撒技能。在播撒模式下，将调料罐内调料播撒到 `target` 上 `sprinkle_num` 次。默认一次约 1g（除非已执行改变播撒克数的动作）。
+- gui_buy_new_item(item: str) -> dict  # 购买物品技能。空手状态下，自动导航至Carton Box在商店UI界面自动购买物品，购买后智能体处于手持对应物品的状态。如果要再次购买要留意放置好物品确保空手，不然会执行失败.
+- gui_order_dish_via_computer(dish_name: str) -> dict  # 下订单技能。每个任务开始前必须先执行该技能，空手状态下，自动导航至Computer在电脑UI界面自动下订单，点完订单后智能体处于空手状态。如果要再次下订单要留意确保空手，不然会执行失败.
+- gui_submit_dish_via_checkout_stand(dish_name: str) -> dict  # 上菜评价技能。每个任务结束后必须执行该技能，手持菜品状态下，自动导航至Checkout Stand在上菜UI界面自动上交菜品，获取所作菜的评分以及反馈。
+- query_scene_objects(query, only_on_screen=False, max_items=100, max_distance=1.8) -> dict  # 查询当前场景中的物品实例技能。用于获取 live instance_id、可见性、容器、距离等执行/消歧信息。
+- query_product_catalog(query='', item_type='', max_items=20) -> dict  # 查询静态产品资料技能。读取 epm/data/products_en.json，返回产品目录信息，不用于当前场景实例检索。
+- query_tool_manual(query='', tool_type='', container_type='', tool_function='', max_items=20) -> dict  # Kitchen tool manual lookup skill. Query cookware usage/specs from epm/data/tool_en.json.
+
+[Timing(时间计时类)] (共1个)
+- countdown_time(duration: float = 5.0)  # 倒计时操作（非阻塞）
+- wait_for_timer(timer_id: Optional[str] = None, timeout_s: float = 60.0)  # 等待计时器完成
+
+[DoorInteraction(门类交互动作)] (共4个)
+- close_drawer()  # 关闭一切抽屉类动作，如冰箱左抽屉、右抽屉等，前后置状态检查基于对应 drawer 的 is_open 字段
+- close_door()  # 关闭一切门类动作，如冰箱门、烤箱门等；执行前必须对准视野中心且2米内的门，前后置状态检查使用对应 door 的 is_open 与 open_angle，并返回3秒 open_angle 变化轨迹
+- open_drawer()  # 打开一切抽屉类动作，如冰箱左抽屉、右抽屉等，前后置状态检查基于对应 drawer 的 is_open 字段
+- open_door()  # 打开一切门类动作，如冰箱左门、右门、烤箱门等；执行前必须对准视野中心且2米内的门，前后置状态检查使用对应 door 的 is_open 与 open_angle，并返回3秒 open_angle 变化轨迹
+
+[Cut-object(切割工具类型动作)] (共3个)
+- enter_cutting_mode()  # 切割工具类型动作。手持刀时，进入切割模式，以对物品进行瞄准并切割。切割物品时需要先进入切割模式，这是切割的前提
+- exit_cutting_mode()  # 切割工具类型动作。在切割模式下，切割完毕后，退出切割模式
+- knife_cut_down()  # 切割工具类型动作。在切割模式下，使刀具垂直下落对正下方物品物品进行切割动作
+
+[Tongs-interaction(夹钳交互动作)] (共2个)
+- pick_up_with_tongs()  # 夹钳交互动作。持有夹钳且对准目标物品情况下，夹取食材，但用不上，可忽略
+- release_with_tongs()  # 夹钳交互动作。在用夹钳夹住物品时，松开夹钳，但用不上，可忽略
+
+[Ladle-interaction(操作勺子动作)] (共2个)
+- get_liquid_in_Ladle()  # 操作勺子动作。手持勺子时，用勺子盛取特定容量液体。一次性操作的液体容量取决于勺子大小，可以根据勺子名称判断盛取容量
+- get_liquid_out_Ladle()  # 操作勺子动作。手持勺子且视野对准目标容器时，将勺子中盛取的液体一次性装入目标容器中
+
+[Pipette-interaction(操作移液器动作)] (共3个)
+- change_content_5_or_10ml()  # 操作移液器动作。手持移液器情况下，将移液器操作的单次液体容量更改装量5ML或者10ML。默认是5ml，再按一次变10ml，再按一次变5ml
+- pour_out_from_pipette()  # 操作移液器动作。手持移液器且视野对准目标容器时，将移液器中的液体装入目标容器中，容量20ml，一次默认操作5ml
+- pour_in_pipette()  # 操作移液器动作。手持移液器且视野对准目标容器时，将目标容器中的液体装入移液器中，容量20ml，一次默认操作5ml
+
+
+[SpatialControl(空间姿态调整类)] (共10个)
+- horizontal_movement(x, y)  # 旋转与空间控制动作。对于特殊模式或者高级控制状态下，对物品进行空间上的水平移动
+- rotate_along_the_Yaxis(x, y, key='left')  # 旋转与空间控制动作。将物品或工具在能控制对象位姿时，绕Y轴旋转，通过鼠标移动实现
+- rotate_clockwise_along_the_Yaxis()  # 旋转与空间控制动作。将物品或工具在能控制对象位姿时，沿Y轴顺时针旋转，通过键盘实现
+- rotate_clockwise_along_the_Zaxis()  # 旋转与空间控制动作。将物品或工具在能控制对象位姿时，沿Z轴顺时针旋转
+- rotate_counterclockwise_along_the_Yaxis()  # 旋转与空间控制动作。将物品或工具在能控制对象位姿时，沿Y轴逆时针旋转，通过键盘实现
+- rotate_counterclockwise_along_the_Zaxis()  # 旋转与空间控制动作。将物品或工具在能控制对象位姿时，沿Z轴逆时针旋转
+- spatial_rotation(x, y, key='right')  # 旋转与空间控制动作。对于高级控制状态下，对于对象进行空间旋转，使其位姿发生变化
+- switch_to_advanced_control_mode()  # 旋转与空间控制动作。对于手持状态情况下，切换高级控制，以支持空间移动旋转等操作
+- switch_to_normal_control_mode()  # 旋转与空间控制动作。在高级控制状态下，切换普通控制，以恢复正常的交互状态。
+- vertical_movement(y, key='left')  # 旋转与空间控制动作。对于高级控制状态下，对于对象进行垂直方向上的移动
+
+[Liquid-pourout(液体倾倒操作类型动作)] (共4个)
+- enter_pouring_mode()  # 液体倾倒操作类型动作。手持容器或者液体瓶并且对准另一个容器情况下，对进入液体倾倒模式，这是液体倾倒的前提
+- exit_pouring_mode()  # 液体倾倒操作类型动作。在液体倾倒模式情况下，退出液体倾倒模式
+- bottleneck_move_downward(y, key='left')  # 液体倾倒操作类型动作。在液体倾倒模式情况下，将瓶口向下倾倒，以流出液体
+- bottleneck_move_upward(y, key='left')  # 液体倾倒操作类型动作。在液体倾倒模式情况下，将瓶口向上抬起，以停止液体流出
+
+[Faucet-container-interaction(液体容器与水龙头的交互动作)] (共8个)
+- change_faucet_pipe_rotation()  # 液体容器与水龙头的交互动作。前提满足二者之一即可：已经进入水龙头加水模式，或者已经导航到水龙头区域并对准水龙头出水管。执行后会验证出水管位置是否发生偏转，并反馈它在水平面距离上当前更靠近 Left Sink Place Point 还是 Right Sink Place Point
+- enter_the_faucet_filling_mode()  # 液体容器与水龙头的交互动作。手持液体容器且瞄准水龙头时，进入加水状态并将容器对准到可加水位置；这是后续打开左右手柄之前的前提
+- exit_the_faucet_filling_mode()  # 液体容器与水龙头的交互动作。加水模式情况下，退出加水模式，恢复正常手持液体容器状态
+- move_faucet_container(x, y)  # 液体容器与水龙头的交互动作。加水模式情况下，移动液体容器位置垂直方向上对准水龙头，以便加水
+- screw_faucet_left_handle(target_ml)  # 液体容器与水龙头的交互动作。先进入加水状态，再打开水龙头左手柄向当前容器加入目标增量的热水；达到目标后自动停止并退出，反馈返回倒出液体量、容器最终液体量以及可能的溢出提示
+- screw_faucet_right_handle(target_ml)  # 液体容器与水龙头的交互动作。先进入加水状态，再打开水龙头右手柄向当前容器加入目标增量的冷水；达到目标后自动停止并退出，反馈返回倒出液体量、容器最终液体量以及可能的溢出提示
+- unscrew_faucet_left_handle()  # 液体容器与水龙头的交互动作。加水模式且水龙头打开的情况下，关闭水龙头左手柄
+- unscrew_faucet_right_handle()  # 液体容器与水龙头的交互动作。加水模式且水龙头打开的情况下，关闭水龙头右手柄
+
+[Bottle-interaction(液体瓶交互类动作)] (共2个)
+- screw_bottle()  # 液体瓶交互类动作。持有液体瓶情况下，拧紧瓶盖
+- unscrew_bottle()  # 液体瓶交互类动作。持有液体瓶情况下，拧松瓶盖
+
+[DeepFryer-interaction(炸炉专属交互动作)] (共2个)
+- togggle_add_oil_into_Deep_fryer()  # 炸炉专属交互动作。点击工具上Fryer 1/2 Buntton On按钮,炸炉加注食用油。前提是要先对准炸炉加油按钮
+- toggle_pour_oil_out_Deep_fryer()  # 炸炉专属交互动作。点击工具上Fryer 1/2 Buntton Off按钮,炸炉排出食用油，前提是要先对准炸炉排油按钮
+
+[ToggleOn/Off(电器开关交互类动作)] (共2个)
+- toggle_off_switch()  # 电器开关交互类动作。关闭一个位置的煤气灶、或者平板煎炉、烤箱、条纹煎炉、炸炉等，开关名都带switch一词，执行此操作前需要导航并对准开关位置
+- toggle_on_switch()  # 电器开关交互类动作。打开一个位置的煤气灶、或者平板煎炉、烤箱、条纹煎炉、炸炉等，开关名都带switch一词，执行此操作前需要导航并对准开关位置
+
+[Skewer-interaction(签子交互动作)] (共2个)
+- skewer_hang_on_string()  # 签子交互动作。手拿签子且对准物品的情况下，串上食材
+- skewer_remove_the_ingredients()  # 签子交互动作。当签子上有食物且对准放置位置的情况下，取下食材
+
+[Spices-sprinkle(调料播撒类型动作)] (共3个)
+- adjust_sprinkle_weight()  # 调料播撒类型动作。在香料播撒模式下，调整倾倒重量
+- enter_spices_sprinkle_mode()  # 调料播撒类型动作。手持调料罐并对准物品或容器情况下，进入香料播撒模式。这是进行香料播撒的前提
+- exit_spices_sprinkle_mode()  # 调料播撒类型动作。在香料播撒模式情况下，退出香料播撒模式
+
+[Spatula-interaction(铲子交互动作)] (共2个)
+- enter_the_flipping_mode()  # 铲子交互动作。手持铲子且铲起食材后，进入翻动模式，以便对于食材进行翻面操作，这是翻面的前提。比如煎肉饼时需要翻面
+- exit_the_flipping_mode()  # 铲子交互动作。在翻动模式下，退出翻动模式，恢复正常铲子持有状态
+- flip_over()  # 铲子交互动作。在翻动模式下，将铲子上的食材翻面到平面上
+- pick_up_with_spatula()  # 铲子交互动作。手持铲子情况下对准目标物品，铲起食材
+
+[Food-processor(食品料理机专属交互动作)] (共2个)
+- toggle_off_food_processor()  # 食品料理机专属交互动作。关闭料理机转头切割功能
+- toggle_on_food_processor()  # 食品料理机专属交互动作。打开料理机转头切割功能，将物品由固体打汁成液体
+
+[Egg-crack(鸡蛋交互类动作)] (共1个)
+- crack_open_the_egg()  # 鸡蛋交互类动作。手持鸡蛋时，敲开鸡蛋。最终蛋清在手中，蛋壳垂直掉落
+
+
+
+
+
+[Excluded: Internal helpers (not atomic actions)]
+-----------------------------------------------
+
+[Internal/ControlPrimitives] (共11个)
+-----------------------------------
+- click_mouse(key: Literal['left', 'right', 'mid'])  # 点击鼠标
+- hold_keyboard(key: Literal['w', 'a', 's', 'd', 'shift', 'ctrl'])  # 按住按键
+- hold_mouse(key: Literal['left', 'right'])  # 按住鼠标
+- leave_keyboard(key: Literal['w', 'a', 's', 'd', 'shift', 'ctrl'])  # 松开按键
+- leave_mouse(key: Literal['left', 'right'])  # 松开鼠标
+- move_related_mouse(x: int, y: int)  # 相对移动鼠标（用于非视角转动）
+- press_keyboard(key: Literal['w', 'a', 's', 'd', 'e', 'q', 'r', 'shift', 'ctrl'])  # 点击按键
+- scroll_down_the_wheel(distance: int = 0.5)  # 向下滑动滚轮
+- scroll_up_the_wheel(distance: int = 0.5)  # 向上滑动滚轮
+
+[Internal/Window] (共5个)
+-----------------------
+- focus_terminal()  # 将焦点切换到运行此脚本的命令行窗口。
+- get_window_center(window_name: str = 'CookingSimulator')  # 获取窗口的中心点（屏幕绝对坐标）。

@@ -1,0 +1,10 @@
+﻿Requirements:
+- Output plain text only. No JSON. No markdown.
+- Keep it concise but concrete.
+- Prioritize these points in order:
+  1) whether the camera view or foreground object causes occlusion,
+  2) whether the current target workspace or container is visible, centered, and aligned for interaction,
+  3) the immediate blocker for the next interaction,
+  4) whether the current execution already shows an anomaly or a likely near-term failure risk.
+- Mention only the most decision-relevant facts.
+- Use at most 4 short lines.

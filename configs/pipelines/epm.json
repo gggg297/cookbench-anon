@@ -1,0 +1,83 @@
+{
+  "extends": "../common.json",
+  "runtime": {
+    "stm_window_size": 200
+  },
+  "brain": {
+    "pipeline": "epm",
+    "use_vlm": true,
+    "perception_mode": "vlm",
+    "plan_steps": 10,
+    "prompt_policy": {
+      "include_task_progress": true
+    },
+    "prompt_ablation": {
+      "profile": "full"
+    },
+    "task_progress_maintenance": {
+      "enabled": true,
+      "update_mode": "maintainer_only",
+      "on_new_plan_generated": true,
+      "on_need_replan": true,
+      "history_window_steps": 30,
+      "min_step_gap_steps": 30,
+      "_doc": {
+        "enabled": {
+          "desc": "Enable task_progress maintenance.",
+          "range": "true|false",
+          "current": true
+        },
+        "on_new_plan_generated": {
+          "desc": "Refresh once right after a new plan is generated, before executing the first step of that plan.",
+          "range": "true|false",
+          "current": true
+        },
+        "on_need_replan": {
+          "desc": "Refresh when a replan is needed (alignment failure, etc.).",
+          "range": "true|false",
+          "current": true
+        },
+        "history_window_steps": {
+          "desc": "Recent step window injected into task_progress maintenance.",
+          "range": "positive integer",
+          "current": 30
+        },
+        "min_step_gap_steps": {
+          "desc": "Minimum episode-step gap between maintainer runs, even if new-plan/replan triggers fire frequently.",
+          "range": "non-negative integer",
+          "current": 30
+        }
+      }
+    },
+    "precondition_checker": {
+      "enabled": true,
+      "mode": "key_rules",
+      "max_retries": 0,
+      "max_plan_repair_attempts": 1,
+      "recheck_after_repair": false,
+      "strip_think_tags": true
+    },
+    "visual_anomaly_observer": {
+      "enabled": true,
+      "max_retries": 0,
+      "strip_think_tags": true,
+      "history_window_steps": 4
+    },
+    "subgoal_done_judge": {
+      "enabled": false,
+      "check_done_every_n_steps": 1,
+      "_doc": {
+        "enabled": {
+          "desc": "Enable subgoal completion judge in EPM pipeline.",
+          "range": "true|false",
+          "current": false
+        },
+        "check_done_every_n_steps": {
+          "desc": "Run subgoal-done judging every N successful steps inside the current subgoal.",
+          "range": "positive integer",
+          "current": 1
+        }
+      }
+    }
+  }
+}

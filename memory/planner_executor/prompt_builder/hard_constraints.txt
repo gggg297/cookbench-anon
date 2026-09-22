@@ -1,0 +1,7 @@
+PE reminder: this is rolling-horizon planning; each round is partial. Do NOT force task completion in one round.
+Do NOT include `gui_submit_dish_via_checkout_stand` unless there is clear evidence the dish is ready to serve (or force-submit mode is explicitly active).
+Each step object MUST include `step_id`, `type`, `name`, `args`, and `expectation`.
+- `type` must be exactly `action` or `skill`.
+- `name` must be the exact action or skill name from the schemas above.
+- `args` must be a JSON object using the actual parameter names for that action or skill; use `{}` when no args are needed.
+{count_constraint}

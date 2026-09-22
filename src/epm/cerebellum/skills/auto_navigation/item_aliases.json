@@ -1,0 +1,243 @@
+{
+    "_comment": "物品名称别名映射表 - 将常用名称映射到游戏内部名称",
+    "_usage": "在导航时可以使用别名来查找物品，如 'olive_oil' 会被自动转换为游戏内名称",
+    "_updated": "2025-12-12",
+    "_note": "游戏中的油类名称是 2_Oil(Clone), 4013_Oil(Clone) 等，没有专门的橄榄油",
+
+    "aliases": {
+        "olive_oil": "2_Oil",
+        "olive_oil_liquid": "2_Oil",
+        "oliveoil": "2_Oil",
+        "cooking_oil": "2_Oil",
+
+        "sesame_oil": "SesameOil",
+        "sesameoil": "SesameOil",
+
+        "sunflower_oil": "Oil",
+        "sunfloweroil": "Oil",
+
+        "peanut_oil": "Oil",
+        "peanutoil": "Oil",
+
+        "avocado_oil": "Oil",
+        "avocadooil": "Oil",
+
+        "cactus_oil": "CactusOil",
+        "rapeseed_oil": "RapeSeedOil",
+
+        "oil": "2_Oil",
+
+        "water": "水",
+        "milk": "牛奶",
+        "honey": "蜂蜜",
+
+        "soy_sauce": "酱油",
+        "soysauce": "酱油",
+
+        "ketchup": "番茄酱",
+        "tomato_sauce": "番茄酱",
+
+        "mustard": "芥末",
+        "dijon_mustard": "法国第戎芥末",
+
+        "vinegar": "白醋",
+        "white_vinegar": "白醋",
+        "wine_vinegar": "葡萄酒醋",
+        "balsamic_vinegar": "意大利香醋",
+        "rice_vinegar": "米醋",
+
+        "wine": "红葡萄酒",
+        "red_wine": "红葡萄酒",
+        "white_wine": "白葡萄酒",
+        "rice_wine": "米酒",
+
+        "butter": "脱水黄油",
+        "clarified_butter": "脱水黄油",
+
+        "cream": "酸奶油",
+        "sour_cream": "酸奶油",
+
+        "lemon_juice": "柠檬汁",
+        "lime_juice": "青柠汁",
+
+        "bbq_sauce": "烧烤酱",
+        "barbecue_sauce": "烧烤酱",
+
+        "hoisin_sauce": "海鲜酱",
+
+        "chicken_soup": "鸡汤",
+        "broth": "鸡汤",
+
+        "coconut_milk": "椰奶",
+
+        "salt": "盐",
+        "pepper": "黑胡椒",
+        "black_pepper": "黑胡椒",
+        "white_pepper": "白胡椒",
+
+        "sugar": "糖",
+        "starch": "淀粉",
+
+        "paprika": "甜椒粉",
+        "chili_powder": "辣椒粉",
+        "chilli_powder": "辣椒粉",
+        "chili_flakes": "辣椒薄片",
+
+        "cumin": "孜然粉",
+        "cumin_powder": "孜然粉",
+
+        "curry": "咖喱粉",
+        "curry_powder": "咖喱粉",
+
+        "turmeric": "姜黄根粉",
+        "ginger": "姜",
+        "ginger_whole": "整块姜",
+
+        "garlic": "大蒜",
+        "dried_garlic": "干大蒜",
+
+        "cinnamon": "肉桂末",
+        "cinnamon_powder": "肉桂末",
+        "cinnamon_sticks": "肉桂皮条",
+
+        "nutmeg": "肉豆蔻粉",
+        "vanilla": "香草粉",
+
+        "oregano": "干牛至",
+        "dried_oregano": "干牛至",
+        "OreganoDried": "干牛至",
+
+        "basil": "干罗勒",
+        "dried_basil": "干罗勒",
+
+        "thyme": "干百里香",
+        "dried_thyme": "干百里香",
+
+        "rosemary": "干迷迭香",
+        "dried_rosemary": "干迷迭香",
+
+        "dill": "干莳萝",
+        "dried_dill": "干莳萝",
+
+        "mint": "干薄荷",
+        "dried_mint": "干薄荷",
+
+        "bay_leaf": "干香叶",
+        "dried_bay_leaf": "干香叶",
+
+        "parsley": "欧芹",
+        "fresh_parsley": "新鲜欧芹叶",
+
+        "cilantro": "干香菜叶",
+        "coriander": "干香菜叶",
+        "fresh_cilantro": "新鲜香菜叶",
+
+        "fresh_basil": "新鲜罗勒叶",
+        "fresh_dill": "新鲜莳萝",
+        "fresh_bay_leaves": "新鲜香叶",
+
+        "chives": "细香葱",
+        "scallion": "葱",
+
+        "tomato": "番茄",
+        "potato": "土豆",
+        "carrot": "胡萝卜",
+        "onion": "洋葱",
+        "cucumber": "黄瓜",
+        "zucchini": "西葫芦",
+        "eggplant": "茄子",
+        "broccoli": "西兰花",
+        "asparagus": "芦笋",
+        "pumpkin": "南瓜",
+        "corn": "玉米棒",
+        "beetroot": "甜菜",
+        "sweet_potato": "红薯",
+        "parsnip": "欧洲萝卜",
+        "cabbage": "紫甘蓝",
+        "purple_cabbage": "紫甘蓝",
+        "brussels_sprouts": "抱子甘蓝",
+
+        "red_pepper": "红椒",
+        "bell_pepper_red": "红椒",
+        "green_pepper": "青椒",
+        "bell_pepper_green": "青椒",
+        "yellow_pepper": "黄椒",
+        "bell_pepper_yellow": "黄椒",
+        "jalapeno": "墨西哥辣椒",
+        "chili_pepper": "红辣椒",
+        "horseradish": "辣根",
+
+        "mushroom": "草菇",
+        "straw_mushroom": "草菇",
+
+        "lemon": "柠檬",
+        "lime": "青柠",
+        "orange": "橙子",
+        "apple": "苹果",
+        "strawberry": "草莓",
+
+        "egg": "鸡蛋",
+        "bacon": "培根",
+        "steak": "牛排",
+        "t_bone": "T骨牛排",
+        "tbone": "T骨牛排",
+        "pork_chop": "猪排",
+        "pork_shoulder": "猪肩肉",
+        "pork_tenderloin": "猪里脊",
+        "chicken_breast": "鸡胸",
+        "chicken_leg": "鸡腿",
+        "duck_breast": "鸭胸",
+        "hamburger": "汉堡排",
+        "burger_meat": "汉堡排",
+
+        "salmon": "三文鱼柳",
+        "salmon_fillet": "三文鱼柳",
+        "tuna": "吞拿鱼",
+        "cod": "鳕鱼",
+        "codfish": "鳕鱼",
+        "trout": "鳟鱼",
+        "shrimp": "虾",
+        "lobster": "龙虾尾",
+        "lobster_tail": "龙虾尾",
+        "scallop": "扇贝",
+
+        "cheese": "切达芝士",
+        "cheddar": "切达芝士",
+        "mozzarella": "马苏里拉芝士",
+        "goat_cheese": "山羊芝士",
+        "gorgonzola": "戈尔贡佐拉干酪",
+
+        "bread": "面包",
+        "burger_bun": "汉堡面包顶",
+        "burger_bun_top": "汉堡面包顶",
+        "burger_bun_bottom": "汉堡面包底",
+        "pasta": "通心粉",
+        "penne": "通心粉",
+        "rotini": "螺旋粉",
+        "potato_dumplings": "土豆面球",
+
+        "knife": "刀",
+        "pan": "煎锅",
+        "pot": "大锅",
+        "big_pot": "大锅",
+        "small_pot": "小锅",
+        "paella_pan": "双耳锅",
+        "grill_pan": "烤盘",
+        "fryer_basket": "炸篮",
+        "bake_tray": "烘烤托盘",
+
+        "refrigerator": "冰箱",
+        "fridge": "冰箱",
+        "microwave": "微波炉",
+        "oven": "烤箱",
+        "gas_stove": "煤气炉",
+        "grill": "条纹烤炉",
+        "fryer": "炸炉",
+        "deep_fryer": "炸炉",
+        "faucet": "水龙头",
+        "trash": "垃圾桶",
+        "trash_can": "垃圾桶",
+        "computer": "电脑",
+        "box": "箱子"
+    }
+}

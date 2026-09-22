@@ -1,0 +1,4 @@
+﻿IMPORTANT:
+- Use ONLY the provided on-screen object snapshots (is_on_screen==true) and execution feedback.
+- Do not assume hidden state.
+- Output MUST be a single JSON object and NOTHING else.

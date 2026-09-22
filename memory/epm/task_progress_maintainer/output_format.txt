@@ -1,0 +1,37 @@
+﻿You must output a SINGLE JSON object and NOTHING else.
+
+Output schema:
+{
+  "current_high_level_id": "H1",
+  "current_high_level_goal": "current semantic goal",
+  "goal_state": {
+    "current_subgoal": "",
+    "status": "todo|doing|done|blocked",
+    "done_criteria": ["..."],
+    "current_activity": ""
+  },
+  "semantic_progress": {
+    "completed_tasks": ["..."],
+    "recent_high_level_actions": ["..."]
+  },
+  "commitments": [{"name":"","value":"","reason":""}],
+  "resource_bindings": {
+    "held_item": "",
+    "active_container": "",
+    "active_workspace": "",
+    "timers": []
+  },
+  "blocking_conditions": [{"type":"","detail":""}],
+  "temporal_checkpoints": {
+    "force_submit_remaining_steps": null,
+    "timer_checkpoints": []
+  },
+  "strategy_notes": {
+  },
+  "evidence": {
+    "recipe_constraints": ["..."],
+    "last_feedback_summary": "",
+    "recent_steps_summary": "",
+    "agent_state_summary": ""
+  }
+}

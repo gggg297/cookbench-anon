@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epm-cookbench"
+version = "0.0.0"
+description = "EPM (Embodied Planning Machine): CookBench x Cooking Simulator baseline agent"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+  "loguru>=0.7.0",
+  "mss>=9.0.0",
+  "numpy>=1.23.0",
+  "opencv-python>=4.5.0",
+  "pillow>=10.0.0",
+  "pygetwindow>=0.0.9",
+  "requests>=2.31.0",
+  "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+# Accelerates template matching (falls back to pure-numpy/OpenCV when absent).
+fast = [
+  "scipy>=1.9.0",
+]
+# Only needed for the optional live A* navigation visualisation.
+viz = [
+  "matplotlib>=3.6.0",
+]
+# Windows-only screen-grab helper used by the optional annotation capture tool.
+win32 = [
+  "pywin32>=305; sys_platform == 'win32'",
+]
+dev = [
+  "pytest>=7.0.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"epm.cerebellum" = ["*.txt", "*.json"]
+"epm.cerebellum.skills" = ["**/*.txt", "**/*.json"]

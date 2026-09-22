@@ -1,0 +1,2 @@
+You must {next_step_phrase} based on the latest observation and feedback.
+You must output STRICT JSON only.

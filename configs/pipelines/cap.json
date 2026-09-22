@@ -1,0 +1,46 @@
+{
+  "extends": "../common.json",
+  "runtime": {
+    "stm_window_size": 200
+  },
+  "brain": {
+    "pipeline": "cap",
+    "use_vlm": true,
+    "perception_mode": "oracle",
+    "plan_steps": 10,
+    "task_progress_maintenance": {
+      "enabled": false,
+      "update_mode": "maintainer_only",
+      "every_n_steps": 5,
+      "on_need_replan": true,
+      "on_planner_invalid_step": false,
+      "history_window_steps": 20,
+      "_doc": {
+        "enabled": {
+          "desc": "Enable task_progress maintenance.",
+          "range": "true|false",
+          "current": true
+        },
+        "every_n_steps": {
+          "desc": "Force refresh every N steps. 0 disables periodic refresh.",
+          "range": "0 or positive integer",
+          "current": 0
+        },
+        "on_need_replan": {
+          "desc": "Refresh when a replan is needed (alignment failure, etc.).",
+          "range": "true|false",
+          "current": true
+        },
+        "on_planner_invalid_step": {
+          "desc": "Refresh when planner outputs an invalid step.",
+          "range": "true|false",
+          "current": false
+        },
+        "history_window_steps": {
+          "desc": "Recent step window injected into task_progress maintenance.",
+          "range": "positive integer"
+        }
+      }
+    }
+  }
+}

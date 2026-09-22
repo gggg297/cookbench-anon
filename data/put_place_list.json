@@ -1,0 +1,86 @@
+{
+  "kind": "platform_point",
+  "note": "Each platform category is derived by removing the trailing '-<index>' from name_en. IMPORTANT: the trailing number in name_en is an index, NOT the instance_id. Use the `instance_id` field in realtime_products.json for disambiguation (same as normal items). This file only summarizes platform categories and valid index ranges.",
+  "platforms": [
+    {
+      "category": "Large Table Center",
+      "name_template": "Large Table Center-{index}",
+      "index_ranges": [
+        [
+          1,
+          56
+        ]
+      ]
+    },
+    {
+      "category": "Side Table",
+      "name_template": "Side Table-{index}",
+      "index_ranges": [
+        [
+          1,
+          28
+        ]
+      ]
+    },
+    {
+      "category": "Top Shelf 1 (2-Shelf)",
+      "name_template": "Top Shelf 1 (2-Shelf)-{index}",
+      "index_ranges": [
+        [
+          1,
+          21
+        ]
+      ]
+    },
+    {
+      "category": "Top Shelf 2 (2-Shelf)",
+      "name_template": "Top Shelf 2 (2-Shelf)-{index}",
+      "index_ranges": [
+        [
+          1,
+          21
+        ]
+      ]
+    },
+    {
+      "category": "Top Shelf 3 (3-Shelf)",
+      "name_template": "Top Shelf 3 (3-Shelf)-{index}",
+      "index_ranges": [
+        [
+          1,
+          21
+        ]
+      ]
+    },
+    {
+      "category": "Griddle Surface",
+      "name_template": "Griddle Surface-{index}",
+      "index_ranges": [
+        [
+          1,
+          12
+        ]
+      ]
+    },
+    {
+      "category": "Gas Stand Shelf",
+      "name_template": "Gas Stand Shelf-{index}",
+      "index_ranges": [
+        [
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "category": "Grill Surface",
+      "name_template": "Grill Surface-{index}",
+      "index_ranges": [
+        [
+          1,
+          6
+        ]
+      ]
+    }
+  ]
+}

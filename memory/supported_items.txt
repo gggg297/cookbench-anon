@@ -1,0 +1,1276 @@
+Supported items (static snapshot from data mapping):
+{
+  "query": "",
+  "mapping_error": null,
+  "items": [
+    {
+      "name_en": "Barrel of dark beer",
+      "name_cn": "桶黑啤酒",
+      "category": "background"
+    },
+    {
+      "name_en": "Barrel of light beer",
+      "name_cn": "桶淡啤酒",
+      "category": "background"
+    },
+    {
+      "name_en": "Avocado Oil",
+      "name_cn": "鳄梨油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Balsamic Vinegar",
+      "name_cn": "意大利香醋",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Barbecue Sauce",
+      "name_cn": "烧烤酱",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Bavarian Beer Vinegar",
+      "name_cn": "巴伐利亚啤酒醋",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Chicken Broth",
+      "name_cn": "鸡汤",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Cinnamon stick",
+      "name_cn": "肉桂皮条",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Clarified Butter",
+      "name_cn": "脱水黄油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Coconut Milk",
+      "name_cn": "椰奶",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Cola",
+      "name_cn": "可乐",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Dijon Mustard",
+      "name_cn": "法国第戎芥末",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Dunkles Märzenbier",
+      "name_cn": "黑清啤",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Düsseldorf Mustard",
+      "name_cn": "杜塞尔多夫芥末",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Elderflower Jelly",
+      "name_cn": "接骨木花冻酱",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Fusilli Box",
+      "name_cn": "螺旋粉盒",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Helles Märzenbier",
+      "name_cn": "淡色拉格清啤",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Hoisin Sauce",
+      "name_cn": "海鲜酱",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Honey",
+      "name_cn": "蜂蜜",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Ketchup",
+      "name_cn": "番茄酱",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Lemon Juice",
+      "name_cn": "柠檬汁",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Lime Juice",
+      "name_cn": "青柠汁",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Milk",
+      "name_cn": "牛奶",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Mustard",
+      "name_cn": "芥末",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Olive Oil",
+      "name_cn": "橄榄油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Peanut Oil",
+      "name_cn": "花生油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Penne Box",
+      "name_cn": "通心粉盒",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Pesto",
+      "name_cn": "青酱",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Potato Dumplings Box",
+      "name_cn": "土豆面球盒",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Red Wine",
+      "name_cn": "红葡萄酒",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Redcurrant Jelly",
+      "name_cn": "红醋栗冻酱",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Rice Vinegar",
+      "name_cn": "米醋",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Rice Wine",
+      "name_cn": "米酒",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Salsa",
+      "name_cn": "莎莎酱",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Sesame Oil",
+      "name_cn": "芝麻油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Sour Cream",
+      "name_cn": "酸奶油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Soy Sauce",
+      "name_cn": "酱油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Star Anise",
+      "name_cn": "八角茴香",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Sunflower Oil",
+      "name_cn": "葵花籽油",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Tortellini Box",
+      "name_cn": "意大利馄饨盒",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Water",
+      "name_cn": "水",
+      "category": "liquids"
+    },
+    {
+      "name_en": "White Vinegar",
+      "name_cn": "白醋",
+      "category": "liquids"
+    },
+    {
+      "name_en": "White Wine",
+      "name_cn": "白葡萄酒",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Wine Vinegar",
+      "name_cn": "葡萄酒醋",
+      "category": "liquids"
+    },
+    {
+      "name_en": "Anchovy",
+      "name_cn": "鳀鱼",
+      "category": "products"
+    },
+    {
+      "name_en": "Apple",
+      "name_cn": "苹果",
+      "category": "products"
+    },
+    {
+      "name_en": "Asparagus",
+      "name_cn": "芦笋",
+      "category": "products"
+    },
+    {
+      "name_en": "Bacon",
+      "name_cn": "培根",
+      "category": "products"
+    },
+    {
+      "name_en": "Banana",
+      "name_cn": "香蕉",
+      "category": "products"
+    },
+    {
+      "name_en": "Basil Leaf dresh",
+      "name_cn": "新鲜罗勒叶",
+      "category": "products"
+    },
+    {
+      "name_en": "Bay Leaf dresh",
+      "name_cn": "新鲜香叶",
+      "category": "products"
+    },
+    {
+      "name_en": "Beef Chuck",
+      "name_cn": "牛肩胛肉",
+      "category": "products"
+    },
+    {
+      "name_en": "Beetroot",
+      "name_cn": "甜菜",
+      "category": "products"
+    },
+    {
+      "name_en": "Bottom Burger Bun",
+      "name_cn": "汉堡面包底",
+      "category": "products"
+    },
+    {
+      "name_en": "Bread",
+      "name_cn": "面包",
+      "category": "products"
+    },
+    {
+      "name_en": "Broccoli",
+      "name_cn": "西兰花",
+      "category": "products"
+    },
+    {
+      "name_en": "Brussels Sprouts",
+      "name_cn": "抱子甘蓝",
+      "category": "products"
+    },
+    {
+      "name_en": "Burger Meat",
+      "name_cn": "汉堡排",
+      "category": "products"
+    },
+    {
+      "name_en": "Button Mushroom",
+      "name_cn": "草菇",
+      "category": "products"
+    },
+    {
+      "name_en": "Carrot",
+      "name_cn": "胡萝卜",
+      "category": "products"
+    },
+    {
+      "name_en": "Cheddar",
+      "name_cn": "切达芝士",
+      "category": "products"
+    },
+    {
+      "name_en": "Chicken Breast",
+      "name_cn": "鸡胸",
+      "category": "products"
+    },
+    {
+      "name_en": "Chicken Leg",
+      "name_cn": "鸡腿",
+      "category": "products"
+    },
+    {
+      "name_en": "Chicken Wing",
+      "name_cn": "鸡翅",
+      "category": "products"
+    },
+    {
+      "name_en": "Chili Pepper",
+      "name_cn": "红辣椒",
+      "category": "products"
+    },
+    {
+      "name_en": "Chives",
+      "name_cn": "细香葱",
+      "category": "products"
+    },
+    {
+      "name_en": "Cilantro Leaves dresh",
+      "name_cn": "新鲜香菜叶",
+      "category": "products"
+    },
+    {
+      "name_en": "Cob of Corn",
+      "name_cn": "玉米棒",
+      "category": "products"
+    },
+    {
+      "name_en": "Cod",
+      "name_cn": "鳕鱼",
+      "category": "products"
+    },
+    {
+      "name_en": "Cucumber",
+      "name_cn": "黄瓜",
+      "category": "products"
+    },
+    {
+      "name_en": "Dill dresh",
+      "name_cn": "新鲜莳萝",
+      "category": "products"
+    },
+    {
+      "name_en": "Duck Breast",
+      "name_cn": "鸭胸",
+      "category": "products"
+    },
+    {
+      "name_en": "Egg",
+      "name_cn": "鸡蛋",
+      "category": "products"
+    },
+    {
+      "name_en": "Eggplant",
+      "name_cn": "茄子",
+      "category": "products"
+    },
+    {
+      "name_en": "English Muffin",
+      "name_cn": "英式玛芬",
+      "category": "products"
+    },
+    {
+      "name_en": "Feta",
+      "name_cn": "菲达奶酪",
+      "category": "products"
+    },
+    {
+      "name_en": "Fingerling Potato",
+      "name_cn": "手指土豆",
+      "category": "products"
+    },
+    {
+      "name_en": "Fusilli",
+      "name_cn": "螺旋粉",
+      "category": "products"
+    },
+    {
+      "name_en": "Garlic",
+      "name_cn": "大蒜",
+      "category": "products"
+    },
+    {
+      "name_en": "Goat Cheese",
+      "name_cn": "山羊芝士",
+      "category": "products"
+    },
+    {
+      "name_en": "Gorgonzola",
+      "name_cn": "戈尔贡佐拉干酪",
+      "category": "products"
+    },
+    {
+      "name_en": "Green Bell Pepper",
+      "name_cn": "青椒",
+      "category": "products"
+    },
+    {
+      "name_en": "Halloumi",
+      "name_cn": "哈罗米奶酪",
+      "category": "products"
+    },
+    {
+      "name_en": "Ham",
+      "name_cn": "火腿",
+      "category": "products"
+    },
+    {
+      "name_en": "Honey Mango",
+      "name_cn": "蜂蜜芒果",
+      "category": "products"
+    },
+    {
+      "name_en": "Horseradish",
+      "name_cn": "辣根",
+      "category": "products"
+    },
+    {
+      "name_en": "Jalapeño",
+      "name_cn": "墨西哥辣椒",
+      "category": "products"
+    },
+    {
+      "name_en": "Lemon",
+      "name_cn": "柠檬",
+      "category": "products"
+    },
+    {
+      "name_en": "Lime",
+      "name_cn": "青柠",
+      "category": "products"
+    },
+    {
+      "name_en": "Lobster Tail",
+      "name_cn": "龙虾尾",
+      "category": "products"
+    },
+    {
+      "name_en": "Mint Leaf",
+      "name_cn": "薄荷叶",
+      "category": "products"
+    },
+    {
+      "name_en": "Mooncake",
+      "name_cn": "月饼",
+      "category": "products"
+    },
+    {
+      "name_en": "Mozzarella",
+      "name_cn": "马苏里拉芝士",
+      "category": "products"
+    },
+    {
+      "name_en": "Onion",
+      "name_cn": "洋葱",
+      "category": "products"
+    },
+    {
+      "name_en": "Orange",
+      "name_cn": "橙子",
+      "category": "products"
+    },
+    {
+      "name_en": "Oregano Twig",
+      "name_cn": "牛至嫩枝",
+      "category": "products"
+    },
+    {
+      "name_en": "Pancetta",
+      "name_cn": "意式培根",
+      "category": "products"
+    },
+    {
+      "name_en": "Parmesan",
+      "name_cn": "帕尔玛干酪",
+      "category": "products"
+    },
+    {
+      "name_en": "Parsley Leaves dresh",
+      "name_cn": "新鲜欧芹叶",
+      "category": "products"
+    },
+    {
+      "name_en": "Parsley Root",
+      "name_cn": "欧芹",
+      "category": "products"
+    },
+    {
+      "name_en": "Parsnip",
+      "name_cn": "欧洲萝卜",
+      "category": "products"
+    },
+    {
+      "name_en": "Pear",
+      "name_cn": "梨",
+      "category": "products"
+    },
+    {
+      "name_en": "Penne",
+      "name_cn": "通心粉",
+      "category": "products"
+    },
+    {
+      "name_en": "Pork Breakfast Sausage",
+      "name_cn": "早餐猪肉肠",
+      "category": "products"
+    },
+    {
+      "name_en": "Pork Chops",
+      "name_cn": "猪排",
+      "category": "products"
+    },
+    {
+      "name_en": "Pork Shoulder",
+      "name_cn": "猪肩肉",
+      "category": "products"
+    },
+    {
+      "name_en": "Pork Tenderloin",
+      "name_cn": "猪里脊",
+      "category": "products"
+    },
+    {
+      "name_en": "Pork ribs",
+      "name_cn": "猪肋排",
+      "category": "products"
+    },
+    {
+      "name_en": "Potato",
+      "name_cn": "土豆",
+      "category": "products"
+    },
+    {
+      "name_en": "Potato Dumplings",
+      "name_cn": "土豆面球",
+      "category": "products"
+    },
+    {
+      "name_en": "Pumpkin",
+      "name_cn": "南瓜",
+      "category": "products"
+    },
+    {
+      "name_en": "Radish",
+      "name_cn": "樱桃萝卜",
+      "category": "products"
+    },
+    {
+      "name_en": "Raspberry",
+      "name_cn": "树莓",
+      "category": "products"
+    },
+    {
+      "name_en": "Red Bell Pepper",
+      "name_cn": "红椒",
+      "category": "products"
+    },
+    {
+      "name_en": "Red Cabbage",
+      "name_cn": "紫甘蓝",
+      "category": "products"
+    },
+    {
+      "name_en": "Red Potato",
+      "name_cn": "红薯",
+      "category": "products"
+    },
+    {
+      "name_en": "Rosemary Twig",
+      "name_cn": "迷迭香嫩枝",
+      "category": "products"
+    },
+    {
+      "name_en": "Sage Leaf dresh",
+      "name_cn": "新鲜鼠尾草叶",
+      "category": "products"
+    },
+    {
+      "name_en": "Salmon Fillet",
+      "name_cn": "三文鱼柳",
+      "category": "products"
+    },
+    {
+      "name_en": "Sausage",
+      "name_cn": "香肠",
+      "category": "products"
+    },
+    {
+      "name_en": "Scallion",
+      "name_cn": "葱",
+      "category": "products"
+    },
+    {
+      "name_en": "Scallop",
+      "name_cn": "扇贝",
+      "category": "products"
+    },
+    {
+      "name_en": "Serrano Pepper",
+      "name_cn": "塞拉诺辣椒",
+      "category": "products"
+    },
+    {
+      "name_en": "Shrimp",
+      "name_cn": "虾",
+      "category": "products"
+    },
+    {
+      "name_en": "Steak",
+      "name_cn": "牛排",
+      "category": "products"
+    },
+    {
+      "name_en": "Strawberry",
+      "name_cn": "草莓",
+      "category": "products"
+    },
+    {
+      "name_en": "Swordfish",
+      "name_cn": "剑鱼",
+      "category": "products"
+    },
+    {
+      "name_en": "T-bone Steak",
+      "name_cn": "T骨牛排",
+      "category": "products"
+    },
+    {
+      "name_en": "Tart",
+      "name_cn": "甜果馅饼",
+      "category": "products"
+    },
+    {
+      "name_en": "Thyme Twig",
+      "name_cn": "百里香嫩枝",
+      "category": "products"
+    },
+    {
+      "name_en": "Tomato",
+      "name_cn": "番茄",
+      "category": "products"
+    },
+    {
+      "name_en": "Top Burger Bun",
+      "name_cn": "汉堡面包顶",
+      "category": "products"
+    },
+    {
+      "name_en": "Tortellini",
+      "name_cn": "意大利馄饨",
+      "category": "products"
+    },
+    {
+      "name_en": "Trout",
+      "name_cn": "鳟鱼",
+      "category": "products"
+    },
+    {
+      "name_en": "Tuna",
+      "name_cn": "吞拿鱼",
+      "category": "products"
+    },
+    {
+      "name_en": "White sausage",
+      "name_cn": "白肠",
+      "category": "products"
+    },
+    {
+      "name_en": "Whole Ginger",
+      "name_cn": "整块姜",
+      "category": "products"
+    },
+    {
+      "name_en": "Yellow Bell Pepper",
+      "name_cn": "黄椒",
+      "category": "products"
+    },
+    {
+      "name_en": "Zucchini",
+      "name_cn": "西葫芦",
+      "category": "products"
+    },
+    {
+      "name_en": "Allspice powder",
+      "name_cn": "多香果粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Basil dried",
+      "name_cn": "干罗勒",
+      "category": "spices"
+    },
+    {
+      "name_en": "Bay Leaf dried",
+      "name_cn": "干香叶",
+      "category": "spices"
+    },
+    {
+      "name_en": "Black Pepper",
+      "name_cn": "黑胡椒",
+      "category": "spices"
+    },
+    {
+      "name_en": "Brown Sugar",
+      "name_cn": "棕糖",
+      "category": "spices"
+    },
+    {
+      "name_en": "Cayenne Pepper powder",
+      "name_cn": "辣椒粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Chili Flakes",
+      "name_cn": "辣椒薄片",
+      "category": "spices"
+    },
+    {
+      "name_en": "Cilantro Leaves dried",
+      "name_cn": "干香菜叶",
+      "category": "spices"
+    },
+    {
+      "name_en": "Cinnamon ground",
+      "name_cn": "肉桂末",
+      "category": "spices"
+    },
+    {
+      "name_en": "Cloves ground",
+      "name_cn": "丁香末",
+      "category": "spices"
+    },
+    {
+      "name_en": "Cumin powder",
+      "name_cn": "孜然粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Curry powder",
+      "name_cn": "咖喱粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Dill dried",
+      "name_cn": "干莳萝",
+      "category": "spices"
+    },
+    {
+      "name_en": "Fenugreek Leaves dried",
+      "name_cn": "干葫芦巴叶",
+      "category": "spices"
+    },
+    {
+      "name_en": "Garlic dried",
+      "name_cn": "干大蒜",
+      "category": "spices"
+    },
+    {
+      "name_en": "Ginger",
+      "name_cn": "姜",
+      "category": "spices"
+    },
+    {
+      "name_en": "Ground coffee",
+      "name_cn": "咖啡粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Herbs de Provence dried",
+      "name_cn": "干普罗旺香草",
+      "category": "spices"
+    },
+    {
+      "name_en": "Horseradish dried",
+      "name_cn": "干辣根",
+      "category": "spices"
+    },
+    {
+      "name_en": "Lemon Pepper",
+      "name_cn": "柠檬胡椒粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Lovage dried",
+      "name_cn": "干独活草",
+      "category": "spices"
+    },
+    {
+      "name_en": "Marjoram dried",
+      "name_cn": "干墨角兰",
+      "category": "spices"
+    },
+    {
+      "name_en": "Mint dried",
+      "name_cn": "干薄荷",
+      "category": "spices"
+    },
+    {
+      "name_en": "Mustard Seeds",
+      "name_cn": "欧洲芥末籽",
+      "category": "spices"
+    },
+    {
+      "name_en": "Nutmeg powder",
+      "name_cn": "肉豆蔻粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Oregano dried",
+      "name_cn": "干牛至",
+      "category": "spices"
+    },
+    {
+      "name_en": "Rosemary dried",
+      "name_cn": "干迷迭香",
+      "category": "spices"
+    },
+    {
+      "name_en": "Salt",
+      "name_cn": "盐",
+      "category": "spices"
+    },
+    {
+      "name_en": "Sichuan Pepper powder",
+      "name_cn": "花椒粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Smoked Pepper powder",
+      "name_cn": "烟熏胡椒粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Starch",
+      "name_cn": "淀粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Sugar",
+      "name_cn": "糖",
+      "category": "spices"
+    },
+    {
+      "name_en": "Sweet Bell Pepper powder",
+      "name_cn": "甜椒粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Thyme dried",
+      "name_cn": "干百里香",
+      "category": "spices"
+    },
+    {
+      "name_en": "Turmeric powder",
+      "name_cn": "姜黄根粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "Vanilla powder",
+      "name_cn": "香草粉",
+      "category": "spices"
+    },
+    {
+      "name_en": "White Pepper",
+      "name_cn": "白胡椒",
+      "category": "spices"
+    },
+    {
+      "name_en": "Baking tray rack point",
+      "name_cn": "烤盘架层",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Bottom Oven Switch",
+      "name_cn": "下层烤炉开关",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Checkout Stand",
+      "name_cn": "检查台",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Cool Faucet Switch",
+      "name_cn": "水龙头右阀门",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Faucet Base",
+      "name_cn": "水龙头底座",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Faucet Pipe",
+      "name_cn": "水龙头出水管",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Food Processor Container",
+      "name_cn": "食物处理机容器",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Food Processor button Off",
+      "name_cn": "食物处理机关闭",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Food Processor button On",
+      "name_cn": "食物处理机开启",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Fryer Switch",
+      "name_cn": "炸炉开关",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Fryer oil discharge switch",
+      "name_cn": "炸锅按钮(关)",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Fryer oil filling switch",
+      "name_cn": "炸锅加油按钮(开)",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Fryer-Slot a",
+      "name_cn": "炸炉槽位a",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Fryer-Slot b",
+      "name_cn": "炸炉槽位b",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Griddle Switch",
+      "name_cn": "扒炉开关",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Grill Switch",
+      "name_cn": "条纹烤炉开关",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Hook Point",
+      "name_cn": "挂钩点位",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Hook Point a",
+      "name_cn": "挂钩点位A",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Hook Point b",
+      "name_cn": "挂钩点位B",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Hot Faucet Switch",
+      "name_cn": "水龙头左阀门",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Left Sink Place Point",
+      "name_cn": "水槽左放置点",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Oven Bottom place point",
+      "name_cn": "烤炉下层放置点",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Oven Top place point",
+      "name_cn": "烤炉上层放置点",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Right Sink Place Point",
+      "name_cn": "水槽右放置点",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Stove Place Point",
+      "name_cn": "煤气炉放置点",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Stove Switch",
+      "name_cn": "煤气炉开关",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Top Oven Switch",
+      "name_cn": "上层烤炉开关",
+      "category": "tool-interaction"
+    },
+    {
+      "name_en": "Bowl",
+      "name_cn": "简式碗",
+      "category": "tools"
+    },
+    {
+      "name_en": "Casserole",
+      "name_cn": "简式砂锅",
+      "category": "tools"
+    },
+    {
+      "name_en": "Deep Plate",
+      "name_cn": "简式深盘",
+      "category": "tools"
+    },
+    {
+      "name_en": "Large Plate",
+      "name_cn": "简式大盘",
+      "category": "tools"
+    },
+    {
+      "name_en": "Maβkrug",
+      "name_cn": "啤酒杯",
+      "category": "tools"
+    },
+    {
+      "name_en": "Plastic Bowl",
+      "name_cn": "塑料碗",
+      "category": "tools"
+    },
+    {
+      "name_en": "Plate",
+      "name_cn": "简式盘",
+      "category": "tools"
+    },
+    {
+      "name_en": "Small Plate",
+      "name_cn": "简式小盘",
+      "category": "tools"
+    },
+    {
+      "name_en": "Square Plate",
+      "name_cn": "简式方盘",
+      "category": "tools"
+    },
+    {
+      "name_en": "Auto Cutter Container",
+      "name_cn": "自动切割机容器",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Automatic Cutter Button",
+      "name_cn": "自动切割器按钮",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Automatic Cutter Container",
+      "name_cn": "自动切割容器",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Automatic Cutter Inlet",
+      "name_cn": "自动切割机入口",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Bake Tray",
+      "name_cn": "烘烤托盘",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Big Pot",
+      "name_cn": "大锅",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Blender",
+      "name_cn": "搅拌机",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Bucket",
+      "name_cn": "桶",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Carton Box",
+      "name_cn": "箱子",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Colander",
+      "name_cn": "滤锅",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Computer",
+      "name_cn": "电脑",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Cutting Board",
+      "name_cn": "切菜板",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Food Processor Container",
+      "name_cn": "料理机容器",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Fryer",
+      "name_cn": "炸炉",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Fryer Basket",
+      "name_cn": "炸篮",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Griddle",
+      "name_cn": "平板煎炉",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Grill",
+      "name_cn": "条纹烤炉",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Grill Pan",
+      "name_cn": "烤盘",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Knife",
+      "name_cn": "刀",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Knife holder",
+      "name_cn": "刀架",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Ladle 150 ml",
+      "name_cn": "长柄勺150毫升容量",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Ladle 50 ml",
+      "name_cn": "长柄勺50毫升容量",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Large Skewer",
+      "name_cn": "大签子",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Medium Skewer",
+      "name_cn": "中签子",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Oven",
+      "name_cn": "烤箱",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Paella Pan",
+      "name_cn": "双耳锅",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Pan",
+      "name_cn": "煎锅",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Phone Holder",
+      "name_cn": "电话座支架",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Pipette",
+      "name_cn": "移液器",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Refrigerator",
+      "name_cn": "冰箱",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Refrigerator Left Door",
+      "name_cn": "冰箱左门",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Refrigerator Left Drawer",
+      "name_cn": "冰箱左抽屉",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Refrigerator Right Door",
+      "name_cn": "冰箱右门",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Refrigerator Right Drawer",
+      "name_cn": "冰箱右抽屉",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Repair Phone",
+      "name_cn": "维修电话",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Small Pot",
+      "name_cn": "小锅",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Small Skewer",
+      "name_cn": "小签子",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Spatula",
+      "name_cn": "锅铲",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Stove",
+      "name_cn": "煤气炉",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Tongs",
+      "name_cn": "钳子",
+      "category": "utensils"
+    },
+    {
+      "name_en": "Trash can",
+      "name_cn": "垃圾桶",
+      "category": "utensils"
+    }
+  ],
+  "put_place_list_error": "missing:data/put_place_list.json",
+  "platforms": [],
+  "tool_interaction_point_list_error": "missing:data/tool_interaction_point_list.json",
+  "tool_points": []
+}
