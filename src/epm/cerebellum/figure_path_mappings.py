@@ -177,7 +177,7 @@ ORDER_PATHS = {
 
     # 特殊主题菜品
     "head_headless_horseman": get_figure_path("computer", "order", "Head of the Headless Horseman.png"),
-    "witchs_brew": get_figure_path("computer", "order", "Witch's Brew.png"),
+    "witchs_brew": get_figure_path("computer", "order", "Witch\u2018s Brew.png"),
 
     # 意大利菜和其他国际菜
     "italian_home_fries": get_figure_path("computer", "order", "Italian Home Fries.png"),
