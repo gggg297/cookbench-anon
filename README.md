@@ -29,7 +29,7 @@ information is intentionally omitted.
     game_environment_lock.md
     images/               # screenshots referenced by this README
   memory/                 # prompt assets and documented-memory templates
-  mods/                   # game-side bridge: MelonLoader mod + mapping tables
+  mods/                   # mapping tables consumed by the game-side bridge
   scripts/                # CLI entry points
   src/epm/                # importable package
     brain/                # planner, prompt building, pipelines, modules
@@ -60,12 +60,17 @@ The harness reads the game's live state through a MelonLoader mod. Without it, t
 perception layer has nothing to observe.
 
 **1.1 Install MelonLoader 0.5.7.** Download the `.exe` installer from
-<https://melonloader.co/download.html> (a copy is vendored at
-[`mods/MelonLoader.Installer.exe`](mods/MelonLoader.Installer.exe)). Run it, select
-the MelonLoader version and the game, and accept the defaults.
+<https://melonloader.co/download.html>. Run it, select the MelonLoader version and
+the game, and accept the defaults.
 
-**1.2 Deploy the bridge mod.** The mod binary is **not redistributed here** (it is a
-compiled artifact of a private game build). Obtain it separately, then place it in:
+**1.2 Deploy the bridge mod.** The bridge is a compiled MelonLoader mod that
+publishes the game's live state over a local socket. Its source and prebuilt binary
+**will be released upon acceptance**; they are withheld here only to keep the
+artifact anonymous and self-contained during review.
+
+Together with the mapping tables in [`mods/`](mods/), it is the sole game-specific
+component — everything else in this repository runs unchanged against the interface
+it defines. Once obtained, place the binary in:
 
 ```text
 <game-dir>/Mods/
