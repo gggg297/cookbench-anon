@@ -29,8 +29,8 @@ information is intentionally omitted.
     game_environment_lock.md
     images/               # screenshots referenced by this README
   memory/                 # prompt assets and documented-memory templates
-  mods/                   # mapping tables + bridge placeholder + output sample
-    bridge/               # placeholder for the withheld mod binary
+  mods/                   # game-side bridge, mapping tables, output sample
+    bridge/               # compiled mod + its C# source
     samples/              # verbatim capture of the bridge's live output
   scripts/                # CLI entry points
   src/epm/                # importable package
@@ -66,22 +66,19 @@ perception layer has nothing to observe.
 the game, and accept the defaults.
 
 **1.2 Deploy the bridge mod.** The bridge is a compiled MelonLoader mod that reads
-the game's scene graph and writes it to plain-text snapshots. Its source and prebuilt
-binary **will be released upon acceptance**; they are withheld during review only
-because compiled .NET assemblies embed assembly metadata and PDB paths, which would
-de-identify this submission.
-
-Together with the mapping tables in [`mods/`](mods/), it is the sole game-specific
-component — everything else in this repository runs unchanged against the interface
-it defines. A placeholder with the full rationale sits at
-[`mods/bridge/CS_CamDump.dll.PLACEHOLDER.txt`](mods/bridge/CS_CamDump.dll.PLACEHOLDER.txt).
-Once obtained, place the binary in:
+the game's scene graph and writes it to plain-text snapshots. It is shipped as a
+prebuilt binary at [`mods/bridge/CS_CamDump.dll`](mods/bridge/CS_CamDump.dll); copy
+it into:
 
 ```text
 <game-dir>/Mods/
 ```
 
-> **The interface is verifiable now.** [`mods/samples/realtime_products.sample.json`](mods/samples/realtime_products.sample.json)
+Together with the mapping tables in [`mods/`](mods/), it is the sole game-specific
+component — everything else in this repository runs unchanged against the interface
+it defines.
+
+> **The output contract is verifiable.** [`mods/samples/realtime_products.sample.json`](mods/samples/realtime_products.sample.json)
 > is a verbatim, unedited capture from a live session — 745 scene objects with 42
 > fields each, including real Unity component types. The parsers under
 > `src/epm/world_adapter/` and `src/epm/cerebellum/` consume exactly this schema, so
