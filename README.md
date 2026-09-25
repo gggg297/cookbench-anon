@@ -30,7 +30,7 @@ information is intentionally omitted.
     images/               # screenshots referenced by this README
   memory/                 # prompt assets and documented-memory templates
   mods/                   # game-side bridge, mapping tables, output sample
-    bridge/               # compiled mod + its C# source
+    bridge/               # compiled mod
     samples/              # verbatim capture of the bridge's live output
   scripts/                # CLI entry points
   src/epm/                # importable package
