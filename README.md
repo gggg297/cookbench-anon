@@ -14,13 +14,11 @@ information is intentionally omitted.
 
 ## Demo
 
-[![CookBench: Dish 74 demonstration](docs/images/demo-dish74.jpg)](https://github.com/gggg297/cookbench-anon/releases/tag/demo-dish74-cap-deepseek-v4-1-flash-1017-3x)
-
-[Download the full episode (MP4)](https://github.com/gggg297/cookbench-anon/releases/download/demo-dish74-cap-deepseek-v4-1-flash-1017-3x/cookbench-dish74-cap-deepseek-v4.1-flash-1017-3x.mp4) · [Configuration and checksum](https://github.com/gggg297/cookbench-anon/releases/tag/demo-dish74-cap-deepseek-v4-1-flash-1017-3x)
+[![CookBench: Dish 74 demonstration](docs/images/demo-dish74.jpg)](assets/videos/dish74/README.md)
 
 **Dish 74 — Pasta alla Genovese** · **Harness:** Code as Policy (CaP) · **Model:** `deepseek-v4.1-flash-1017` · **Playback:** 3x speed.
 
-The 1080p recording runs for approximately 45 min 37 sec and includes the final in-game evaluation screen. The published video is silent.
+[Watch the complete episode in five parts](assets/videos/dish74/README.md). The approximately 45 min 37 sec recording includes the final in-game evaluation screen. Silent 1080p web copies are provided at 15 fps, with each file below 100 MB for anonymous hosting.
 
 ## Layout
 

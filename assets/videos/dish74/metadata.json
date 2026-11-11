@@ -1,0 +1,54 @@
+{
+  "dish_id": 74,
+  "dish_name": "Pasta alla Genovese",
+  "harness": "Code as Policy (CaP)",
+  "model": "deepseek-v4.1-flash-1017",
+  "playback_speed": "3x as supplied",
+  "audio": "none",
+  "resolution": "1920x1080",
+  "web_copy_fps": 15,
+  "duration_seconds": 2736.9333333333334,
+  "encoding": "H.264 web copies; complete chronological episode split into five parts; no timeline cuts",
+  "parts": [
+    {
+      "file": "part-01.mp4",
+      "start_seconds": 0.0,
+      "duration_seconds": 600.1333333333333,
+      "frames": 9002,
+      "size_bytes": 66088125,
+      "sha256": "8cd79c3fe22ac335b299e1092fd3671200d119cbf09fc763977acf7da45b47d3"
+    },
+    {
+      "file": "part-02.mp4",
+      "start_seconds": 600.1333333333333,
+      "duration_seconds": 604.6,
+      "frames": 9069,
+      "size_bytes": 81311278,
+      "sha256": "6ed1decf55ee12518aa78ebdd0c1188997d019f6e8943eaf845f89c586cd5eb2"
+    },
+    {
+      "file": "part-03.mp4",
+      "start_seconds": 1204.7333333333333,
+      "duration_seconds": 602.8,
+      "frames": 9042,
+      "size_bytes": 78601588,
+      "sha256": "3874649fc1b883beac5fdef69d0caefa014d58ab6b50ceec9f6e0d9d3d8d1d2e"
+    },
+    {
+      "file": "part-04.mp4",
+      "start_seconds": 1807.5333333333333,
+      "duration_seconds": 593.5333333333333,
+      "frames": 8903,
+      "size_bytes": 65730331,
+      "sha256": "b211ccf549fbe096b3e04941a6697b3e02ffdb245f828be807bfe2905a401ca7"
+    },
+    {
+      "file": "part-05.mp4",
+      "start_seconds": 2401.0666666666666,
+      "duration_seconds": 335.8666666666667,
+      "frames": 5038,
+      "size_bytes": 25906528,
+      "sha256": "9bc4072a65cce042ed94372021cb15e05ee03899a919f36de9ae0b42a4470076"
+    }
+  ]
+}
