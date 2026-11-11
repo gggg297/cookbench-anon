@@ -12,6 +12,16 @@ information is intentionally omitted.
 > perception and GUI layers are runnable out of the box, and remain the property of
 > the game's rights holders. See [Template assets](#template-assets).
 
+## Demo
+
+[![CookBench: Dish 74 demonstration](docs/images/demo-dish74.jpg)](https://github.com/gggg297/cookbench-anon/releases/tag/demo-dish74-cap-deepseek-v4-1-flash-1017-3x)
+
+[Download the full episode (MP4)](https://github.com/gggg297/cookbench-anon/releases/download/demo-dish74-cap-deepseek-v4-1-flash-1017-3x/cookbench-dish74-cap-deepseek-v4.1-flash-1017-3x.mp4) · [Configuration and checksum](https://github.com/gggg297/cookbench-anon/releases/tag/demo-dish74-cap-deepseek-v4-1-flash-1017-3x)
+
+**Dish 74 — Pasta alla Genovese** · **Harness:** Code as Policy (CaP) · **Model:** `deepseek-v4.1-flash-1017` · **Playback:** 3x speed.
+
+The 1080p recording runs for approximately 45 min 37 sec and includes the final in-game evaluation screen. The published video is silent.
+
 ## Layout
 
 ```text
